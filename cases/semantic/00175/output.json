@@ -1,0 +1,28 @@
+[
+  {
+    "class": "Record",
+    "id": "S1",
+    "space": "x00175",
+    "title": "S1",
+    "assignments": {
+      "start_": "0"
+    }
+  },
+  {
+    "class": "Process",
+    "id": "S1_proc",
+    "space": "x00175",
+    "aux": {
+      "metaid": "rule1"
+    },
+    "assignments": {
+      "ode_": "7"
+    },
+    "actors": [
+      {
+        "target": "S1",
+        "stoichiometry": 1
+      }
+    ]
+  }
+]

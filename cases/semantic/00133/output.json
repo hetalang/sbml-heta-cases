@@ -1,0 +1,103 @@
+[
+  {
+    "class": "Compartment",
+    "id": "compartment",
+    "space": "x00133",
+    "title": "compartment",
+    "assignments": {
+      "start_": "1"
+    },
+    "boundary": true
+  },
+  {
+    "class": "Species",
+    "id": "S1",
+    "space": "x00133",
+    "title": "S1",
+    "assignments": {
+      "start_": "0.003 / compartment"
+    },
+    "compartment": "compartment"
+  },
+  {
+    "class": "Species",
+    "id": "S2",
+    "space": "x00133",
+    "title": "S2",
+    "assignments": {
+      "start_": "0 / compartment"
+    },
+    "compartment": "compartment"
+  },
+  {
+    "class": "Species",
+    "id": "S3",
+    "space": "x00133",
+    "title": "S3",
+    "assignments": {
+      "start_": "0 / compartment"
+    },
+    "compartment": "compartment"
+  },
+  {
+    "class": "Reaction",
+    "id": "reaction1",
+    "space": "x00133",
+    "title": "reaction1",
+    "aux": {
+      "reversible": false,
+      "fast": false
+    },
+    "assignments": {
+      "ode_": "compartment * k * S1"
+    },
+    "actors": [
+      {
+        "target": "S2",
+        "stoichiometry": 1
+      },
+      {
+        "target": "S1",
+        "stoichiometry": -1
+      }
+    ]
+  },
+  {
+    "class": "Const",
+    "id": "k__reaction2_local",
+    "space": "x00133",
+    "num": 2
+  },
+  {
+    "class": "Reaction",
+    "id": "reaction2",
+    "space": "x00133",
+    "title": "reaction2",
+    "aux": {
+      "reversible": false,
+      "fast": false
+    },
+    "assignments": {
+      "ode_": "compartment * multiply(k__reaction2_local, S2)"
+    },
+    "actors": [
+      {
+        "target": "S3",
+        "stoichiometry": 1
+      },
+      {
+        "target": "S2",
+        "stoichiometry": -1
+      }
+    ]
+  },
+  {
+    "class": "Record",
+    "id": "k",
+    "space": "x00133",
+    "title": "k",
+    "assignments": {
+      "start_": "1"
+    }
+  }
+]

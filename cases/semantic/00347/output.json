@@ -1,0 +1,127 @@
+[
+  {
+    "class": "Compartment",
+    "id": "compartment",
+    "space": "x00347",
+    "title": "compartment",
+    "assignments": {
+      "start_": "1"
+    },
+    "boundary": true
+  },
+  {
+    "class": "Species",
+    "id": "S1",
+    "space": "x00347",
+    "title": "S1",
+    "assignments": {
+      "start_": "0.0015 / compartment"
+    },
+    "compartment": "compartment"
+  },
+  {
+    "class": "Species",
+    "id": "S2",
+    "space": "x00347",
+    "title": "S2",
+    "assignments": {
+      "start_": "0.002 / compartment"
+    },
+    "compartment": "compartment"
+  },
+  {
+    "class": "Species",
+    "id": "S3",
+    "space": "x00347",
+    "title": "S3",
+    "assignments": {
+      "start_": "0.0015 / compartment"
+    },
+    "compartment": "compartment"
+  },
+  {
+    "class": "Species",
+    "id": "S4",
+    "space": "x00347",
+    "title": "S4",
+    "assignments": {
+      "start_": "0.004 / compartment"
+    },
+    "compartment": "compartment"
+  },
+  {
+    "class": "Reaction",
+    "id": "reaction1",
+    "space": "x00347",
+    "title": "reaction1",
+    "aux": {
+      "reversible": false,
+      "fast": false
+    },
+    "assignments": {
+      "ode_": "compartment * k1 * S1"
+    },
+    "actors": [
+      {
+        "target": "S2",
+        "stoichiometry": 1
+      },
+      {
+        "target": "S1",
+        "stoichiometry": -1
+      }
+    ]
+  },
+  {
+    "class": "Record",
+    "id": "k1",
+    "space": "x00347",
+    "title": "k1",
+    "assignments": {
+      "start_": "0.693"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "k2",
+    "space": "x00347",
+    "title": "k2",
+    "assignments": {
+      "start_": "0.25"
+    }
+  },
+  {
+    "class": "Process",
+    "id": "S3_proc",
+    "space": "x00347",
+    "aux": {
+      "metaid": "rule1"
+    },
+    "assignments": {
+      "ode_": "5e-4 * k1"
+    },
+    "actors": [
+      {
+        "target": "S3",
+        "stoichiometry": 1
+      }
+    ]
+  },
+  {
+    "class": "Process",
+    "id": "S4_proc",
+    "space": "x00347",
+    "aux": {
+      "metaid": "rule2"
+    },
+    "assignments": {
+      "ode_": "(-5e-4) * k2"
+    },
+    "actors": [
+      {
+        "target": "S4",
+        "stoichiometry": 1
+      }
+    ]
+  }
+]
