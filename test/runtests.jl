@@ -2,6 +2,11 @@ using SBMLCases
 using Test
 
 cases_dict = upload_cases()
+
+@testset "upload test" begin
+    @test length(cases_dict) == 1780
+end
+
 @testset "filter test" begin
     s1 = filter_cases(
         cases_dict,

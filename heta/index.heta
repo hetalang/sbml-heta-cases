@@ -1,0 +1,14 @@
+/*
+  Creates many namespaces
+*/
+
+// Part 1
+include ./table.xlsx type xlsx with { sheet: 1, omitRows: 3 }
+include ./table.xlsx type xlsx with { sheet: 2, omitRows: 3 }
+include ./table.xlsx type xlsx with { sheet: 3, omitRows: 3 }
+include ./table.xlsx type xlsx with { sheet: 4, omitRows: 3 }
+// Part 2
+//include ./table1.xlsx type xlsx with { sheet: 1, omitRows: 3 }
+//include ./table1.xlsx type xlsx with { sheet: 2, omitRows: 3 }
+//include ./table1.xlsx type xlsx with { sheet: 3, omitRows: 3 }
+//include ./table1.xlsx type xlsx with { sheet: 4, omitRows: 3 }
