@@ -1,12 +1,12 @@
 # SBMLCases
 
-The package is designed to test Simulation Software against [SBML Test Suite Cases](https://github.com/sbmlteam/sbml-test-suite) in Julia.
+The package is designed to test Simulation Software against [SBML Test Suite](https://github.com/sbmlteam/sbml-test-suite) cases in Julia.
 
 ## Overview
 
 SBMLCases.jl contains:
 - [SBML Test Suite](https://github.com/sbmlteam/sbml-test-suite) cases in `cases_path = "./cases/semantic"`. The original Matlab models were converted to Julia with Heta compiler. Julia code for each model is stored in `./cases/semantic/<case_num>/julia`, while models' settings and tags are stored in `cases_db = "./cases.json"`.
-- API (documented in the *Usage* section) to upload `cases_db`, run simulations, save results to `output_path = "./cases/output"` and update status in `results_db = "./results.json"`. A simulation can end with one of the three status: `success` indicates the output file has passed [tolerance test](https://github.com/sbmlteam/sbml-test-suite/blob/master/cases/semantic/README.md#tolerances-and-errors-for-timecourse-tests), `failure` signifies that tolerance test for a given simulation was not passed and `error` stand for any error during the simulation (error message is printed to the `message` field in `results_db`). 
+- API (documented in the *Usage* section) to upload `cases_db`, run simulations, save results to `output_path = "./cases/output"` and update status in `results_db = "./results.json"`. A simulation can end with one of the three status: `success` indicates the output file has passed [tolerance test](https://github.com/sbmlteam/sbml-test-suite/blob/master/cases/semantic/README.md#tolerances-and-errors-for-timecourse-tests), `failure` signifies that tolerance test for a given simulation was not passed and `error` stands for any error during the simulation (error message is printed to the `message` field in `results_db`).
 
 Currently SBMLCases.jl suport only one `SimSolver` Simulation Backend.
 
