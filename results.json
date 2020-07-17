@@ -29,6 +29,10 @@
             "testTags": [
                 "Amount"
             ]
+        },
+        "result": {
+            "status": "success",
+            "message": ""
         }
     },
     "00002": {
@@ -98,6 +102,10 @@
                 "Amount",
                 "NonUnityStoichiometry"
             ]
+        },
+        "result": {
+            "status": "success",
+            "message": ""
         }
     },
     "00004": {
@@ -131,6 +139,10 @@
                 "Amount",
                 "NonUnityStoichiometry"
             ]
+        },
+        "result": {
+            "status": "success",
+            "message": ""
         }
     },
     "00005": {
@@ -163,6 +175,10 @@
             "testTags": [
                 "Amount"
             ]
+        },
+        "result": {
+            "status": "success",
+            "message": ""
         }
     },
     "00006": {
@@ -195,6 +211,10 @@
             "testTags": [
                 "Amount"
             ]
+        },
+        "result": {
+            "status": "success",
+            "message": ""
         }
     },
     "00007": {
@@ -228,6 +248,10 @@
                 "Amount",
                 "BoundaryCondition"
             ]
+        },
+        "result": {
+            "status": "success",
+            "message": ""
         }
     },
     "00008": {
@@ -262,6 +286,10 @@
                 "Amount",
                 "BoundaryCondition"
             ]
+        },
+        "result": {
+            "status": "success",
+            "message": ""
         }
     },
     "00009": {
@@ -295,6 +323,10 @@
                 "Amount",
                 "BoundaryCondition"
             ]
+        },
+        "result": {
+            "status": "success",
+            "message": ""
         }
     },
     "00010": {
@@ -65632,10 +65664,6 @@
                 "NonConstantParameter",
                 "NonUnityCompartment"
             ]
-        },
-        "result": {
-            "status": "error",
-            "message": "Check the model: KeyError(:C1)"
         }
     }
 }
