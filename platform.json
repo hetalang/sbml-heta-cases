@@ -7,8 +7,8 @@
   "license": "UNLICENSED",
   "options": {
     "debuggingMode": true,
-    "logMode": "error",
-    "logLevel": "info",
+    "logMode": "always",
+    "logLevel": "warn",
     "skipExport": false,
     "distDir": "cases/semantic"
   },
