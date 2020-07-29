@@ -1,1 +1,52 @@
-[]
+[
+  {
+    "class": "Compartment",
+    "id": "C",
+    "space": "x00947",
+    "assignments": {
+      "start_": "1",
+      "event1": "10"
+    }
+  },
+  {
+    "class": "Species",
+    "id": "S1",
+    "space": "x00947",
+    "assignments": {
+      "start_": "1 / C"
+    },
+    "compartment": "C"
+  },
+  {
+    "class": "Reaction",
+    "id": "reaction1",
+    "space": "x00947",
+    "aux": {
+      "reversible": false,
+      "fast": false
+    },
+    "assignments": {
+      "ode_": "C * k1 / S1"
+    },
+    "actors": [
+      {
+        "target": "S1",
+        "stoichiometry": 1
+      }
+    ]
+  },
+  {
+    "class": "Record",
+    "id": "k1",
+    "space": "x00947",
+    "assignments": {
+      "start_": "1"
+    }
+  },
+  {
+    "class": "DSwitcher",
+    "id": "event1",
+    "space": "x00947",
+    "trigger": "S1 > 2.1"
+  }
+]

@@ -61,6 +61,21 @@ solves it with the chosen `backend` solver and writes results to `results_db`.
 
 ```
     update_results(
+        cases_range::UnitRange,
+        cases_dict::AbstractDict=upload_cases(json=cases_db);
+        cases_path::AbstractString=cases_path,
+        cases_db::AbstractString=cases_db,
+        results_db::AbstractString=results_db,
+        backend::DataType=default_backend,
+        kwargs...
+    )
+
+Reads `cases_db` to `cases_dict`, accesses the selected cases from `cases_range`,
+solves it with the chosen `backend` solver and writes results to `results_db`.
+```
+
+```
+    update_results(
         cases_dict::AbstractDict=upload_cases(json=cases_db);
         include_test_tags::Vector{String}=String[],
         include_component_tags::Vector{String}=String[],

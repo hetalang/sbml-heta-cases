@@ -1,1 +1,148 @@
-[]
+[
+  {
+    "class": "Compartment",
+    "id": "C",
+    "space": "x00858",
+    "title": "C",
+    "assignments": {
+      "start_": "2.45"
+    },
+    "boundary": true
+  },
+  {
+    "class": "Species",
+    "id": "S1",
+    "space": "x00858",
+    "title": "S1",
+    "assignments": {
+      "start_": "0.01 / C"
+    },
+    "compartment": "C"
+  },
+  {
+    "class": "Species",
+    "id": "S2",
+    "space": "x00858",
+    "title": "S2",
+    "assignments": {
+      "start_": "0 / C"
+    },
+    "compartment": "C"
+  },
+  {
+    "class": "Species",
+    "id": "S3",
+    "space": "x00858",
+    "title": "S3",
+    "assignments": {
+      "start_": "0 / C"
+    },
+    "compartment": "C"
+  },
+  {
+    "class": "Species",
+    "id": "S4",
+    "space": "x00858",
+    "title": "S4",
+    "assignments": {
+      "start_": "0 / C"
+    },
+    "compartment": "C"
+  },
+  {
+    "class": "Reaction",
+    "id": "reaction1",
+    "space": "x00858",
+    "title": "reaction1",
+    "aux": {
+      "reversible": false,
+      "fast": false
+    },
+    "assignments": {
+      "ode_": "C * k1 * S1 * t"
+    },
+    "actors": [
+      {
+        "target": "S2",
+        "stoichiometry": 1
+      },
+      {
+        "target": "S1",
+        "stoichiometry": -1
+      }
+    ]
+  },
+  {
+    "class": "Reaction",
+    "id": "reaction2",
+    "space": "x00858",
+    "title": "reaction2",
+    "aux": {
+      "reversible": false,
+      "fast": false
+    },
+    "assignments": {
+      "ode_": "C * k2 * S2 * t"
+    },
+    "actors": [
+      {
+        "target": "S3",
+        "stoichiometry": 1
+      },
+      {
+        "target": "S2",
+        "stoichiometry": -1
+      }
+    ]
+  },
+  {
+    "class": "Reaction",
+    "id": "reaction3",
+    "space": "x00858",
+    "title": "reaction3",
+    "aux": {
+      "reversible": false,
+      "fast": false
+    },
+    "assignments": {
+      "ode_": "C * k3 * S3 * t"
+    },
+    "actors": [
+      {
+        "target": "S4",
+        "stoichiometry": 1
+      },
+      {
+        "target": "S3",
+        "stoichiometry": -1
+      }
+    ]
+  },
+  {
+    "class": "Record",
+    "id": "k1",
+    "space": "x00858",
+    "title": "k1",
+    "assignments": {
+      "start_": "0.7"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "k2",
+    "space": "x00858",
+    "title": "k2",
+    "assignments": {
+      "start_": "0.5"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "k3",
+    "space": "x00858",
+    "title": "k3",
+    "assignments": {
+      "start_": "1"
+    }
+  }
+]

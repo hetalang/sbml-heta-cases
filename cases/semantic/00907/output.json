@@ -1,1 +1,37 @@
-[]
+[
+  {
+    "class": "Compartment",
+    "id": "c",
+    "space": "x00907",
+    "title": "c",
+    "assignments": {
+      "start_": "22.5"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "k1",
+    "space": "x00907",
+    "title": "k1",
+    "assignments": {
+      "start_": "0.175"
+    }
+  },
+  {
+    "class": "Process",
+    "id": "c_proc",
+    "space": "x00907",
+    "aux": {
+      "metaid": "rule1"
+    },
+    "assignments": {
+      "ode_": "(-1) * c / k1"
+    },
+    "actors": [
+      {
+        "target": "c",
+        "stoichiometry": 1
+      }
+    ]
+  }
+]

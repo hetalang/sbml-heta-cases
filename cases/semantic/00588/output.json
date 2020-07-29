@@ -1,1 +1,132 @@
-[]
+[
+  {
+    "class": "Compartment",
+    "id": "C",
+    "space": "x00588",
+    "title": "C",
+    "assignments": {
+      "start_": "0.3"
+    },
+    "boundary": true
+  },
+  {
+    "class": "Species",
+    "id": "S1",
+    "space": "x00588",
+    "title": "S1",
+    "assignments": {
+      "start_": "1.5"
+    },
+    "compartment": "C"
+  },
+  {
+    "class": "Species",
+    "id": "S2",
+    "space": "x00588",
+    "title": "S2",
+    "assignments": {
+      "start_": "1.7"
+    },
+    "compartment": "C"
+  },
+  {
+    "class": "Species",
+    "id": "S3",
+    "space": "x00588",
+    "title": "S3",
+    "assignments": {
+      "start_": "2"
+    },
+    "compartment": "C"
+  },
+  {
+    "class": "Species",
+    "id": "S4",
+    "space": "x00588",
+    "title": "S4",
+    "assignments": {
+      "start_": "1"
+    },
+    "compartment": "C"
+  },
+  {
+    "class": "Reaction",
+    "id": "reaction1",
+    "space": "x00588",
+    "title": "reaction1",
+    "aux": {
+      "reversible": false,
+      "fast": false
+    },
+    "assignments": {
+      "ode_": "C * k1 * S1 * S2"
+    },
+    "actors": [
+      {
+        "target": "S3",
+        "stoichiometry": 1
+      },
+      {
+        "target": "S4",
+        "stoichiometry": 1
+      },
+      {
+        "target": "S1",
+        "stoichiometry": -1
+      },
+      {
+        "target": "S2",
+        "stoichiometry": -1
+      }
+    ]
+  },
+  {
+    "class": "Reaction",
+    "id": "reaction2",
+    "space": "x00588",
+    "title": "reaction2",
+    "aux": {
+      "reversible": false,
+      "fast": false
+    },
+    "assignments": {
+      "ode_": "C * k2 * S3 * S4"
+    },
+    "actors": [
+      {
+        "target": "S1",
+        "stoichiometry": 1
+      },
+      {
+        "target": "S2",
+        "stoichiometry": 1
+      },
+      {
+        "target": "S3",
+        "stoichiometry": -1
+      },
+      {
+        "target": "S4",
+        "stoichiometry": -1
+      }
+    ]
+  },
+  {
+    "class": "Record",
+    "id": "k1",
+    "space": "x00588",
+    "title": "k1",
+    "assignments": {
+      "start_": "0.75"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "k2",
+    "space": "x00588",
+    "title": "k2",
+    "assignments": {
+      "start_": "0.25"
+    }
+  }
+]

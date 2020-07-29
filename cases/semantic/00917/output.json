@@ -1,1 +1,28 @@
-[]
+[
+  {
+    "class": "Compartment",
+    "id": "c",
+    "space": "x00917",
+    "title": "c",
+    "assignments": {
+      "start_": "2.2 / 3"
+    }
+  },
+  {
+    "class": "Process",
+    "id": "c_proc",
+    "space": "x00917",
+    "aux": {
+      "metaid": "rule1"
+    },
+    "assignments": {
+      "ode_": "0.5 * c"
+    },
+    "actors": [
+      {
+        "target": "c",
+        "stoichiometry": 1
+      }
+    ]
+  }
+]

@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "class": "Record",
+    "id": "P",
+    "space": "x00951",
+    "assignments": {
+      "start_": "Infinity"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "Q",
+    "space": "x00951",
+    "assignments": {
+      "start_": "-Infinity"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "R",
+    "space": "x00951",
+    "assignments": {
+      "start_": "NaN"
+    }
+  }
+]

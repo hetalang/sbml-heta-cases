@@ -1,0 +1,19 @@
+{
+  "builderVersion": "^0.5.8",
+  "id": "sbml-cases",
+  "title": "Platform to test SBML as module and transformation to Julia",
+  "notes": "platform notes",
+  "version": "v0.1.0",
+  "license": "UNLICENSED",
+  "options": {
+    "debuggingMode": true,
+    "logMode": "error",
+    "logLevel": "warn",
+    "skipExport": false,
+    "distDir": "cases/semantic"
+  },
+  "importModule": {
+    "type": "heta",
+    "source": "heta/index.heta"
+  }
+}

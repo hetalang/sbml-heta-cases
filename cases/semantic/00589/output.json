@@ -1,1 +1,64 @@
-[]
+[
+  {
+    "class": "Compartment",
+    "id": "C",
+    "space": "x00589",
+    "title": "C",
+    "assignments": {
+      "start_": "1"
+    },
+    "boundary": true
+  },
+  {
+    "class": "Species",
+    "id": "S1",
+    "space": "x00589",
+    "title": "S1",
+    "assignments": {
+      "start_": "0.015"
+    },
+    "compartment": "C"
+  },
+  {
+    "class": "Species",
+    "id": "S2",
+    "space": "x00589",
+    "title": "S2",
+    "assignments": {
+      "start_": "0"
+    },
+    "compartment": "C"
+  },
+  {
+    "class": "Reaction",
+    "id": "reaction1",
+    "space": "x00589",
+    "title": "reaction1",
+    "aux": {
+      "reversible": false,
+      "fast": false
+    },
+    "assignments": {
+      "ode_": "C * k1 * S1"
+    },
+    "actors": [
+      {
+        "target": "S2",
+        "stoichiometry": 1
+      },
+      {
+        "target": "S1",
+        "stoichiometry": -1
+      }
+    ]
+  },
+  {
+    "class": "Record",
+    "id": "k1",
+    "space": "x00589",
+    "title": "k1",
+    "assignments": {
+      "start_": "1"
+    }
+  }
+]

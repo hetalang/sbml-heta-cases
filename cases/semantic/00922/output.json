@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "class": "Record",
+    "id": "k1",
+    "space": "x00922",
+    "title": "k1",
+    "assignments": {
+      "start_": "2 * k2"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "k2",
+    "space": "x00922",
+    "title": "k2",
+    "assignments": {
+      "start_": "0.3"
+    }
+  }
+]

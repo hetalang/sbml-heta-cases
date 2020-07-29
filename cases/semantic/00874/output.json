@@ -1,1 +1,121 @@
-[]
+[
+  {
+    "class": "Compartment",
+    "id": "C",
+    "space": "x00874",
+    "title": "C",
+    "assignments": {
+      "start_": "1"
+    },
+    "boundary": true
+  },
+  {
+    "class": "Species",
+    "id": "A1",
+    "space": "x00874",
+    "title": "A1",
+    "assignments": {
+      "start_": "2 / C"
+    },
+    "compartment": "C"
+  },
+  {
+    "class": "Species",
+    "id": "A2",
+    "space": "x00874",
+    "title": "A2",
+    "assignments": {
+      "start_": "3 / C"
+    },
+    "compartment": "C"
+  },
+  {
+    "class": "Species",
+    "id": "A3",
+    "space": "x00874",
+    "title": "A3",
+    "assignments": {
+      "start_": "4 / C"
+    },
+    "boundary": true,
+    "compartment": "C"
+  },
+  {
+    "class": "Species",
+    "id": "A4",
+    "space": "x00874",
+    "title": "A4",
+    "assignments": {
+      "start_": "1 / C"
+    },
+    "compartment": "C"
+  },
+  {
+    "class": "Reaction",
+    "id": "reaction1",
+    "space": "x00874",
+    "title": "reaction1",
+    "aux": {
+      "reversible": false,
+      "fast": true
+    },
+    "assignments": {
+      "ode_": "A4 * C * Kf1"
+    },
+    "actors": [
+      {
+        "target": "A2",
+        "stoichiometry": 1
+      },
+      {
+        "target": "A4",
+        "stoichiometry": -1
+      }
+    ]
+  },
+  {
+    "class": "Reaction",
+    "id": "reaction2",
+    "space": "x00874",
+    "title": "reaction2",
+    "aux": {
+      "reversible": false,
+      "fast": false
+    },
+    "assignments": {
+      "ode_": "A1 * A2 * C * Kf"
+    },
+    "actors": [
+      {
+        "target": "A3",
+        "stoichiometry": 1
+      },
+      {
+        "target": "A1",
+        "stoichiometry": -1
+      },
+      {
+        "target": "A2",
+        "stoichiometry": -1
+      }
+    ]
+  },
+  {
+    "class": "Record",
+    "id": "Kf1",
+    "space": "x00874",
+    "title": "Kf1",
+    "assignments": {
+      "start_": "1"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "Kf",
+    "space": "x00874",
+    "title": "Kf",
+    "assignments": {
+      "start_": "1"
+    }
+  }
+]

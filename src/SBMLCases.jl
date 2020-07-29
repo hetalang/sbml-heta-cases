@@ -125,7 +125,7 @@ function save_as_json(dict::AbstractDict, json::AbstractString)
 """
     update_results(
         case::AbstractString,
-        cases_dict::AbstractDict=upload_cases(json=cases_db);
+        cases_dict::AbstractDict=upload_cases(json=results_db);
         cases_path::AbstractString=cases_path,
         cases_db::AbstractString=cases_db,
         results_db::AbstractString=results_db,
@@ -138,7 +138,7 @@ solves it with the chosen `backend` solver and writes result to `results_db`.
 """
 function update_results(
     case::AbstractString,
-    cases_dict::AbstractDict=upload_cases(json=cases_db);
+    cases_dict::AbstractDict=upload_cases(json=results_db);
     cases_path::AbstractString=cases_path,
     cases_db::AbstractString=cases_db,
     results_db::AbstractString=results_db,
@@ -170,7 +170,7 @@ end
 """
     update_results(
         cases_vec::Vector{String},
-        cases_dict::AbstractDict=upload_cases(json=cases_db);
+        cases_dict::AbstractDict=upload_cases(json=results_db);
         cases_path::AbstractString=cases_path,
         cases_db::AbstractString=cases_db,
         results_db::AbstractString=results_db,
@@ -183,7 +183,7 @@ solves it with the chosen `backend` solver and writes results to `results_db`.
 """
 function update_results(
     cases_vec::Vector{String},
-    cases_dict::AbstractDict=upload_cases(json=cases_db);
+    cases_dict::AbstractDict=upload_cases(json=results_db);
     cases_path::AbstractString=cases_path,
     cases_db::AbstractString=cases_db,
     results_db::AbstractString=results_db,
@@ -207,7 +207,44 @@ end
 
 """
     update_results(
-        cases_dict::AbstractDict=upload_cases(json=cases_db);
+        cases_range::UnitRange,
+        cases_dict::AbstractDict=upload_cases(json=results_db);
+        cases_path::AbstractString=cases_path,
+        cases_db::AbstractString=cases_db,
+        results_db::AbstractString=results_db,
+        backend::DataType=default_backend,
+        kwargs...
+    )
+
+Reads `cases_db` to `cases_dict`, accesses the selected cases from `cases_range`,
+solves it with the chosen `backend` solver and writes results to `results_db`.
+"""
+function update_results(
+    cases_range::UnitRange,
+    cases_dict::AbstractDict=upload_cases(json=results_db);
+    cases_path::AbstractString=cases_path,
+    cases_db::AbstractString=cases_db,
+    results_db::AbstractString=results_db,
+    backend::DataType=default_backend,
+    kwargs...
+)
+    for case in cases_range
+        update_results(
+            lpad(case, 5, "0"),
+            cases_dict;
+            cases_path=cases_path,
+            cases_db=cases_db,
+            results_db=results_db,
+            backend=default_backend,
+            kwargs...
+        )
+    end
+    return nothing
+end
+
+"""
+    update_results(
+        cases_dict::AbstractDict=upload_cases(json=results_db);
         include_test_tags::Vector{String}=String[],
         include_component_tags::Vector{String}=String[],
         exclude_test_tags::Vector{String}=String[],
@@ -223,7 +260,7 @@ Reads `cases_db` to `cases_dict`, filters the cases according to `include` and `
 solves it with the chosen `backend` solver and writes results to `results_db`.
 """
 function update_results(
-    cases_dict::AbstractDict=upload_cases(json=cases_db);
+    cases_dict::AbstractDict=upload_cases(json=results_db);
     include_test_tags::Vector{String}=String[],
     include_component_tags::Vector{String}=String[],
     exclude_test_tags::Vector{String}=String[],
@@ -237,7 +274,7 @@ function update_results(
     cases_vec = isempty(include_test_tags) &&
                 isempty(include_component_tags) &&
                 isempty(exclude_test_tags) &&
-                isempty(exclude_component_tags) ? keys(cases_dict) :
+                isempty(exclude_component_tags) ? cases_dict.keys :
                     filter_cases(cases_dict;
                         include_test_tags=include_test_tags,
                         include_component_tags=include_component_tags,
@@ -367,12 +404,15 @@ function eval_model(model_code)
     Model(
         (cons)->Base.invokelatest(model_code.start, cons),
         (du, u, p, t)->Base.invokelatest(model_code.ode, du, u, p, t),
-        [((u, t, integrator)->Base.invokelatest(cond, u, t, integrator), (integrator)->Base.invokelatest(ass, integrator)) for (cond,ass) in model_code.events],
-        [((u, t, integrator)->Base.invokelatest(cond, u, t, integrator), (integrator)->Base.invokelatest(ass, integrator)) for (cond,ass) in model_code.discrete], # place for discrete events, not used
+        [eval_event(evt) for evt in model_code.events],
         (outputIds)->Base.invokelatest(model_code.saving, outputIds),
         model_code.default_constants
     )
 end
+
+eval_event(evt::TimeEvent) = TimeEvent((cons)->Base.invokelatest(evt.condition_func, cons), (integrator)->Base.invokelatest(evt.affect_func, integrator))
+eval_event(evt::DEvent) = DEvent((u, t, integrator)->Base.invokelatest(evt.condition_func, u, t, integrator), (integrator)->Base.invokelatest(evt.affect_func, integrator))
+eval_event(evt::CEvent) = CEvent((u, t, integrator)->Base.invokelatest(evt.condition_func, u, t, integrator), (integrator)->Base.invokelatest(evt.affect_func, integrator))
 
 export upload_cases, filter_cases, add_cases, update_results
 
