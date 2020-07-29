@@ -3,12 +3,22 @@
 */
 
 // Part 1
+
 include ./table.xlsx type xlsx with { sheet: 1, omitRows: 3 }
 include ./table.xlsx type xlsx with { sheet: 2, omitRows: 3 }
 include ./table.xlsx type xlsx with { sheet: 3, omitRows: 3 }
 include ./table.xlsx type xlsx with { sheet: 4, omitRows: 3 }
+
 // Part 2
-include ./table1.xlsx type xlsx with { sheet: 1, omitRows: 3 }
-include ./table1.xlsx type xlsx with { sheet: 2, omitRows: 3 }
-include ./table1.xlsx type xlsx with { sheet: 3, omitRows: 3 }
-include ./table1.xlsx type xlsx with { sheet: 4, omitRows: 3 }
+//include ./table1.xlsx type xlsx with { sheet: 1, omitRows: 3 }
+//include ./table1.xlsx type xlsx with { sheet: 2, omitRows: 3 }
+//include ./table1.xlsx type xlsx with { sheet: 3, omitRows: 3 }
+//include ./table1.xlsx type xlsx with { sheet: 4, omitRows: 3 }
+
+// single case
+/*
+#setNS x00355::*;
+#include x00355::* {source: "../cases/semantic/00355/00355-sbml-l2v4.xml", type: sbml};
+#export {format: JSON, filepath: "00355/output", spaceFilter: x00355 };
+#export {format: Julia, filepath: "00355/julia", spaceFilter: x00355 };
+*/
