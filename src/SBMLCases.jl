@@ -325,8 +325,8 @@ function solve_case(
 
     solver = Dict(
         :alg=>alg,
-        :reltol=>case["settings"]["relative"],
-        :abstol=>case["settings"]["absolute"],
+        :reltol=>1e-7, #case["settings"]["relative"],
+        :abstol=>1e-14 #case["settings"]["absolute"],
         #:maxiters => 10^5,
         #:dtmax => step/2
     )
@@ -413,6 +413,32 @@ end
 eval_event(evt::TimeEvent) = TimeEvent((cons)->Base.invokelatest(evt.condition_func, cons), (integrator)->Base.invokelatest(evt.affect_func, integrator))
 eval_event(evt::DEvent) = DEvent((u, t, integrator)->Base.invokelatest(evt.condition_func, u, t, integrator), (integrator)->Base.invokelatest(evt.affect_func, integrator))
 eval_event(evt::CEvent) = CEvent((u, t, integrator)->Base.invokelatest(evt.condition_func, u, t, integrator), (integrator)->Base.invokelatest(evt.affect_func, integrator))
+
+function results_to_df(res::AbstractDict, ran::UnitRange{Int64}=1:955)
+    num = length(ran)
+    id_str = Vector{String}(undef, num)
+    comp_tags = Vector(undef, num)
+    test_tags = Vector(undef, num)
+    status = Vector{String}(undef, num)
+    message = Vector{String}(undef, num)
+
+    for j in ran
+        i = j-first(ran)+1
+        id_str[i] = lpad(j, 5, "0")
+        comp_tags[i] = res[id_str[i]]["tags"]["componentTags"]
+        test_tags[i] = res[id_str[i]]["tags"]["testTags"]
+        status[i] = String(res[id_str[i]]["result"]["status"])
+        message[i] = String(res[id_str[i]]["result"]["message"])
+    end
+
+    DataFrame(
+        id = id_str,
+        comp_tags = comp_tags,
+        test_tags = test_tags,
+        status = status,
+        message = message
+    )
+end
 
 export upload_cases, filter_cases, add_cases, update_results
 
