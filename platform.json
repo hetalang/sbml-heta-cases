@@ -9,6 +9,7 @@
     "debuggingMode": true,
     "logMode": "always",
     "logLevel": "warn",
+    "logFormat": "json",
     "skipExport": false,
     "distDir": "cases/semantic"
   },
