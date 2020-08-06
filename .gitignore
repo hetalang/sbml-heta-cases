@@ -1,7 +1,6 @@
-Manifest.toml
-
 ~$*.*
 
 /cases/semantic/*/output.json
 /cases/semantic/*/julia
 /build.log
+/results.json
