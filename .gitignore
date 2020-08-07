@@ -2,5 +2,6 @@
 
 /cases/semantic/*/output.json
 /cases/semantic/*/julia
+/cases/output/*.csv
 /build.log
 /results.json
