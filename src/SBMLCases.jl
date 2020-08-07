@@ -12,15 +12,59 @@ const output_path = "./cases/output"
 const default_backend = Val{:SimSolver}
 
 
+### Metelkin
+
+function case_build_errors(
+    case::AbstractDict;
+    build_dict::Vector{Any}
+)
+    id = case["name"]
+    filename_regex = Regex("$id-sbml-l2v4\\.xml\$")
+
+    # to get only errors which refer to cases id
+    f = x -> x["level"] == "error" && ( # select only errors
+        ( haskey(x["opt"], "space") && x["opt"]["space"] == "x$id" ) ||  # search id in space
+        ( haskey(x["opt"], "filename") && occursin(filename_regex, x["opt"]["filename"]) ) # search id in filename
+    )
+
+    return filter(f, build_dict)
+end
+
+function case_sim_result(
+    case::AbstractDict;
+    cases_path::AbstractString,
+    output_path::AbstractString
+)
+    result = OrderedDict()
+    try
+        status = solve_case(case; cases_path = cases_path, output_path = output_path)
+        if status
+            result["status"] = "SUCCESS"
+            result["message"] = "Simulations meet the criteria"
+            println("$(case["name"])...................success")
+        else
+            result["status"] = "TOLERANCE_FAIL"
+            result["message"] = "Simulation tolerance test not passed"
+            println("$(case["name"])...................failure")
+        end
+    catch e
+        result["status"] = "ERROR"
+        result["message"] = "Error while running model. $e"
+        println("$(case["name"])...................error")
+    end
+
+    return result
+end
+
 ########################## Upload cases from cases_db ########################
 
 """
-    upload_cases(;json::AbstractString=cases_db)
+    upload_cases(;cases_db_path::AbstractString=cases_db)
 
 Upload cases from `cases_db`.
 """
-function upload_cases(;json::AbstractString=cases_db)
-    f = open(json, "r")
+function upload_cases(;cases_db_path::AbstractString=cases_db)
+    f = open(cases_db_path, "r")
     dict = JSON.parse(f, dicttype=OrderedDict)
     close(f)
     return dict
@@ -440,6 +484,7 @@ function results_to_df(res::AbstractDict, ran::UnitRange{Int64}=1:955)
     )
 end
 
-export upload_cases, filter_cases, add_cases, update_results
+export upload_cases, filter_cases, add_cases, update_results,
+    case_build_errors, case_sim_result # Metelkin
 
 end #module

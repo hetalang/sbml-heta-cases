@@ -1,0 +1,78 @@
+<HTML>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="config.js"></script>
+    <script>
+        $(window).ready(() => {
+            $.get(config.results || 'results.json', (data) => {
+                let container = $('#container');
+                Object.values(data.cases).forEach((x) => {
+                    let componentTags = x.tags?.componentTags?.join(', ');
+                    let testTags = x.tags?.testTags?.join(', ');
+                    let status = x.result?.status;
+                    let message = x.result?.message;
+                    let description = `
+                        <h2>#${x.name}</h2>
+                        <p><strong>status:</strong> ${status}</p>
+                        <p><strong>message:</strong> ${message}</p>
+                        <p><strong>componentTags:</strong> ${componentTags}</p>
+                        <p><strong>testTags:</strong> ${testTags}</p>
+                    `;
+
+                    $(`<div class="item ${status}"><div class="hoovable">${description}</div></div>`)
+                        .appendTo(container);
+                });
+            }, 'json');
+        });
+    </script>
+    <!-- https://css-tricks.com/snippets/css/a-guide-to-flexbox/ -->
+    <style>
+        #container {
+            /*border: black 1px dotted;*/
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+            width: 800px;
+            min-width: 300px;
+            margin-bottom: 200px;
+        }
+        .item {
+            border: white 0.5px solid;
+            width: 15px;
+            height: 15px;
+            background-color: lightgrey;
+        }
+        .item div.hoovable {
+            display: none;
+            position: relative;
+            top: -30px;
+            left: 30px;
+            background-color: white;
+            border: grey 1px solid;
+            width: 300px;
+            height: 230px;
+            font-size: small;
+            padding: 5px;
+        }
+        .item:hover div.hoovable {
+            display: block;
+        }
+        .item:hover {
+            border-color: black;
+        }
+        .item.success {
+            background-color: lightgreen;
+        }
+        .item.fail {
+            background-color: lightpink;
+        }
+    </style>
+</head>
+<body>
+    <h2>Result of testing SBML cases</h2>
+    <p id="info"></p>
+    <div>
+        <div id="container"/>
+    </div>
+</body>
+</HTML>
