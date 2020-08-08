@@ -7,7 +7,7 @@ build_dict = JSON.parsefile("./build.log"; dicttype = OrderedDict)
 
 ### run all cases
 
-for (id, value) in collect(cases_dict)[1:5]
+for (id, value) in collect(cases_dict)
     build_errors = case_build_errors(
         value;
         build_dict = build_dict
@@ -30,11 +30,16 @@ for (id, value) in collect(cases_dict)[1:5]
     value["result"] = sim_report
 end
 
+#heta_version = ENV["heta_version"]
+heta_version = length(ARGS) > 0 ? ARGS[1] : "unknown"
 report = Dict(
-    "cases" => cases_dict
+    "cases" => cases_dict,
+    "required_time" => "000 min",
+    "date" => "0000-00-00 00:00",
+    "heta_version" => heta_version,
+    "simsolver_version" => "0.1.x"
 )
 
-#save_as_json(cases_dict, "./res.json")
 open("./results.json", "w") do f
     JSON.print(f, report, 4)
 end

@@ -5,21 +5,39 @@
     <script>
         $(window).ready(() => {
             $.get(config.results || 'results.json', (data) => {
+                // general info
+                $('#heta_version')
+                    .html('<strong>Heta version:</strong> ' + data.heta_version);
+                $('#simsolver_version')
+                    .html('<strong>SimSolver version:</strong> ' + data.simsolver_version);
+                $('#date')
+                    .html('<strong>Date:</strong> ' + data.date);
+                $('#required_time')
+                    .html('<strong>Required time:</strong> ' + data.required_time);
+
+                // color panel
                 let container = $('#container');
                 Object.values(data.cases).forEach((x) => {
                     let componentTags = x.tags?.componentTags?.join(', ');
                     let testTags = x.tags?.testTags?.join(', ');
                     let status = x.result?.status;
                     let message = x.result?.message;
+                    let build_errors = x.build_errors?.map((line) => {
+                        return `<li>${line.msg}</li>`;
+                    }).join('');
                     let description = `
                         <h2>#${x.name}</h2>
+                        <p><strong>build_errors:</strong> <ul>${build_errors}</ul></p>
                         <p><strong>status:</strong> ${status}</p>
                         <p><strong>message:</strong> ${message}</p>
                         <p><strong>componentTags:</strong> ${componentTags}</p>
                         <p><strong>testTags:</strong> ${testTags}</p>
                     `;
 
-                    $(`<div class="item ${status}"><div class="hoovable">${description}</div></div>`)
+                    let symb = {
+                        ERROR: ''
+                    }[status];
+                    $(`<div class="item ${status}">${symb ? symb : ''}<div class="hoovable">${description}</div></div>`)
                         .appendTo(container);
                 });
             }, 'json');
@@ -27,6 +45,9 @@
     </script>
     <!-- https://css-tricks.com/snippets/css/a-guide-to-flexbox/ -->
     <style>
+        #info {
+            font-size: small;
+        }
         #container {
             /*border: black 1px dotted;*/
             display: flex;
@@ -40,7 +61,7 @@
             border: white 0.5px solid;
             width: 15px;
             height: 15px;
-            background-color: lightgrey;
+            background-color: lightblue;
         }
         .item div.hoovable {
             display: none;
@@ -50,7 +71,7 @@
             background-color: white;
             border: grey 1px solid;
             width: 300px;
-            height: 230px;
+            height: 300px;
             font-size: small;
             padding: 5px;
         }
@@ -60,17 +81,28 @@
         .item:hover {
             border-color: black;
         }
-        .item.success {
-            background-color: lightgreen;
+        .item.SKIPPED {
+            background-color: lightgrey;
         }
-        .item.fail {
-            background-color: lightpink;
+        .item.ERROR {
+            background-color: red;
+        }
+        .item.TOLERANCE_FAIL {
+            background-color: orange;
+        }
+        .item.SUCCESS {
+            background-color: lightgreen;
         }
     </style>
 </head>
 <body>
     <h2>Result of testing SBML cases</h2>
-    <p id="info"></p>
+    <div id="info">
+        <p id="heta_version"/>
+        <p id="simsolver_version"/>
+        <p id="date"/>
+        <p id="required_time"/>
+    </div>
     <div>
         <div id="container"/>
     </div>

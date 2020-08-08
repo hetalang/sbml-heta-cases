@@ -11,7 +11,6 @@ const output_path = "./cases/output"
 # default backend
 const default_backend = Val{:SimSolver}
 
-
 ### Metelkin
 
 function case_build_errors(
