@@ -3,43 +3,48 @@ using Pkg
 Pkg.activate(".")
 
 using SBMLCases, DataStructures, JSON
+using Dates
 
 cases_dict = JSON.parsefile("./cases.json"; dicttype = OrderedDict)
 build_dict = JSON.parsefile("./build.log"; dicttype = OrderedDict)
 
 ### run all cases
 
-for (id, value) in collect(cases_dict) # [1:10]
-    build_errors = case_build_errors(
-        value;
-        build_dict = build_dict
-    )
-    value["build_errors"] = build_errors
-
-    if (length(build_errors) == 0)
-        sim_report = case_sim_result(
+required_time = @elapsed begin
+    for (id, value) in collect(cases_dict)[1:5]
+        build_errors = case_build_errors(
             value;
-            cases_path = "./cases/semantic",
-            output_path = "./cases/output"
+            build_dict = build_dict
         )
-    else
-        sim_report = Dict(
-            "status" => "SKIPPED",
-            "message" => "Model was not simulated because of build errors"
-        )
-    end
+        value["build_errors"] = build_errors
 
-    value["result"] = sim_report
+        if (length(build_errors) == 0)
+            sim_report = case_sim_result(
+                value;
+                cases_path = "./cases/semantic",
+                output_path = "./cases/output"
+            )
+        else
+            sim_report = Dict(
+                "status" => "SKIPPED",
+                "message" => "Model was not simulated because of build errors"
+            )
+        end
+
+        value["result"] = sim_report
+    end
 end
 
 #heta_version = ENV["heta_version"]
+date = Dates.format(Dates.now(), "yyyy-mm-dd HH:MM:SS")
 heta_version = length(ARGS) > 0 ? ARGS[1] : "unknown"
+pkg = Pkg.installed()
 report = Dict(
     "cases" => cases_dict,
-    "required_time" => "000 min",
-    "date" => "0000-00-00 00:00",
+    "required_time" => required_time,
+    "date" => date,
     "heta_version" => heta_version,
-    "simsolver_version" => "0.1.x"
+    "simsolver_version" => string(pkg["SimSolver"])
 )
 
 open("./results.json", "w") do f

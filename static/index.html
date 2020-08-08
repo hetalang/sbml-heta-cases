@@ -13,7 +13,7 @@
                 $('#date')
                     .html('<strong>Date:</strong> ' + data.date);
                 $('#required_time')
-                    .html('<strong>Required time:</strong> ' + data.required_time);
+                    .html('<strong>Runtime:</strong> ' + Math.round(data.required_time/60) + ' min');
 
                 // color panel
                 let container = $('#container');
