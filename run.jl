@@ -1,4 +1,6 @@
 #include("./src/SBMLCases.jl")
+using Pkg
+Pkg.activate(".")
 
 using SBMLCases, DataStructures, JSON
 
@@ -7,7 +9,7 @@ build_dict = JSON.parsefile("./build.log"; dicttype = OrderedDict)
 
 ### run all cases
 
-for (id, value) in collect(cases_dict)
+for (id, value) in collect(cases_dict) # [1:10]
     build_errors = case_build_errors(
         value;
         build_dict = build_dict
