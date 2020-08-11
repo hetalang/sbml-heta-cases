@@ -1,3 +1,3 @@
 window.config = {
-    results: '../results.json'
+    results: './results.json'
 };

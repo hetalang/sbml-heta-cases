@@ -1,6 +1,11 @@
-# SBMLCases
+# SBML Heta cases
 
 The package is designed to test Simulation Software against [SBML Test Suite](https://github.com/sbmlteam/sbml-test-suite) cases in Julia.
+
+[![Heta project](https://img.shields.io/badge/%CD%B1-Heta_project-blue)](https://hetalang.github.io/)
+[![Build and Share](https://github.com/insysbio/sbml-heta-cases/workflows/Build%20and%20Share/badge.svg)](https://insysbio.github.io/sbml-heta-cases/)
+[![GitHub issues](https://img.shields.io/github/issues/insysbio/sbml-heta-cases.svg)](https://GitHub.com/insysbio/sbml-heta-cases/issues/)
+[![GitHub license](https://img.shields.io/github/license/insysbio/sbml-heta-cases.svg)](https://github.com/insysbio/sbml-heta-cases/blob/master/LICENSE)
 
 ## Overview
 

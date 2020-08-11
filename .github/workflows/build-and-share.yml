@@ -4,7 +4,7 @@ name: Build and Share
 
 on:
   push:
-    branches: [ master, '*-results' ]
+    branches: [ master, '*-result' ]
   pull_request:
     branches: [ master ]
 
@@ -27,19 +27,21 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm i -g heta-compiler@${{ matrix.heta-version }}
+    - run: |
+        # npm i -g heta-compiler@${{ matrix.heta-version }}
+        npm i -g https://github.com/insysbio/heta-compiler.git
     - run: |
         heta build
         heta_version=`heta -v`
-    - name: Copy result files to "static"
+    - name: Copy files to "static"
       run: |
         mkdir -p ./static/cases/output
-        cp -rf ./cases/output/*.csv ./static/cases/output
+        cp -rf ./cases/output/*.csv ./static/cases/output/ | true
         cp -f ./build.log ./static/
         cp -f ./results.json ./static/
-    - name: Deploy to "results" branch only for "master" and "*-results" pushes
+    - name: Deploy to "result" branch only for "master" and "*-result" pushes
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BRANCH: results # The branch the action should deploy to.
+        BRANCH: result # The branch the action should deploy to.
         FOLDER: static # The folder the action should deploy.
