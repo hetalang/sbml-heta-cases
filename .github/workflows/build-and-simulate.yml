@@ -1,12 +1,15 @@
 # This workflow build Heta platform and share results in "display" branch
 
-name: Build and Share
+name: Build and simulate
 
 on:
-  push:
-    branches: [ master, '*-result' ]
-  pull_request:
-    branches: [ master ]
+  workflow_dispatch:
+    # Inputs the workflow accepts.
+    inputs:
+      name:
+        description: 'Manual run of build and simulate'
+        default: 'World'
+        required: true
 
 jobs:
   build:
@@ -27,21 +30,32 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: |
+    - name: Heta-compiler installation
+      run: |
         # npm i -g heta-compiler@${{ matrix.heta-version }}
         npm i -g https://github.com/insysbio/heta-compiler.git
     - run: |
         heta build
         heta_version=`heta -v`
+    - name: Setup Julia environment
+      uses: julia-actions/setup-julia@v1.1.12
+      with:
+        version: ~1.5.0 # optional, default is 1
+        arch: x64 # optional, default is x64
+        show-versioninfo: true # optional, default is false
+    - name: SimSolver installation
+      run: julia -e 'using Pkg;Pkg.activate(".");Pkg.add(url="https://${{ secrets.SIMSOLVER_GITLAB_TOKEN }}@gitlab.insysbio.com/dev-group/simsolver")'
+    - name: Run Julia simulations
+      run: julia ./run.jl $heta_version
     - name: Copy files to "static"
       run: |
-        mkdir -p ./static/cases/output
-        cp -rf ./cases/output/*.csv ./static/cases/output/ | true
-        cp -f ./build.log ./static/
-        cp -f ./results.json ./static/
+        mkdir -p ./result/cases/output
+        cp -rf ./cases/output/*.csv ./result/cases/output/ | true
+        cp -f ./build.log ./result/
+        cp -f ./results.json ./result/
     - name: Deploy to "result" branch only for "master" and "*-result" pushes
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: result # The branch the action should deploy to.
-        FOLDER: static # The folder the action should deploy.
+        FOLDER: result # The folder the action should deploy.

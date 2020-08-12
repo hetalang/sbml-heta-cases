@@ -1,9 +1,9 @@
 #include("./src/SBMLCases.jl")
 using Pkg
 Pkg.activate(".")
+Pkg.instantiate()
 
-using SBMLCases, DataStructures, JSON
-using Dates
+using SBMLCases, DataStructures, JSON, Dates
 
 cases_dict = JSON.parsefile("./cases.json"; dicttype = OrderedDict)
 build_dict = JSON.parsefile("./build.log"; dicttype = OrderedDict)
