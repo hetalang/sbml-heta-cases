@@ -3,5 +3,6 @@
 /cases/semantic/*/output.json
 /cases/semantic/*/julia
 /cases/output/*.csv
+/cases/output/*.png
 /build.log
 #/results.json

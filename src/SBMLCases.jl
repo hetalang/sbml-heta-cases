@@ -1,6 +1,6 @@
 module SBMLCases
 
-using JSON, SimSolver, DataFrames, CSV, DataStructures
+using JSON, SimSolver, DataFrames, CSV, DataStructures, StatsPlots
 
 # files containing settings and tags of sbml models
 const cases_db = "./cases.json"
@@ -58,12 +58,12 @@ end
 ########################## Upload cases from cases_db ########################
 
 """
-    upload_cases(;cases_db_path::AbstractString=cases_db)
+    upload_cases(;db_path::AbstractString=cases_db)
 
 Upload cases from `cases_db`.
 """
-function upload_cases(;cases_db_path::AbstractString=cases_db)
-    f = open(cases_db_path, "r")
+function upload_cases(;db_path::AbstractString=cases_db)
+    f = open(db_path, "r")
     dict = JSON.parse(f, dicttype=OrderedDict)
     close(f)
     return dict
@@ -84,7 +84,7 @@ function add_cases(;
     cases_path::AbstractString=cases_path,
     cases_db::AbstractString=cases_db
 )
-    cases_dict = upload_cases(json=cases_db)
+    cases_dict = upload_cases(db_path=cases_db)
     new_cases = 0
     foreach(readdir(cases_path)) do case
         if !haskey(cases_dict, case)
@@ -168,7 +168,7 @@ function save_as_json(dict::AbstractDict, json::AbstractString)
 """
     update_results(
         case::AbstractString,
-        cases_dict::AbstractDict=upload_cases(json=results_db);
+        cases_dict::AbstractDict=upload_cases(db_path=results_db);
         cases_path::AbstractString=cases_path,
         cases_db::AbstractString=cases_db,
         results_db::AbstractString=results_db,
@@ -181,28 +181,28 @@ solves it with the chosen `backend` solver and writes result to `results_db`.
 """
 function update_results(
     case::AbstractString,
-    cases_dict::AbstractDict=upload_cases(json=results_db);
+    cases_dict::AbstractDict=upload_cases(db_path=results_db);
     cases_path::AbstractString=cases_path,
     cases_db::AbstractString=cases_db,
     results_db::AbstractString=results_db,
     backend::DataType=default_backend,
     kwargs...
 )
-    cases_dict[case]["result"] = OrderedDict()
+    cases_dict["cases"][case]["result"] = OrderedDict()
     try
-        status = solve_case(cases_dict[case], backend; kwargs...)
+        status = solve_case(cases_dict["cases"][case], backend; kwargs...)
         if status
-            cases_dict[case]["result"]["status"] = "success"
-            cases_dict[case]["result"]["message"] = ""
+            cases_dict["cases"][case]["result"]["status"] = "success"
+            cases_dict["cases"][case]["result"]["message"] = ""
             println("$case...................success")
         else
-            cases_dict[case]["result"]["status"] = "failure"
-            cases_dict[case]["result"]["message"] = "tolerance test not passed"
+            cases_dict["cases"][case]["result"]["status"] = "failure"
+            cases_dict["cases"][case]["result"]["message"] = "tolerance test not passed"
             println("$case...................failure")
         end
     catch e
-        cases_dict[case]["result"]["status"] = "error"
-        cases_dict[case]["result"]["message"] = "Check the model: $e"
+        cases_dict["cases"][case]["result"]["status"] = "error"
+        cases_dict["cases"][case]["result"]["message"] = "Check the model: $e"
         println("$case...................error")
     finally
         save_as_json(cases_dict, results_db)
@@ -213,7 +213,7 @@ end
 """
     update_results(
         cases_vec::Vector{String},
-        cases_dict::AbstractDict=upload_cases(json=results_db);
+        cases_dict::AbstractDict=upload_cases(db_path=results_db);
         cases_path::AbstractString=cases_path,
         cases_db::AbstractString=cases_db,
         results_db::AbstractString=results_db,
@@ -226,7 +226,7 @@ solves it with the chosen `backend` solver and writes results to `results_db`.
 """
 function update_results(
     cases_vec::Vector{String},
-    cases_dict::AbstractDict=upload_cases(json=results_db);
+    cases_dict::AbstractDict=upload_cases(db_path=results_db);
     cases_path::AbstractString=cases_path,
     cases_db::AbstractString=cases_db,
     results_db::AbstractString=results_db,
@@ -251,7 +251,7 @@ end
 """
     update_results(
         cases_range::UnitRange,
-        cases_dict::AbstractDict=upload_cases(json=results_db);
+        cases_dict::AbstractDict=upload_cases(db_path=results_db);
         cases_path::AbstractString=cases_path,
         cases_db::AbstractString=cases_db,
         results_db::AbstractString=results_db,
@@ -264,7 +264,7 @@ solves it with the chosen `backend` solver and writes results to `results_db`.
 """
 function update_results(
     cases_range::UnitRange,
-    cases_dict::AbstractDict=upload_cases(json=results_db);
+    cases_dict::AbstractDict=upload_cases(db_path=results_db);
     cases_path::AbstractString=cases_path,
     cases_db::AbstractString=cases_db,
     results_db::AbstractString=results_db,
@@ -287,7 +287,7 @@ end
 
 """
     update_results(
-        cases_dict::AbstractDict=upload_cases(json=results_db);
+        cases_dict::AbstractDict=upload_cases(db_path=results_db);
         include_test_tags::Vector{String}=String[],
         include_component_tags::Vector{String}=String[],
         exclude_test_tags::Vector{String}=String[],
@@ -303,7 +303,7 @@ Reads `cases_db` to `cases_dict`, filters the cases according to `include` and `
 solves it with the chosen `backend` solver and writes results to `results_db`.
 """
 function update_results(
-    cases_dict::AbstractDict=upload_cases(json=results_db);
+    cases_dict::AbstractDict=upload_cases(db_path=results_db);
     include_test_tags::Vector{String}=String[],
     include_component_tags::Vector{String}=String[],
     exclude_test_tags::Vector{String}=String[],
@@ -391,6 +391,10 @@ function solve_case(
     end
     CSV.write("$output_path/$case_name.csv",  df_sim)
     df_ans = DataFrame!(CSV.File("$cases_path/$case_name/$case_name-results.csv"))
+
+    # create plot
+    p_ref = plot_results(df_sim, df_ans)
+    savefig(p_ref, "$output_path/$case_name")
 
     return compare_results(case, df_sim, df_ans)
 end
@@ -481,6 +485,30 @@ function results_to_df(res::AbstractDict, ran::UnitRange{Int64}=1:955)
         status = status,
         message = message
     )
+end
+
+function plot_results(df_sim, df_ans)
+    names_sim = names(df_sim)[2:end]
+    names_ans = names(df_ans)[2:end]
+    cl = size(df_sim)[2]
+    p_sim = StatsPlots.@df df_sim plot(
+        :time,
+        cols(2:cl),
+        title = "Simulations")
+    p_ans = StatsPlots.@df df_ans plot(
+        :time,
+        cols(2:cl),
+        title = "Answers")
+
+    df_diff = copy(df_ans)
+    for (col_sim,col_ans) in zip(names_sim,names_ans)
+        df_diff[!,col_ans] .= abs.(df_sim[!,col_sim] - df_ans[!,col_ans])
+    end
+    p_diff = StatsPlots.@df df_diff plot(
+        :time,
+        cols(2:cl),
+        title = "Difference")
+    plot(p_sim, p_ans, p_diff)
 end
 
 export upload_cases, filter_cases, add_cases, update_results,
