@@ -3,8 +3,9 @@
 name: Build and simulate
 
 on:
+  push:
+    branches: [ master, '*-result' ]
   workflow_dispatch:
-    # Inputs the workflow accepts.
     inputs:
       name:
         description: 'Manual run of build and simulate'
