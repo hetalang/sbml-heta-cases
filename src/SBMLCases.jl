@@ -512,7 +512,7 @@ function plot_results(df_sim, df_ans)
         title = "Difference",
         legend = false)
     legend = plot(
-        [0 0],
+        permutedims(zeros(Int, cl-1)),
         showaxis = false,
         grid = false,
         label = permutedims(names_ans))

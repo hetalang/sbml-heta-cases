@@ -1112,8 +1112,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "ERROR",
-                "message": "Error while running model. DomainError(-2551, \"`n` must not be negative.\")"
+                "status": "error",
+                "message": "Check the model: DomainError(-18.0, \"NaN result for non-NaN input.\")"
             }
         },
         "00029": {
