@@ -494,11 +494,13 @@ function plot_results(df_sim, df_ans)
     p_sim = StatsPlots.@df df_sim plot(
         :time,
         cols(2:cl),
-        title = "Simulations")
+        title = "Simulations",
+        legend = false)
     p_ans = StatsPlots.@df df_ans plot(
         :time,
         cols(2:cl),
-        title = "Answers")
+        title = "Answers",
+        legend = false)
 
     df_diff = copy(df_ans)
     for (col_sim,col_ans) in zip(names_sim,names_ans)
@@ -507,8 +509,14 @@ function plot_results(df_sim, df_ans)
     p_diff = StatsPlots.@df df_diff plot(
         :time,
         cols(2:cl),
-        title = "Difference")
-    plot(p_sim, p_ans, p_diff)
+        title = "Difference",
+        legend = false)
+    legend = plot(
+        [0 0],
+        showaxis = false,
+        grid = false,
+        label = permutedims(names_ans))
+    plot(p_sim, p_ans, p_diff, legend, dpi=300)
 end
 
 export upload_cases, filter_cases, add_cases, update_results,
