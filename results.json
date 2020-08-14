@@ -1,8 +1,8 @@
 {
     "solver_version": "0.1.0",
-    "required_time": 235.781938855,
+    "required_time": 267.461147683,
     "solver": "SimSolver",
-    "date": "2020-08-14 12:05:58",
+    "date": "2020-08-14 12:25:31",
     "cases": {
         "00001": {
             "name": "00001",
