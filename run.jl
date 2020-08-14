@@ -11,7 +11,7 @@ build_dict = JSON.parsefile("./build.log"; dicttype = OrderedDict)
 ### run all cases
 
 required_time = @elapsed begin
-    for (id, value) in collect(cases_dict)
+    for (id, value) in collect(cases_dict)[1:10]
         build_errors = case_build_errors(
             value;
             build_dict = build_dict
@@ -44,8 +44,11 @@ report = Dict(
     "required_time" => required_time,
     "date" => date,
     "heta_version" => heta_version,
-    "simsolver_version" => string(pkg["SimSolver"])
+    "solver" => "SimSolver"
 )
+if haskey(pkg, "SimSolver")
+    report["solver_version"] = string(pkg["SimSolver"])
+end
 
 open("./results.json", "w") do f
     JSON.print(f, report, 4)
