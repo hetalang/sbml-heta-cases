@@ -4,11 +4,11 @@ name: Build and simulate
 
 on:
   workflow_dispatch:
-    inputs:
-      name:
-        description: 'Manual run of build and simulate'
-        default: 'World'
-        required: true
+    inputs: {}
+    #  name:
+    #    description: 'Manual run of build and simulate'
+    #    default: 'World'
+    #    required: true
 
 jobs:
   build:
@@ -50,6 +50,7 @@ jobs:
       run: |
         mkdir -p ./result/cases/output
         cp -rf ./cases/output/*.csv ./result/cases/output/ | true
+        cp -rf ./cases/output/*.png ./result/cases/output/ | true
         cp -f ./build.log ./result/
         cp -f ./results.json ./result/
     - name: Deploy to "result" branch only for "master" and "*-result" pushes
