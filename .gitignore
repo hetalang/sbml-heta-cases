@@ -5,4 +5,4 @@
 /cases/output/*.csv
 /cases/output/*.png
 /build.log
-#/results.json
+/results.json
