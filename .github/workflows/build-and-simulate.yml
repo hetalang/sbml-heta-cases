@@ -43,7 +43,7 @@ jobs:
         arch: x64 # optional, default is x64
         show-versioninfo: true # optional, default is false
     - name: SimSolver installation
-      run: julia -e 'using Pkg;Pkg.activate(".");Pkg.add(url="https://${{ secrets.SIMSOLVER_GITLAB_TOKEN }}@gitlab.insysbio.com/dev-group/simsolver")'
+      run: julia -e 'using Pkg;Pkg.activate(".");Pkg.add(url="https://${{ secrets.SIMSOLVER_GITLAB_TOKEN }}@gitlab.insysbio.com/dev-group/simsolver.git#dev")'
     - name: Run Julia simulations
       run: julia ./run.jl $heta_version
     - name: Copy files to "static"
