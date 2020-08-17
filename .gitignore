@@ -6,3 +6,6 @@
 /cases/output/*.png
 /build.log
 /results.json
+
+/cases/semantic/julia
+/cases/semantic/json.json

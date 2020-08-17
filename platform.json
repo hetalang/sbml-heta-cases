@@ -1,5 +1,5 @@
 {
-  "builderVersion": "^0.5.9",
+  "builderVersion": "^0.5.12",
   "id": "sbml-cases",
   "title": "Platform to test SBML as module and transformation to Julia",
   "notes": "platform notes",
