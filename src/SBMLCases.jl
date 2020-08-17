@@ -2,14 +2,19 @@ module SBMLCases
 
 using JSON, SimSolver, DataFrames, CSV, DataStructures, StatsPlots
 
+
 # files containing settings and tags of sbml models
 const cases_db = "./cases.json"
 const results_db = "./results.json"
 # models' dirs and output dir paths
 const cases_path = "./cases/semantic"
 const output_path = "./cases/output"
+
 # default backend
 const default_backend = Val{:SimSolver}
+
+include("../$cases_path/julia/model.jl")
+
 
 ### Metelkin
 
@@ -343,11 +348,17 @@ function solve_case(
     output_path::AbstractString=output_path,
     alg::Symbol=:Vern9
 )
-    case_name = case["name"]
-    file_path = "$cases_path/$case_name/julia/model.jl"
-    isfile(file_path) ? include(file_path) : "julia model for $case_name doesn't exist"
 
-    model = eval_model(SBMLCases.julia.models)
+    # include heta models code
+    #=
+    file_path = "$cases_path/julia/model.jl"
+    isfile(file_path) ? include(file_path) : "Model file doesn't exist"
+    eval(quote using SBMLCases.SimSolverPlatform end)
+    =#
+    #model = eval_model(SBMLCases.julia.models) invokelatest not needed ?
+
+    case_name = case["name"]
+    #!haskey(SimSolverPlatform.models, case_name) && throw("Model $case_name is not compiled")
 
     tspan = (case["settings"]["start"],case["settings"]["duration"])
     step = (case["settings"]["duration"]-case["settings"]["start"])/case["settings"]["steps"]
@@ -375,7 +386,7 @@ function solve_case(
     )
 
     stask = SimpleSTask(
-        model,
+        SBMLCases.SimSolverPlatform.models[Symbol(join(["x",case_name]))],
         NamedTuple(),
         subtask,
         tspan,
