@@ -21,6 +21,11 @@ jobs:
       uses: actions/checkout@v2
       with:
         persist-credentials: false
+    - name: Copy results (TEMPORAL)
+      run: | 
+        mkdir -p ./result/cases/output
+        cp -rf ./cases/output/*.png ./static/cases/output/ | true
+        cp -f ./results.json ./static/
     - name: Deploy to "result" branch only for "master" and "*-result" pushes
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
