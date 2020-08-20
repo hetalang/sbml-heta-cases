@@ -25,7 +25,7 @@ jobs:
       run: | 
         mkdir -p ./result/cases/output
         cp -rf ./cases/output/*.png ./static/cases/output/ | true
-        cp -f ./results.json ./static/
+        cp -f ./results.json ./static/  | true
     - name: Deploy to "result" branch only for "master" and "*-result" pushes
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:

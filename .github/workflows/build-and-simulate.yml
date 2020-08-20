@@ -18,7 +18,7 @@ jobs:
         heta-version: [ latest ]
         platform: [ ubuntu-latest ]
 
-    runs-on: ${{ matrix.platform }}
+    runs-on: self-hosted # ${{ matrix.platform }}
 
     steps:
     - name: Checkout
