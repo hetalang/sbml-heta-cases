@@ -1,8 +1,7 @@
 {
-    "solver_version": "0.1.0",
-    "required_time": 267.461147683,
+    "required_time": 660.8475421,
     "solver": "SimSolver",
-    "date": "2020-08-14 12:25:31",
+    "date": "2020-08-21 12:42:33",
     "cases": {
         "00001": {
             "name": "00001",
@@ -415,6 +414,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00012": {
@@ -450,6 +454,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00013": {
@@ -485,6 +494,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00014": {
@@ -520,6 +534,11 @@
                     "Amount",
                     "NonUnityStoichiometry"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00015": {
@@ -556,6 +575,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00016": {
@@ -593,6 +617,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00017": {
@@ -630,6 +659,11 @@
                     "Amount",
                     "NonUnityStoichiometry"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00018": {
@@ -666,6 +700,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00019": {
@@ -702,6 +741,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00020": {
@@ -738,6 +782,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00021": {
@@ -65686,5 +65735,5 @@
             }
         }
     },
-    "heta_version": "unknown"
+    "heta_version": "0.5.12"
 }
