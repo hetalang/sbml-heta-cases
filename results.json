@@ -1,7 +1,7 @@
 {
-    "required_time": 660.8475421,
+    "required_time": 2855.706819899,
     "solver": "SimSolver",
-    "date": "2020-08-21 12:42:33",
+    "date": "2020-08-21 13:34:24",
     "cases": {
         "00001": {
             "name": "00001",
@@ -821,6 +821,11 @@
                     "NonUnityCompartment",
                     "NonUnityStoichiometry"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00022": {
@@ -855,6 +860,11 @@
                     "NonUnityCompartment",
                     "NonUnityStoichiometry"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00023": {
@@ -893,6 +903,11 @@
                     "ConstantSpecies",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00024": {
@@ -932,6 +947,11 @@
                     "ConstantSpecies",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00025": {
@@ -965,6 +985,21 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00025\\00025-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00025\\00025-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00026": {
@@ -998,6 +1033,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00027": {
@@ -1033,6 +1073,11 @@
                     "LocalParameters",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00028": {
@@ -1065,6 +1110,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00029": {
@@ -1094,6 +1144,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00030": {
@@ -1124,6 +1179,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00031": {
@@ -1153,6 +1213,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00032": {
@@ -1185,6 +1250,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00033": {
@@ -1219,6 +1289,11 @@
                     "Amount",
                     "NonConstantParameter"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00034": {
@@ -1254,6 +1329,21 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00034\\00034-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00034\\00034-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00035": {
@@ -1291,6 +1381,21 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00035\\00035-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00035\\00035-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00036": {
@@ -1325,6 +1430,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00037": {
@@ -1359,6 +1469,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00038": {
@@ -1395,6 +1510,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00039": {
@@ -1428,6 +1548,21 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"algebraicRule\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00039\\00039-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00039\\00039-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00040": {
@@ -1461,6 +1596,21 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"algebraicRule\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00040\\00040-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00040\\00040-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00041": {
@@ -1494,6 +1644,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00042": {
@@ -1527,6 +1682,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00043": {
@@ -1561,6 +1721,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00044": {
@@ -1597,6 +1762,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00045": {
@@ -1629,6 +1799,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00046": {
@@ -1663,6 +1838,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00047": {
@@ -1699,6 +1879,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00048": {
@@ -1732,6 +1917,11 @@
                     "Amount",
                     "0D-Compartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00049": {
@@ -1767,6 +1957,11 @@
                     "Amount",
                     "0D-Compartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00050": {
@@ -1804,6 +1999,11 @@
                     "Amount",
                     "0D-Compartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00051": {
@@ -1841,6 +2041,11 @@
                     "NonConstantCompartment",
                     "NonUnityCompartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00052": {
@@ -1880,6 +2085,11 @@
                     "NonConstantCompartment",
                     "NonUnityCompartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00053": {
@@ -1921,6 +2131,11 @@
                     "NonConstantCompartment",
                     "NonUnityCompartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00054": {
@@ -1957,6 +2172,11 @@
                     "MultiCompartment",
                     "NonUnityStoichiometry"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00055": {
@@ -1995,6 +2215,11 @@
                     "MultiCompartment",
                     "NonUnityStoichiometry"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00056": {
@@ -2029,6 +2254,11 @@
                     "MultiCompartment",
                     "ReversibleReaction"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00057": {
@@ -2063,6 +2293,11 @@
                     "Amount",
                     "LocalParameters"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00058": {
@@ -2098,6 +2333,11 @@
                     "Amount",
                     "LocalParameters"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00059": {
@@ -2133,6 +2373,11 @@
                     "Amount",
                     "LocalParameters"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00060": {
@@ -2166,6 +2411,11 @@
                     "Amount",
                     "HasOnlySubstanceUnits"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00061": {
@@ -2201,6 +2451,11 @@
                     "Amount",
                     "HasOnlySubstanceUnits"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00062": {
@@ -2238,6 +2493,11 @@
                     "Amount",
                     "HasOnlySubstanceUnits"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00063": {
@@ -2273,6 +2533,11 @@
                     "Amount",
                     "ConstantSpecies"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00064": {
@@ -2310,6 +2575,11 @@
                     "Amount",
                     "ConstantSpecies"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00065": {
@@ -2349,6 +2619,11 @@
                     "Amount",
                     "ConstantSpecies"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00066": {
@@ -2387,6 +2662,11 @@
                     "Amount",
                     "NonConstantParameter"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00067": {
@@ -2423,6 +2703,11 @@
                     "Amount",
                     "NonConstantParameter"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00068": {
@@ -2458,6 +2743,11 @@
                     "AssignedConstantStoichiometry",
                     "NonUnityStoichiometry"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00069": {
@@ -2495,6 +2785,11 @@
                     "AssignedConstantStoichiometry",
                     "NonUnityStoichiometry"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00070": {
@@ -2532,6 +2827,11 @@
                     "AssignedConstantStoichiometry",
                     "NonUnityStoichiometry"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00071": {
@@ -2565,6 +2865,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00072": {
@@ -2598,6 +2903,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00073": {
@@ -2631,6 +2941,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00074": {
@@ -2664,6 +2979,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00075": {
@@ -2697,6 +3017,11 @@
                     "Amount",
                     "NonUnityCompartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00076": {
@@ -2732,6 +3057,11 @@
                     "Amount",
                     "NonUnityCompartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00077": {
@@ -2769,6 +3099,11 @@
                     "Amount",
                     "NonUnityCompartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00078": {
@@ -2806,6 +3141,21 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00078\\00078-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00078\\00078-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00079": {
@@ -2845,6 +3195,21 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00079\\00079-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00079\\00079-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00080": {
@@ -2885,6 +3250,21 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00080\\00080-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00080\\00080-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00081": {
@@ -2920,6 +3300,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00082": {
@@ -2957,6 +3342,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00083": {
@@ -2994,6 +3384,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00084": {
@@ -3030,6 +3425,21 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00084\\00084-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00084\\00084-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00085": {
@@ -3068,6 +3478,21 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00085\\00085-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00085\\00085-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00086": {
@@ -3106,6 +3531,21 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00086\\00086-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00086\\00086-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00087": {
@@ -3142,6 +3582,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00088": {
@@ -3178,6 +3623,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00089": {
@@ -3216,6 +3666,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00090": {
@@ -3253,6 +3708,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00091": {
@@ -3291,6 +3751,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00092": {
@@ -3330,6 +3795,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00093": {
@@ -3369,6 +3839,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00094": {
@@ -3408,6 +3883,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00095": {
@@ -3441,6 +3921,21 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00095\\00095-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00095\\00095-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00096": {
@@ -3474,6 +3969,21 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00096\\00096-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00096\\00096-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00097": {
@@ -3508,6 +4018,21 @@
                     "Amount",
                     "0D-Compartment"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00097\\00097-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00097\\00097-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00098": {
@@ -3543,6 +4068,21 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00098\\00098-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00098\\00098-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00099": {
@@ -3578,6 +4118,21 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00099\\00099-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00099\\00099-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00100": {
@@ -3614,6 +4169,21 @@
                     "Amount",
                     "0D-Compartment"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00100\\00100-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00100\\00100-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00101": {
@@ -3651,6 +4221,21 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00101\\00101-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00101\\00101-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00102": {
@@ -3688,6 +4273,21 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00102\\00102-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00102\\00102-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00103": {
@@ -3726,6 +4326,21 @@
                     "Amount",
                     "0D-Compartment"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00103\\00103-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00103\\00103-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00104": {
@@ -3764,6 +4379,21 @@
                     "NonConstantCompartment",
                     "NonUnityCompartment"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00104\\00104-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00104\\00104-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00105": {
@@ -3804,6 +4434,21 @@
                     "NonConstantCompartment",
                     "NonUnityCompartment"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00105\\00105-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00105\\00105-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00106": {
@@ -3846,6 +4491,21 @@
                     "NonConstantCompartment",
                     "NonUnityCompartment"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00106\\00106-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00106\\00106-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00107": {
@@ -3880,6 +4540,21 @@
                     "Amount",
                     "NonUnityCompartment"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00107\\00107-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00107\\00107-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00108": {
@@ -3916,6 +4591,21 @@
                     "Amount",
                     "NonUnityCompartment"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00108\\00108-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00108\\00108-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00109": {
@@ -3954,6 +4644,21 @@
                     "Amount",
                     "NonUnityCompartment"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00109\\00109-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00109\\00109-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00110": {
@@ -3991,6 +4696,21 @@
                     "MultiCompartment",
                     "NonUnityStoichiometry"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00110\\00110-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00110\\00110-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00111": {
@@ -4030,6 +4750,21 @@
                     "MultiCompartment",
                     "NonUnityStoichiometry"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00111\\00111-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00111\\00111-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00112": {
@@ -4065,6 +4800,21 @@
                     "MultiCompartment",
                     "ReversibleReaction"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00112\\00112-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00112\\00112-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00113": {
@@ -4099,6 +4849,21 @@
                     "Amount",
                     "HasOnlySubstanceUnits"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00113\\00113-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00113\\00113-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00114": {
@@ -4135,6 +4900,21 @@
                     "Amount",
                     "HasOnlySubstanceUnits"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00114\\00114-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00114\\00114-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00115": {
@@ -4173,6 +4953,21 @@
                     "Amount",
                     "HasOnlySubstanceUnits"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00115\\00115-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00115\\00115-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00116": {
@@ -4207,6 +5002,21 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00116\\00116-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00116\\00116-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00117": {
@@ -4241,6 +5051,21 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00117\\00117-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00117\\00117-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00118": {
@@ -4275,6 +5100,21 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00118\\00118-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00118\\00118-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00119": {
@@ -4311,6 +5151,21 @@
                     "Amount",
                     "ConstantSpecies"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00119\\00119-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00119\\00119-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00120": {
@@ -4349,6 +5204,21 @@
                     "Amount",
                     "ConstantSpecies"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00120\\00120-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00120\\00120-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00121": {
@@ -4389,6 +5259,21 @@
                     "Amount",
                     "ConstantSpecies"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00121\\00121-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00121\\00121-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00122": {
@@ -4424,6 +5309,21 @@
                     "Amount",
                     "NonConstantParameter"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00122\\00122-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00122\\00122-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00123": {
@@ -4463,6 +5363,21 @@
                     "Amount",
                     "NonConstantParameter"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00123\\00123-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00123\\00123-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00124": {
@@ -4500,6 +5415,21 @@
                     "Amount",
                     "NonConstantParameter"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00124\\00124-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00124\\00124-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00125": {
@@ -4534,6 +5464,21 @@
                     "Amount",
                     "NonUnityStoichiometry"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00125\\00125-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00125\\00125-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00126": {
@@ -4568,6 +5513,21 @@
                     "Amount",
                     "NonUnityStoichiometry"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00126\\00126-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00126\\00126-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00127": {
@@ -4604,6 +5564,21 @@
                     "Amount",
                     "NonUnityStoichiometry"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00127\\00127-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00127\\00127-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00128": {
@@ -4642,6 +5617,21 @@
                     "Amount",
                     "NonUnityStoichiometry"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00128\\00128-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00128\\00128-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00129": {
@@ -4678,6 +5668,21 @@
                     "AssignedConstantStoichiometry",
                     "NonUnityStoichiometry"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00129\\00129-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00129\\00129-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00130": {
@@ -4716,6 +5721,21 @@
                     "AssignedConstantStoichiometry",
                     "NonUnityStoichiometry"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00130\\00130-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00130\\00130-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00131": {
@@ -4754,6 +5774,21 @@
                     "AssignedConstantStoichiometry",
                     "NonUnityStoichiometry"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00131\\00131-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00131\\00131-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00132": {
@@ -4789,6 +5824,21 @@
                     "Amount",
                     "LocalParameters"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00132\\00132-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00132\\00132-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00133": {
@@ -4825,6 +5875,21 @@
                     "Amount",
                     "LocalParameters"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00133\\00133-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00133\\00133-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00134": {
@@ -4861,6 +5926,21 @@
                     "Amount",
                     "LocalParameters"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"Y:\\sbml-heta-cases\\cases\\semantic\\00134\\00134-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "Y:\\sbml-heta-cases\\cases\\semantic\\00134\\00134-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00135": {
@@ -4894,6 +5974,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00136": {
@@ -4928,6 +6013,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00137": {
@@ -4964,6 +6054,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00138": {
@@ -4999,6 +6094,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00139": {
@@ -5035,6 +6135,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00140": {
@@ -5071,6 +6176,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00141": {
@@ -5107,6 +6217,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00142": {
@@ -5143,6 +6258,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00143": {
@@ -5179,6 +6299,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00144": {
@@ -5215,6 +6340,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00145": {
@@ -5251,6 +6381,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00146": {
@@ -5287,6 +6422,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00147": {
@@ -5323,6 +6463,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00148": {
@@ -5357,6 +6502,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00149": {
@@ -5391,6 +6541,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00150": {
@@ -5425,6 +6580,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00151": {
