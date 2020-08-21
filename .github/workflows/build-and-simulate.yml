@@ -18,7 +18,7 @@ jobs:
         heta-version: [ latest ]
         platform: [ ubuntu-latest ]
 
-    runs-on: ${{ matrix.platform }}
+    runs-on: [self-hosted,Julia] # ${{ matrix.platform }}
 
     defaults:
           run:
@@ -39,12 +39,12 @@ jobs:
     - run: |
         heta build
         heta_version=`heta -v`
-    - name: Setup Julia environment
-      uses: julia-actions/setup-julia@v1.1.12
-      with:
-        version: ~1.5.0 # optional, default is 1
-        arch: x64 # optional, default is x64
-        show-versioninfo: true # optional, default is false
+    #- name: Setup Julia environment (disabled for self-hosted server)
+    #  uses: julia-actions/setup-julia@v1.1.12
+    #  with:
+    #    version: ~1.5.0 # optional, default is 1
+    #    arch: x64 # optional, default is x64
+    #    show-versioninfo: true # optional, default is false
     - name: SimSolver installation
       run: julia -e 'using Pkg;Pkg.activate(".");Pkg.add(url="https://${{ secrets.SIMSOLVER_GITLAB_TOKEN }}@gitlab.insysbio.com/dev-group/simsolver", rev="dev")'
     - name: Run Julia simulations
