@@ -23,7 +23,7 @@ jobs:
         persist-credentials: false
     - name: Copy results (TEMPORAL)
       run: | 
-        mkdir -p ./result/cases/output
+        mkdir -p ./static/cases/output
         cp -rf ./cases/output/*.png ./static/cases/output/ | true
         cp -f ./results.json ./static/  | true
     - name: Deploy to "result" branch only for "master" and "*-result" pushes
