@@ -34,8 +34,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: Heta-compiler installation
       run: |
-        npm i -g heta-compiler@${{ matrix.heta-version }}
-        # npm i -g https://github.com/insysbio/heta-compiler.git
+        # npm i -g heta-compiler@${{ matrix.heta-version }}
+        npm i -g https://github.com/insysbio/heta-compiler.git
     - run: |
         heta build
         heta_version=`heta -v`
@@ -46,7 +46,7 @@ jobs:
     #    arch: x64 # optional, default is x64
     #    show-versioninfo: true # optional, default is false
     - name: SimSolver installation
-      run: julia -e 'using Pkg;Pkg.activate(".");Pkg.add(url="https://${{ secrets.SIMSOLVER_GITLAB_TOKEN }}@gitlab.insysbio.com/dev-group/simsolver", rev="dev")'
+      run: julia -e 'using Pkg;Pkg.activate(".");Pkg.add(url="https://${{ secrets.SIMSOLVER_GITLAB_TOKEN }}@gitlab.insysbio.com/dev-group/simsolver", rev="dev");Pkg.build()'
     - name: Run Julia simulations
       run: julia ./run.jl $heta_version
     - name: Copy files to "static"
