@@ -396,10 +396,7 @@ function solve_case(
 
     res = solve_task(stask)
 
-    df_sim = DataFrame(time=res[1].axes[1].val)
-    for v in outputs
-        df_sim[!, v] = res[1][ids = v].data
-    end
+    df_sim = sol_as_df(res)
     CSV.write("$output_path/$case_name.csv",  df_sim)
     df_ans = DataFrame!(CSV.File("$cases_path/$case_name/$case_name-results.csv"))
 

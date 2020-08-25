@@ -36,8 +36,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "SUCCESS",
-                "message": "Simulations meet the criteria"
+                "status": "success",
+                "message": ""
             }
         },
         "00002": {
@@ -73,8 +73,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "SUCCESS",
-                "message": "Simulations meet the criteria"
+                "status": "success",
+                "message": ""
             }
         },
         "00003": {
@@ -111,8 +111,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "SUCCESS",
-                "message": "Simulations meet the criteria"
+                "status": "success",
+                "message": ""
             }
         },
         "00004": {
@@ -149,8 +149,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "SUCCESS",
-                "message": "Simulations meet the criteria"
+                "status": "success",
+                "message": ""
             }
         },
         "00005": {
@@ -186,8 +186,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "SUCCESS",
-                "message": "Simulations meet the criteria"
+                "status": "success",
+                "message": ""
             }
         },
         "00006": {
