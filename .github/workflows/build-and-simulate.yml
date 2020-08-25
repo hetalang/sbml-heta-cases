@@ -38,7 +38,7 @@ jobs:
         npm i -g https://github.com/insysbio/heta-compiler.git
     - run: |
         heta build
-        heta_version=`heta -v`
+        export heta_version=`heta -v`
     #- name: Setup Julia environment (disabled for self-hosted server)
     #  uses: julia-actions/setup-julia@v1.1.12
     #  with:

@@ -3,9 +3,9 @@
 /cases/semantic/*/output.json
 /cases/semantic/*/julia
 /cases/output/*.csv
-#/cases/output/*.png
+/cases/output/*.png
 /build.log
-#/results.json
+/results.json
 
 /cases/semantic/julia
 /cases/semantic/json.json
