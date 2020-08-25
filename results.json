@@ -1,8 +1,8 @@
 {
     "solver_version": "0.1.1",
-    "required_time": 3464.080953798,
+    "required_time": 14999.846502755,
     "solver": "SimSolver",
-    "date": "2020-08-25 19:05:26",
+    "date": "2020-08-26 01:06:06",
     "cases": {
         "00001": {
             "name": "00001",
@@ -6624,6 +6624,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00152": {
@@ -6660,6 +6665,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00153": {
@@ -6698,6 +6708,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00154": {
@@ -6734,6 +6749,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00155": {
@@ -6773,6 +6793,11 @@
                     "0D-Compartment",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00156": {
@@ -6810,6 +6835,11 @@
                     "0D-Compartment",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00157": {
@@ -6849,6 +6879,11 @@
                     "NonUnityCompartment",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00158": {
@@ -6886,6 +6921,11 @@
                     "NonUnityCompartment",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00159": {
@@ -6925,6 +6965,11 @@
                     "NonUnityStoichiometry",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00160": {
@@ -6962,6 +7007,11 @@
                     "NonUnityStoichiometry",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00161": {
@@ -6991,6 +7041,11 @@
                 "testTags": [
                     "NonConstantParameter"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00162": {
@@ -7020,6 +7075,11 @@
                 "testTags": [
                     "NonConstantParameter"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00163": {
@@ -7049,6 +7109,11 @@
                 "testTags": [
                     "NonConstantParameter"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00164": {
@@ -7078,6 +7143,11 @@
                 "testTags": [
                     "NonConstantParameter"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00165": {
@@ -7108,6 +7178,11 @@
                 "testTags": [
                     "NonConstantParameter"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00166": {
@@ -7139,6 +7214,11 @@
                 "testTags": [
                     "NonConstantParameter"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00167": {
@@ -7170,6 +7250,11 @@
                 "testTags": [
                     "NonConstantParameter"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00168": {
@@ -7201,6 +7286,11 @@
                 "testTags": [
                     "NonConstantParameter"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00169": {
@@ -7232,6 +7322,11 @@
                 "testTags": [
                     "NonConstantParameter"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00170": {
@@ -7263,6 +7358,11 @@
                 "testTags": [
                     "NonConstantParameter"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00171": {
@@ -7293,6 +7393,21 @@
                 "testTags": [
                     "NonConstantParameter"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00171\\00171-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00171\\00171-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00172": {
@@ -7323,6 +7438,11 @@
                 "testTags": [
                     "NonConstantParameter"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00173": {
@@ -7352,6 +7472,11 @@
                 "testTags": [
                     "NonConstantParameter"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00174": {
@@ -7380,6 +7505,11 @@
                 "testTags": [
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "ERROR",
+                "message": "Error while running model. MethodError(SimSolver.Params, (Union{}[], Any[]), 0x0000000000006d79)"
             }
         },
         "00175": {
@@ -7408,6 +7538,11 @@
                 "testTags": [
                     "NonConstantParameter"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "ERROR",
+                "message": "Error while running model. MethodError(SimSolver.Params, (Union{}[], Any[]), 0x0000000000006d79)"
             }
         },
         "00176": {
@@ -7437,6 +7572,11 @@
                 "testTags": [
                     "NonConstantParameter"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00177": {
@@ -7466,6 +7606,11 @@
                 "testTags": [
                     "NonConstantParameter"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "ERROR",
+                "message": "Error while running model. MethodError(SimSolver.Params, (Union{}[], Any[]), 0x0000000000006d79)"
             }
         },
         "00178": {
@@ -7497,6 +7642,21 @@
                 "testTags": [
                     "NonConstantParameter"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00178\\00178-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00178\\00178-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00179": {
@@ -7528,6 +7688,21 @@
                 "testTags": [
                     "NonConstantParameter"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00179\\00179-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00179\\00179-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00180": {
@@ -7559,6 +7734,11 @@
                     "NonConstantParameter",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00181": {
@@ -7591,6 +7771,11 @@
                     "NonConstantParameter",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00182": {
@@ -7621,6 +7806,21 @@
                 "testTags": [
                     "NonConstantParameter"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"algebraicRule\" from SBML module is not supported. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00182\\00182-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00182\\00182-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00183": {
@@ -7654,6 +7854,21 @@
                     "NonConstantParameter",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00183\\00183-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00183\\00183-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00184": {
@@ -7685,6 +7900,21 @@
                 "testTags": [
                     "NonConstantParameter"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00184\\00184-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00184\\00184-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00185": {
@@ -7718,6 +7948,11 @@
                     "NonConstantParameter",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00186": {
@@ -7752,6 +7987,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00187": {
@@ -7786,6 +8026,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00188": {
@@ -7822,6 +8067,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00189": {
@@ -7858,6 +8108,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00190": {
@@ -7890,6 +8145,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00191": {
@@ -7926,6 +8186,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00192": {
@@ -7962,6 +8227,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00193": {
@@ -7998,6 +8268,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00194": {
@@ -8034,6 +8309,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00195": {
@@ -8066,6 +8346,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00196": {
@@ -8098,6 +8383,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00197": {
@@ -8130,6 +8420,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00198": {
@@ -8166,6 +8461,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00199": {
@@ -8202,6 +8502,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00200": {
@@ -8238,6 +8543,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00201": {
@@ -8274,6 +8584,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00202": {
@@ -8307,6 +8622,11 @@
                     "Amount",
                     "NonUnityCompartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00203": {
@@ -8342,6 +8662,11 @@
                     "Amount",
                     "NonUnityCompartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00204": {
@@ -8379,6 +8704,11 @@
                     "Amount",
                     "NonUnityCompartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00205": {
@@ -8412,6 +8742,11 @@
                     "Amount",
                     "NonUnityCompartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00206": {
@@ -8447,6 +8782,11 @@
                     "Amount",
                     "NonUnityCompartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00207": {
@@ -8484,6 +8824,11 @@
                     "Amount",
                     "NonUnityCompartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00208": {
@@ -8517,6 +8862,11 @@
                     "Amount",
                     "HasOnlySubstanceUnits"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00209": {
@@ -8552,6 +8902,11 @@
                     "Amount",
                     "HasOnlySubstanceUnits"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00210": {
@@ -8589,6 +8944,11 @@
                     "Amount",
                     "HasOnlySubstanceUnits"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00211": {
@@ -8622,6 +8982,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00212": {
@@ -8655,6 +9020,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00213": {
@@ -8688,6 +9058,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00214": {
@@ -8723,6 +9098,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00215": {
@@ -8758,6 +9138,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00216": {
@@ -8793,6 +9178,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00217": {
@@ -8828,6 +9218,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00218": {
@@ -8865,6 +9260,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00219": {
@@ -8902,6 +9302,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00220": {
@@ -8939,6 +9344,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00221": {
@@ -8976,6 +9386,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00222": {
@@ -9013,6 +9428,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00223": {
@@ -9046,6 +9466,11 @@
                     "Amount",
                     "HasOnlySubstanceUnits"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00224": {
@@ -9081,6 +9506,11 @@
                     "Amount",
                     "HasOnlySubstanceUnits"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00225": {
@@ -9118,6 +9548,11 @@
                     "Amount",
                     "HasOnlySubstanceUnits"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00226": {
@@ -9151,6 +9586,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00227": {
@@ -9184,6 +9624,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00228": {
@@ -9217,6 +9662,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00229": {
@@ -9252,6 +9702,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00230": {
@@ -9287,6 +9742,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00231": {
@@ -9322,6 +9782,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00232": {
@@ -9357,6 +9822,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00233": {
@@ -9394,6 +9864,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00234": {
@@ -9431,6 +9906,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00235": {
@@ -9468,6 +9948,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00236": {
@@ -9505,6 +9990,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00237": {
@@ -9542,6 +10032,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00238": {
@@ -9576,6 +10071,11 @@
                     "0D-Compartment",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00239": {
@@ -9610,6 +10110,11 @@
                     "0D-Compartment",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00240": {
@@ -9646,6 +10151,11 @@
                     "0D-Compartment",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00241": {
@@ -9682,6 +10192,11 @@
                     "0D-Compartment",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00242": {
@@ -9718,6 +10233,11 @@
                     "0D-Compartment",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00243": {
@@ -9756,6 +10276,11 @@
                     "0D-Compartment",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00244": {
@@ -9794,6 +10319,11 @@
                     "0D-Compartment",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00245": {
@@ -9832,6 +10362,11 @@
                     "0D-Compartment",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00246": {
@@ -9870,6 +10405,11 @@
                     "0D-Compartment",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00247": {
@@ -9908,6 +10448,11 @@
                     "0D-Compartment",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00248": {
@@ -9944,6 +10489,11 @@
                     "ConstantSpecies",
                     "NonUnityCompartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00249": {
@@ -9982,6 +10532,11 @@
                     "ConstantSpecies",
                     "NonUnityCompartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00250": {
@@ -10022,6 +10577,11 @@
                     "ConstantSpecies",
                     "NonUnityCompartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00251": {
@@ -10057,6 +10617,11 @@
                     "Amount",
                     "ConstantSpecies"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00252": {
@@ -10094,6 +10659,11 @@
                     "Amount",
                     "ConstantSpecies"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00253": {
@@ -10133,6 +10703,11 @@
                     "Amount",
                     "ConstantSpecies"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00254": {
@@ -10168,6 +10743,11 @@
                     "Amount",
                     "ConstantSpecies"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00255": {
@@ -10205,6 +10785,11 @@
                     "Amount",
                     "ConstantSpecies"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00256": {
@@ -10244,6 +10829,11 @@
                     "Amount",
                     "ConstantSpecies"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00257": {
@@ -10280,6 +10870,11 @@
                     "ConstantSpecies",
                     "0D-Compartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00258": {
@@ -10318,6 +10913,11 @@
                     "ConstantSpecies",
                     "0D-Compartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00259": {
@@ -10358,6 +10958,11 @@
                     "ConstantSpecies",
                     "0D-Compartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00260": {
@@ -10391,6 +10996,11 @@
                     "Amount",
                     "NonUnityStoichiometry"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00261": {
@@ -10424,6 +11034,11 @@
                     "Amount",
                     "NonUnityStoichiometry"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00262": {
@@ -10458,6 +11073,11 @@
                     "NonUnityStoichiometry",
                     "0D-Compartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00263": {
@@ -10493,6 +11113,11 @@
                     "Amount",
                     "NonUnityStoichiometry"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00264": {
@@ -10528,6 +11153,11 @@
                     "Amount",
                     "NonUnityStoichiometry"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00265": {
@@ -10564,6 +11194,11 @@
                     "NonUnityStoichiometry",
                     "0D-Compartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00266": {
@@ -10601,6 +11236,11 @@
                     "Amount",
                     "NonUnityStoichiometry"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00267": {
@@ -10638,6 +11278,11 @@
                     "Amount",
                     "NonUnityStoichiometry"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00268": {
@@ -10676,6 +11321,11 @@
                     "NonUnityStoichiometry",
                     "0D-Compartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00269": {
@@ -10709,6 +11359,21 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00269\\00269-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00269\\00269-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00270": {
@@ -10746,6 +11411,21 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00270\\00270-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00270\\00270-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00271": {
@@ -10779,6 +11459,21 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00271\\00271-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00271\\00271-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00272": {
@@ -10816,6 +11511,21 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00272\\00272-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00272\\00272-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00273": {
@@ -10853,6 +11563,21 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00273\\00273-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00273\\00273-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00274": {
@@ -10890,6 +11615,21 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00274\\00274-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00274\\00274-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00275": {
@@ -10923,6 +11663,21 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00275\\00275-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00275\\00275-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00276": {
@@ -10960,6 +11715,21 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00276\\00276-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00276\\00276-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00277": {
@@ -10997,6 +11767,21 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00277\\00277-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00277\\00277-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00278": {
@@ -11034,6 +11819,21 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00278\\00278-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00278\\00278-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00279": {
@@ -11071,6 +11871,21 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00279\\00279-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00279\\00279-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00280": {
@@ -11105,6 +11920,21 @@
                     "Amount",
                     "NonUnityCompartment"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00280\\00280-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00280\\00280-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00281": {
@@ -11139,6 +11969,21 @@
                     "Amount",
                     "NonUnityCompartment"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00281\\00281-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00281\\00281-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00282": {
@@ -11175,6 +12020,21 @@
                     "Amount",
                     "NonUnityCompartment"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00282\\00282-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00282\\00282-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00283": {
@@ -11211,6 +12071,21 @@
                     "Amount",
                     "NonUnityCompartment"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00283\\00283-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00283\\00283-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00284": {
@@ -11249,6 +12124,21 @@
                     "Amount",
                     "NonUnityCompartment"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00284\\00284-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00284\\00284-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00285": {
@@ -11287,6 +12177,21 @@
                     "Amount",
                     "NonUnityCompartment"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00285\\00285-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00285\\00285-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00286": {
@@ -11326,6 +12231,11 @@
                     "MultiCompartment",
                     "NonUnityStoichiometry"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00287": {
@@ -11368,6 +12278,11 @@
                     "MultiCompartment",
                     "NonUnityStoichiometry"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00288": {
@@ -11405,6 +12320,11 @@
                     "MultiCompartment",
                     "ReversibleReaction"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00289": {
@@ -11445,6 +12365,11 @@
                     "MultiCompartment",
                     "NonUnityStoichiometry"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00290": {
@@ -11485,6 +12410,11 @@
                     "MultiCompartment",
                     "NonUnityStoichiometry"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00291": {
@@ -11526,6 +12456,11 @@
                     "MultiCompartment",
                     "NonUnityStoichiometry"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00292": {
@@ -11568,6 +12503,11 @@
                     "MultiCompartment",
                     "NonUnityStoichiometry"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00293": {
@@ -11606,6 +12546,11 @@
                     "MultiCompartment",
                     "ReversibleReaction"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00294": {
@@ -11644,6 +12589,11 @@
                     "MultiCompartment",
                     "ReversibleReaction"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00295": {
@@ -11681,6 +12631,11 @@
                     "HasOnlySubstanceUnits",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00296": {
@@ -11719,6 +12674,11 @@
                     "Amount",
                     "HasOnlySubstanceUnits"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00297": {
@@ -11756,6 +12716,11 @@
                     "BoundaryCondition",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00298": {
@@ -11793,6 +12758,11 @@
                     "BoundaryCondition",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00299": {
@@ -11831,6 +12801,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00300": {
@@ -11869,6 +12844,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00301": {
@@ -11907,6 +12887,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00302": {
@@ -11945,6 +12930,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00303": {
@@ -11982,6 +12972,11 @@
                     "BoundaryCondition",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00304": {
@@ -12020,6 +13015,11 @@
                     "BoundaryCondition",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00305": {
@@ -12058,6 +13058,11 @@
                     "BoundaryCondition",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00306": {
@@ -12097,6 +13102,11 @@
                     "BoundaryCondition",
                     "ConstantSpecies"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00307": {
@@ -12136,6 +13146,11 @@
                     "BoundaryCondition",
                     "ConstantSpecies"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00308": {
@@ -12176,6 +13191,11 @@
                     "Amount",
                     "ConstantSpecies"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00309": {
@@ -12215,6 +13235,11 @@
                     "ConstantSpecies",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00310": {
@@ -12253,6 +13278,11 @@
                     "NonConstantParameter",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00311": {
@@ -12291,6 +13321,11 @@
                     "NonConstantParameter",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00312": {
@@ -12329,6 +13364,11 @@
                     "NonConstantParameter",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00313": {
@@ -12369,6 +13409,11 @@
                     "NonConstantParameter",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00314": {
@@ -12409,6 +13454,11 @@
                     "NonConstantParameter",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00315": {
@@ -12449,6 +13499,11 @@
                     "NonConstantParameter",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00316": {
@@ -12491,6 +13546,11 @@
                     "NonConstantParameter",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00317": {
@@ -12533,6 +13593,11 @@
                     "NonConstantParameter",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00318": {
@@ -12575,6 +13640,11 @@
                     "NonConstantParameter",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00319": {
@@ -12610,6 +13680,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00320": {
@@ -12645,6 +13720,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00321": {
@@ -12681,6 +13761,11 @@
                     "Amount",
                     "0D-Compartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00322": {
@@ -12718,6 +13803,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00323": {
@@ -12755,6 +13845,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00324": {
@@ -12793,6 +13888,11 @@
                     "Amount",
                     "0D-Compartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00325": {
@@ -12830,6 +13930,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00326": {
@@ -12867,6 +13972,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00327": {
@@ -12905,6 +14015,11 @@
                     "Amount",
                     "0D-Compartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00328": {
@@ -12943,6 +14058,11 @@
                     "Amount",
                     "NonUnityCompartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00329": {
@@ -12979,6 +14099,11 @@
                     "Amount",
                     "NonUnityCompartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00330": {
@@ -13017,6 +14142,11 @@
                     "Amount",
                     "NonUnityCompartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00331": {
@@ -13053,6 +14183,11 @@
                     "Amount",
                     "HasOnlySubstanceUnits"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00332": {
@@ -13091,6 +14226,11 @@
                     "Amount",
                     "HasOnlySubstanceUnits"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00333": {
@@ -13129,6 +14269,11 @@
                     "Amount",
                     "HasOnlySubstanceUnits"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00334": {
@@ -13165,6 +14310,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00335": {
@@ -13201,6 +14351,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00336": {
@@ -13237,6 +14392,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00337": {
@@ -13273,6 +14433,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00338": {
@@ -13311,6 +14476,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00339": {
@@ -13349,6 +14519,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00340": {
@@ -13387,6 +14562,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00341": {
@@ -13425,6 +14605,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00342": {
@@ -13463,6 +14648,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00343": {
@@ -13501,6 +14691,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00344": {
@@ -13539,6 +14734,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00345": {
@@ -13577,6 +14777,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00346": {
@@ -13615,6 +14820,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00347": {
@@ -13653,6 +14863,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00348": {
@@ -13688,6 +14903,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00349": {
@@ -13723,6 +14943,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00350": {
@@ -13758,6 +14983,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00351": {
@@ -13795,6 +15025,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00352": {
@@ -13832,6 +15067,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00353": {
@@ -13869,6 +15109,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00354": {
@@ -13905,6 +15150,21 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00354\\00354-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00354\\00354-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00355": {
@@ -13941,6 +15201,21 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00355\\00355-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00355\\00355-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00356": {
@@ -13977,6 +15252,21 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00356\\00356-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00356\\00356-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00357": {
@@ -14013,6 +15303,21 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00357\\00357-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00357\\00357-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00358": {
@@ -14049,6 +15354,21 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00358\\00358-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00358\\00358-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00359": {
@@ -14085,6 +15405,21 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00359\\00359-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00359\\00359-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00360": {
@@ -14120,6 +15455,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00361": {
@@ -14155,6 +15495,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00362": {
@@ -14191,6 +15536,11 @@
                     "Amount",
                     "0D-Compartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00363": {
@@ -14226,6 +15576,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00364": {
@@ -14261,6 +15616,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00365": {
@@ -14297,6 +15657,11 @@
                     "Amount",
                     "0D-Compartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00366": {
@@ -14332,6 +15697,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00367": {
@@ -14367,6 +15737,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00368": {
@@ -14403,6 +15778,11 @@
                     "Amount",
                     "0D-Compartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00369": {
@@ -14439,6 +15819,11 @@
                     "Amount",
                     "NonUnityCompartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00370": {
@@ -14475,6 +15860,11 @@
                     "Amount",
                     "NonUnityCompartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00371": {
@@ -14511,6 +15901,11 @@
                     "Amount",
                     "NonUnityCompartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00372": {
@@ -14549,6 +15944,11 @@
                     "Amount",
                     "NonUnityCompartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00373": {
@@ -14587,6 +15987,11 @@
                     "Amount",
                     "NonUnityCompartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00374": {
@@ -14625,6 +16030,11 @@
                     "Concentration",
                     "NonUnityCompartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00375": {
@@ -14661,6 +16071,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00376": {
@@ -14697,6 +16112,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00377": {
@@ -14733,6 +16153,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00378": {
@@ -14769,6 +16194,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00379": {
@@ -14805,6 +16235,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00380": {
@@ -14841,6 +16276,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00381": {
@@ -14877,6 +16317,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00382": {
@@ -14913,6 +16358,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00383": {
@@ -14949,6 +16399,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00384": {
@@ -14987,6 +16442,11 @@
                     "Amount",
                     "ConstantSpecies"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00385": {
@@ -15025,6 +16485,11 @@
                     "Amount",
                     "ConstantSpecies"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00386": {
@@ -15063,6 +16528,11 @@
                     "Amount",
                     "ConstantSpecies"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00387": {
@@ -15099,6 +16569,11 @@
                     "Amount",
                     "NonUnityStoichiometry"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00388": {
@@ -15137,6 +16612,11 @@
                     "AssignedConstantStoichiometry",
                     "NonUnityStoichiometry"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00389": {
@@ -15172,6 +16652,11 @@
                     "Amount",
                     "LocalParameters"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00390": {
@@ -15210,6 +16695,11 @@
                     "Amount",
                     "NonUnityStoichiometry"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00391": {
@@ -15250,6 +16740,11 @@
                     "AssignedConstantStoichiometry",
                     "NonUnityStoichiometry"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00392": {
@@ -15287,6 +16782,11 @@
                     "Amount",
                     "LocalParameters"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00393": {
@@ -15323,6 +16823,11 @@
                     "Amount",
                     "NonUnityStoichiometry"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00394": {
@@ -15361,6 +16866,11 @@
                     "AssignedConstantStoichiometry",
                     "NonUnityStoichiometry"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00395": {
@@ -15396,6 +16906,11 @@
                     "Amount",
                     "LocalParameters"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00396": {
@@ -15427,6 +16942,11 @@
                 "testTags": [
                     "NonConstantParameter"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00397": {
@@ -15458,6 +16978,11 @@
                 "testTags": [
                     "NonConstantParameter"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00398": {
@@ -15489,6 +17014,11 @@
                 "testTags": [
                     "NonConstantParameter"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00399": {
@@ -15524,6 +17054,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00400": {
@@ -15559,6 +17094,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00401": {
@@ -15594,6 +17134,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00402": {
@@ -15625,6 +17170,11 @@
                 "testTags": [
                     "NonConstantParameter"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00403": {
@@ -15656,6 +17206,11 @@
                 "testTags": [
                     "NonConstantParameter"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00404": {
@@ -15687,6 +17242,11 @@
                 "testTags": [
                     "NonConstantParameter"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00405": {
@@ -15722,6 +17282,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00406": {
@@ -15758,6 +17323,11 @@
                     "Amount",
                     "EventIsPersistent"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00407": {
@@ -15793,6 +17363,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00408": {
@@ -15830,6 +17405,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00409": {
@@ -15867,6 +17447,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00410": {
@@ -15904,6 +17489,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00411": {
@@ -15940,6 +17530,21 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00411\\00411-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00411\\00411-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00412": {
@@ -15976,6 +17581,21 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00412\\00412-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00412\\00412-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00413": {
@@ -16013,6 +17633,21 @@
                     "Amount",
                     "EventIsPersistent"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00413\\00413-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00413\\00413-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00414": {
@@ -16050,6 +17685,21 @@
                     "Amount",
                     "EventIsPersistent"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00414\\00414-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00414\\00414-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00415": {
@@ -16086,6 +17736,21 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00415\\00415-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00415\\00415-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00416": {
@@ -16122,6 +17787,21 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"functionDefinitions\" from SBML module is not supported. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00416\\00416-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00416\\00416-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
+            "result": {
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00417": {
@@ -16157,6 +17837,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00418": {
@@ -16192,6 +17877,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00419": {
@@ -16228,6 +17918,11 @@
                     "Amount",
                     "0D-Compartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00420": {
@@ -16264,6 +17959,11 @@
                     "Amount",
                     "EventIsPersistent"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00421": {
@@ -16300,6 +18000,11 @@
                     "Amount",
                     "EventIsPersistent"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00422": {
@@ -16337,6 +18042,11 @@
                     "0D-Compartment",
                     "EventIsPersistent"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00423": {
@@ -16372,6 +18082,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00424": {
@@ -16407,6 +18122,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00425": {
@@ -16443,6 +18163,11 @@
                     "Amount",
                     "0D-Compartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00426": {
@@ -16479,6 +18204,11 @@
                     "Amount",
                     "NonUnityCompartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00427": {
@@ -16516,6 +18246,11 @@
                     "NonUnityCompartment",
                     "EventIsPersistent"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00428": {
@@ -16552,6 +18287,11 @@
                     "Amount",
                     "NonUnityCompartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00429": {
@@ -16590,6 +18330,11 @@
                     "Amount",
                     "NonUnityCompartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00430": {
@@ -16628,6 +18373,11 @@
                     "Amount",
                     "NonUnityCompartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00431": {
@@ -16666,6 +18416,11 @@
                     "Amount",
                     "NonUnityCompartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00432": {
@@ -16702,6 +18457,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00433": {
@@ -16738,6 +18498,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00434": {
@@ -16774,6 +18539,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00435": {
@@ -16811,6 +18581,11 @@
                     "BoundaryCondition",
                     "EventIsPersistent"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00436": {
@@ -16847,6 +18622,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00437": {
@@ -16883,6 +18663,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00438": {
@@ -16919,6 +18704,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00439": {
@@ -16955,6 +18745,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00440": {
@@ -16991,6 +18786,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00441": {
@@ -17029,6 +18829,11 @@
                     "Amount",
                     "ConstantSpecies"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00442": {
@@ -17068,6 +18873,11 @@
                     "ConstantSpecies",
                     "EventIsPersistent"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00443": {
@@ -17106,6 +18916,11 @@
                     "Amount",
                     "ConstantSpecies"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00444": {
@@ -17142,6 +18957,11 @@
                     "Amount",
                     "NonUnityStoichiometry"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00445": {
@@ -17180,6 +19000,11 @@
                     "AssignedConstantStoichiometry",
                     "NonUnityStoichiometry"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00446": {
@@ -17215,6 +19040,11 @@
                     "Amount",
                     "LocalParameters"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00447": {
@@ -17253,6 +19083,11 @@
                     "Amount",
                     "NonUnityStoichiometry"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00448": {
@@ -17293,6 +19128,11 @@
                     "AssignedConstantStoichiometry",
                     "NonUnityStoichiometry"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00449": {
@@ -17330,6 +19170,11 @@
                     "Amount",
                     "LocalParameters"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00450": {
@@ -17367,6 +19212,11 @@
                     "NonUnityStoichiometry",
                     "EventIsPersistent"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00451": {
@@ -17405,6 +19255,11 @@
                     "AssignedConstantStoichiometry",
                     "NonUnityStoichiometry"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00452": {
@@ -17440,6 +19295,11 @@
                     "Amount",
                     "LocalParameters"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00453": {
@@ -17471,6 +19331,11 @@
                 "testTags": [
                     "NonConstantParameter"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00454": {
@@ -17503,6 +19368,11 @@
                     "NonConstantParameter",
                     "EventIsPersistent"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00455": {
@@ -17534,6 +19404,11 @@
                 "testTags": [
                     "NonConstantParameter"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00456": {
@@ -17570,6 +19445,11 @@
                     "Amount",
                     "EventUsesTriggerTimeValues"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00457": {
@@ -17606,6 +19486,11 @@
                     "Amount",
                     "EventUsesTriggerTimeValues"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00458": {
@@ -17642,6 +19527,11 @@
                     "Amount",
                     "EventUsesTriggerTimeValues"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00459": {
@@ -17674,6 +19564,11 @@
                     "NonConstantParameter",
                     "EventUsesTriggerTimeValues"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00460": {
@@ -17706,6 +19601,11 @@
                     "NonConstantParameter",
                     "EventUsesTriggerTimeValues"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00461": {
@@ -17738,6 +19638,11 @@
                     "NonConstantParameter",
                     "EventUsesTriggerTimeValues"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "TOLERANCE_FAIL",
+                "message": "Simulation tolerance test not passed"
             }
         },
         "00462": {
@@ -17770,6 +19675,11 @@
                 "testTags": [
                     "Concentration"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00463": {
@@ -17802,6 +19712,11 @@
                 "testTags": [
                     "Concentration"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00464": {
@@ -17834,6 +19749,11 @@
                 "testTags": [
                     "Concentration"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00465": {
@@ -17868,6 +19788,11 @@
                 "testTags": [
                     "Concentration"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00466": {
@@ -17904,6 +19829,11 @@
                 "testTags": [
                     "Concentration"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00467": {
@@ -17940,6 +19870,11 @@
                 "testTags": [
                     "Concentration"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00468": {
@@ -17976,6 +19911,11 @@
                 "testTags": [
                     "Concentration"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00469": {
@@ -18010,6 +19950,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00470": {
@@ -18044,6 +19989,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00471": {
@@ -18078,6 +20028,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00472": {
@@ -18112,6 +20067,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00473": {
@@ -18146,6 +20106,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00474": {
@@ -18182,6 +20147,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00475": {
@@ -18217,6 +20187,11 @@
                 "testTags": [
                     "Amount"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00476": {
@@ -18253,6 +20228,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00477": {
@@ -18289,6 +20269,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00478": {
@@ -18325,6 +20310,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00479": {
@@ -18361,6 +20351,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00480": {
@@ -18397,6 +20392,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00481": {
@@ -18433,6 +20433,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00482": {
@@ -18469,6 +20474,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00483": {
@@ -18505,6 +20515,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00484": {
@@ -18541,6 +20556,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00485": {
@@ -18577,6 +20597,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00486": {
@@ -18613,6 +20638,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00487": {
@@ -18649,6 +20679,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00488": {
@@ -18685,6 +20720,11 @@
                     "Amount",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00489": {
@@ -18722,6 +20762,11 @@
                     "0D-Compartment",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00490": {
@@ -18758,6 +20803,11 @@
                     "Amount",
                     "0D-Compartment"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00491": {
@@ -18795,6 +20845,11 @@
                     "0D-Compartment",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00492": {
@@ -18830,6 +20885,11 @@
                     "NonUnityCompartment",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00493": {
@@ -18865,6 +20925,11 @@
                     "NonUnityCompartment",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00494": {
@@ -18900,6 +20965,11 @@
                     "NonUnityCompartment",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00495": {
@@ -18937,6 +21007,11 @@
                     "NonUnityCompartment",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00496": {
@@ -18974,6 +21049,11 @@
                     "NonUnityCompartment",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00497": {
@@ -19011,6 +21091,11 @@
                     "NonUnityCompartment",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00498": {
@@ -19046,6 +21131,11 @@
                     "BoundaryCondition",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00499": {
@@ -19081,6 +21171,11 @@
                     "BoundaryCondition",
                     "InitialValueReassigned"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00500": {
@@ -19115,6 +21210,11 @@
                     "Amount",
                     "BoundaryCondition"
                 ]
+            },
+            "build_errors": [],
+            "result": {
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00501": {
