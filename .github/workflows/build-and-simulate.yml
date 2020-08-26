@@ -38,7 +38,6 @@ jobs:
         npm i -g https://github.com/insysbio/heta-compiler.git
     - run: |
         heta build
-        heta_version=`heta -v`
     #- name: Setup Julia environment (disabled for self-hosted server)
     #  uses: julia-actions/setup-julia@v1.1.12
     #  with:
@@ -48,7 +47,7 @@ jobs:
     - name: SimSolver installation
       run: julia -e 'using Pkg;Pkg.activate(".");Pkg.add(url="https://${{ secrets.SIMSOLVER_GITLAB_TOKEN }}@gitlab.insysbio.com/dev-group/simsolver", rev="dev");Pkg.build()'
     - name: Run Julia simulations
-      run: julia ./run.jl ${{ heta_version }}
+      run: julia ./run.jl `heta -v`
     - name: Copy files to "static"
       run: |
         mkdir -p ./result/cases/output
