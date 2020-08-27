@@ -11,7 +11,7 @@ build_dict = JSON.parsefile("./build.log"; dicttype = OrderedDict)
 ### run all cases
 
 required_time = @elapsed begin
-    for (id, value) in collect(cases_dict)[1:1000]
+    for (id, value) in collect(cases_dict)
         build_errors = case_build_errors(
             value;
             build_dict = build_dict

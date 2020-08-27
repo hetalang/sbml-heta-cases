@@ -19,10 +19,11 @@ jobs:
         platform: [ ubuntu-latest ]
 
     runs-on: [self-hosted,Julia] # ${{ matrix.platform }}
-
+    timeout-minutes: 1440
     defaults:
           run:
             shell: bash
+
     steps:
     - name: Checkout
       uses: actions/checkout@v2
