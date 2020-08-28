@@ -530,7 +530,7 @@ end
 function run_and_update_status!(
     cases_dict::OrderedDict;
     build_dict::Vector{Any} = OrderedDict(),
-    range::UnitRange{Int64}
+    range::UnitRange{Int64} = 1:1780
 )
     for (id, value) in collect(cases_dict)[range]
         build_errors = case_build_errors(
@@ -542,8 +542,8 @@ function run_and_update_status!(
         if (length(build_errors) == 0)
             sim_report = case_sim_result(
                 value;
-                cases_path = "../cases/semantic",
-                output_path = "../cases/output"
+                cases_path = "./cases/semantic",
+                output_path = "./cases/output"
             )
         else
             sim_report = Dict(
