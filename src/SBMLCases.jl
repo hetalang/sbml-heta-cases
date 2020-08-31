@@ -405,6 +405,7 @@ function solve_case(
     savefig(p_ref, "$output_path/$case_name")
 
     return compare_results(case, df_sim, df_ans)
+    
 end
 
 # tolerance test according to:
@@ -499,13 +500,17 @@ function plot_results(df_sim, df_ans)
     names_sim = names(df_sim)[2:end]
     names_ans = names(df_ans)[2:end]
     cl = size(df_sim)[2]
+
+    time_sim = :time
+    time_ans = Symbol(names(df_ans)[1])
+
     p_sim = StatsPlots.@df df_sim plot(
-        :time,
+        cols(time_sim),
         cols(2:cl),
         title = "Simulations",
         legend = false)
     p_ans = StatsPlots.@df df_ans plot(
-        :time,
+        cols(time_ans),
         cols(2:cl),
         title = "Answers",
         legend = false)
@@ -515,7 +520,7 @@ function plot_results(df_sim, df_ans)
         df_diff[!,col_ans] .= abs.(df_sim[!,col_sim] - df_ans[!,col_ans])
     end
     p_diff = StatsPlots.@df df_diff plot(
-        :time,
+        cols(time_ans),
         cols(2:cl),
         title = "Difference",
         legend = false)
