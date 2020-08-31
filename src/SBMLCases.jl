@@ -2,7 +2,6 @@ module SBMLCases
 
 using JSON, SimSolver, DataFrames, CSV, DataStructures, StatsPlots
 
-
 # files containing settings and tags of sbml models
 const cases_db = "./cases.json"
 const results_db = "./results.json"
@@ -532,7 +531,38 @@ function plot_results(df_sim, df_ans)
     plot(p_sim, p_ans, p_diff, legend, dpi=300)
 end
 
+###  ###
+function run_and_update_status!(
+    cases_dict::OrderedDict;
+    build_dict::Vector{Any} = OrderedDict(),
+    range::UnitRange{Int64} = 1:1780
+)
+    for (id, value) in collect(cases_dict)[range]
+        build_errors = case_build_errors(
+            value;
+            build_dict = build_dict
+        )
+        value["build_errors"] = build_errors
+
+        if (length(build_errors) == 0)
+            sim_report = case_sim_result(
+                value;
+                cases_path = "./cases/semantic",
+                output_path = "./cases/output"
+            )
+        else
+            sim_report = Dict(
+                "status" => "SKIPPED",
+                "message" => "Model was not simulated because of build errors"
+            )
+        end
+
+        value["result"] = sim_report
+    end
+end
+### ###
+
 export upload_cases, filter_cases, add_cases, update_results,
-    case_build_errors, case_sim_result # Metelkin
+    case_build_errors, case_sim_result, run_and_update_status! # Metelkin
 
 end #module
