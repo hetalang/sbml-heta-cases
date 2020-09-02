@@ -1,8 +1,8 @@
 {
-    "solver_version": "0.1.1",
-    "required_time": 8767.066659939,
+    "solver_version": "0.1.2",
+    "required_time": 8168.088952978,
     "solver": "SimSolver",
-    "date": "2020-08-31 13:36:28",
+    "date": "2020-09-02 11:14:19",
     "cases": {
         "00001": {
             "name": "00001",
@@ -30705,8 +30705,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "SUCCESS",
-                "message": "Simulations meet the criteria"
+                "status": "ERROR",
+                "message": "Error while running model. KeyError(:S4_)"
             }
         },
         "00840": {
@@ -30748,8 +30748,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "SUCCESS",
-                "message": "Simulations meet the criteria"
+                "status": "ERROR",
+                "message": "Error while running model. KeyError(:S4_)"
             }
         },
         "00841": {
@@ -32064,10 +32064,20 @@
                     "FastReaction"
                 ]
             },
-            "build_errors": [],
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"fast\" reactions \"fasterReaction\" is not supported in SBML module. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00870\\00870-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00870\\00870-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
             "result": {
-                "status": "TOLERANCE_FAIL",
-                "message": "Simulation tolerance test not passed"
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00871": {
@@ -32106,10 +32116,20 @@
                     "FastReaction"
                 ]
             },
-            "build_errors": [],
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"fast\" reactions \"reaction1\" is not supported in SBML module. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00871\\00871-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00871\\00871-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
             "result": {
-                "status": "TOLERANCE_FAIL",
-                "message": "Simulation tolerance test not passed"
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00872": {
@@ -32150,10 +32170,20 @@
                     "BoundaryCondition"
                 ]
             },
-            "build_errors": [],
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"fast\" reactions \"reaction1\" is not supported in SBML module. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00872\\00872-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00872\\00872-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
             "result": {
-                "status": "TOLERANCE_FAIL",
-                "message": "Simulation tolerance test not passed"
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00873": {
@@ -32194,10 +32224,20 @@
                     "BoundaryCondition"
                 ]
             },
-            "build_errors": [],
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"fast\" reactions \"reaction1\" is not supported in SBML module. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00873\\00873-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00873\\00873-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
             "result": {
-                "status": "TOLERANCE_FAIL",
-                "message": "Simulation tolerance test not passed"
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00874": {
@@ -32237,10 +32277,20 @@
                     "BoundaryCondition"
                 ]
             },
-            "build_errors": [],
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"fast\" reactions \"reaction1\" is not supported in SBML module. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00874\\00874-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00874\\00874-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
             "result": {
-                "status": "TOLERANCE_FAIL",
-                "message": "Simulation tolerance test not passed"
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00875": {
@@ -32280,10 +32330,20 @@
                     "BoundaryCondition"
                 ]
             },
-            "build_errors": [],
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"fast\" reactions \"reaction1\" is not supported in SBML module. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00875\\00875-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00875\\00875-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
             "result": {
-                "status": "TOLERANCE_FAIL",
-                "message": "Simulation tolerance test not passed"
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00876": {
@@ -32501,8 +32561,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "SUCCESS",
-                "message": "Simulations meet the criteria"
+                "status": "ERROR",
+                "message": "Error while running model. KeyError(:S3_)"
             }
         },
         "00881": {
@@ -32543,8 +32603,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "SUCCESS",
-                "message": "Simulations meet the criteria"
+                "status": "ERROR",
+                "message": "Error while running model. KeyError(:S3_)"
             }
         },
         "00882": {
@@ -34316,8 +34376,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "TOLERANCE_FAIL",
-                "message": "Simulation tolerance test not passed"
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00927": {
@@ -34353,8 +34413,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "TOLERANCE_FAIL",
-                "message": "Simulation tolerance test not passed"
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00928": {
@@ -35232,8 +35292,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "TOLERANCE_FAIL",
-                "message": "Simulation tolerance test not passed"
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00946": {
@@ -35313,8 +35373,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "TOLERANCE_FAIL",
-                "message": "Simulation tolerance test not passed"
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00948": {
@@ -37257,10 +37317,20 @@
                     "HasOnlySubstanceUnits"
                 ]
             },
-            "build_errors": [],
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"fast\" reactions \"fast\" is not supported in SBML module. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00986\\00986-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00986\\00986-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
             "result": {
-                "status": "TOLERANCE_FAIL",
-                "message": "Simulation tolerance test not passed"
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00987": {
@@ -37301,10 +37371,20 @@
                     "HasOnlySubstanceUnits"
                 ]
             },
-            "build_errors": [],
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"fast\" reactions \"fast\" is not supported in SBML module. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00987\\00987-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00987\\00987-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
             "result": {
-                "status": "TOLERANCE_FAIL",
-                "message": "Simulation tolerance test not passed"
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "00988": {
@@ -37347,7 +37427,7 @@
             "build_errors": [
                 {
                     "level": "error",
-                    "msg": "\"delay\" in event is not supported in SBML module when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00988\\00988-sbml-l2v4.xml\"",
+                    "msg": "\"fast\" reactions \"fast\" is not supported in SBML module. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00988\\00988-sbml-l2v4.xml\"",
                     "opt": {
                         "type": "ModuleError",
                         "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00988\\00988-sbml-l2v4.xml"
@@ -37835,8 +37915,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "SUCCESS",
-                "message": "Simulations meet the criteria"
+                "status": "ERROR",
+                "message": "Error while running model. KeyError(:S1_)"
             }
         },
         "00999": {
@@ -37901,8 +37981,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "TOLERANCE_FAIL",
-                "message": "Simulation tolerance test not passed"
+                "status": "ERROR",
+                "message": "Error while running model. KeyError(:S2_)"
             }
         },
         "01000": {
@@ -38028,8 +38108,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "SUCCESS",
-                "message": "Simulations meet the criteria"
+                "status": "ERROR",
+                "message": "Error while running model. KeyError(:S1_)"
             }
         },
         "01002": {
@@ -38069,8 +38149,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "SUCCESS",
-                "message": "Simulations meet the criteria"
+                "status": "ERROR",
+                "message": "Error while running model. KeyError(:S1_)"
             }
         },
         "01003": {
@@ -38112,8 +38192,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "SUCCESS",
-                "message": "Simulations meet the criteria"
+                "status": "ERROR",
+                "message": "Error while running model. KeyError(:S1_)"
             }
         },
         "01004": {
@@ -38307,8 +38387,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "SUCCESS",
-                "message": "Simulations meet the criteria"
+                "status": "ERROR",
+                "message": "Error while running model. KeyError(:S1_)"
             }
         },
         "01008": {
@@ -38351,8 +38431,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "SUCCESS",
-                "message": "Simulations meet the criteria"
+                "status": "ERROR",
+                "message": "Error while running model. KeyError(:S1_)"
             }
         },
         "01009": {
@@ -38392,8 +38472,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "SUCCESS",
-                "message": "Simulations meet the criteria"
+                "status": "ERROR",
+                "message": "Error while running model. KeyError(:S1_)"
             }
         },
         "01010": {
@@ -38435,8 +38515,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "SUCCESS",
-                "message": "Simulations meet the criteria"
+                "status": "ERROR",
+                "message": "Error while running model. KeyError(:S1_)"
             }
         },
         "01011": {
@@ -38474,8 +38554,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "SUCCESS",
-                "message": "Simulations meet the criteria"
+                "status": "ERROR",
+                "message": "Error while running model. KeyError(:S1_)"
             }
         },
         "01012": {
@@ -38515,8 +38595,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "SUCCESS",
-                "message": "Simulations meet the criteria"
+                "status": "ERROR",
+                "message": "Error while running model. KeyError(:S1_)"
             }
         },
         "01013": {
@@ -38558,8 +38638,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "SUCCESS",
-                "message": "Simulations meet the criteria"
+                "status": "ERROR",
+                "message": "Error while running model. KeyError(:S1_)"
             }
         },
         "01014": {
@@ -38601,8 +38681,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "SUCCESS",
-                "message": "Simulations meet the criteria"
+                "status": "ERROR",
+                "message": "Error while running model. KeyError(:S1_)"
             }
         },
         "01015": {
@@ -38645,8 +38725,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "SUCCESS",
-                "message": "Simulations meet the criteria"
+                "status": "ERROR",
+                "message": "Error while running model. KeyError(:S1_)"
             }
         },
         "01016": {
@@ -38687,8 +38767,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "SUCCESS",
-                "message": "Simulations meet the criteria"
+                "status": "ERROR",
+                "message": "Error while running model. KeyError(:S1_)"
             }
         },
         "01017": {
@@ -38731,8 +38811,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "SUCCESS",
-                "message": "Simulations meet the criteria"
+                "status": "ERROR",
+                "message": "Error while running model. KeyError(:S1_)"
             }
         },
         "01018": {
@@ -39698,8 +39778,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "SUCCESS",
-                "message": "Simulations meet the criteria"
+                "status": "ERROR",
+                "message": "Error while running model. KeyError(:S4_)"
             }
         },
         "01040": {
@@ -39742,8 +39822,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "SUCCESS",
-                "message": "Simulations meet the criteria"
+                "status": "ERROR",
+                "message": "Error while running model. KeyError(:S4_)"
             }
         },
         "01041": {
@@ -40244,10 +40324,20 @@
                     "FastReaction"
                 ]
             },
-            "build_errors": [],
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"fast\" reactions \"fasterReaction\" is not supported in SBML module. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01051\\01051-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01051\\01051-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
             "result": {
-                "status": "TOLERANCE_FAIL",
-                "message": "Simulation tolerance test not passed"
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "01052": {
@@ -40287,10 +40377,20 @@
                     "BoundaryCondition"
                 ]
             },
-            "build_errors": [],
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"fast\" reactions \"reaction1\" is not supported in SBML module. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01052\\01052-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01052\\01052-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
             "result": {
-                "status": "TOLERANCE_FAIL",
-                "message": "Simulation tolerance test not passed"
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "01053": {
@@ -40330,10 +40430,20 @@
                     "BoundaryCondition"
                 ]
             },
-            "build_errors": [],
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"fast\" reactions \"reaction1\" is not supported in SBML module. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01053\\01053-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01053\\01053-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
             "result": {
-                "status": "TOLERANCE_FAIL",
-                "message": "Simulation tolerance test not passed"
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "01054": {
@@ -43746,8 +43856,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "TOLERANCE_FAIL",
-                "message": "Simulation tolerance test not passed"
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "01118": {
@@ -43785,8 +43895,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "TOLERANCE_FAIL",
-                "message": "Simulation tolerance test not passed"
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "01119": {
@@ -44001,8 +44111,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "TOLERANCE_FAIL",
-                "message": "Simulation tolerance test not passed"
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "01123": {
@@ -48243,8 +48353,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "TOLERANCE_FAIL",
-                "message": "Simulation tolerance test not passed"
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "01207": {
@@ -48287,8 +48397,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "SUCCESS",
-                "message": "Simulations meet the criteria"
+                "status": "ERROR",
+                "message": "Error while running model. KeyError(:S1_)"
             }
         },
         "01208": {
@@ -48809,7 +48919,7 @@
             "build_errors": [],
             "result": {
                 "status": "ERROR",
-                "message": "Error while running model. ErrorException(\"Cannot convert Symbol to series data for plotting\")"
+                "message": "Error while running model. KeyError(:S1_)"
             }
         },
         "01220": {
@@ -48847,7 +48957,7 @@
             "build_errors": [],
             "result": {
                 "status": "ERROR",
-                "message": "Error while running model. ErrorException(\"Cannot convert Symbol to series data for plotting\")"
+                "message": "Error while running model. KeyError(:S1_)"
             }
         },
         "01221": {
@@ -48886,7 +48996,7 @@
             "build_errors": [],
             "result": {
                 "status": "ERROR",
-                "message": "Error while running model. ErrorException(\"Cannot convert Symbol to series data for plotting\")"
+                "message": "Error while running model. KeyError(:S1_)"
             }
         },
         "01222": {
@@ -48927,7 +49037,7 @@
             "build_errors": [],
             "result": {
                 "status": "ERROR",
-                "message": "Error while running model. ErrorException(\"Cannot convert Symbol to series data for plotting\")"
+                "message": "Error while running model. KeyError(:S1_)"
             }
         },
         "01223": {
@@ -48969,7 +49079,7 @@
             "build_errors": [],
             "result": {
                 "status": "ERROR",
-                "message": "Error while running model. ErrorException(\"Cannot convert Symbol to series data for plotting\")"
+                "message": "Error while running model. KeyError(:S1_)"
             }
         },
         "01224": {
@@ -57438,7 +57548,7 @@
             "build_errors": [
                 {
                     "level": "error",
-                    "msg": "\"stoichiometryMath\" from SBML module is not supported. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01397\\01397-sbml-l2v4.xml\"",
+                    "msg": "\"fast\" reactions \"J0\" is not supported in SBML module. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01397\\01397-sbml-l2v4.xml\"",
                     "opt": {
                         "type": "ModuleError",
                         "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01397\\01397-sbml-l2v4.xml"
@@ -57536,10 +57646,20 @@
                     "LocalParameters"
                 ]
             },
-            "build_errors": [],
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"fast\" reactions \"J0\" is not supported in SBML module. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01399\\01399-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01399\\01399-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
             "result": {
-                "status": "TOLERANCE_FAIL",
-                "message": "Simulation tolerance test not passed"
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "01400": {
@@ -65069,7 +65189,7 @@
             "build_errors": [
                 {
                     "level": "error",
-                    "msg": "\"delay\" symbol in expression (SBML module) is not supported when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01539\\01539-sbml-l2v4.xml\"",
+                    "msg": "\"fast\" reactions \"J0\" is not supported in SBML module. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01539\\01539-sbml-l2v4.xml\"",
                     "opt": {
                         "type": "ModuleError",
                         "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01539\\01539-sbml-l2v4.xml"
@@ -67024,19 +67144,10 @@
             "build_errors": [
                 {
                     "level": "error",
-                    "msg": "x01565::J51 Cannot parse MathExpr properly. Value expected (char 25) \" 1  *  S51  *  S51b  * ()\"",
+                    "msg": "\"fast\" reactions \"J0\" is not supported in SBML module. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01565\\01565-sbml-l2v4.xml\"",
                     "opt": {
-                        "type": "ValidationError",
-                        "space": "x01565"
-                    },
-                    "levelNum": 3
-                },
-                {
-                    "level": "error",
-                    "msg": "Record \"x01565::J51\" is not initialized. You must set \"start_\" or \"ode_\" for the record or use abstract namespace.",
-                    "opt": {
-                        "type": "BindingError",
-                        "space": "x01565"
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01565\\01565-sbml-l2v4.xml"
                     },
                     "levelNum": 3
                 }
@@ -67187,7 +67298,7 @@
             "build_errors": [
                 {
                     "level": "error",
-                    "msg": "\"algebraicRule\" from SBML module is not supported. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01567\\01567-sbml-l2v4.xml\"",
+                    "msg": "\"fast\" reactions \"J0\" is not supported in SBML module. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01567\\01567-sbml-l2v4.xml\"",
                     "opt": {
                         "type": "ModuleError",
                         "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01567\\01567-sbml-l2v4.xml"
@@ -67239,10 +67350,20 @@
                     "ReversibleReaction"
                 ]
             },
-            "build_errors": [],
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"fast\" reactions \"J0\" is not supported in SBML module. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01568\\01568-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01568\\01568-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
             "result": {
-                "status": "ERROR",
-                "message": "Error while running model. ErrorException(\"Cannot convert Symbol to series data for plotting\")"
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "01569": {
@@ -67288,10 +67409,20 @@
                     "MultipleFastReactions"
                 ]
             },
-            "build_errors": [],
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"fast\" reactions \"J0\" is not supported in SBML module. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01569\\01569-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01569\\01569-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
             "result": {
-                "status": "ERROR",
-                "message": "Error while running model. ErrorException(\"Cannot convert Symbol to series data for plotting\")"
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "01570": {
@@ -67331,10 +67462,20 @@
                     "ReversibleReaction"
                 ]
             },
-            "build_errors": [],
+            "build_errors": [
+                {
+                    "level": "error",
+                    "msg": "\"fast\" reactions \"J0\" is not supported in SBML module. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01570\\01570-sbml-l2v4.xml\"",
+                    "opt": {
+                        "type": "ModuleError",
+                        "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01570\\01570-sbml-l2v4.xml"
+                    },
+                    "levelNum": 3
+                }
+            ],
             "result": {
-                "status": "ERROR",
-                "message": "Error while running model. ErrorException(\"Cannot convert Symbol to series data for plotting\")"
+                "status": "SKIPPED",
+                "message": "Model was not simulated because of build errors"
             }
         },
         "01571": {
@@ -67427,7 +67568,7 @@
             "build_errors": [
                 {
                     "level": "error",
-                    "msg": "\"stoichiometryMath\" from SBML module is not supported. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01572\\01572-sbml-l2v4.xml\"",
+                    "msg": "\"fast\" reactions \"J0\" is not supported in SBML module. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01572\\01572-sbml-l2v4.xml\"",
                     "opt": {
                         "type": "ModuleError",
                         "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01572\\01572-sbml-l2v4.xml"

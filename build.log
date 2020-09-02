@@ -8930,9 +8930,37 @@
     "levelNum": 1
   },
   {
+    "level": "error",
+    "msg": "\"fast\" reactions \"fasterReaction\" is not supported in SBML module. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00870\\00870-sbml-l2v4.xml\"",
+    "opt": {
+      "type": "ModuleError",
+      "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00870\\00870-sbml-l2v4.xml"
+    },
+    "levelNum": 3
+  },
+  {
+    "level": "warn",
+    "msg": "Nothing is imported from file \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00870\\00870-sbml-l2v4.xml\"...",
+    "levelNum": 2
+  },
+  {
     "level": "info",
     "msg": "Reading module of type \"sbml\" from file \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00871\\00871-sbml-l2v4.xml\"...",
     "levelNum": 1
+  },
+  {
+    "level": "error",
+    "msg": "\"fast\" reactions \"reaction1\" is not supported in SBML module. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00871\\00871-sbml-l2v4.xml\"",
+    "opt": {
+      "type": "ModuleError",
+      "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00871\\00871-sbml-l2v4.xml"
+    },
+    "levelNum": 3
+  },
+  {
+    "level": "warn",
+    "msg": "Nothing is imported from file \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00871\\00871-sbml-l2v4.xml\"...",
+    "levelNum": 2
   },
   {
     "level": "info",
@@ -8940,9 +8968,37 @@
     "levelNum": 1
   },
   {
+    "level": "error",
+    "msg": "\"fast\" reactions \"reaction1\" is not supported in SBML module. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00872\\00872-sbml-l2v4.xml\"",
+    "opt": {
+      "type": "ModuleError",
+      "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00872\\00872-sbml-l2v4.xml"
+    },
+    "levelNum": 3
+  },
+  {
+    "level": "warn",
+    "msg": "Nothing is imported from file \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00872\\00872-sbml-l2v4.xml\"...",
+    "levelNum": 2
+  },
+  {
     "level": "info",
     "msg": "Reading module of type \"sbml\" from file \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00873\\00873-sbml-l2v4.xml\"...",
     "levelNum": 1
+  },
+  {
+    "level": "error",
+    "msg": "\"fast\" reactions \"reaction1\" is not supported in SBML module. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00873\\00873-sbml-l2v4.xml\"",
+    "opt": {
+      "type": "ModuleError",
+      "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00873\\00873-sbml-l2v4.xml"
+    },
+    "levelNum": 3
+  },
+  {
+    "level": "warn",
+    "msg": "Nothing is imported from file \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00873\\00873-sbml-l2v4.xml\"...",
+    "levelNum": 2
   },
   {
     "level": "info",
@@ -8950,9 +9006,37 @@
     "levelNum": 1
   },
   {
+    "level": "error",
+    "msg": "\"fast\" reactions \"reaction1\" is not supported in SBML module. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00874\\00874-sbml-l2v4.xml\"",
+    "opt": {
+      "type": "ModuleError",
+      "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00874\\00874-sbml-l2v4.xml"
+    },
+    "levelNum": 3
+  },
+  {
+    "level": "warn",
+    "msg": "Nothing is imported from file \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00874\\00874-sbml-l2v4.xml\"...",
+    "levelNum": 2
+  },
+  {
     "level": "info",
     "msg": "Reading module of type \"sbml\" from file \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00875\\00875-sbml-l2v4.xml\"...",
     "levelNum": 1
+  },
+  {
+    "level": "error",
+    "msg": "\"fast\" reactions \"reaction1\" is not supported in SBML module. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00875\\00875-sbml-l2v4.xml\"",
+    "opt": {
+      "type": "ModuleError",
+      "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00875\\00875-sbml-l2v4.xml"
+    },
+    "levelNum": 3
+  },
+  {
+    "level": "warn",
+    "msg": "Nothing is imported from file \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00875\\00875-sbml-l2v4.xml\"...",
+    "levelNum": 2
   },
   {
     "level": "info",
@@ -9988,9 +10072,37 @@
     "levelNum": 1
   },
   {
+    "level": "error",
+    "msg": "\"fast\" reactions \"fast\" is not supported in SBML module. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00986\\00986-sbml-l2v4.xml\"",
+    "opt": {
+      "type": "ModuleError",
+      "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00986\\00986-sbml-l2v4.xml"
+    },
+    "levelNum": 3
+  },
+  {
+    "level": "warn",
+    "msg": "Nothing is imported from file \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00986\\00986-sbml-l2v4.xml\"...",
+    "levelNum": 2
+  },
+  {
     "level": "info",
     "msg": "Reading module of type \"sbml\" from file \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00987\\00987-sbml-l2v4.xml\"...",
     "levelNum": 1
+  },
+  {
+    "level": "error",
+    "msg": "\"fast\" reactions \"fast\" is not supported in SBML module. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00987\\00987-sbml-l2v4.xml\"",
+    "opt": {
+      "type": "ModuleError",
+      "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00987\\00987-sbml-l2v4.xml"
+    },
+    "levelNum": 3
+  },
+  {
+    "level": "warn",
+    "msg": "Nothing is imported from file \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00987\\00987-sbml-l2v4.xml\"...",
+    "levelNum": 2
   },
   {
     "level": "info",
@@ -9999,7 +10111,7 @@
   },
   {
     "level": "error",
-    "msg": "\"delay\" in event is not supported in SBML module when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00988\\00988-sbml-l2v4.xml\"",
+    "msg": "\"fast\" reactions \"fast\" is not supported in SBML module. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00988\\00988-sbml-l2v4.xml\"",
     "opt": {
       "type": "ModuleError",
       "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\00988\\00988-sbml-l2v4.xml"
@@ -10609,14 +10721,56 @@
     "levelNum": 1
   },
   {
+    "level": "error",
+    "msg": "\"fast\" reactions \"fasterReaction\" is not supported in SBML module. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01051\\01051-sbml-l2v4.xml\"",
+    "opt": {
+      "type": "ModuleError",
+      "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01051\\01051-sbml-l2v4.xml"
+    },
+    "levelNum": 3
+  },
+  {
+    "level": "warn",
+    "msg": "Nothing is imported from file \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01051\\01051-sbml-l2v4.xml\"...",
+    "levelNum": 2
+  },
+  {
     "level": "info",
     "msg": "Reading module of type \"sbml\" from file \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01052\\01052-sbml-l2v4.xml\"...",
     "levelNum": 1
   },
   {
+    "level": "error",
+    "msg": "\"fast\" reactions \"reaction1\" is not supported in SBML module. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01052\\01052-sbml-l2v4.xml\"",
+    "opt": {
+      "type": "ModuleError",
+      "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01052\\01052-sbml-l2v4.xml"
+    },
+    "levelNum": 3
+  },
+  {
+    "level": "warn",
+    "msg": "Nothing is imported from file \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01052\\01052-sbml-l2v4.xml\"...",
+    "levelNum": 2
+  },
+  {
     "level": "info",
     "msg": "Reading module of type \"sbml\" from file \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01053\\01053-sbml-l2v4.xml\"...",
     "levelNum": 1
+  },
+  {
+    "level": "error",
+    "msg": "\"fast\" reactions \"reaction1\" is not supported in SBML module. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01053\\01053-sbml-l2v4.xml\"",
+    "opt": {
+      "type": "ModuleError",
+      "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01053\\01053-sbml-l2v4.xml"
+    },
+    "levelNum": 3
+  },
+  {
+    "level": "warn",
+    "msg": "Nothing is imported from file \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01053\\01053-sbml-l2v4.xml\"...",
+    "levelNum": 2
   },
   {
     "level": "info",
@@ -13662,7 +13816,7 @@
   },
   {
     "level": "error",
-    "msg": "\"stoichiometryMath\" from SBML module is not supported. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01397\\01397-sbml-l2v4.xml\"",
+    "msg": "\"fast\" reactions \"J0\" is not supported in SBML module. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01397\\01397-sbml-l2v4.xml\"",
     "opt": {
       "type": "ModuleError",
       "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01397\\01397-sbml-l2v4.xml"
@@ -13687,6 +13841,20 @@
     "level": "info",
     "msg": "Reading module of type \"sbml\" from file \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01399\\01399-sbml-l2v4.xml\"...",
     "levelNum": 1
+  },
+  {
+    "level": "error",
+    "msg": "\"fast\" reactions \"J0\" is not supported in SBML module. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01399\\01399-sbml-l2v4.xml\"",
+    "opt": {
+      "type": "ModuleError",
+      "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01399\\01399-sbml-l2v4.xml"
+    },
+    "levelNum": 3
+  },
+  {
+    "level": "warn",
+    "msg": "Nothing is imported from file \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01399\\01399-sbml-l2v4.xml\"...",
+    "levelNum": 2
   },
   {
     "level": "error",
@@ -15218,7 +15386,7 @@
   },
   {
     "level": "error",
-    "msg": "\"delay\" symbol in expression (SBML module) is not supported when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01539\\01539-sbml-l2v4.xml\"",
+    "msg": "\"fast\" reactions \"J0\" is not supported in SBML module. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01539\\01539-sbml-l2v4.xml\"",
     "opt": {
       "type": "ModuleError",
       "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01539\\01539-sbml-l2v4.xml"
@@ -15518,6 +15686,20 @@
   },
   {
     "level": "error",
+    "msg": "\"fast\" reactions \"J0\" is not supported in SBML module. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01565\\01565-sbml-l2v4.xml\"",
+    "opt": {
+      "type": "ModuleError",
+      "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01565\\01565-sbml-l2v4.xml"
+    },
+    "levelNum": 3
+  },
+  {
+    "level": "warn",
+    "msg": "Nothing is imported from file \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01565\\01565-sbml-l2v4.xml\"...",
+    "levelNum": 2
+  },
+  {
+    "level": "error",
     "msg": "Module file not found: \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01566\\01566-sbml-l2v4.xml\"",
     "opt": {
       "type": "FileSystemError",
@@ -15532,7 +15714,7 @@
   },
   {
     "level": "error",
-    "msg": "\"algebraicRule\" from SBML module is not supported. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01567\\01567-sbml-l2v4.xml\"",
+    "msg": "\"fast\" reactions \"J0\" is not supported in SBML module. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01567\\01567-sbml-l2v4.xml\"",
     "opt": {
       "type": "ModuleError",
       "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01567\\01567-sbml-l2v4.xml"
@@ -15550,14 +15732,56 @@
     "levelNum": 1
   },
   {
+    "level": "error",
+    "msg": "\"fast\" reactions \"J0\" is not supported in SBML module. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01568\\01568-sbml-l2v4.xml\"",
+    "opt": {
+      "type": "ModuleError",
+      "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01568\\01568-sbml-l2v4.xml"
+    },
+    "levelNum": 3
+  },
+  {
+    "level": "warn",
+    "msg": "Nothing is imported from file \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01568\\01568-sbml-l2v4.xml\"...",
+    "levelNum": 2
+  },
+  {
     "level": "info",
     "msg": "Reading module of type \"sbml\" from file \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01569\\01569-sbml-l2v4.xml\"...",
     "levelNum": 1
   },
   {
+    "level": "error",
+    "msg": "\"fast\" reactions \"J0\" is not supported in SBML module. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01569\\01569-sbml-l2v4.xml\"",
+    "opt": {
+      "type": "ModuleError",
+      "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01569\\01569-sbml-l2v4.xml"
+    },
+    "levelNum": 3
+  },
+  {
+    "level": "warn",
+    "msg": "Nothing is imported from file \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01569\\01569-sbml-l2v4.xml\"...",
+    "levelNum": 2
+  },
+  {
     "level": "info",
     "msg": "Reading module of type \"sbml\" from file \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01570\\01570-sbml-l2v4.xml\"...",
     "levelNum": 1
+  },
+  {
+    "level": "error",
+    "msg": "\"fast\" reactions \"J0\" is not supported in SBML module. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01570\\01570-sbml-l2v4.xml\"",
+    "opt": {
+      "type": "ModuleError",
+      "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01570\\01570-sbml-l2v4.xml"
+    },
+    "levelNum": 3
+  },
+  {
+    "level": "warn",
+    "msg": "Nothing is imported from file \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01570\\01570-sbml-l2v4.xml\"...",
+    "levelNum": 2
   },
   {
     "level": "error",
@@ -15575,7 +15799,7 @@
   },
   {
     "level": "error",
-    "msg": "\"stoichiometryMath\" from SBML module is not supported. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01572\\01572-sbml-l2v4.xml\"",
+    "msg": "\"fast\" reactions \"J0\" is not supported in SBML module. when converting module \"C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01572\\01572-sbml-l2v4.xml\"",
     "opt": {
       "type": "ModuleError",
       "filename": "C:\\actions-runner\\_work\\sbml-heta-cases\\sbml-heta-cases\\cases\\semantic\\01572\\01572-sbml-l2v4.xml"
@@ -26866,15 +27090,6 @@
     "levelNum": 3
   },
   {
-    "level": "error",
-    "msg": "x01565::J51 Cannot parse MathExpr properly. Value expected (char 25) \" 1  *  S51  *  S51b  * ()\"",
-    "opt": {
-      "type": "ValidationError",
-      "space": "x01565"
-    },
-    "levelNum": 3
-  },
-  {
     "level": "info",
     "msg": "Namespace \"nameless\" was set as \"abstract\"",
     "levelNum": 1
@@ -35786,7 +36001,7 @@
   },
   {
     "level": "info",
-    "msg": "Setting references in elements, total length 70644",
+    "msg": "Setting references in elements, total length 70355",
     "levelNum": 1
   },
   {
@@ -35912,15 +36127,6 @@
     "opt": {
       "type": "BindingError",
       "space": "x01564"
-    },
-    "levelNum": 3
-  },
-  {
-    "level": "error",
-    "msg": "Record \"x01565::J51\" is not initialized. You must set \"start_\" or \"ode_\" for the record or use abstract namespace.",
-    "opt": {
-      "type": "BindingError",
-      "space": "x01565"
     },
     "levelNum": 3
   },
