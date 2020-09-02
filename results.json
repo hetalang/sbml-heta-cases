@@ -1,8 +1,8 @@
 {
     "solver_version": "0.1.2",
-    "required_time": 8168.088952978,
+    "required_time": 8254.499038331,
     "solver": "SimSolver",
-    "date": "2020-09-02 11:14:19",
+    "date": "2020-09-02 14:26:45",
     "cases": {
         "00001": {
             "name": "00001",
@@ -37915,8 +37915,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "ERROR",
-                "message": "Error while running model. KeyError(:S1_)"
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00999": {
@@ -37981,8 +37981,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "ERROR",
-                "message": "Error while running model. KeyError(:S2_)"
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "01000": {
@@ -38108,8 +38108,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "ERROR",
-                "message": "Error while running model. KeyError(:S1_)"
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "01002": {
@@ -38149,8 +38149,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "ERROR",
-                "message": "Error while running model. KeyError(:S1_)"
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "01003": {
@@ -38192,8 +38192,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "ERROR",
-                "message": "Error while running model. KeyError(:S1_)"
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "01004": {
@@ -38387,8 +38387,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "ERROR",
-                "message": "Error while running model. KeyError(:S1_)"
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "01008": {
@@ -38431,8 +38431,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "ERROR",
-                "message": "Error while running model. KeyError(:S1_)"
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "01009": {
@@ -38472,8 +38472,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "ERROR",
-                "message": "Error while running model. KeyError(:S1_)"
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "01010": {
@@ -38515,8 +38515,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "ERROR",
-                "message": "Error while running model. KeyError(:S1_)"
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "01011": {
@@ -38554,8 +38554,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "ERROR",
-                "message": "Error while running model. KeyError(:S1_)"
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "01012": {
@@ -38595,8 +38595,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "ERROR",
-                "message": "Error while running model. KeyError(:S1_)"
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "01013": {
@@ -38638,8 +38638,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "ERROR",
-                "message": "Error while running model. KeyError(:S1_)"
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "01014": {
@@ -38681,8 +38681,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "ERROR",
-                "message": "Error while running model. KeyError(:S1_)"
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "01015": {
@@ -38725,8 +38725,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "ERROR",
-                "message": "Error while running model. KeyError(:S1_)"
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "01016": {
@@ -38767,8 +38767,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "ERROR",
-                "message": "Error while running model. KeyError(:S1_)"
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "01017": {
@@ -38811,8 +38811,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "ERROR",
-                "message": "Error while running model. KeyError(:S1_)"
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "01018": {
@@ -48397,8 +48397,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "ERROR",
-                "message": "Error while running model. KeyError(:S1_)"
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "01208": {
@@ -48919,7 +48919,7 @@
             "build_errors": [],
             "result": {
                 "status": "ERROR",
-                "message": "Error while running model. KeyError(:S1_)"
+                "message": "Error while running model. ErrorException(\"Cannot convert Symbol to series data for plotting\")"
             }
         },
         "01220": {
@@ -48957,7 +48957,7 @@
             "build_errors": [],
             "result": {
                 "status": "ERROR",
-                "message": "Error while running model. KeyError(:S1_)"
+                "message": "Error while running model. ErrorException(\"Cannot convert Symbol to series data for plotting\")"
             }
         },
         "01221": {
@@ -48996,7 +48996,7 @@
             "build_errors": [],
             "result": {
                 "status": "ERROR",
-                "message": "Error while running model. KeyError(:S1_)"
+                "message": "Error while running model. ErrorException(\"Cannot convert Symbol to series data for plotting\")"
             }
         },
         "01222": {
@@ -49037,7 +49037,7 @@
             "build_errors": [],
             "result": {
                 "status": "ERROR",
-                "message": "Error while running model. KeyError(:S1_)"
+                "message": "Error while running model. ErrorException(\"Cannot convert Symbol to series data for plotting\")"
             }
         },
         "01223": {
@@ -49079,7 +49079,7 @@
             "build_errors": [],
             "result": {
                 "status": "ERROR",
-                "message": "Error while running model. KeyError(:S1_)"
+                "message": "Error while running model. ErrorException(\"Cannot convert Symbol to series data for plotting\")"
             }
         },
         "01224": {
