@@ -1,8 +1,8 @@
 {
     "solver_version": "0.1.2",
-    "required_time": 8254.499038331,
+    "required_time": 8387.352276843,
     "solver": "SimSolver",
-    "date": "2020-09-02 14:26:45",
+    "date": "2020-09-03 11:29:12",
     "cases": {
         "00001": {
             "name": "00001",
@@ -30705,8 +30705,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "ERROR",
-                "message": "Error while running model. KeyError(:S4_)"
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00840": {
@@ -30748,8 +30748,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "ERROR",
-                "message": "Error while running model. KeyError(:S4_)"
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00841": {
@@ -32561,8 +32561,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "ERROR",
-                "message": "Error while running model. KeyError(:S3_)"
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00881": {
@@ -32603,8 +32603,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "ERROR",
-                "message": "Error while running model. KeyError(:S3_)"
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "00882": {
@@ -39778,8 +39778,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "ERROR",
-                "message": "Error while running model. KeyError(:S4_)"
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "01040": {
@@ -39822,8 +39822,8 @@
             },
             "build_errors": [],
             "result": {
-                "status": "ERROR",
-                "message": "Error while running model. KeyError(:S4_)"
+                "status": "SUCCESS",
+                "message": "Simulations meet the criteria"
             }
         },
         "01041": {
