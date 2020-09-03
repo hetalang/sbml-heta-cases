@@ -14,7 +14,7 @@ required_time = @elapsed run_and_update_status!(
     cases_dict;
     build_dict = build_dict,
     range = 1189:1780
-)s
+)
 
 #heta_version = ENV["heta_version"]
 date = Dates.format(Dates.now(), "yyyy-mm-dd HH:MM:SS")
