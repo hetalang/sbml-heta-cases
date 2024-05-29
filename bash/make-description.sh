@@ -1,54 +1,56 @@
 #!/bin/bash
 
+base_dir="result/l2v5"
+
 echo Create of file structure
-mkdir -p result
-rm -rf result/*
+mkdir -p $base_dir
+rm -rf $base_dir/*
 
 echo Collect compiler information
-echo "{" > result/summary.json
+echo "{" > $base_dir/summary.json
 hetaCompilerVersion=$(heta --version)
-echo "  \"hetaCompilerVersion\": \"$hetaCompilerVersion\"," >> result/summary.json
+echo "  \"hetaCompilerVersion\": \"$hetaCompilerVersion\"," >> $base_dir/summary.json
 started=$(date)
-echo "  \"started\": \"$started\"," >> result/summary.json
+echo "  \"started\": \"$started\"," >> $base_dir/summary.json
 dirs=$(find ./cases/semantic/ -type d -regex '.*/[0-9]+' -print0 | xargs -0 -n1 basename ) # find all directories with numbers
 #dirs=$(find ./cases/semantic/ -type f -name "*-sbml-l2v5.xml" -exec dirname {} \; | xargs -n1 basename )
 totalCasesCount=$(echo "$dirs" | wc -l)
-echo "  \"totalCasesCount\": \"$totalCasesCount\"," >> result/summary.json
+echo "  \"totalCasesCount\": \"$totalCasesCount\"," >> $base_dir/summary.json
 
 echo Copy files from cases and build models
-echo "  \"cases\": [" >> result/summary.json
+echo "  \"cases\": [" >> $base_dir/summary.json
 
 counter=0
 for dir in $dirs; do
     counter=$((counter+1))
     [ $counter==$totalCasesCount ] && delimiter="" || delimiter=","
     
-    mkdir -p result/$dir
-    cp bash/index.heta result/$dir/index.heta
+    mkdir -p $base_dir/$dir
+    cp bash/index.heta $base_dir/$dir/index.heta
 
     # Extract line starting from "synopsis" until the end of line
     synopsis=$(sed -n '/(\*/,/*)/p' cases/semantic/$dir/$dir-model.m | sed '1d;$d')
-    echo "$synopsis" > result/$dir/synopsis.txt
+    echo "$synopsis" > $base_dir/$dir/synopsis.txt
 
-    cp cases/semantic/$dir/$dir-sbml-l2v5.xml result/$dir/model-sbml-l2v5.xml > /dev/null 2>&1
+    cp cases/semantic/$dir/$dir-sbml-l2v5.xml $base_dir/$dir/model-sbml-l2v5.xml > /dev/null 2>&1
     if [ $? -ne 0 ]; then
-        echo "    {\"id\": \"$dir\", \"retCode\": 9}$delimiter" >> result/summary.json
+        echo "    {\"id\": \"$dir\", \"retCode\": 9}$delimiter" >> $base_dir/summary.json
         echo "$dir has no SBML file"
         continue
     fi
 
     # supress logs
-    heta build --skip-updates --dist-dir . --log-mode error result/$dir > /dev/null 2>&1 
+    heta build --skip-updates --dist-dir . --log-mode error $base_dir/$dir > /dev/null 2>&1 
     retCode=$(echo $?)
-    echo "    {\"id\": \"$dir\", \"retCode\": $retCode}$delimiter" >> result/summary.json
+    echo "    {\"id\": \"$dir\", \"retCode\": $retCode}$delimiter" >> $base_dir/summary.json
     echo "$dir finished with $retCode"
 done
 
-echo "  ]," >> result/summary.json
+echo "  ]," >> $base_dir/summary.json
 finished=$(date)
-echo "  \"finished\": \"$finished\"" >> result/summary.json
-echo "}" >> result/summary.json
+echo "  \"finished\": \"$finished\"" >> $base_dir/summary.json
+echo "}" >> $base_dir/summary.json
 
 # Save list of directories in JSON file
 # sudo apt-get install jq
-# echo "$dirs" | jq -R . | jq -s . > result/dirs.json
+# echo "$dirs" | jq -R . | jq -s . > $base_dir/summary.json

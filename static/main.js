@@ -2,7 +2,7 @@ $(window).ready(() => {
     $('#modal .close').click(() => {
         $('#modal').hide();
     });
-    $.get(config.summaryPath, (data) => {
+    $.get(`${config.path}/summary.json`, (data) => {
         // general statistics
         $('#heta_version').html(data.hetaCompilerVersion);
         $('#started').html(data.started);
@@ -15,21 +15,21 @@ $(window).ready(() => {
             item.on('click', () => {
                 $('#caseId').html(x.id);
                 $('#caseId').removeClass().addClass('retCode_' + x.retCode);
-                $('#casePath').html(`/result/${x.id}/`);
+                $('#casePath').html(`${config.path}/${x.id}/`);
                 $('#retCode').html(x.retCode);
                 $('#modal').show();
 
-                $.get(`/result/${x.id}/heta-code/output.heta`, (data) => {
+                $.get(`${config.path}/${x.id}/heta-code/output.heta`, (data) => {
                     $('#modal #heta-code pre code').html(data);
                 }).fail(() => {
                     $('#modal #heta-code pre code').html('No heta-code/output.heta file found');
                 });
-                $.get(`/result/${x.id}/synopsis.txt`, (data) => {
+                $.get(`${config.path}/${x.id}/synopsis.txt`, (data) => {
                     $('#modal #synopsis pre code').html(data);
                 }).fail(() => {
                     $('#modal #synopsis pre code').html('No synopsis.txt file found');
                 });
-                $.get(`/result/${x.id}/build.log`, (data) => {
+                $.get(`${config.path}/${x.id}/build.log`, (data) => {
                     $('#modal #logs pre code').html(data);
                 }).fail(() => {
                     $('#modal #logs pre code').html('No build.log file found');
