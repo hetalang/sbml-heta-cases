@@ -20,9 +20,9 @@ jobs:
         with:
           node-version: 16
 
-      - name: Installations
+      - name: Installations of heta-compiler from repository
         run: |
-          npm i -g heta-compiler
+          npm i -g hetalang/heta-compiler
           heta -v
 
       - name: Create file structure

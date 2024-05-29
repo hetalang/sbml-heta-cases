@@ -23,7 +23,11 @@ echo "  \"cases\": [" >> $base_dir/summary.json
 counter=0
 for dir in $dirs; do
     counter=$((counter+1))
-    [ $counter==$totalCasesCount ] && delimiter="" || delimiter=","
+    if [ $counter == $totalCasesCount ]; then
+        delimiter=""
+    else
+        delimiter=","
+    fi
     
     mkdir -p $base_dir/$dir
     cp bash/index.heta $base_dir/$dir/index.heta
