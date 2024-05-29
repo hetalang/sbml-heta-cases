@@ -1,0 +1,124 @@
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+/*
+#info {
+    font-size: small;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+#statistics, #versions {
+    padding-left: 10px;
+    border-left: 4px solid grey;
+    width: 400px;
+}
+#main {
+    display: flex;
+    flex-direction: row;
+}
+#container {
+    order: 1;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    min-width: 300px;
+    margin-bottom: 400px;
+}
+#figure {
+    order: 2;
+    width: 30%;
+}
+#figure img {
+    width: 100%;
+    margin: auto;
+}
+.item {
+    border: white 0.5px solid;
+    width: 15px;
+    height: 15px;
+    background-color: lightblue;
+}
+.item div.hoovable {
+    display: none;
+    position: relative;
+    top: -30px;
+    left: 30px;
+    background-color: white;
+    border: grey 1px solid;
+    width: 300px;
+    height: 300px;
+    font-size: small;
+    padding: 5px;
+}
+.item:hover div.hoovable {
+    display: block;
+}
+.item:hover {
+    border-color: black;
+}
+.item.SKIPPED {
+    background-color: lightgrey;
+}
+.item.ERROR {
+    background-color: red;
+}
+.item.TOLERANCE_FAIL {
+    background-color: orange;
+}
+.item.SUCCESS {
+    background-color: lightgreen;
+}
+*/
+
+.itemContainer{
+    order: 1;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    min-width: 300px;
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 70vh;
+    overflow: auto;
+    background-color: lightgray;
+    margin: 5vh;
+    padding: 50px;
+}
+
+pre {
+    background-color: white;
+    padding: 5px;
+}
+
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.item {
+    padding: 5px;
+    margin: 2px;
+}
+
+.retCode_0 {
+    background-color: lightgreen;
+}
+.retCode_1 {
+    background-color: lightcoral;
+}
+.retCode_2 {
+    background-color: yellow;
+}
+.retCode_9 {
+    background-color: blue;
+}

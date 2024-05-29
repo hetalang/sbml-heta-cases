@@ -1,22 +1,21 @@
 # SBML Heta Cases
 
-The package is designed to test Simulation Software against [SBML Test Suite](https://github.com/sbmlteam/sbml-test-suite) cases in Julia.
-
-See results here <https://insysbio.github.io/sbml-heta-cases/>
+The package is designed to test different aspects of Heta formats on [SBML Test Suite](https://github.com/sbmlteam/sbml-test-suite).
 
 [![Heta project](https://img.shields.io/badge/%CD%B1-Heta_project-blue)](https://hetalang.github.io/)
 [![Copy visualization](https://github.com/insysbio/sbml-heta-cases/workflows/Copy%20visualization/badge.svg)](https://insysbio.github.io/sbml-heta-cases/)
-![Build and simulate](https://github.com/insysbio/sbml-heta-cases/workflows/Build%20and%20simulate/badge.svg)
+[![Build and simulate](https://github.com/insysbio/sbml-heta-cases/actions/workflows/convert-to-heta.yml/badge.svg)](https://github.com/insysbio/sbml-heta-cases/actions/workflows/convert-to-heta.yml)
 [![GitHub issues](https://img.shields.io/github/issues/insysbio/sbml-heta-cases.svg)](https://GitHub.com/insysbio/sbml-heta-cases/issues/)
 [![GitHub license](https://img.shields.io/github/license/insysbio/sbml-heta-cases.svg)](https://github.com/insysbio/sbml-heta-cases/blob/master/LICENSE)
 
-## Overview
 
-SBML Heta Cases contains:
+1. Conversion of cases into Heta code and JSON format
+2. Load models in SBML format and make simulations in 
+
+## File content
+
 - [SBML Test Suite](https://github.com/sbmlteam/sbml-test-suite) cases in `cases_path = "./cases/semantic"`. The original Matlab models were converted to Julia with Heta compiler. Julia code for each model is stored in `./cases/semantic/<case_num>/julia`, while models' settings and tags are stored in `cases_db = "./cases.json"`.
 - API (documented in the *Usage* section) to upload `cases_db`, run simulations, save results to `output_path = "./cases/output"` and update status in `results_db = "./results.json"`. A simulation can end with one of the three status: `success` indicates the output file has passed [tolerance test](https://github.com/sbmlteam/sbml-test-suite/blob/master/cases/semantic/README.md#tolerances-and-errors-for-timecourse-tests), `failure` signifies that tolerance test for a given simulation was not passed and `error` stands for any error during the simulation (error message is printed to the `message` field in `results_db`).
-
-Currently SBML Heta Cases suport only one `SimSolver` Simulation Backend.
 
 ## Usage
 

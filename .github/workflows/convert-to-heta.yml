@@ -1,0 +1,42 @@
+name: convert to Heta
+
+on:
+  workflow_dispatch: {}
+  push:
+    branches: [ master, '*-result' ]
+
+jobs:
+  convert-to-heta:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Install Node.js 16
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Installations
+        run: |
+          npm i -g heta-compiler
+          heta -v
+
+      - name: Create file structure
+        run: |
+          bash ./bash/make-description.sh
+
+      - name: copy static
+        run: |
+          cp -r static/* result/
+
+      - name: Commit changes to result branch
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: result # The branch the action should deploy to.
+          FOLDER: result # The folder the action should deploy.
+          CLEAN: false
