@@ -1,0 +1,98 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Compartment",
+    "id": "C",
+    "title": "C",
+    "units": "volume",
+    "assignments": {
+      "start_": "1"
+    },
+    "boundary": true
+  },
+  {
+    "class": "Species",
+    "id": "S1",
+    "title": "S1",
+    "units": "substance/volume",
+    "assignments": {
+      "start_": "1 / C"
+    },
+    "compartment": "C"
+  },
+  {
+    "class": "Species",
+    "id": "S2",
+    "title": "S2",
+    "units": "substance/volume",
+    "assignments": {
+      "start_": "0 / C"
+    },
+    "compartment": "C"
+  },
+  {
+    "class": "Species",
+    "id": "S3",
+    "title": "S3",
+    "units": "substance/volume",
+    "assignments": {
+      "start_": "1 / C",
+      "ode_": "k * S2"
+    },
+    "compartment": "C"
+  },
+  {
+    "class": "Const",
+    "id": "k__reaction1_local",
+    "num": 5
+  },
+  {
+    "class": "Reaction",
+    "id": "reaction1",
+    "title": "reaction1",
+    "assignments": {
+      "ode_": "C * k__reaction1_local * S1"
+    },
+    "actors": [
+      {
+        "target": "S2",
+        "stoichiometry": 1
+      },
+      {
+        "target": "S1",
+        "stoichiometry": -1
+      }
+    ],
+    "reversible": false
+  },
+  {
+    "class": "Record",
+    "id": "k",
+    "title": "k",
+    "assignments": {
+      "start_": "0.75"
+    }
+  },
+  {
+    "id": "volume",
+    "units": "metre^3",
+    "action": "defineUnit"
+  },
+  {
+    "id": "area",
+    "units": "metre^2",
+    "action": "defineUnit"
+  },
+  {
+    "id": "length",
+    "units": "metre",
+    "action": "defineUnit"
+  },
+  {
+    "id": "substance",
+    "units": "(1e-6 mole)",
+    "action": "defineUnit"
+  }
+]

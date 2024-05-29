@@ -1,0 +1,9 @@
+[info]	Namespace "nameless" was set as "concrete"
+[info]	Builder initialized in directory "/home/runner/work/sbml-heta-cases/sbml-heta-cases/result/l2v5/00445".
+[info]	Compilation of module "index.heta" of type "heta"...
+[info]	Reading module of type "heta" from file "/home/runner/work/sbml-heta-cases/sbml-heta-cases/result/l2v5/00445/index.heta"...
+[info]	Reading module of type "sbml" from file "/home/runner/work/sbml-heta-cases/sbml-heta-cases/result/l2v5/00445/model-sbml-l2v5.xml"...
+[error]	"stoichiometryMath" from SBML module is not supported. when converting module "/home/runner/work/sbml-heta-cases/sbml-heta-cases/result/l2v5/00445/model-sbml-l2v5.xml"
+[info]	Setting references in elements, total length 83
+[info]	Checking for circular references in Records.
+[warn]	Units checking and export were skipped because of errors in compilation.

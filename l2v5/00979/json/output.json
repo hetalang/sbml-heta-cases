@@ -1,0 +1,67 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Record",
+    "id": "x",
+    "assignments": {
+      "start_": "0",
+      "_E0": "2"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "y",
+    "assignments": {
+      "start_": "0",
+      "_E0": "y + x"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "p",
+    "assignments": {
+      "start_": "0",
+      "_E1": "3"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "q",
+    "assignments": {
+      "start_": "0",
+      "_E1": "p + 1"
+    }
+  },
+  {
+    "class": "DSwitcher",
+    "id": "_E0",
+    "trigger": "t >= 0.98"
+  },
+  {
+    "class": "DSwitcher",
+    "id": "_E1",
+    "trigger": "t >= 0.99"
+  },
+  {
+    "id": "volume",
+    "units": "metre^3",
+    "action": "defineUnit"
+  },
+  {
+    "id": "area",
+    "units": "metre^2",
+    "action": "defineUnit"
+  },
+  {
+    "id": "length",
+    "units": "metre",
+    "action": "defineUnit"
+  },
+  {
+    "id": "substance",
+    "units": "(1e-6 mole)",
+    "action": "defineUnit"
+  }
+]

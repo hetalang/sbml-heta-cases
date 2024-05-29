@@ -1,0 +1,45 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Compartment",
+    "id": "compartment",
+    "title": "compartment",
+    "units": "volume",
+    "assignments": {
+      "start_": "1"
+    },
+    "boundary": true
+  },
+  {
+    "class": "Species",
+    "id": "S1",
+    "title": "S1",
+    "units": "substance/volume",
+    "assignments": {
+      "ode_": "7"
+    },
+    "compartment": "compartment"
+  },
+  {
+    "id": "volume",
+    "units": "metre^3",
+    "action": "defineUnit"
+  },
+  {
+    "id": "area",
+    "units": "metre^2",
+    "action": "defineUnit"
+  },
+  {
+    "id": "length",
+    "units": "metre",
+    "action": "defineUnit"
+  },
+  {
+    "id": "substance",
+    "units": "(1e-6 mole)",
+    "action": "defineUnit"
+  }
+]
