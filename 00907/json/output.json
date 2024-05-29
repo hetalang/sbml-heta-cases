@@ -1,0 +1,58 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Compartment",
+    "id": "c",
+    "title": "c",
+    "units": "length",
+    "assignments": {
+      "start_": "22.5"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "k1",
+    "title": "k1",
+    "assignments": {
+      "start_": "0.175"
+    }
+  },
+  {
+    "class": "Process",
+    "id": "c_proc",
+    "aux": {
+      "metaid": "rule1"
+    },
+    "assignments": {
+      "ode_": "(-1) * c / k1"
+    },
+    "actors": [
+      {
+        "target": "c",
+        "stoichiometry": 1
+      }
+    ]
+  },
+  {
+    "id": "volume",
+    "units": "metre^3",
+    "action": "defineUnit"
+  },
+  {
+    "id": "area",
+    "units": "metre^2",
+    "action": "defineUnit"
+  },
+  {
+    "id": "length",
+    "units": "metre",
+    "action": "defineUnit"
+  },
+  {
+    "id": "substance",
+    "units": "(1e-6 mole)",
+    "action": "defineUnit"
+  }
+]

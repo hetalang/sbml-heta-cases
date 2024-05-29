@@ -1,0 +1,38 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Record",
+    "id": "x",
+    "assignments": {
+      "start_": "3",
+      "E0": "((1 == 1) ? 5 : 7)"
+    }
+  },
+  {
+    "class": "DSwitcher",
+    "id": "E0",
+    "trigger": "t > 0.01"
+  },
+  {
+    "id": "volume",
+    "units": "metre^3",
+    "action": "defineUnit"
+  },
+  {
+    "id": "area",
+    "units": "metre^2",
+    "action": "defineUnit"
+  },
+  {
+    "id": "length",
+    "units": "metre",
+    "action": "defineUnit"
+  },
+  {
+    "id": "substance",
+    "units": "(1e-6 mole)",
+    "action": "defineUnit"
+  }
+]

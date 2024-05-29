@@ -1,0 +1,67 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Compartment",
+    "id": "c",
+    "assignments": {
+      "start_": "2"
+    }
+  },
+  {
+    "class": "Species",
+    "id": "S1",
+    "assignments": {
+      "start_": "1.2"
+    },
+    "compartment": "c",
+    "isAmount": true
+  },
+  {
+    "class": "Process",
+    "id": "S1_proc",
+    "assignments": {
+      "ode_": "1"
+    },
+    "actors": [
+      {
+        "target": "S1",
+        "stoichiometry": 1
+      }
+    ]
+  },
+  {
+    "class": "Process",
+    "id": "c_proc",
+    "assignments": {
+      "ode_": "1"
+    },
+    "actors": [
+      {
+        "target": "c",
+        "stoichiometry": 1
+      }
+    ]
+  },
+  {
+    "id": "volume",
+    "units": "metre^3",
+    "action": "defineUnit"
+  },
+  {
+    "id": "area",
+    "units": "metre^2",
+    "action": "defineUnit"
+  },
+  {
+    "id": "length",
+    "units": "metre",
+    "action": "defineUnit"
+  },
+  {
+    "id": "substance",
+    "units": "(1e-6 mole)",
+    "action": "defineUnit"
+  }
+]

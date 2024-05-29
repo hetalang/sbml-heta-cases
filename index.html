@@ -2,162 +2,34 @@
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="config.js"></script>
-    <script>
-        $(window).ready(() => {
-            $.get(config.results || 'results.json', (data) => {
-                // version and runtime info
-                $('#heta_version')
-                    .html('<strong>Heta compiler version:</strong> ' + data.heta_version);
-                $('#solver')
-                    .html('<strong>Solver:</strong> ' + data.solver);
-                $('#solver_version')
-                    .html('<strong>Solver version:</strong> ' + data.solver_version);
-                $('#date')
-                    .html('<strong>Date:</strong> ' + data.date);
-                $('#required_time')
-                    .html('<strong>Runtime:</strong> ' + Math.round(data.required_time/60) + ' min');
-
-                let casesArray = Object.values(data.cases);
-
-                // statistics
-                let success_count = casesArray.filter((x) => x.result?.status === 'SUCCESS').length;
-                $('#SUCCESS_status')
-                    .html(`<strong>SUCCESS:</strong> ${success_count} (${(success_count/casesArray.length*100).toPrecision(2)}%)`);
-
-                let tolerance_fail_count = casesArray.filter((x) => x.result?.status === 'TOLERANCE_FAIL').length;
-                $('#TOLERANCE_FAIL_status')
-                    .html(`<strong>TOLERANCE_FAIL:</strong> ${tolerance_fail_count} (${(tolerance_fail_count/casesArray.length*100).toPrecision(2)}%)`);
-
-                let error_count = casesArray.filter((x) => x.result?.status === 'ERROR').length;
-                $('#ERROR_status')
-                    .html(`<strong>ERROR:</strong> ${error_count} (${(error_count/casesArray.length*100).toPrecision(2)}%)`);
-                    
-                let skipped_count = casesArray.filter((x) => x.result?.status === 'SKIPPED').length;
-                $('#SKIPPED_status')
-                    .html(`<strong>SKIPPED:</strong> ${skipped_count} (${(skipped_count/casesArray.length*100).toPrecision(2)}%)`);
-
-                let undefined_count = casesArray.filter((x) => x.result?.status === undefined).length;
-                $('#undefined_status')
-                    .html(`<strong>undefined:</strong> ${undefined_count} (${(undefined_count/casesArray.length*100).toPrecision(2)}%)`);
-
-                // color panel
-                let container = $('#container');
-                casesArray.forEach((x) => {
-
-                    let componentTags = x.tags?.componentTags?.join(', ');
-                    let testTags = x.tags?.testTags?.join(', ');
-                    let status = x.result?.status;
-                    let message = x.result?.message;
-                    let build_errors = x.build_errors?.map((line) => {
-                        return `<li>${line.msg}</li>`;
-                    }).join('');
-                    let description = `
-                        <h2>#${x.name}</h2>
-                        <p><strong>build_errors:</strong> <ul>${build_errors}</ul></p>
-                        <p><strong>status:</strong> ${status}</p>
-                        <p><strong>message:</strong> ${message}</p>
-                        <p><strong>componentTags:</strong> ${componentTags}</p>
-                        <p><strong>testTags:</strong> ${testTags}</p>
-                    `;
-
-                    let symb = {
-                        ERROR: ''
-                    }[status];
-                    $(`<div id="${x.name}" class="item ${status}">${symb ? symb : ''}<div class="hoovable">${description}</div></div>`)
-                        .appendTo(container);
-                    
-                });
-            }, 'json');
-            // display graph
-            $('#container').click((evt) => {
-                let caseName = evt.target.id;
-                let filename = caseName + '.png';
-                let filepath = [config.figPath, filename].join('/');
-                $('#figure img').prop('src', filepath);
-            });
-        });
-    </script>
-    <!-- https://css-tricks.com/snippets/css/a-guide-to-flexbox/ -->
-    <style>
-        #info {
-            font-size: small;
-            display: flex;
-            flex-direction: row;
-            margin-bottom: 20px;
-        }
-        #statistics, #versions {
-            padding-left: 10px;
-            border-left: 4px solid grey;
-            width: 400px;
-        }
-        #main {
-            display: flex;
-            flex-direction: row;
-        }
-        #container {
-            order: 1;
-            display: flex;
-            flex-wrap: wrap;
-            width: 60%;
-            min-width: 300px;
-            margin-bottom: 400px;
-        }
-        #figure {
-            order: 2;
-            width: 30%;
-        }
-        #figure img {
-            width: 100%;
-            margin: auto;
-        }
-        .item {
-            border: white 0.5px solid;
-            width: 15px;
-            height: 15px;
-            background-color: lightblue;
-        }
-        .item div.hoovable {
-            display: none;
-            position: relative;
-            top: -30px;
-            left: 30px;
-            background-color: white;
-            border: grey 1px solid;
-            width: 300px;
-            height: 300px;
-            font-size: small;
-            padding: 5px;
-        }
-        .item:hover div.hoovable {
-            display: block;
-        }
-        .item:hover {
-            border-color: black;
-        }
-        .item.SKIPPED {
-            background-color: lightgrey;
-        }
-        .item.ERROR {
-            background-color: red;
-        }
-        .item.TOLERANCE_FAIL {
-            background-color: orange;
-        }
-        .item.SUCCESS {
-            background-color: lightgreen;
-        }
-    </style>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <h2>Result of testing SBML cases</h2>
+    <h1>Result of testing SBML cases</h1>
     <p><i>Repository's home is <a href="https://github.com/insysbio/sbml-heta-cases">HERE</a></i></p>
     <div id="info">
+        <h2>From SBML L2V5</h2>
+        
+        <div id="summaryExplanations" class="itemContainer">
+            <div class="item retCode_0">Success</div>
+            <div class="item retCode_1">Compiler error</div>
+            <div class="item retCode_2">Platform error</div>
+            <div class="item retCode_9">No SBML</div>
+        </div>
+        
         <div id="versions">
-            <p id="heta_version"/>
+            <p>Heta compiler: <span id="heta_version">-</span></p>
+            <p>Started: <span id="started">-</span></p>
+            <p>Finished: <span id="finished">-</span></p>
+            <p>Cases count: <span id="totalCasesCount">-</span></p>
             <p id="solver"/>
             <p id="solver_version"/>
-            <p id="date"/>
             <p id="required_time"/>
+        </div>
+
+        <div id="summary" class="itemContainer"/>
+
         </div>
         <div id="statistics">
             <p id="SUCCESS_status"/>
@@ -170,6 +42,26 @@
     <div id="main">
         <div id="container"></div>
         <div id="figure"><img/></div>
+    </div>
+    <div id="modal">
+        <span class="close">&times;</span>
+        <div id="preamble">
+            <h2 id="caseId"></h2>
+            <p>Case path: <span id="casePath"></span></p>
+            <p>Return code: <span id="retCode"></span></p>
+        </div>
+        <div id="synopsis">
+            <h3>Synopsis</h3>
+            <pre><code class="text"></code></pre>
+        </div>
+        <div id="heta-code">
+            <h3>Heta code</h3>
+            <pre class="heta"><code></code></pre>
+        </div>
+        <div id="logs">
+            <h3>Logs</h3>
+            <pre><code class="text"></code></pre>
+        </div>
     </div>
 </body>
 </HTML>

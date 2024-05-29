@@ -1,0 +1,149 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Compartment",
+    "id": "compartment",
+    "title": "compartment",
+    "units": "area",
+    "assignments": {
+      "start_": "10"
+    },
+    "boundary": true
+  },
+  {
+    "class": "Species",
+    "id": "S1",
+    "title": "S1",
+    "units": "substance",
+    "assignments": {
+      "start_": "0.001"
+    },
+    "compartment": "compartment",
+    "isAmount": true
+  },
+  {
+    "class": "Species",
+    "id": "S2",
+    "title": "S2",
+    "units": "substance",
+    "assignments": {
+      "start_": "0.0015"
+    },
+    "compartment": "compartment",
+    "isAmount": true
+  },
+  {
+    "class": "Species",
+    "id": "S3",
+    "title": "S3",
+    "units": "substance",
+    "assignments": {
+      "start_": "0.002"
+    },
+    "compartment": "compartment",
+    "isAmount": true
+  },
+  {
+    "class": "Species",
+    "id": "S4",
+    "title": "S4",
+    "units": "substance",
+    "assignments": {
+      "start_": "0.001"
+    },
+    "compartment": "compartment",
+    "isAmount": true
+  },
+  {
+    "class": "Reaction",
+    "id": "reaction1",
+    "title": "reaction1",
+    "assignments": {
+      "ode_": "k1 * S1 * S2"
+    },
+    "actors": [
+      {
+        "target": "S3",
+        "stoichiometry": 1
+      },
+      {
+        "target": "S4",
+        "stoichiometry": 1
+      },
+      {
+        "target": "S1",
+        "stoichiometry": -1
+      },
+      {
+        "target": "S2",
+        "stoichiometry": -1
+      }
+    ],
+    "reversible": false
+  },
+  {
+    "class": "Reaction",
+    "id": "reaction2",
+    "title": "reaction2",
+    "assignments": {
+      "ode_": "k2 * S3 * S4"
+    },
+    "actors": [
+      {
+        "target": "S1",
+        "stoichiometry": 1
+      },
+      {
+        "target": "S2",
+        "stoichiometry": 1
+      },
+      {
+        "target": "S3",
+        "stoichiometry": -1
+      },
+      {
+        "target": "S4",
+        "stoichiometry": -1
+      }
+    ],
+    "reversible": false
+  },
+  {
+    "class": "Record",
+    "id": "k1",
+    "title": "k1",
+    "assignments": {
+      "start_": "7500"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "k2",
+    "title": "k2",
+    "assignments": {
+      "start_": "250"
+    }
+  },
+  {
+    "id": "volume",
+    "units": "metre^3",
+    "action": "defineUnit"
+  },
+  {
+    "id": "area",
+    "units": "metre^2",
+    "action": "defineUnit"
+  },
+  {
+    "id": "length",
+    "units": "metre",
+    "action": "defineUnit"
+  },
+  {
+    "id": "substance",
+    "units": "(1e-6 mole)",
+    "action": "defineUnit"
+  }
+]
