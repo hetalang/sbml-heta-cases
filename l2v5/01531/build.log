@@ -1,0 +1,26 @@
+[info]	Namespace "nameless" was set as "concrete"
+[info]	Builder initialized in directory "/home/runner/work/sbml-heta-cases/sbml-heta-cases/result/l2v5/01531".
+[info]	Compilation of module "index.heta" of type "heta"...
+[info]	Reading module of type "heta" from file "/home/runner/work/sbml-heta-cases/sbml-heta-cases/result/l2v5/01531/index.heta"...
+[info]	Reading module of type "sbml" from file "/home/runner/work/sbml-heta-cases/sbml-heta-cases/result/l2v5/01531/model-sbml-l2v5.xml"...
+[error]	E51 Cannot parse MathExpr properly. Value expected (char 11) " trig  > ()"
+[error]	E52 Cannot parse MathExpr properly. Value expected (char 11) " trig  > ()"
+[error]	E53 Cannot parse MathExpr properly. Unexpected end of expression (char 18) " trig  >  0  and "
+[error]	E54 Cannot parse MathExpr properly. Unexpected end of expression (char 22) " trig  >  0  and not "
+[error]	E55 Cannot parse MathExpr properly. Unexpected end of expression (char 22) " trig  >  0  and not "
+[info]	Setting references in elements, total length 197
+[error]	FunctionDef "sinh" is not found as expected here: E40 { trigger: trig > sinh(0.3) };
+[error]	FunctionDef "cosh" is not found as expected here: E41 { trigger: trig > cosh(1.7) };
+[error]	FunctionDef "asinh" is not found as expected here: E45 { trigger: trig > asinh(99) };
+[error]	FunctionDef "acosh" is not found as expected here: E46 { trigger: trig > acosh(1.34) };
+[error]	FunctionDef "atanh" is not found as expected here: E47 { trigger: trig > atanh((-0.7)) };
+[error]	FunctionDef "asech" is not found as expected here: E48 { trigger: trig > asech(0.42) };
+[error]	FunctionDef "acsch" is not found as expected here: E49 { trigger: trig > acsch(0.01) };
+[error]	FunctionDef "acoth" is not found as expected here: E50 { trigger: trig > acoth(8.2) };
+[error]	No required "trigger" property for "E51" of DSwitcher.
+[error]	No required "trigger" property for "E52" of DSwitcher.
+[error]	No required "trigger" property for "E53" of DSwitcher.
+[error]	No required "trigger" property for "E54" of DSwitcher.
+[error]	No required "trigger" property for "E55" of DSwitcher.
+[info]	Checking for circular references in Records.
+[warn]	Units checking and export were skipped because of errors in compilation.
