@@ -127,7 +127,7 @@ $(window).ready(() => {
 
 function splitLines(s) {
     let newS = [];
-    str.split('\n').forEach((line) => {
+    s.split('\n').forEach((line) => {
         if (line.length <= 100) {
             newS.push(line);
         } else {
