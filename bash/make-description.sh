@@ -12,7 +12,7 @@ hetaCompilerVersion=$(heta --version)
 echo "  \"hetaCompilerVersion\": \"$hetaCompilerVersion\"," >> $base_dir/summary.json
 started=$(date)
 echo "  \"started\": \"$started\"," >> $base_dir/summary.json
-dirs=$(find ./cases/semantic/ -type d -regex '.*/[0-9]+' -print0 | xargs -0 -n1 basename ) # find all directories with numbers
+dirs=$(find ./cases/semantic/ -type d -regex '.*/[0-9]+' -print0 | xargs -0 -n1 basename | sort ) # find all directories with numbers and sort by name
 #dirs=$(find ./cases/semantic/ -type f -name "*-sbml-l2v5.xml" -exec dirname {} \; | xargs -n1 basename )
 totalCasesCount=$(echo "$dirs" | wc -l)
 echo "  \"totalCasesCount\": \"$totalCasesCount\"," >> $base_dir/summary.json
