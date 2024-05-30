@@ -4,19 +4,18 @@ area #defineUnit { units: metre^2, };
 length #defineUnit { units: metre, };
 substance #defineUnit { units: (1e-6 mole), };
 
-namespace nameless begin
-  t @TimeScale { };
+t @TimeScale { };
 
-  compartment @Compartment 'compartment' { units: volume, boundary: true, } .= 0.3;
+compartment @Compartment 'compartment' { units: volume, boundary: true, } .= 0.3;
 
-  S1 @Species 'S1' { units: substance/volume, boundary: false, compartment: compartment, isAmount: false, } .= 0.0015 / compartment;
-  S2 @Species 'S2' { units: substance/volume, boundary: false, compartment: compartment, isAmount: false, } .= 0 / compartment;
+S1 @Species 'S1' { units: substance/volume, boundary: false, compartment: compartment, isAmount: false, } .= 0.0015 / compartment;
+S2 @Species 'S2' { units: substance/volume, boundary: false, compartment: compartment, isAmount: false, } .= 0 / compartment;
 
-  reaction1 @Reaction 'reaction1' { actors: S1 = 0.3*S2, reversible: false, };
-  reaction1 := compartment * k1 * S1;
-  reaction2 @Reaction 'reaction2' { actors: 0.7*S2 = S1, reversible: false, };
-  reaction2 := compartment * k2 * S2;
+reaction1 @Reaction 'reaction1' { actors: S1 = 0.3*S2, reversible: false, };
+reaction1 := compartment * k1 * S1;
+reaction2 @Reaction 'reaction2' { actors: 0.7*S2 = S1, reversible: false, };
+reaction2 := compartment * k2 * S2;
 
-  k1 @Record 'k1' { } .= 0.35;
-  k2 @Record 'k2' { } .= 180;
-end
+k1 @Record 'k1' { } .= 0.35;
+k2 @Record 'k2' { } .= 180;
+

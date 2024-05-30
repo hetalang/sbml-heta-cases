@@ -4,23 +4,22 @@ area #defineUnit { units: metre^2, };
 length #defineUnit { units: metre, };
 substance #defineUnit { units: (1e-6 mole), };
 
-namespace nameless begin
-  t @TimeScale { };
+t @TimeScale { };
 
-  compartment @Compartment 'compartment' { units: length, boundary: true, } .= 1;
+compartment @Compartment 'compartment' { units: length, boundary: true, } .= 1;
 
-  S1 @Species 'S1' { units: substance/length, boundary: false, compartment: compartment, isAmount: false, } .= 1.5e-4 / compartment;
-  S2 @Species 'S2' { units: substance/length, boundary: false, compartment: compartment, isAmount: false, } .= 2e-4 / compartment;
-  S3 @Species 'S3' { units: substance/length, boundary: false, compartment: compartment, isAmount: false, } .= 4e-4 / compartment;
-  S4 @Species 'S4' { units: substance/length, boundary: false, compartment: compartment, isAmount: false, } .= 1e-4 / compartment;
+S1 @Species 'S1' { units: substance/length, boundary: false, compartment: compartment, isAmount: false, } .= 1.5e-4 / compartment;
+S2 @Species 'S2' { units: substance/length, boundary: false, compartment: compartment, isAmount: false, } .= 2e-4 / compartment;
+S3 @Species 'S3' { units: substance/length, boundary: false, compartment: compartment, isAmount: false, } .= 4e-4 / compartment;
+S4 @Species 'S4' { units: substance/length, boundary: false, compartment: compartment, isAmount: false, } .= 1e-4 / compartment;
 
-  reaction1 @Reaction 'reaction1' { actors: S1 + S2 = S3, reversible: false, };
-  reaction1 := compartment * k1 * S1 * S2;
-  reaction2 @Reaction 'reaction2' { actors: S3 = S1 + S2, reversible: false, };
-  reaction2 := compartment * k2 * S3;
-  S4_proc @Process { actors:  = S4, aux: {{"metaid":"rule1"}}, };
-  S4_proc := (1 / 10000);
+reaction1 @Reaction 'reaction1' { actors: S1 + S2 = S3, reversible: false, };
+reaction1 := compartment * k1 * S1 * S2;
+reaction2 @Reaction 'reaction2' { actors: S3 = S1 + S2, reversible: false, };
+reaction2 := compartment * k2 * S3;
+S4_proc @Process { actors:  = S4, aux: {{"metaid":"rule1"}}, };
+S4_proc := (1 / 10000);
 
-  k1 @Record 'k1' { } .= 6900;
-  k2 @Record 'k2' { } .= 0.0023;
-end
+k1 @Record 'k1' { } .= 6900;
+k2 @Record 'k2' { } .= 0.0023;
+

@@ -7,8 +7,7 @@ addone #defineFunction { arguments: [x], math: x + 1, };
 addoneagain2x #defineFunction { arguments: [x], math: addone(x) + addone(x) + 1, };
 addoneagainandagain2x #defineFunction { arguments: [x], math: addoneagain2x(x) + addoneagain2x(x) + addone(x) + addone(x) + 1, };
 
-namespace nameless begin
-  t @TimeScale { };
+t @TimeScale { };
 
-  p1 @Record { } .= addoneagainandagain2x(3);
-end
+p1 @Record { } .= addoneagainandagain2x(3);
+

@@ -4,10 +4,9 @@ area #defineUnit { units: metre^2, };
 length #defineUnit { units: metre, };
 substance #defineUnit { units: (1e-6 mole), };
 
-namespace nameless begin
-  t @TimeScale { };
+t @TimeScale { };
 
-  C @Compartment { boundary: true, } .= 1;
+C @Compartment { boundary: true, } .= 1;
 
-  S1 @Species { boundary: false, compartment: C, isAmount: false, } .= 2;
-end
+S1 @Species { boundary: false, compartment: C, isAmount: false, } .= 2;
+

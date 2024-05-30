@@ -4,20 +4,19 @@ area #defineUnit { units: metre^2, };
 length #defineUnit { units: metre, };
 substance #defineUnit { units: (1e-6 mole), };
 
-namespace nameless begin
-  t @TimeScale { };
+t @TimeScale { };
 
-  C @Compartment 'C' { units: volume, boundary: true, } .= 1;
+C @Compartment 'C' { units: volume, boundary: true, } .= 1;
 
-  S1 @Species 'S1' { units: substance/volume, boundary: false, compartment: C, isAmount: false, } .= 1 / C;
-  S2 @Species 'S2' { units: substance/volume, boundary: false, compartment: C, isAmount: false, } .= 0 / C;
-  S3 @Species 'S3' { units: substance/volume, boundary: false, compartment: C, isAmount: false, } .= 1 / C;
-  S3 := k * S2;
+S1 @Species 'S1' { units: substance/volume, boundary: false, compartment: C, isAmount: false, } .= 1 / C;
+S2 @Species 'S2' { units: substance/volume, boundary: false, compartment: C, isAmount: false, } .= 0 / C;
+S3 @Species 'S3' { units: substance/volume, boundary: false, compartment: C, isAmount: false, } .= 1 / C;
+S3 := k * S2;
 
-  reaction1 @Reaction 'reaction1' { actors: S1 = S2, reversible: false, };
-  reaction1 := C * k__reaction1_local * S1;
+reaction1 @Reaction 'reaction1' { actors: S1 = S2, reversible: false, };
+reaction1 := C * k__reaction1_local * S1;
 
-  k @Record 'k' { } .= 0.75;
+k @Record 'k' { } .= 0.75;
 
-  k__reaction1_local @Const { } = 5;
-end
+k__reaction1_local @Const { } = 5;
+

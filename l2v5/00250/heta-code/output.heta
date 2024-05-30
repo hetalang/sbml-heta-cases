@@ -4,22 +4,21 @@ area #defineUnit { units: metre^2, };
 length #defineUnit { units: metre, };
 substance #defineUnit { units: (1e-6 mole), };
 
-namespace nameless begin
-  t @TimeScale { };
+t @TimeScale { };
 
-  compartment @Compartment 'compartment' { units: volume, boundary: true, } .= 0.2;
+compartment @Compartment 'compartment' { units: volume, boundary: true, } .= 0.2;
 
-  S1 @Species 'S1' { units: substance/volume, boundary: false, compartment: compartment, isAmount: false, } .= 1e-6 / compartment;
-  S2 @Species 'S2' { units: substance/volume, boundary: false, compartment: compartment, isAmount: false, } .= 1.5e-6 / compartment;
-  S3 @Species 'S3' { units: substance/volume, boundary: false, compartment: compartment, isAmount: false, } .= 2e-6 / compartment;
-  S4 @Species 'S4' { units: substance/volume, boundary: false, compartment: compartment, isAmount: false, } .= 5e-7 / compartment;
-  S5 @Species 'S5' { units: substance/volume, boundary: true, compartment: compartment, isAmount: false, } .= 1e-6 / compartment;
+S1 @Species 'S1' { units: substance/volume, boundary: false, compartment: compartment, isAmount: false, } .= 1e-6 / compartment;
+S2 @Species 'S2' { units: substance/volume, boundary: false, compartment: compartment, isAmount: false, } .= 1.5e-6 / compartment;
+S3 @Species 'S3' { units: substance/volume, boundary: false, compartment: compartment, isAmount: false, } .= 2e-6 / compartment;
+S4 @Species 'S4' { units: substance/volume, boundary: false, compartment: compartment, isAmount: false, } .= 5e-7 / compartment;
+S5 @Species 'S5' { units: substance/volume, boundary: true, compartment: compartment, isAmount: false, } .= 1e-6 / compartment;
 
-  reaction1 @Reaction 'reaction1' { actors: S1 + S2 = S3 + S4, reversible: false, };
-  reaction1 := compartment * k1 * S1 * S2;
-  reaction2 @Reaction 'reaction2' { actors: S3 + S4 = S1 + S2, modifiers: [S5], reversible: false, };
-  reaction2 := compartment * k2 * S3 * S4 * pow(S5, (-1));
+reaction1 @Reaction 'reaction1' { actors: S1 + S2 = S3 + S4, reversible: false, };
+reaction1 := compartment * k1 * S1 * S2;
+reaction2 @Reaction 'reaction2' { actors: S3 + S4 = S1 + S2, modifiers: [S5], reversible: false, };
+reaction2 := compartment * k2 * S3 * S4 * pow(S5, (-1));
 
-  k1 @Record 'k1' { } .= 1300;
-  k2 @Record 'k2' { } .= 0.3;
-end
+k1 @Record 'k1' { } .= 1300;
+k2 @Record 'k2' { } .= 0.3;
+

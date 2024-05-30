@@ -7,8 +7,7 @@ three #defineFunction { arguments: [], math: 3, };
 getthree #defineFunction { arguments: [], math: three(), };
 getgetthree #defineFunction { arguments: [], math: getthree(), };
 
-namespace nameless begin
-  t @TimeScale { };
+t @TimeScale { };
 
-  p1 @Record { } .= getgetthree();
-end
+p1 @Record { } .= getgetthree();
+

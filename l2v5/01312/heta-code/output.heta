@@ -7,8 +7,7 @@ this #defineFunction { arguments: [x], math: x, };
 getthis #defineFunction { arguments: [x], math: this(x), };
 getgetthis #defineFunction { arguments: [x], math: getthis(x), };
 
-namespace nameless begin
-  t @TimeScale { };
+t @TimeScale { };
 
-  p1 @Record { } .= getgetthis(3);
-end
+p1 @Record { } .= getgetthis(3);
+

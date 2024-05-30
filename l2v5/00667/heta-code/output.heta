@@ -5,19 +5,18 @@ length #defineUnit { units: metre, };
 substance #defineUnit { units: (1e-6 mole), };
 multiply #defineFunction { arguments: [x, y], math: x * y, };
 
-namespace nameless begin
-  t @TimeScale { };
+t @TimeScale { };
 
-  C @Compartment 'C' { units: volume, boundary: true, } .= 2.5;
+C @Compartment 'C' { units: volume, boundary: true, } .= 2.5;
 
-  S1 @Species 'S1' { units: substance/volume, boundary: false, compartment: C, isAmount: false, } .= 1 / C;
-  S2 @Species 'S2' { units: substance/volume, boundary: false, compartment: C, isAmount: false, } .= 0.5 / C;
-  S3 @Species 'S3' { units: substance/volume, boundary: false, compartment: C, isAmount: false, };
-  S3 := multiply(k1, S2);
+S1 @Species 'S1' { units: substance/volume, boundary: false, compartment: C, isAmount: false, } .= 1 / C;
+S2 @Species 'S2' { units: substance/volume, boundary: false, compartment: C, isAmount: false, } .= 0.5 / C;
+S3 @Species 'S3' { units: substance/volume, boundary: false, compartment: C, isAmount: false, };
+S3 := multiply(k1, S2);
 
-  reaction1 @Reaction 'reaction1' { actors: S1 = S2, reversible: false, };
-  reaction1 := C * k2 * S1;
+reaction1 @Reaction 'reaction1' { actors: S1 = S2, reversible: false, };
+reaction1 := C * k2 * S1;
 
-  k1 @Record 'k1' { } .= 1.5;
-  k2 @Record 'k2' { } .= 5;
-end
+k1 @Record 'k1' { } .= 1.5;
+k2 @Record 'k2' { } .= 5;
+

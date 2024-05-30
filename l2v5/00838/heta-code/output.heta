@@ -4,19 +4,18 @@ area #defineUnit { units: metre^2, };
 length #defineUnit { units: metre, };
 substance #defineUnit { units: (1e-6 mole), };
 
-namespace nameless begin
-  t @TimeScale { };
+t @TimeScale { };
 
-  C @Compartment 'C' { units: volume, boundary: true, } .= 1;
+C @Compartment 'C' { units: volume, boundary: true, } .= 1;
 
-  S1 @Species 'S1' { units: substance/volume, boundary: false, compartment: C, isAmount: false, } .= 1 / C;
-  S2 @Species 'S2' { units: substance/volume, boundary: false, compartment: C, isAmount: false, } .= 0.5 / C;
-  S3 @Species 'S3' { units: substance/volume, boundary: false, compartment: C, isAmount: false, } .= 0 / C;
+S1 @Species 'S1' { units: substance/volume, boundary: false, compartment: C, isAmount: false, } .= 1 / C;
+S2 @Species 'S2' { units: substance/volume, boundary: false, compartment: C, isAmount: false, } .= 0.5 / C;
+S3 @Species 'S3' { units: substance/volume, boundary: false, compartment: C, isAmount: false, } .= 0 / C;
 
-  reaction1 @Reaction 'reaction1' { actors: S1 = S2 + S3, };
-  reaction1 := C * (kf * S1 + (-1) * kr * S2 * S3);
+reaction1 @Reaction 'reaction1' { actors: S1 = S2 + S3, };
+reaction1 := C * (kf * S1 + (-1) * kr * S2 * S3);
 
-  kf @Record 'kf' { };
-  kf := 2.5;
-  kr @Record 'kr' { } .= 0.2;
-end
+kf @Record 'kf' { };
+kf := 2.5;
+kr @Record 'kr' { } .= 0.2;
+

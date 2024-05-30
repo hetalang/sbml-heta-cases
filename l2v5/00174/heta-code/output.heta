@@ -4,9 +4,8 @@ area #defineUnit { units: metre^2, };
 length #defineUnit { units: metre, };
 substance #defineUnit { units: (1e-6 mole), };
 
-namespace nameless begin
-  t @TimeScale { };
+t @TimeScale { };
 
-  S1 @Record 'S1' { } .= 0;
-  S1 := 7;
-end
+S1 @Record 'S1' { } .= 0;
+S1 := 7;
+

@@ -4,22 +4,21 @@ area #defineUnit { units: metre^2, };
 length #defineUnit { units: metre, };
 substance #defineUnit { units: (1e-6 mole), };
 
-namespace nameless begin
-  t @TimeScale { };
+t @TimeScale { };
 
-  C @Compartment 'C' { units: volume, boundary: true, } .= 1;
+C @Compartment 'C' { units: volume, boundary: true, } .= 1;
 
-  S1 @Species 'S1' { units: substance/volume, boundary: false, compartment: C, isAmount: false, } .= 2 * p1;
-  S2 @Species 'S2' { units: substance/volume, boundary: false, compartment: C, isAmount: false, } .= 0.02 / C;
-  S3 @Species 'S3' { units: substance/volume, boundary: false, compartment: C, isAmount: false, } .= 0.01 / C;
+S1 @Species 'S1' { units: substance/volume, boundary: false, compartment: C, isAmount: false, } .= 2 * p1;
+S2 @Species 'S2' { units: substance/volume, boundary: false, compartment: C, isAmount: false, } .= 0.02 / C;
+S3 @Species 'S3' { units: substance/volume, boundary: false, compartment: C, isAmount: false, } .= 0.01 / C;
 
-  reaction1 @Reaction 'reaction1' { actors: S1 + S2 = S3, reversible: false, };
-  reaction1 := C * k__reaction1_local * S1 * S2;
-  reaction2 @Reaction 'reaction2' { actors: S3 = S1 + S2, reversible: false, };
-  reaction2 := C * k__reaction2_local * S3;
+reaction1 @Reaction 'reaction1' { actors: S1 + S2 = S3, reversible: false, };
+reaction1 := C * k__reaction1_local * S1 * S2;
+reaction2 @Reaction 'reaction2' { actors: S3 = S1 + S2, reversible: false, };
+reaction2 := C * k__reaction2_local * S3;
 
-  p1 @Record 'p1' { } .= 0.00125;
+p1 @Record 'p1' { } .= 0.00125;
 
-  k__reaction1_local @Const { } = 0.75;
-  k__reaction2_local @Const { } = 0.25;
-end
+k__reaction1_local @Const { } = 0.75;
+k__reaction2_local @Const { } = 0.25;
+

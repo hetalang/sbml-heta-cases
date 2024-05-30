@@ -5,20 +5,19 @@ length #defineUnit { units: metre, };
 substance #defineUnit { units: (1e-6 mole), };
 add #defineFunction { arguments: [x, y], math: x + y, };
 
-namespace nameless begin
-  t @TimeScale { };
+t @TimeScale { };
 
-  compartment @Compartment 'compartment' { units: volume, boundary: true, } .= 1;
+compartment @Compartment 'compartment' { units: volume, boundary: true, } .= 1;
 
-  S1 @Species 'S1' { units: substance/volume, boundary: false, compartment: compartment, isAmount: false, } .= 0.0015 / compartment;
-  S2 @Species 'S2' { units: substance/volume, boundary: false, compartment: compartment, isAmount: false, } .= 0 / compartment;
+S1 @Species 'S1' { units: substance/volume, boundary: false, compartment: compartment, isAmount: false, } .= 0.0015 / compartment;
+S2 @Species 'S2' { units: substance/volume, boundary: false, compartment: compartment, isAmount: false, } .= 0 / compartment;
 
-  reaction1 @Reaction 'reaction1' { actors: S1 = S2, reversible: false, };
-  reaction1 := compartment * k1 * S1;
-  k1_proc @Process { actors:  = k1, aux: {{"metaid":"rule1"}}, };
-  k1_proc := add(k2, k3);
+reaction1 @Reaction 'reaction1' { actors: S1 = S2, reversible: false, };
+reaction1 := compartment * k1 * S1;
+k1_proc @Process { actors:  = k1, aux: {{"metaid":"rule1"}}, };
+k1_proc := add(k2, k3);
 
-  k1 @Record 'k1' { boundary: false, } .= 1;
-  k2 @Record 'k2' { } .= 0.2;
-  k3 @Record 'k3' { } .= 0.3;
-end
+k1 @Record 'k1' { boundary: false, } .= 1;
+k2 @Record 'k2' { } .= 0.2;
+k3 @Record 'k3' { } .= 0.3;
+

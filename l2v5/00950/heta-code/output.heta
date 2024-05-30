@@ -4,10 +4,9 @@ area #defineUnit { units: metre^2, };
 length #defineUnit { units: metre, };
 substance #defineUnit { units: (1e-6 mole), };
 
-namespace nameless begin
-  t @TimeScale { };
+t @TimeScale { };
 
-  P @Record { } .= Infinity;
-  Q @Record { } .= (-Infinity);
-  R @Record { } .= NaN;
-end
+P @Record { } .= Infinity;
+Q @Record { } .= (-Infinity);
+R @Record { } .= NaN;
+

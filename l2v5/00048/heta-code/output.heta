@@ -4,16 +4,15 @@ area #defineUnit { units: metre^2, };
 length #defineUnit { units: metre, };
 substance #defineUnit { units: (1e-6 mole), };
 
-namespace nameless begin
-  t @TimeScale { };
+t @TimeScale { };
 
-  compartment @Compartment 'compartment' { boundary: true, } .= 0;
+compartment @Compartment 'compartment' { boundary: true, } .= 0;
 
-  S1 @Species 'S1' { units: substance, boundary: false, compartment: compartment, isAmount: true, } .= 0.015;
-  S2 @Species 'S2' { units: substance, boundary: false, compartment: compartment, isAmount: true, } .= 0;
+S1 @Species 'S1' { units: substance, boundary: false, compartment: compartment, isAmount: true, } .= 0.015;
+S2 @Species 'S2' { units: substance, boundary: false, compartment: compartment, isAmount: true, } .= 0;
 
-  reaction1 @Reaction 'reaction1' { actors: S1 = S2, reversible: false, };
-  reaction1 := k1 * S1;
+reaction1 @Reaction 'reaction1' { actors: S1 = S2, reversible: false, };
+reaction1 := k1 * S1;
 
-  k1 @Record 'k1' { } .= 1;
-end
+k1 @Record 'k1' { } .= 1;
+
