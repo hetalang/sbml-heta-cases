@@ -9,6 +9,17 @@ $(window).ready(() => {
         $('#finished').html(data.finished);
         $('#totalCasesCount').html(data.totalCasesCount);
 
+        // display statistics
+        let code_0_stat = data.cases.filter((x) => x.retCode == 0).length;
+        let code_1_stat = data.cases.filter((x) => x.retCode == 1).length;
+        let code_2_stat = data.cases.filter((x) => x.retCode == 2).length;
+        let code_9_stat = data.cases.filter((x) => x.retCode == 9).length;
+
+        $('code_0_stat').html(code_0_stat);
+        $('code_1_stat').html(code_1_stat);
+        $('code_2_stat').html(code_2_stat);
+        $('code_9_stat').html(code_9_stat);
+
         data.cases.forEach((x) => {
             let item =$(`<div class="item retCode_${x.retCode}">${x.id}</div>`)
                 .appendTo('#summary');
@@ -25,7 +36,8 @@ $(window).ready(() => {
                     $('#modal #heta-code pre code').html('No heta-code/output.heta file found');
                 });
                 $.get(`${config.path}/${x.id}/synopsis.txt`, (data) => {
-                    $('#modal #synopsis pre code').html(data);
+                    let shorted = splitLines(data);
+                    $('#modal #synopsis pre code').html(shorted);
                 }).fail(() => {
                     $('#modal #synopsis pre code').html('No synopsis.txt file found');
                 });
@@ -112,3 +124,20 @@ $(window).ready(() => {
     });
     */
 });
+
+function splitLines(s) {
+    let newS = [];
+    str.split('\n').forEach((line) => {
+        if (line.length <= 100) {
+            newS.push(line);
+        } else {
+            let i = 0;
+            while (i < line.length) {
+                newS.push(line.slice(i, i + 100));
+                i += 100;
+            }
+        }
+    });
+
+    return newS.join('\n');
+}
