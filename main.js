@@ -15,10 +15,10 @@ $(window).ready(() => {
         let code_2_stat = data.cases.filter((x) => x.retCode == 2).length;
         let code_9_stat = data.cases.filter((x) => x.retCode == 9).length;
 
-        $('code_0_stat').html(code_0_stat);
-        $('code_1_stat').html(code_1_stat);
-        $('code_2_stat').html(code_2_stat);
-        $('code_9_stat').html(code_9_stat);
+        $('#code_0_stat').html(code_0_stat);
+        $('#code_1_stat').html(code_1_stat);
+        $('#code_2_stat').html(code_2_stat);
+        $('#code_9_stat').html(code_9_stat);
 
         data.cases.forEach((x) => {
             let item =$(`<div class="item retCode_${x.retCode}">${x.id}</div>`)
