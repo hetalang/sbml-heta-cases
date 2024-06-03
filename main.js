@@ -34,9 +34,9 @@ $(window).ready(() => {
         data.cases.forEach((x) => {
             let item =$(`<div class="item"></div>`)
                 .appendTo('#summary');
+            item.append(`<div class="part3">${x.id}</div>`);
             item.append(`<div class="part1 retCode_${x.l2v5RetCode}"></div>`);
             item.append(`<div class="part2 retCode_${x.l3v2RetCode}"></div>`);
-            item.append(`<div class="part3">${x.id}</div>`);
 
             item.on('click', () => {
                 $('#caseId').html(x.id);
