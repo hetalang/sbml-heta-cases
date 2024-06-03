@@ -32,8 +32,10 @@ $(window).ready(() => {
         $('#l3v2_code_9_stat').html(l3v2_code_9_stat);
 
         data.cases.forEach((x) => {
-            let item =$(`<div class="item retCode_${x.l2v5RetCode}">${x.id}</div>`)
+            let item =$(`<div class="item">${x.id}</div>`)
                 .appendTo('#summary');
+            item.append(`<div class="part retCode_${x.l2v5RetCode}"></div>`);
+            item.append(`<div class="part retCode_${x.l3v2RetCode}"></div>`);
             item.on('click', () => {
                 $('#caseId').html(x.id);
                 $('#caseId').removeClass().addClass('retCode_' + x.l2v5RetCode);

@@ -110,6 +110,11 @@ pre {
     margin: 2px;
 }
 
+.part {
+    height: 50%;
+    width: 100%;
+}
+
 .retCode_0 {
     background-color: lightgreen;
 }
