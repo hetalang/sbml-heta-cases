@@ -9,25 +9,36 @@ $(window).ready(() => {
         $('#finished').html(data.finished);
         $('#totalCasesCount').html(data.totalCasesCount);
 
-        // display statistics
-        let code_0_stat = data.cases.filter((x) => x.retCode == 0).length;
-        let code_1_stat = data.cases.filter((x) => x.retCode == 1).length;
-        let code_2_stat = data.cases.filter((x) => x.retCode == 2).length;
-        let code_9_stat = data.cases.filter((x) => x.retCode == 9).length;
+        // display statistics L2V5
+        let l2v5_code_0_stat = data.cases.filter((x) => x.l2v5RetCode == 0).length;
+        let l2v5_code_1_stat = data.cases.filter((x) => x.l2v5RetCode == 1).length;
+        let l2v5_code_2_stat = data.cases.filter((x) => x.l2v5RetCode == 2).length;
+        let l2v5_code_9_stat = data.cases.filter((x) => x.l2v5RetCode == 9).length;
 
-        $('#code_0_stat').html(code_0_stat);
-        $('#code_1_stat').html(code_1_stat);
-        $('#code_2_stat').html(code_2_stat);
-        $('#code_9_stat').html(code_9_stat);
+        $('#l2v5_code_0_stat').html(l2v5_code_0_stat);
+        $('#l2v5_code_1_stat').html(l2v5_code_1_stat);
+        $('#l2v5_code_2_stat').html(l2v5_code_2_stat);
+        $('#l2v5_code_9_stat').html(l2v5_code_9_stat);
+
+        // display statistics L3V2
+        let l3v2_code_0_stat = data.cases.filter((x) => x.l3v2RetCode == 0).length;
+        let l3v2_code_1_stat = data.cases.filter((x) => x.l3v2RetCode == 1).length;
+        let l3v2_code_2_stat = data.cases.filter((x) => x.l3v2RetCode == 2).length;
+        let l3v2_code_9_stat = data.cases.filter((x) => x.l3v2RetCode == 9).length;
+
+        $('#l3v2_code_0_stat').html(l3v2_code_0_stat);
+        $('#l3v2_code_1_stat').html(l3v2_code_1_stat);
+        $('#l3v2_code_2_stat').html(l3v2_code_2_stat);
+        $('#l3v2_code_9_stat').html(l3v2_code_9_stat);
 
         data.cases.forEach((x) => {
-            let item =$(`<div class="item retCode_${x.retCode}">${x.id}</div>`)
+            let item =$(`<div class="item retCode_${x.l2v5RetCode}">${x.id}</div>`)
                 .appendTo('#summary');
             item.on('click', () => {
                 $('#caseId').html(x.id);
-                $('#caseId').removeClass().addClass('retCode_' + x.retCode);
+                $('#caseId').removeClass().addClass('retCode_' + x.l2v5RetCode);
                 $('#casePath').html(`${config.path}/${x.id}/`);
-                $('#retCode').html(x.retCode);
+                $('#retCode').html(x.l2v5RetCode);
                 $('#modal').show();
 
                 $.get(`${config.path}/${x.id}/synopsis.txt`, (data) => {
