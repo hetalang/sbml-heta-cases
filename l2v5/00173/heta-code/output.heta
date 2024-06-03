@@ -11,8 +11,8 @@ S1_proc := (-1) * factorial(ceil(p1 * S1)) * pow(p2, (-1));
 S2_proc @Process { actors:  = S2, aux: {{"metaid":"rule2"}}, };
 S2_proc := factorial(ceil(p1 * S1)) * pow(p2, (-1));
 
-S1 @Record 'S1' { boundary: false, } .= 1;
-S2 @Record 'S2' { boundary: false, } .= 0;
+S1 @Record 'S1' { } .= 1;
+S2 @Record 'S2' { } .= 0;
 p1 @Record 'p1' { } .= 4;
 p2 @Record 'p2' { } .= 25;
 

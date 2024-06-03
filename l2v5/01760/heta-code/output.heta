@@ -8,7 +8,7 @@ t @TimeScale { };
 
 C @Compartment { boundary: true, } .= 1;
 
-S1 @Species { boundary: false, compartment: C, isAmount: false, } .= 1;
+S1 @Species { compartment: C, } .= 1;
 
 J0 @Reaction { actors:  = S1, };
 J0 := avogadro__J0_local;

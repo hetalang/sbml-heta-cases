@@ -15,10 +15,10 @@ S3_proc := k1 * S1 * S2 + (-1) * k2 * S3 * S4;
 S4_proc @Process { actors:  = S4, aux: {{"metaid":"rule4"}}, };
 S4_proc := k1 * S1 * S2 + (-1) * k2 * S3 * S4;
 
-S1 @Record 'S1' { boundary: false, } .= 0.01;
-S2 @Record 'S2' { boundary: false, } .= 0.01;
-S3 @Record 'S3' { boundary: false, } .= 0.02;
-S4 @Record 'S4' { boundary: false, } .= 0.01;
+S1 @Record 'S1' { } .= 0.01;
+S2 @Record 'S2' { } .= 0.01;
+S3 @Record 'S3' { } .= 0.02;
+S4 @Record 'S4' { } .= 0.01;
 k1 @Record 'k1' { } .= 75;
 k2 @Record 'k2' { } .= 25;
 

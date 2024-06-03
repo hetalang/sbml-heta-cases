@@ -6,11 +6,11 @@ substance #defineUnit { units: (1e-6 mole), };
 
 t @TimeScale { };
 
-compartment @Compartment 'compartment' { units: volume, boundary: false, } .= 1;
+compartment @Compartment 'compartment' { units: volume, } .= 1;
 compartment := p1 * p2;
 
-S1 @Species 'S1' { units: substance/volume, boundary: false, compartment: compartment, isAmount: false, } .= 1.5 / compartment;
-S2 @Species 'S2' { units: substance/volume, boundary: false, compartment: compartment, isAmount: false, } .= 0 / compartment;
+S1 @Species 'S1' { units: substance/volume, compartment: compartment, } .= 1.5 / compartment;
+S2 @Species 'S2' { units: substance/volume, compartment: compartment, } .= 0 / compartment;
 
 reaction1 @Reaction 'reaction1' { actors: S1 = S2, reversible: false, };
 reaction1 := compartment * k1 * S1;
@@ -19,5 +19,5 @@ p2_proc := 0.1;
 
 k1 @Record 'k1' { } .= 0.9;
 p1 @Record 'p1' { } .= 0.1;
-p2 @Record 'p2' { boundary: false, } .= 1.5;
+p2 @Record 'p2' { } .= 1.5;
 

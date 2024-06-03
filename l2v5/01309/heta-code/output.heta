@@ -6,7 +6,7 @@ substance #defineUnit { units: (1e-6 mole), };
 
 t @TimeScale { };
 
-C @Compartment { boundary: false, } .= 3;
+C @Compartment { } .= 3;
 
 S1 @Species { boundary: true, compartment: C, isAmount: true, } .= 2;
 

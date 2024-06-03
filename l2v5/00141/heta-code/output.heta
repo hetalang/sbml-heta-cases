@@ -6,12 +6,12 @@ substance #defineUnit { units: (1e-6 mole), };
 
 t @TimeScale { };
 
-compartment @Compartment 'compartment' { units: volume, boundary: false, };
+compartment @Compartment 'compartment' { units: volume, };
 compartment := 1;
 
-S1 @Species 'S1' { units: substance/volume, boundary: false, compartment: compartment, isAmount: false, } .= 1 / compartment;
-S2 @Species 'S2' { units: substance/volume, boundary: false, compartment: compartment, isAmount: false, } .= 1.5 / compartment;
-S3 @Species 'S3' { units: substance/volume, boundary: false, compartment: compartment, isAmount: false, } .= 1.125 / compartment;
+S1 @Species 'S1' { units: substance/volume, compartment: compartment, } .= 1 / compartment;
+S2 @Species 'S2' { units: substance/volume, compartment: compartment, } .= 1.5 / compartment;
+S3 @Species 'S3' { units: substance/volume, compartment: compartment, } .= 1.125 / compartment;
 
 reaction1 @Reaction 'reaction1' { actors: S1 = S2, reversible: false, };
 reaction1 := compartment * k2 * S1;

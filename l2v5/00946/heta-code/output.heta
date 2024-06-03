@@ -6,16 +6,16 @@ substance #defineUnit { units: (1e-6 mole), };
 
 t @TimeScale { };
 
-C @Compartment { boundary: false, };
+C @Compartment { };
 C := fakeC;
 
-S1 @Species { boundary: false, compartment: C, isAmount: false, } .= 1 / C;
+S1 @Species { compartment: C, } .= 1 / C;
 
 reaction1 @Reaction { actors:  = S1, reversible: false, };
 reaction1 := (C * k1) / S1;
 
 fakeC @Record { } .= 1;
-  fakeC [event1]= 10;
+fakeC [event1]= 10;
 k1 @Record { } .= 1;
 
 event1 @DSwitcher { trigger: S1 > 2.1, };

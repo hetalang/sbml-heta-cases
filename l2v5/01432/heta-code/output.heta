@@ -8,8 +8,8 @@ t @TimeScale { };
 
 C @Compartment { boundary: true, } .= 1;
 
-A @Species { boundary: false, compartment: C, isAmount: false, } .= 30;
-B @Species { boundary: false, compartment: C, isAmount: false, } .= 1;
+A @Species { compartment: C, } .= 30;
+B @Species { compartment: C, } .= 1;
 
 J0 @Reaction { actors: A + 2*A = 2*B + B, };
 J0 := 1;

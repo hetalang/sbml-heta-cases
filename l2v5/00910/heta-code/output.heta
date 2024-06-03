@@ -6,8 +6,8 @@ substance #defineUnit { units: (1e-6 mole), };
 
 t @TimeScale { };
 
-C1 @Compartment 'C1' { units: length, boundary: false, } .= 0.015;
-C2 @Compartment 'C2' { units: area, boundary: false, } .= 0.01;
+C1 @Compartment 'C1' { units: length, } .= 0.015;
+C2 @Compartment 'C2' { units: area, } .= 0.01;
 
 C1_proc @Process { actors:  = C1, aux: {{"metaid":"rule1"}}, };
 C1_proc := 0.3 * C1 + 0.5 * C2;

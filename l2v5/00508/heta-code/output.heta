@@ -8,9 +8,9 @@ t @TimeScale { };
 
 C @Compartment 'C' { units: volume, boundary: true, } .= 1;
 
-S1 @Species 'S1' { units: substance/volume, boundary: false, compartment: C, isAmount: false, } .= 1 / C;
-S2 @Species 'S2' { units: substance/volume, boundary: false, compartment: C, isAmount: false, } .= 1.5 / C;
-S3 @Species 'S3' { units: substance/volume, boundary: true, compartment: C, isAmount: false, } .= k1 * S2;
+S1 @Species 'S1' { units: substance/volume, compartment: C, } .= 1 / C;
+S2 @Species 'S2' { units: substance/volume, compartment: C, } .= 1.5 / C;
+S3 @Species 'S3' { units: substance/volume, boundary: true, compartment: C, } .= k1 * S2;
 
 reaction1 @Reaction 'reaction1' { actors: S1 = S2, modifiers: [S3], reversible: false, };
 reaction1 := C * k2 * S1 * S3;

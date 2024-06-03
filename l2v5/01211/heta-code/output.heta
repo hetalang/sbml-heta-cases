@@ -7,7 +7,7 @@ substance #defineUnit { units: (1e-6 mole), };
 t @TimeScale { };
 
 x @Record { } .= 3;
-  x [_E0]= 5;
+x [_E0]= 5;
 
 _E0 @DSwitcher { trigger: t > 0.21 and 5 <= 5, };
 

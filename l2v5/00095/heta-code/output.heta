@@ -9,8 +9,8 @@ t @TimeScale { };
 
 compartment @Compartment 'compartment' { units: area, boundary: true, } .= 1;
 
-S1 @Species 'S1' { units: substance/area, boundary: false, compartment: compartment, isAmount: false, } .= 1.5e-4 / compartment;
-S2 @Species 'S2' { units: substance/area, boundary: false, compartment: compartment, isAmount: false, } .= 1.5e-4 / compartment;
+S1 @Species 'S1' { units: substance/area, compartment: compartment, } .= 1.5e-4 / compartment;
+S2 @Species 'S2' { units: substance/area, compartment: compartment, } .= 1.5e-4 / compartment;
 
 reaction1 @Reaction 'reaction1' { actors: S1 = S2, reversible: false, };
 reaction1 := compartment * multiply(k1, S1);

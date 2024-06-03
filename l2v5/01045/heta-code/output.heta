@@ -8,9 +8,9 @@ t @TimeScale { };
 
 C @Compartment 'C' { units: litre, boundary: true, } .= 1;
 
-S1 @Species 'S1' { units: mole/litre, boundary: false, compartment: C, isAmount: false, } .= 1 / C;
-S2 @Species 'S2' { units: mole/litre, boundary: false, compartment: C, isAmount: false, } .= 2 / C;
-  S2 [event1]= 1.5;
+S1 @Species 'S1' { units: mole/litre, compartment: C, } .= 1 / C;
+S2 @Species 'S2' { units: mole/litre, compartment: C, } .= 2 / C;
+S2 [event1]= 1.5;
 
 reaction1 @Reaction 'reaction1' { actors: S2 = S1, };
 reaction1 := (-(C * (kf * S1 + (-1) * kr * S2)));

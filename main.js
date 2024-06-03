@@ -2,12 +2,12 @@ $(window).ready(() => {
     $('#modal .close').click(() => {
         $('#modal').hide();
     });
-    $.get(`${config.path}/summary.json`, (data) => {
+    $.get(`${config.l2v5Path}/summary.json`, (data) => {
         // general statistics
-        $('#heta_version').html(data.hetaCompilerVersion);
-        $('#started').html(data.started);
-        $('#finished').html(data.finished);
-        $('#totalCasesCount').html(data.totalCasesCount);
+        $('#l2v5-heta_version').html(data.hetaCompilerVersion);
+        $('#l2v5-started').html(data.started);
+        $('#l2v5-finished').html(data.finished);
+        $('#l2v5-totalCasesCount').html(data.totalCasesCount);
 
         // display statistics
         let code_0_stat = data.cases.filter((x) => x.retCode == 0).length;
@@ -22,26 +22,26 @@ $(window).ready(() => {
 
         data.cases.forEach((x) => {
             let item =$(`<div class="item retCode_${x.retCode}">${x.id}</div>`)
-                .appendTo('#summary');
+                .appendTo('#l2v5-summary');
             item.on('click', () => {
                 $('#caseId').html(x.id);
                 $('#caseId').removeClass().addClass('retCode_' + x.retCode);
-                $('#casePath').html(`${config.path}/${x.id}/`);
+                $('#casePath').html(`${config.l2v5Path}/${x.id}/`);
                 $('#retCode').html(x.retCode);
                 $('#modal').show();
 
-                $.get(`${config.path}/${x.id}/heta-code/output.heta`, (data) => {
+                $.get(`${config.l2v5Path}/${x.id}/heta-code/output.heta`, (data) => {
                     $('#modal #heta-code pre code').html(data);
                 }).fail(() => {
                     $('#modal #heta-code pre code').html('No heta-code/output.heta file found');
                 });
-                $.get(`${config.path}/${x.id}/synopsis.txt`, (data) => {
+                $.get(`${config.l2v5Path}/${x.id}/synopsis.txt`, (data) => {
                     let shorted = splitLines(data);
                     $('#modal #synopsis pre code').html(shorted);
                 }).fail(() => {
                     $('#modal #synopsis pre code').html('No synopsis.txt file found');
                 });
-                $.get(`${config.path}/${x.id}/build.log`, (data) => {
+                $.get(`${config.l2v5Path}/${x.id}/build.log`, (data) => {
                     $('#modal #logs pre code').html(data);
                 }).fail(() => {
                     $('#modal #logs pre code').html('No build.log file found');
@@ -128,7 +128,7 @@ $(window).ready(() => {
 function splitLines(s) {
     let newS = [];
     s.split('\n').forEach((line) => {
-        if (line.length <= 100) {
+        if (line.length <= 180) {
             newS.push(line);
         } else {
             let i = 0;

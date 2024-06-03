@@ -7,16 +7,16 @@ substance #defineUnit { units: (1e-6 mole), };
 t @TimeScale { };
 
 comp1 @Compartment { boundary: true, } .= 10;
-comp2 @Compartment { boundary: false, } .= 10;
+comp2 @Compartment { } .= 10;
 
-S1 @Species { boundary: false, compartment: comp1, isAmount: false, } .= 1;
-S2 @Species { boundary: false, compartment: comp1, isAmount: true, } .= 2 * comp1;
-S3 @Species { boundary: false, compartment: comp1, isAmount: false, } .= 3 / comp1;
-S4 @Species { boundary: false, compartment: comp1, isAmount: true, } .= 4;
-S5 @Species { boundary: false, compartment: comp2, isAmount: false, } .= 5;
-S6 @Species { boundary: false, compartment: comp2, isAmount: true, } .= 6 * comp2;
-S7 @Species { boundary: false, compartment: comp2, isAmount: false, } .= 7 / comp2;
-S8 @Species { boundary: false, compartment: comp2, isAmount: true, } .= 8;
+S1 @Species { compartment: comp1, } .= 1;
+S2 @Species { compartment: comp1, isAmount: true, } .= 2 * comp1;
+S3 @Species { compartment: comp1, } .= 3 / comp1;
+S4 @Species { compartment: comp1, isAmount: true, } .= 4;
+S5 @Species { compartment: comp2, } .= 5;
+S6 @Species { compartment: comp2, isAmount: true, } .= 6 * comp2;
+S7 @Species { compartment: comp2, } .= 7 / comp2;
+S8 @Species { compartment: comp2, isAmount: true, } .= 8;
 
 comp2_proc @Process { actors:  = comp2, };
 comp2_proc := 1;

@@ -6,9 +6,9 @@ substance #defineUnit { units: (1e-6 mole), };
 
 t @TimeScale { };
 
-c @Compartment { boundary: false, } .= 2;
+c @Compartment { } .= 2;
 
-S1 @Species { boundary: false, compartment: c, isAmount: true, } .= 1.2;
+S1 @Species { compartment: c, isAmount: true, } .= 1.2;
 
 S1_proc @Process { actors:  = S1, };
 S1_proc := 1;

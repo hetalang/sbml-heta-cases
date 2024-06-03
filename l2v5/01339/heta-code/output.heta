@@ -8,12 +8,12 @@ t @TimeScale { };
 
 C @Compartment { boundary: true, } .= 1;
 
-S1 @Species { boundary: false, compartment: C, isAmount: false, } .= 0;
+S1 @Species { compartment: C, } .= 0;
 
 J0 @Reaction { actors:  = S1, };
 J0 := k1;
 k1_proc @Process { actors:  = k1, };
 k1_proc := 1;
 
-k1 @Record { boundary: false, } .= -5;
+k1 @Record { } .= -5;
 

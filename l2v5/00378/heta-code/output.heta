@@ -8,11 +8,11 @@ t @TimeScale { };
 
 C @Compartment 'C' { units: volume, boundary: true, } .= 1;
 
-S1 @Species 'S1' { units: substance/volume, boundary: false, compartment: C, isAmount: false, } .= 1 / C;
-  S1 [event2]= 1;
-S2 @Species 'S2' { units: substance/volume, boundary: true, compartment: C, isAmount: false, } .= 2 / C;
-  S2 [event1]= 1;
-S3 @Species 'S3' { units: substance/volume, boundary: false, compartment: C, isAmount: false, } .= 1 / C;
+S1 @Species 'S1' { units: substance/volume, compartment: C, } .= 1 / C;
+S1 [event2]= 1;
+S2 @Species 'S2' { units: substance/volume, boundary: true, compartment: C, } .= 2 / C;
+S2 [event1]= 1;
+S3 @Species 'S3' { units: substance/volume, compartment: C, } .= 1 / C;
 
 reaction1 @Reaction 'reaction1' { actors: S1 + S2 = S3, reversible: false, };
 reaction1 := C * k1 * S1 * S2;

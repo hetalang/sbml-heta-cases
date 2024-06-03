@@ -8,6 +8,6 @@ t @TimeScale { };
 
 compartment @Compartment 'compartment' { units: volume, boundary: true, } .= 1;
 
-S1 @Species 'S1' { units: substance/volume, boundary: false, compartment: compartment, isAmount: false, };
+S1 @Species 'S1' { units: substance/volume, compartment: compartment, };
 S1 := 7;
 

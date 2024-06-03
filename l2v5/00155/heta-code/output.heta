@@ -8,10 +8,10 @@ t @TimeScale { };
 
 compartment @Compartment 'compartment' { boundary: true, } .= 0;
 
-S1 @Species 'S1' { units: substance, boundary: false, compartment: compartment, isAmount: true, } .= 0.001;
-S2 @Species 'S2' { units: substance, boundary: false, compartment: compartment, isAmount: true, } .= 0.0015;
-S3 @Species 'S3' { units: substance, boundary: false, compartment: compartment, isAmount: true, } .= 0.001;
-S4 @Species 'S4' { units: substance, boundary: false, compartment: compartment, isAmount: true, };
+S1 @Species 'S1' { units: substance, compartment: compartment, isAmount: true, } .= 0.001;
+S2 @Species 'S2' { units: substance, compartment: compartment, isAmount: true, } .= 0.0015;
+S3 @Species 'S3' { units: substance, compartment: compartment, isAmount: true, } .= 0.001;
+S4 @Species 'S4' { units: substance, compartment: compartment, isAmount: true, };
 S4 := k3 * S2;
 
 reaction1 @Reaction 'reaction1' { actors: S1 + S2 = S3, reversible: false, };

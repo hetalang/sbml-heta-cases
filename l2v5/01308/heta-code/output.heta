@@ -8,7 +8,7 @@ t @TimeScale { };
 
 C @Compartment { boundary: true, } .= 3;
 
-S1 @Species { boundary: false, compartment: C, isAmount: true, } .= 2;
+S1 @Species { compartment: C, isAmount: true, } .= 2;
 
 S1_proc @Process { actors:  = S1, };
 S1_proc := 1;

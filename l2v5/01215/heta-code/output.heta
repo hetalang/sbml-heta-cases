@@ -9,5 +9,5 @@ t @TimeScale { };
 x_proc @Process { actors:  = x, };
 x_proc := ((2 > 1) ? 1 : 0);
 
-x @Record { boundary: false, } .= 3;
+x @Record { } .= 3;
 

@@ -8,8 +8,8 @@ t @TimeScale { };
 
 C @Compartment { boundary: true, } .= 1;
 
-k0 @Species { boundary: true, compartment: C, isAmount: false, } .= 2 / C;
-S2 @Species { boundary: false, compartment: C, isAmount: false, } .= 0 / C;
+k0 @Species { boundary: true, compartment: C, } .= 2 / C;
+S2 @Species { compartment: C, } .= 0 / C;
 
 J0 @Reaction { actors: k0 = S2, };
 J0 := 1 / k0__J0_local;

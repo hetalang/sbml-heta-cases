@@ -11,9 +11,9 @@ S1_proc := (-1) * k1 * S1;
 S2_proc @Process { actors:  = S2, aux: {{"metaid":"rule2"}}, };
 S2_proc := k1 * S1;
 
-S1 @Record 'S1' { boundary: false, } .= 1;
-  S1 [event1]= 1;
-S2 @Record 'S2' { boundary: false, } .= 0;
+S1 @Record 'S1' { } .= 1;
+S1 [event1]= 1;
+S2 @Record 'S2' { } .= 0;
 k1 @Record 'k1' { } .= 1;
 
 event1 @DSwitcher 'event1' { trigger: S1 < 0.1, };

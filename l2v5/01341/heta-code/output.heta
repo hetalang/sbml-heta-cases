@@ -8,5 +8,5 @@ t @TimeScale { };
 
 C @Compartment { boundary: true, } .= 1;
 
-S1 @Species { boundary: false, compartment: C, isAmount: false, } .= 2;
+S1 @Species { compartment: C, } .= 2;
 

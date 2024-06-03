@@ -8,8 +8,8 @@ t @TimeScale { };
 
 C @Compartment 'C' { units: area, boundary: true, } .= 1;
 
-S1 @Species 'S1' { units: substance/area, boundary: false, compartment: C, isAmount: false, } .= 0.015;
-S2 @Species 'S2' { units: substance/area, boundary: false, compartment: C, isAmount: false, } .= 0;
+S1 @Species 'S1' { units: substance/area, compartment: C, } .= 0.015;
+S2 @Species 'S2' { units: substance/area, compartment: C, } .= 0;
 
 reaction1 @Reaction 'reaction1' { actors: S1 = S2, reversible: false, };
 reaction1 := C * k1 * S1;

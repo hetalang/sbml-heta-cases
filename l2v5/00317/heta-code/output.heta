@@ -6,13 +6,13 @@ substance #defineUnit { units: (1e-6 mole), };
 
 t @TimeScale { };
 
-C @Compartment 'C' { units: volume, boundary: false, } .= 0.1;
+C @Compartment 'C' { units: volume, } .= 0.1;
 C := p1 * p2;
 
-S1 @Species 'S1' { units: substance/volume, boundary: false, compartment: C, isAmount: false, } .= 1 / C;
-S2 @Species 'S2' { units: substance/volume, boundary: false, compartment: C, isAmount: false, } .= 1.5 / C;
-S3 @Species 'S3' { units: substance/volume, boundary: false, compartment: C, isAmount: false, } .= 1.1 / C;
-S4 @Species 'S4' { units: substance/volume, boundary: false, compartment: C, isAmount: false, } .= 1 / C;
+S1 @Species 'S1' { units: substance/volume, compartment: C, } .= 1 / C;
+S2 @Species 'S2' { units: substance/volume, compartment: C, } .= 1.5 / C;
+S3 @Species 'S3' { units: substance/volume, compartment: C, } .= 1.1 / C;
+S4 @Species 'S4' { units: substance/volume, compartment: C, } .= 1 / C;
 
 reaction1 @Reaction 'reaction1' { actors: S1 + S2 = S3 + S4, reversible: false, };
 reaction1 := C * k1 * S1 * S2;
@@ -24,5 +24,5 @@ p2_proc := 0.1;
 k1 @Record 'k1' { } .= 0.0365;
 k2 @Record 'k2' { } .= 0.0025;
 p1 @Record 'p1' { } .= 0.1;
-p2 @Record 'p2' { boundary: false, } .= 1.5;
+p2 @Record 'p2' { } .= 1.5;
 

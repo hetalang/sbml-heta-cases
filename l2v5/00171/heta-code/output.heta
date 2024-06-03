@@ -12,7 +12,7 @@ S1_proc := (-1) * multiply(k1, S1);
 S2_proc @Process { actors:  = S2, aux: {{"metaid":"rule2"}}, };
 S2_proc := multiply(k1, S1);
 
-S1 @Record 'S1' { boundary: false, } .= 0.015;
-S2 @Record 'S2' { boundary: false, } .= 0.015;
+S1 @Record 'S1' { } .= 0.015;
+S2 @Record 'S2' { } .= 0.015;
 k1 @Record 'k1' { } .= 1;
 

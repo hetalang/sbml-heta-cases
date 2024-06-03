@@ -8,13 +8,13 @@ t @TimeScale { };
 
 C @Compartment { boundary: true, } .= 1;
 
-S1 @Species { boundary: false, compartment: C, isAmount: false, } .= 1 / C;
+S1 @Species { compartment: C, } .= 1 / C;
 
 reaction1 @Reaction { actors:  = S1, reversible: false, };
 reaction1 := (C * k1) / S1;
 
 k1 @Record { } .= 1;
-  k1 [event1]= 10;
+k1 [event1]= 10;
 
 event1 @DSwitcher { trigger: S1 > 2.1, };
 

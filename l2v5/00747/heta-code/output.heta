@@ -8,12 +8,12 @@ t @TimeScale { };
 
 C @Compartment 'C' { units: volume, boundary: true, } .= 0.1;
 
-S1 @Species 'S1' { units: substance/volume, boundary: false, compartment: C, isAmount: false, } .= 1e-4;
-  S1 [event1]= (1 / 5000);
-S2 @Species 'S2' { units: substance/volume, boundary: false, compartment: C, isAmount: false, } .= 1.2e-4;
-S3 @Species 'S3' { units: substance/volume, boundary: false, compartment: C, isAmount: false, } .= 2e-4;
-S4 @Species 'S4' { units: substance/volume, boundary: false, compartment: C, isAmount: false, } .= 1e-4;
-  S4 [event2]= (1 / 10000);
+S1 @Species 'S1' { units: substance/volume, compartment: C, } .= 1e-4;
+S1 [event1]= (1 / 5000);
+S2 @Species 'S2' { units: substance/volume, compartment: C, } .= 1.2e-4;
+S3 @Species 'S3' { units: substance/volume, compartment: C, } .= 2e-4;
+S4 @Species 'S4' { units: substance/volume, compartment: C, } .= 1e-4;
+S4 [event2]= (1 / 10000);
 
 reaction1 @Reaction 'reaction1' { actors: S1 + S2 = S3 + S4, reversible: false, };
 reaction1 := C * k1 * S1 * S2;

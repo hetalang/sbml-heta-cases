@@ -8,5 +8,5 @@ t @TimeScale { };
 
 C @Compartment { boundary: true, } .= 2;
 
-S1 @Species { boundary: false, compartment: C, isAmount: false, } .= 2 / C;
+S1 @Species { compartment: C, } .= 2 / C;
 

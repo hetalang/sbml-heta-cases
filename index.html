@@ -11,36 +11,65 @@
 <body>
     <h1>Result of testing SBML cases</h1>
     <p><i>Repository's home is <a href="https://github.com/insysbio/sbml-heta-cases">HERE</a></i></p>
-    <div id="info">
+    <!-- BEGIN L2V5 -->
+    <div>
         <h2>From SBML L2V5</h2>
         
-        <div id="summaryExplanations" class="itemContainer">
+        <div class="itemContainer">
             <div class="item retCode_0">Success <span id="code_0_stat"/></div>
             <div class="item retCode_1">Compiler error <span id="code_1_stat"/></div>
             <div class="item retCode_2">Platform error <span id="code_2_stat"/></div>
             <div class="item retCode_9">No SBML <span id="code_9_stat"/></div>
         </div>
         
-        <div id="versions">
-            <p>Heta compiler: <span id="heta_version">-</span></p>
-            <p>Started: <span id="started">-</span></p>
-            <p>Finished: <span id="finished">-</span></p>
-            <p>Cases count: <span id="totalCasesCount">-</span></p>
+        <div>
+            <p>Heta compiler: <span id="l2v5-heta_version">-</span></p>
+            <p>Started: <span id="l2v5-started">-</span></p>
+            <p>Finished: <span id="l2v5-finished">-</span></p>
+            <p>Cases count: <span id="l2v5-totalCasesCount">-</span></p>
             <p id="solver"/>
             <p id="solver_version"/>
             <p id="required_time"/>
         </div>
 
-        <div id="summary" class="itemContainer"/>
+        <div id="l2v5-summary" class="itemContainer"/>
 
+    </div>
+    <!-- END L2V5 -->
+
+    <!-- BEGIN L3V2 -->
+    <div>
+        <h2>From SBML L3V2</h2>
+        
+        <div class="itemContainer">
+            <div class="item retCode_0">Success <span id="code_0_stat"/></div>
+            <div class="item retCode_1">Compiler error <span id="code_1_stat"/></div>
+            <div class="item retCode_2">Platform error <span id="code_2_stat"/></div>
+            <div class="item retCode_9">No SBML <span id="code_9_stat"/></div>
         </div>
-        <div id="statistics">
-            <p id="SUCCESS_status"/>
-            <p id="TOLERANCE_FAIL_status"/>
-            <p id="ERROR_status"/>
-            <p id="SKIPPED_status"/>
-            <p id="undefined_status"/>
+        
+        <div>
+            <p>Heta compiler: <span id="l3v2-heta_version">-</span></p>
+            <p>Started: <span id="l3v2-started">-</span></p>
+            <p>Finished: <span id="l3v2-finished">-</span></p>
+            <p>Cases count: <span id="l3v2-totalCasesCount">-</span></p>
+            <p id="solver"/>
+            <p id="solver_version"/>
+            <p id="required_time"/>
         </div>
+
+        <div id="l3v2-summary" class="itemContainer"/>
+
+    </div>
+    <!-- END L3V2 -->
+
+    <div id="statistics">
+        <p id="SUCCESS_status"/>
+        <p id="TOLERANCE_FAIL_status"/>
+        <p id="ERROR_status"/>
+        <p id="SKIPPED_status"/>
+        <p id="undefined_status"/>
+    </div>
     </div>
     <div id="main">
         <div id="container"></div>

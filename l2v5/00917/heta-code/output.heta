@@ -6,7 +6,7 @@ substance #defineUnit { units: (1e-6 mole), };
 
 t @TimeScale { };
 
-c @Compartment 'c' { units: length, boundary: false, } .= 2.2 / 3;
+c @Compartment 'c' { units: length, } .= 2.2 / 3;
 
 c_proc @Process { actors:  = c, aux: {{"metaid":"rule1"}}, };
 c_proc := 0.5 * c;
