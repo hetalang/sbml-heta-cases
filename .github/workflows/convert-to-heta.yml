@@ -1,4 +1,4 @@
-name: convert to Heta
+name: convert to L2V5
 
 on:
   workflow_dispatch: {}
@@ -27,7 +27,7 @@ jobs:
 
       - name: Create file structure
         run: |
-          bash ./bash/make-description.sh
+          ./bash/make-description.sh l2v5
 
       - name: copy static
         run: |
