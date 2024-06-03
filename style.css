@@ -108,9 +108,18 @@ pre {
 .item {
     padding: 5px;
     margin: 2px;
+    position: relative;
 }
 
-.part {
+.part1 {
+    position: relative;
+    top: 0%;
+    height: 50%;
+    width: 100%;
+}
+.part2 {
+    position: relative;
+    top: 50%;
     height: 50%;
     width: 100%;
 }
