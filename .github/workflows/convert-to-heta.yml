@@ -27,8 +27,7 @@ jobs:
 
       - name: Create file structure
         run: |
-          bash ./bash/make-description.sh l2v5
-          bash ./bash/make-description.sh l3v2
+          bash ./bash/make-description.sh
 
       - name: copy static
         run: |

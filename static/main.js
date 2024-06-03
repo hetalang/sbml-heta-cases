@@ -2,12 +2,12 @@ $(window).ready(() => {
     $('#modal .close').click(() => {
         $('#modal').hide();
     });
-    $.get(`${config.l2v5Path}/summary.json`, (data) => {
+    $.get(`${config.path}/summary.json`, (data) => {
         // general statistics
-        $('#l2v5-heta_version').html(data.hetaCompilerVersion);
-        $('#l2v5-started').html(data.started);
-        $('#l2v5-finished').html(data.finished);
-        $('#l2v5-totalCasesCount').html(data.totalCasesCount);
+        $('#heta_version').html(data.hetaCompilerVersion);
+        $('#started').html(data.started);
+        $('#finished').html(data.finished);
+        $('#totalCasesCount').html(data.totalCasesCount);
 
         // display statistics
         let code_0_stat = data.cases.filter((x) => x.retCode == 0).length;
@@ -22,29 +22,41 @@ $(window).ready(() => {
 
         data.cases.forEach((x) => {
             let item =$(`<div class="item retCode_${x.retCode}">${x.id}</div>`)
-                .appendTo('#l2v5-summary');
+                .appendTo('#summary');
             item.on('click', () => {
                 $('#caseId').html(x.id);
                 $('#caseId').removeClass().addClass('retCode_' + x.retCode);
-                $('#casePath').html(`${config.l2v5Path}/${x.id}/`);
+                $('#casePath').html(`${config.path}/${x.id}/`);
                 $('#retCode').html(x.retCode);
                 $('#modal').show();
 
-                $.get(`${config.l2v5Path}/${x.id}/heta-code/output.heta`, (data) => {
-                    $('#modal #heta-code pre code').html(data);
-                }).fail(() => {
-                    $('#modal #heta-code pre code').html('No heta-code/output.heta file found');
-                });
-                $.get(`${config.l2v5Path}/${x.id}/synopsis.txt`, (data) => {
+                $.get(`${config.path}/${x.id}/synopsis.txt`, (data) => {
                     let shorted = splitLines(data);
                     $('#modal #synopsis pre code').html(shorted);
                 }).fail(() => {
                     $('#modal #synopsis pre code').html('No synopsis.txt file found');
                 });
-                $.get(`${config.l2v5Path}/${x.id}/build.log`, (data) => {
-                    $('#modal #logs pre code').html(data);
+
+                $.get(`${config.path}/${x.id}/l2v5/heta-code/output.heta`, (data) => {
+                    $('#modal #heta-code-l2v5 pre code').html(data);
                 }).fail(() => {
-                    $('#modal #logs pre code').html('No build.log file found');
+                    $('#modal #heta-code-l2v5 pre code').html('No l2v5/heta-code/output.heta file found');
+                });
+                $.get(`${config.path}/${x.id}/l2v5/build.log`, (data) => {
+                    $('#modal #logs-l2v5 pre code').html(data);
+                }).fail(() => {
+                    $('#modal #logs-l2v5 pre code').html('No l2v5/build.log file found');
+                });
+                
+                $.get(`${config.path}/${x.id}/l3v2/heta-code/output.heta`, (data) => {
+                    $('#modal #heta-code-l3v2 pre code').html(data);
+                }).fail(() => {
+                    $('#modal #heta-code-l3v2 pre code').html('No l3v2/heta-code/output.heta file found');
+                });
+                $.get(`${config.path}/${x.id}/l3v2/build.log`, (data) => {
+                    $('#modal #logs-l3v2 pre code').html(data);
+                }).fail(() => {
+                    $('#modal #logs-l3v2 pre code').html('No l3v2/build.log file found');
                 });
             });
         });

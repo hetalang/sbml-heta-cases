@@ -1,9 +1,10 @@
-#defineUnit volume { units: metre^3 };
+#defineUnit volume { units: litre };
 #defineUnit area { units: metre^2 };
 #defineUnit length { units: metre };
-#defineUnit substance { units: (1e-6 mole) };
+#defineUnit substance { units: mole };
+#defineUnit time { units: second };
 
-#include { source: ./model-sbml-l2v5.xml, type: sbml };
+#include { source: ../model-sbml-l2v5.xml, type: sbml };
 
 #export { format: HetaCode };
 #export { format: JSON };

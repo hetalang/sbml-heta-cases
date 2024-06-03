@@ -1,7 +1,6 @@
 #!/bin/bash
 
-# $1 is version of SBML
-base_dir="result/$1"
+base_dir="result/sbml"
 
 echo Create of file structure
 mkdir -p $base_dir
@@ -29,25 +28,34 @@ for dir in $dirs; do
         delimiter=","
     fi
     
-    mkdir -p $base_dir/$dir
-    cp bash/$1-index.heta $base_dir/$dir/index.heta
+    mkdir -p $base_dir/$dir/l2v5
+    mkdir -p $base_dir/$dir/l3v2
+    cp bash/l2v5-index.heta $base_dir/$dir/l2v5/index.heta
+    cp bash/l3v2-index.heta $base_dir/$dir/l3v2/index.heta
 
     # Extract line starting from "synopsis" until the end of line
     synopsis=$(sed -n '/(\*/,/*)/p' cases/semantic/$dir/$dir-model.m | sed '1d;$d')
     echo "$synopsis" > $base_dir/$dir/synopsis.txt
 
-    cp cases/semantic/$dir/$dir-sbml-$1.xml $base_dir/$dir/model-sbml-$1.xml > /dev/null 2>&1
+    cp cases/semantic/$dir/$dir-sbml-l2v5.xml $base_dir/$dir/model-sbml-l2v5.xml > /dev/null 2>&1
     if [ $? -ne 0 ]; then
-        echo "    {\"id\": \"$dir\", \"retCode\": 9}$delimiter" >> $base_dir/summary.json
-        echo "$dir has no SBML file"
-        continue
+        echo "$dir has no SBML L2V5 file"
+        l2v5RetCode=9
+    else
+        heta build --skip-updates --dist-dir . --log-mode error $base_dir/$dir/l2v5 > /dev/null 2>&1 
+        l2v5RetCode=$(echo $?)
+    fi
+    cp cases/semantic/$dir/$dir-sbml-l3v2.xml $base_dir/$dir/model-sbml-l3v2.xml > /dev/null 2>&1
+    if [ $? -ne 0 ]; then
+        echo "$dir has no SBML L3V2 file"
+        l3v2RetCode=9
+    else
+        heta build --skip-updates --dist-dir . --log-mode error $base_dir/$dir/l3v2 > /dev/null 2>&1
+        l3v2RetCode=$(echo $?)
     fi
 
-    # supress logs
-    heta build --skip-updates --dist-dir . --log-mode error $base_dir/$dir > /dev/null 2>&1 
-    retCode=$(echo $?)
-    echo "    {\"id\": \"$dir\", \"retCode\": $retCode}$delimiter" >> $base_dir/summary.json
-    echo "$dir finished with $retCode"
+    echo "    {\"id\": \"$dir\", \"l2v5RetCode\": $l2v5RetCode, \"l3v2RetCode\": $l3v2RetCode}$delimiter" >> $base_dir/summary.json
+    echo "$dir finished with $l2v5RetCode, $l3v2RetCode"
 done
 
 echo "  ]," >> $base_dir/summary.json
