@@ -1,0 +1,49 @@
+[info]	Namespace "nameless" was set as "concrete"
+[info]	Builder initialized in directory "/home/runner/work/sbml-heta-cases/sbml-heta-cases/result/sbml/01323/l3v2".
+[info]	Compilation of module "index.heta" of type "heta"...
+[info]	Reading module of type "heta" from file "/home/runner/work/sbml-heta-cases/sbml-heta-cases/result/sbml/01323/l3v2/index.heta"...
+[info]	Reading module of type "sbml" from file "/home/runner/work/sbml-heta-cases/sbml-heta-cases/result/sbml/01323/model-sbml-l3v2.xml"...
+[info]	Setting references in elements, total length 120
+[error]	No required "num" property for "a_sbml" of Const.
+[error]	No required "num" property for "a_truncated" of Const.
+[error]	No required "num" property for "a_1865" of Const.
+[error]	No required "num" property for "a_1873" of Const.
+[error]	No required "num" property for "a_1890a" of Const.
+[error]	No required "num" property for "a_1890b" of Const.
+[error]	No required "num" property for "a_1901" of Const.
+[error]	No required "num" property for "a_1903" of Const.
+[error]	No required "num" property for "a_1904" of Const.
+[error]	No required "num" property for "a_1908" of Const.
+[error]	No required "num" property for "a_1909" of Const.
+[error]	No required "num" property for "a_1914a" of Const.
+[error]	No required "num" property for "a_1914b" of Const.
+[error]	No required "num" property for "a_1915" of Const.
+[error]	No required "num" property for "a_1917" of Const.
+[error]	No required "num" property for "a_1923" of Const.
+[error]	No required "num" property for "a_1924" of Const.
+[error]	No required "num" property for "a_1929" of Const.
+[error]	No required "num" property for "a_1931" of Const.
+[error]	No required "num" property for "a_1941" of Const.
+[error]	No required "num" property for "a_1945" of Const.
+[error]	No required "num" property for "a_1948" of Const.
+[error]	No required "num" property for "a_1949" of Const.
+[error]	No required "num" property for "a_1951" of Const.
+[error]	No required "num" property for "a_1965a" of Const.
+[error]	No required "num" property for "a_1965b" of Const.
+[error]	No required "num" property for "a_1973" of Const.
+[error]	No required "num" property for "a_1974" of Const.
+[error]	No required "num" property for "a_1987a" of Const.
+[error]	No required "num" property for "a_1987b" of Const.
+[error]	No required "num" property for "a_1992" of Const.
+[error]	No required "num" property for "a_1994" of Const.
+[error]	No required "num" property for "a_1995" of Const.
+[error]	No required "num" property for "a_1999" of Const.
+[error]	No required "num" property for "a_2000" of Const.
+[error]	No required "num" property for "a_2001" of Const.
+[error]	No required "num" property for "a_2002" of Const.
+[error]	No required "num" property for "a_2003" of Const.
+[error]	No required "num" property for "a_2006" of Const.
+[error]	No required "num" property for "a_2011" of Const.
+[error]	No required "num" property for "a_2015" of Const.
+[info]	Checking for circular references in Records.
+[warn]	Units checking and export were skipped because of errors in compilation.

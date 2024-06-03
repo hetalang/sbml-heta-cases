@@ -1,0 +1,134 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Compartment",
+    "id": "C",
+    "title": "C",
+    "units": "volume",
+    "assignments": {
+      "start_": "1"
+    },
+    "boundary": true
+  },
+  {
+    "class": "Species",
+    "id": "S1",
+    "title": "S1",
+    "units": "substance/volume",
+    "assignments": {
+      "start_": "2 * p1"
+    },
+    "compartment": "C"
+  },
+  {
+    "class": "Species",
+    "id": "S2",
+    "title": "S2",
+    "units": "substance/volume",
+    "assignments": {
+      "start_": "0.02 / C"
+    },
+    "compartment": "C"
+  },
+  {
+    "class": "Species",
+    "id": "S3",
+    "title": "S3",
+    "units": "substance/volume",
+    "assignments": {
+      "start_": "0.01 / C"
+    },
+    "compartment": "C"
+  },
+  {
+    "class": "Const",
+    "id": "k__reaction1_local",
+    "num": 0.75
+  },
+  {
+    "class": "Reaction",
+    "id": "reaction1",
+    "title": "reaction1",
+    "assignments": {
+      "ode_": "C * k__reaction1_local * S1 * S2"
+    },
+    "actors": [
+      {
+        "target": "S3",
+        "stoichiometry": 1
+      },
+      {
+        "target": "S1",
+        "stoichiometry": -1
+      },
+      {
+        "target": "S2",
+        "stoichiometry": -1
+      }
+    ],
+    "reversible": false
+  },
+  {
+    "class": "Const",
+    "id": "k__reaction2_local",
+    "num": 0.25
+  },
+  {
+    "class": "Reaction",
+    "id": "reaction2",
+    "title": "reaction2",
+    "assignments": {
+      "ode_": "C * k__reaction2_local * S3"
+    },
+    "actors": [
+      {
+        "target": "S1",
+        "stoichiometry": 1
+      },
+      {
+        "target": "S2",
+        "stoichiometry": 1
+      },
+      {
+        "target": "S3",
+        "stoichiometry": -1
+      }
+    ],
+    "reversible": false
+  },
+  {
+    "class": "Record",
+    "id": "p1",
+    "title": "p1",
+    "assignments": {
+      "start_": "0.00125"
+    }
+  },
+  {
+    "id": "volume",
+    "units": "litre",
+    "action": "defineUnit"
+  },
+  {
+    "id": "area",
+    "units": "metre^2",
+    "action": "defineUnit"
+  },
+  {
+    "id": "length",
+    "units": "metre",
+    "action": "defineUnit"
+  },
+  {
+    "id": "substance",
+    "units": "mole",
+    "action": "defineUnit"
+  },
+  {
+    "id": "time",
+    "units": "second",
+    "action": "defineUnit"
+  }
+]

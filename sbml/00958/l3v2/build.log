@@ -1,0 +1,36 @@
+[info]	Namespace "nameless" was set as "concrete"
+[info]	Builder initialized in directory "/home/runner/work/sbml-heta-cases/sbml-heta-cases/result/sbml/00958/l3v2".
+[info]	Compilation of module "index.heta" of type "heta"...
+[info]	Reading module of type "heta" from file "/home/runner/work/sbml-heta-cases/sbml-heta-cases/result/sbml/00958/l3v2/index.heta"...
+[info]	Reading module of type "sbml" from file "/home/runner/work/sbml-heta-cases/sbml-heta-cases/result/sbml/00958/model-sbml-l3v2.xml"...
+[info]	Setting references in elements, total length 107
+[error]	No required "num" property for "P1" of Const.
+[error]	No required "num" property for "P3" of Const.
+[error]	No required "num" property for "P4" of Const.
+[error]	No required "num" property for "P5" of Const.
+[error]	No required "num" property for "P6" of Const.
+[error]	No required "num" property for "P7" of Const.
+[error]	No required "num" property for "P8" of Const.
+[error]	No required "num" property for "P9" of Const.
+[error]	No required "num" property for "P10" of Const.
+[error]	No required "num" property for "P11" of Const.
+[error]	No required "num" property for "P12" of Const.
+[error]	No required "num" property for "P13" of Const.
+[error]	No required "num" property for "P14" of Const.
+[error]	No required "num" property for "P15" of Const.
+[error]	No required "num" property for "P16" of Const.
+[error]	No required "num" property for "P17" of Const.
+[error]	No required "num" property for "P18" of Const.
+[error]	No required "num" property for "P19" of Const.
+[error]	No required "num" property for "P20" of Const.
+[error]	No required "num" property for "P21" of Const.
+[error]	No required "num" property for "P22" of Const.
+[error]	No required "num" property for "P23" of Const.
+[error]	No required "num" property for "P24" of Const.
+[error]	No required "num" property for "P25" of Const.
+[error]	No required "num" property for "P26" of Const.
+[error]	No required "num" property for "P27" of Const.
+[error]	No required "num" property for "P28" of Const.
+[error]	No required "num" property for "P29" of Const.
+[info]	Checking for circular references in Records.
+[warn]	Units checking and export were skipped because of errors in compilation.

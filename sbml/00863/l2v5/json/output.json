@@ -1,0 +1,88 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Compartment",
+    "id": "C",
+    "title": "C",
+    "units": "volume",
+    "assignments": {
+      "start_": "1"
+    },
+    "boundary": true
+  },
+  {
+    "class": "Species",
+    "id": "S1",
+    "title": "S1",
+    "units": "substance/volume",
+    "assignments": {
+      "start_": "0.15 / C"
+    },
+    "boundary": true,
+    "compartment": "C"
+  },
+  {
+    "class": "Species",
+    "id": "S2",
+    "title": "S2",
+    "units": "substance/volume",
+    "assignments": {
+      "start_": "0 / C"
+    },
+    "compartment": "C"
+  },
+  {
+    "class": "Reaction",
+    "id": "reaction1",
+    "title": "reaction1",
+    "assignments": {
+      "ode_": "C * k1 * S1 * t"
+    },
+    "actors": [
+      {
+        "target": "S2",
+        "stoichiometry": 1
+      },
+      {
+        "target": "S1",
+        "stoichiometry": -1
+      }
+    ],
+    "reversible": false
+  },
+  {
+    "class": "Record",
+    "id": "k1",
+    "title": "k1",
+    "assignments": {
+      "start_": "1"
+    }
+  },
+  {
+    "id": "volume",
+    "units": "litre",
+    "action": "defineUnit"
+  },
+  {
+    "id": "area",
+    "units": "metre^2",
+    "action": "defineUnit"
+  },
+  {
+    "id": "length",
+    "units": "metre",
+    "action": "defineUnit"
+  },
+  {
+    "id": "substance",
+    "units": "mole",
+    "action": "defineUnit"
+  },
+  {
+    "id": "time",
+    "units": "second",
+    "action": "defineUnit"
+  }
+]

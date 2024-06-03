@@ -1,0 +1,58 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Compartment",
+    "id": "C",
+    "assignments": {
+      "start_": "1"
+    },
+    "boundary": true
+  },
+  {
+    "class": "Species",
+    "id": "S1",
+    "assignments": {
+      "start_": "2 / C",
+      "E0": "2"
+    },
+    "compartment": "C"
+  },
+  {
+    "class": "Species",
+    "id": "S2",
+    "assignments": {
+      "start_": "3 / C",
+      "E0": "3"
+    },
+    "compartment": "C"
+  },
+  {
+    "class": "Reaction",
+    "id": "J0",
+    "assignments": {
+      "ode_": "0.01"
+    },
+    "actors": [
+      {
+        "target": "S2",
+        "stoichiometry": 1
+      },
+      {
+        "target": "S1",
+        "stoichiometry": -1
+      }
+    ]
+  },
+  {
+    "class": "Const",
+    "id": "m_cf",
+    "num": 3
+  },
+  {
+    "class": "DSwitcher",
+    "id": "E0",
+    "trigger": "t >= 4.5"
+  }
+]

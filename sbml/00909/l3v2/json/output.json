@@ -1,0 +1,55 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Compartment",
+    "id": "C1",
+    "title": "C1",
+    "units": "litre",
+    "assignments": {
+      "start_": "0.015"
+    }
+  },
+  {
+    "class": "Compartment",
+    "id": "C2",
+    "title": "C2",
+    "units": "metre",
+    "assignments": {
+      "start_": "0.01"
+    }
+  },
+  {
+    "class": "Process",
+    "id": "C1_proc",
+    "aux": {
+      "metaid": "rule1"
+    },
+    "assignments": {
+      "ode_": "0.4 * C1 + 0.25 * C2"
+    },
+    "actors": [
+      {
+        "target": "C1",
+        "stoichiometry": 1
+      }
+    ]
+  },
+  {
+    "class": "Process",
+    "id": "C2_proc",
+    "aux": {
+      "metaid": "rule2"
+    },
+    "assignments": {
+      "ode_": "0.15 * C1 + 0.2 * C2"
+    },
+    "actors": [
+      {
+        "target": "C2",
+        "stoichiometry": 1
+      }
+    ]
+  }
+]

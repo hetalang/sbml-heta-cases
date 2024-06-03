@@ -1,0 +1,99 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Record",
+    "id": "S1",
+    "title": "S1",
+    "assignments": {
+      "start_": "0.1"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "S2",
+    "title": "S2",
+    "assignments": {
+      "start_": "0.2"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "S3",
+    "title": "S3",
+    "assignments": {
+      "start_": "0.1"
+    }
+  },
+  {
+    "class": "Const",
+    "id": "k1",
+    "title": "k1",
+    "num": 0.75
+  },
+  {
+    "class": "Const",
+    "id": "k2",
+    "title": "k2",
+    "num": 0.25
+  },
+  {
+    "class": "Process",
+    "id": "S3_proc",
+    "aux": {
+      "metaid": "rule1"
+    },
+    "assignments": {
+      "ode_": "multiply(k1, S1, S2) + (-1) * k2 * S3"
+    },
+    "actors": [
+      {
+        "target": "S3",
+        "stoichiometry": 1
+      }
+    ]
+  },
+  {
+    "class": "Process",
+    "id": "S1_proc",
+    "aux": {
+      "metaid": "rule2"
+    },
+    "assignments": {
+      "ode_": "k2 * S3 + (-1) * multiply(k1, S1, S2)"
+    },
+    "actors": [
+      {
+        "target": "S1",
+        "stoichiometry": 1
+      }
+    ]
+  },
+  {
+    "class": "Process",
+    "id": "S2_proc",
+    "aux": {
+      "metaid": "rule3"
+    },
+    "assignments": {
+      "ode_": "k2 * S3 + (-1) * multiply(k1, S1, S2)"
+    },
+    "actors": [
+      {
+        "target": "S2",
+        "stoichiometry": 1
+      }
+    ]
+  },
+  {
+    "id": "multiply",
+    "arguments": [
+      "x",
+      "y",
+      "z"
+    ],
+    "math": "x * y * z",
+    "action": "defineFunction"
+  }
+]

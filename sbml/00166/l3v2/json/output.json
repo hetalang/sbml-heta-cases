@@ -1,0 +1,113 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Record",
+    "id": "S1",
+    "title": "S1",
+    "assignments": {
+      "start_": "0.01"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "S2",
+    "title": "S2",
+    "assignments": {
+      "start_": "0.01"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "S3",
+    "title": "S3",
+    "assignments": {
+      "start_": "0.02"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "S4",
+    "title": "S4",
+    "assignments": {
+      "start_": "0.01"
+    }
+  },
+  {
+    "class": "Const",
+    "id": "k1",
+    "title": "k1",
+    "num": 75
+  },
+  {
+    "class": "Const",
+    "id": "k2",
+    "title": "k2",
+    "num": 25
+  },
+  {
+    "class": "Process",
+    "id": "S1_proc",
+    "aux": {
+      "metaid": "rule1"
+    },
+    "assignments": {
+      "ode_": "k2 * S3 * S4 + (-1) * k1 * S1 * S2"
+    },
+    "actors": [
+      {
+        "target": "S1",
+        "stoichiometry": 1
+      }
+    ]
+  },
+  {
+    "class": "Process",
+    "id": "S2_proc",
+    "aux": {
+      "metaid": "rule2"
+    },
+    "assignments": {
+      "ode_": "k2 * S3 * S4 + (-1) * k1 * S1 * S2"
+    },
+    "actors": [
+      {
+        "target": "S2",
+        "stoichiometry": 1
+      }
+    ]
+  },
+  {
+    "class": "Process",
+    "id": "S3_proc",
+    "aux": {
+      "metaid": "rule3"
+    },
+    "assignments": {
+      "ode_": "k1 * S1 * S2 + (-1) * k2 * S3 * S4"
+    },
+    "actors": [
+      {
+        "target": "S3",
+        "stoichiometry": 1
+      }
+    ]
+  },
+  {
+    "class": "Process",
+    "id": "S4_proc",
+    "aux": {
+      "metaid": "rule4"
+    },
+    "assignments": {
+      "ode_": "k1 * S1 * S2 + (-1) * k2 * S3 * S4"
+    },
+    "actors": [
+      {
+        "target": "S4",
+        "stoichiometry": 1
+      }
+    ]
+  }
+]

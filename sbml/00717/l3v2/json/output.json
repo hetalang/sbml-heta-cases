@@ -1,0 +1,97 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Compartment",
+    "id": "C",
+    "title": "C",
+    "units": "litre",
+    "assignments": {
+      "start_": "1"
+    },
+    "boundary": true
+  },
+  {
+    "class": "Species",
+    "id": "S1",
+    "title": "S1",
+    "units": "mole/litre",
+    "assignments": {
+      "start_": "1.5 / C"
+    },
+    "compartment": "C"
+  },
+  {
+    "class": "Species",
+    "id": "S2",
+    "title": "S2",
+    "units": "mole/litre",
+    "assignments": {
+      "start_": "0 / C"
+    },
+    "compartment": "C"
+  },
+  {
+    "class": "Species",
+    "id": "S3",
+    "title": "S3",
+    "units": "mole/litre",
+    "assignments": {
+      "start_": "0 / C"
+    },
+    "compartment": "C"
+  },
+  {
+    "class": "Species",
+    "id": "S4",
+    "title": "S4",
+    "units": "mole/litre",
+    "assignments": {
+      "start_": "1 / C"
+    },
+    "boundary": true,
+    "compartment": "C"
+  },
+  {
+    "class": "Reaction",
+    "id": "reaction1",
+    "title": "reaction1",
+    "assignments": {
+      "ode_": "C * k1 * S1"
+    },
+    "actors": [
+      {
+        "target": "S2",
+        "stoichiometry": 1
+      },
+      {
+        "target": "S1",
+        "stoichiometry": -1
+      }
+    ],
+    "reversible": false
+  },
+  {
+    "class": "Const",
+    "id": "k1",
+    "title": "k1",
+    "num": 1.5
+  },
+  {
+    "class": "Process",
+    "id": "S3_proc",
+    "aux": {
+      "metaid": "rule1"
+    },
+    "assignments": {
+      "ode_": "0.15"
+    },
+    "actors": [
+      {
+        "target": "S3",
+        "stoichiometry": 1
+      }
+    ]
+  }
+]

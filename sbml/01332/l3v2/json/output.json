@@ -1,0 +1,24 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Record",
+    "id": "x",
+    "assignments": {
+      "start_": "3",
+      "E1": "7",
+      "E2": "5"
+    }
+  },
+  {
+    "class": "DSwitcher",
+    "id": "E1",
+    "trigger": "x > 2"
+  },
+  {
+    "class": "DSwitcher",
+    "id": "E2",
+    "trigger": "x > 2"
+  }
+]

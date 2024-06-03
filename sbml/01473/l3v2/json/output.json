@@ -1,0 +1,29 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Compartment",
+    "id": "comp",
+    "assignments": {
+      "start_": "1"
+    },
+    "boundary": true
+  },
+  {
+    "class": "Species",
+    "id": "S",
+    "assignments": {
+      "start_": "5"
+    },
+    "compartment": "comp"
+  },
+  {
+    "class": "Species",
+    "id": "D",
+    "assignments": {
+      "start_": "10"
+    },
+    "compartment": "comp"
+  }
+]

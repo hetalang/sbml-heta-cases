@@ -1,0 +1,72 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Compartment",
+    "id": "C",
+    "title": "C",
+    "units": "litre",
+    "assignments": {
+      "start_": "1"
+    },
+    "boundary": true
+  },
+  {
+    "class": "Species",
+    "id": "S1",
+    "title": "S1",
+    "units": "mole/litre",
+    "assignments": {
+      "start_": "1 / C"
+    },
+    "compartment": "C"
+  },
+  {
+    "class": "Species",
+    "id": "S2",
+    "title": "S2",
+    "units": "mole/litre",
+    "assignments": {
+      "start_": "2 / C",
+      "event1": "1.5"
+    },
+    "compartment": "C"
+  },
+  {
+    "class": "Reaction",
+    "id": "reaction1",
+    "title": "reaction1",
+    "assignments": {
+      "ode_": "(-(C * (kf * S1 + (-1) * kr * S2)))"
+    },
+    "actors": [
+      {
+        "target": "S1",
+        "stoichiometry": 1
+      },
+      {
+        "target": "S2",
+        "stoichiometry": -1
+      }
+    ]
+  },
+  {
+    "class": "Const",
+    "id": "kf",
+    "title": "kf",
+    "num": 0.9
+  },
+  {
+    "class": "Const",
+    "id": "kr",
+    "title": "kr",
+    "num": 0.075
+  },
+  {
+    "class": "DSwitcher",
+    "id": "event1",
+    "title": "event1",
+    "trigger": "S1 < 0.75"
+  }
+]

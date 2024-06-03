@@ -1,0 +1,46 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Compartment",
+    "id": "C",
+    "assignments": {
+      "start_": "2"
+    },
+    "boundary": true
+  },
+  {
+    "class": "Species",
+    "id": "S1",
+    "assignments": {
+      "start_": "2 / C"
+    },
+    "compartment": "C"
+  },
+  {
+    "id": "volume",
+    "units": "litre",
+    "action": "defineUnit"
+  },
+  {
+    "id": "area",
+    "units": "metre^2",
+    "action": "defineUnit"
+  },
+  {
+    "id": "length",
+    "units": "metre",
+    "action": "defineUnit"
+  },
+  {
+    "id": "substance",
+    "units": "mole",
+    "action": "defineUnit"
+  },
+  {
+    "id": "time",
+    "units": "second",
+    "action": "defineUnit"
+  }
+]

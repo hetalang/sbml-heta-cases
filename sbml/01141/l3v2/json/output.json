@@ -1,0 +1,17 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Compartment",
+    "id": "C8",
+    "assignments": {
+      "start_": "8"
+    }
+  },
+  {
+    "class": "Const",
+    "id": "conv",
+    "num": 0.1
+  }
+]

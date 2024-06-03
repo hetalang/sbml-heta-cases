@@ -1,0 +1,66 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Record",
+    "id": "S1",
+    "title": "S1",
+    "assignments": {
+      "start_": "1",
+      "event1": "1"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "S2",
+    "title": "S2",
+    "assignments": {
+      "start_": "0"
+    }
+  },
+  {
+    "class": "Const",
+    "id": "k1",
+    "title": "k1",
+    "num": 1
+  },
+  {
+    "class": "Process",
+    "id": "S1_proc",
+    "aux": {
+      "metaid": "rule1"
+    },
+    "assignments": {
+      "ode_": "(-1) * k1 * S1"
+    },
+    "actors": [
+      {
+        "target": "S1",
+        "stoichiometry": 1
+      }
+    ]
+  },
+  {
+    "class": "Process",
+    "id": "S2_proc",
+    "aux": {
+      "metaid": "rule2"
+    },
+    "assignments": {
+      "ode_": "k1 * S1"
+    },
+    "actors": [
+      {
+        "target": "S2",
+        "stoichiometry": 1
+      }
+    ]
+  },
+  {
+    "class": "DSwitcher",
+    "id": "event1",
+    "title": "event1",
+    "trigger": "S1 < 0.1"
+  }
+]

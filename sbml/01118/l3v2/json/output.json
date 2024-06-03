@@ -1,0 +1,34 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Compartment",
+    "id": "C",
+    "assignments": {
+      "start_": "1"
+    }
+  },
+  {
+    "class": "Species",
+    "id": "S1",
+    "assignments": {
+      "start_": "1"
+    },
+    "boundary": true,
+    "compartment": "C"
+  },
+  {
+    "class": "Process",
+    "id": "C_proc",
+    "assignments": {
+      "ode_": "1"
+    },
+    "actors": [
+      {
+        "target": "C",
+        "stoichiometry": 1
+      }
+    ]
+  }
+]

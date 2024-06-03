@@ -1,0 +1,26 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Compartment",
+    "id": "compartment",
+    "title": "compartment",
+    "units": "litre",
+    "assignments": {
+      "start_": "1"
+    },
+    "boundary": true
+  },
+  {
+    "class": "Species",
+    "id": "S1",
+    "title": "S1",
+    "units": "mole/litre",
+    "assignments": {
+      "start_": "7 / compartment",
+      "ode_": "7"
+    },
+    "compartment": "compartment"
+  }
+]

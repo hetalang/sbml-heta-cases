@@ -1,0 +1,110 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Record",
+    "id": "P1",
+    "title": "P1",
+    "assignments": {
+      "start_": "0.0015"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "P2",
+    "title": "P2",
+    "assignments": {
+      "start_": "0"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "P3",
+    "title": "P3",
+    "assignments": {
+      "start_": "0.001"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "k1",
+    "title": "k1",
+    "assignments": {
+      "start_": "0.5"
+    }
+  },
+  {
+    "class": "Process",
+    "id": "P3_proc",
+    "aux": {
+      "metaid": "rule1"
+    },
+    "assignments": {
+      "ode_": "k1 * t"
+    },
+    "actors": [
+      {
+        "target": "P3",
+        "stoichiometry": 1
+      }
+    ]
+  },
+  {
+    "class": "Process",
+    "id": "P1_proc",
+    "aux": {
+      "metaid": "rule2"
+    },
+    "assignments": {
+      "ode_": "(-1) * P1 * P3"
+    },
+    "actors": [
+      {
+        "target": "P1",
+        "stoichiometry": 1
+      }
+    ]
+  },
+  {
+    "class": "Process",
+    "id": "P2_proc",
+    "aux": {
+      "metaid": "rule3"
+    },
+    "assignments": {
+      "ode_": "P1 * P3"
+    },
+    "actors": [
+      {
+        "target": "P2",
+        "stoichiometry": 1
+      }
+    ]
+  },
+  {
+    "id": "volume",
+    "units": "litre",
+    "action": "defineUnit"
+  },
+  {
+    "id": "area",
+    "units": "metre^2",
+    "action": "defineUnit"
+  },
+  {
+    "id": "length",
+    "units": "metre",
+    "action": "defineUnit"
+  },
+  {
+    "id": "substance",
+    "units": "mole",
+    "action": "defineUnit"
+  },
+  {
+    "id": "time",
+    "units": "second",
+    "action": "defineUnit"
+  }
+]

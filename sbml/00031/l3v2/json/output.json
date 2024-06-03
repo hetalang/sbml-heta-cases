@@ -1,0 +1,41 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Compartment",
+    "id": "compartment",
+    "title": "compartment",
+    "units": "litre",
+    "assignments": {
+      "start_": "1"
+    },
+    "boundary": true
+  },
+  {
+    "class": "Species",
+    "id": "S1",
+    "title": "S1",
+    "units": "mole/litre",
+    "assignments": {
+      "start_": "0 / compartment"
+    },
+    "compartment": "compartment"
+  },
+  {
+    "class": "Process",
+    "id": "S1_proc",
+    "aux": {
+      "metaid": "rule1"
+    },
+    "assignments": {
+      "ode_": "7"
+    },
+    "actors": [
+      {
+        "target": "S1",
+        "stoichiometry": 1
+      }
+    ]
+  }
+]
