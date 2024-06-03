@@ -36,8 +36,8 @@ $(window).ready(() => {
                 .appendTo('#summary');
             item.append(`<div class="part1 retCode_${x.l2v5RetCode}"></div>`);
             item.append(`<div class="part2 retCode_${x.l3v2RetCode}"></div>`);
-            item.append(`${x.id}`);
-            
+            item.append(`<div class="part3">${x.id}</div>`);
+
             item.on('click', () => {
                 $('#caseId').html(x.id);
                 $('#caseId').removeClass().addClass('retCode_' + x.l2v5RetCode);

@@ -112,13 +112,13 @@ pre {
 }
 
 .part1 {
-    position: relative;
+    position: absolute;
     top: 0%;
     height: 50%;
     width: 100%;
 }
 .part2 {
-    position: relative;
+    position: absolute;
     top: 50%;
     height: 50%;
     width: 100%;
