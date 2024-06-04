@@ -3,10 +3,15 @@
 [info]	Compilation of module "index.heta" of type "heta"...
 [info]	Reading module of type "heta" from file "/home/runner/work/sbml-heta-cases/sbml-heta-cases/result/sbml/01494/l2v5/index.heta"...
 [info]	Reading module of type "sbml" from file "/home/runner/work/sbml-heta-cases/sbml-heta-cases/result/sbml/01494/model-sbml-l2v5.xml"...
+[error]	The #defineFunction my_lt must have "arguments".
 [error]	Function math "my_lt" should be a numeric expression.
+[error]	The #defineFunction my_gt must have "arguments".
 [error]	Function math "my_gt" should be a numeric expression.
+[error]	The #defineFunction my_leq must have "arguments".
 [error]	Function math "my_leq" should be a numeric expression.
+[error]	The #defineFunction my_geq must have "arguments".
 [error]	Function math "my_geq" should be a numeric expression.
+[error]	The #defineFunction my_eq must have "arguments".
 [error]	Function math "my_eq" should be a numeric expression.
 [info]	Setting references in elements, total length 89
 [error]	FunctionDef "my_lt" is not found as expected here: P1 { math: undefined };

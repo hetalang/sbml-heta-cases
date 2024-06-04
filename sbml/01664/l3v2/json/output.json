@@ -1,0 +1,18 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Record",
+    "id": "p1",
+    "assignments": {
+      "start_": "1",
+      "E0": "6.02214076e+23"
+    }
+  },
+  {
+    "class": "DSwitcher",
+    "id": "E0",
+    "trigger": "t > 1.5"
+  }
+]

@@ -22,7 +22,7 @@
     "class": "Reaction",
     "id": "J0",
     "assignments": {
-      "ode_": "avogadro / avogadro"
+      "ode_": "6.02214076e+23 / avogadro"
     },
     "actors": [
       {
