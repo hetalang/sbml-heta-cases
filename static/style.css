@@ -106,8 +106,27 @@ pre {
 }
 
 .item {
-    padding: 5px;
     margin: 2px;
+    position: relative;
+    cursor: pointer;
+}
+
+.part1 {
+    position: absolute;
+    top: 0%;
+    height: 50%;
+    width: 100%;
+    z-index: -1;
+}
+.part2 {
+    position: absolute;
+    top: 50%;
+    height: 50%;
+    width: 100%;
+    z-index: -1;
+}
+.part3 {
+    padding: 4px;
 }
 
 .retCode_0 {
