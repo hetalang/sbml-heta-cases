@@ -1,1 +1,0 @@
-D:\INSYSBIO\repos\sbmlrun_wrapper_for_julia\julia_wrapper.bat
