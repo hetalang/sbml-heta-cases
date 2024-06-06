@@ -30,3 +30,5 @@ The initial conditions are as follows:
 |Value of parameter S4 |$1.0 \x 10^-2$ |same as S1 |
 |Value of parameter k1 |$0.75 \x 10^2$ |(units of S1)^-1^ second^-1^ |
 |Value of parameter k2 |$0.25 \x 10^2$ |(units of S1)^-1^ second^-1^ |]
+
+

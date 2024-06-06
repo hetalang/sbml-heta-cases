@@ -42,3 +42,4 @@ The species' initial quantities are given in terms of substance units to
 make it easier to use the model in a discrete stochastic simulator, but
 their symbols represent their values in concentration units where they
 appear in expressions.
+

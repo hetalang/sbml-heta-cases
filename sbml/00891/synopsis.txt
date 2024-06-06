@@ -23,3 +23,5 @@ The initial conditions are as follows:
 |Value of parameter k1         |$1.5 \x 10^-4$ |any        |
 |Value of parameter k2         |$            0$ |same as k1 |
 |Value of parameter k3         |$            1$ |second^-2^ |]
+
+

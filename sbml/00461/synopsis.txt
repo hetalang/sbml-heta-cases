@@ -39,3 +39,5 @@ The initial conditions are as follows:
 |Value of parameter k1 |$0.75$           |second^-1^ |
 |Value of parameter k2 |$0.55$           |second^-1^ |
 |Value of parameter k3 |$0.25$           |second^-1^                |]
+
+

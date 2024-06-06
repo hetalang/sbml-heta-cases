@@ -25,3 +25,5 @@ The initial conditions are as follows:
 |Value of parameter S2 |$          0.5$ |same as S1 |
 |Value of parameter k1 |$          1.0$ |same as S1 |
 |Value of parameter k2 |$          0.8$ |second^-1^ |]
+
+

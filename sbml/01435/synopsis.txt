@@ -2,7 +2,7 @@
 category:        Test
 synopsis:        Multiple species references to the same species
 componentTags:   Compartment, Reaction, Species, StoichiometryMath
-testTags:        Amount, AssignedConstantStoichiometry, NonUnityStoichiometry
+testTags:        Amount, AssignedConstantStoichiometry, DefaultValue, NonUnityStoichiometry
 testType:        TimeCourse
 levels:          2.1, 2.2, 2.3, 2.4, 2.5
 generatedBy:     Numeric
@@ -28,3 +28,4 @@ The initial conditions are as follows:
 | Initial volume of compartment 'C' | $1$ | constant |
 | Initial value of species reference 'A1_sr' | $2$ | variable |
 | Initial value of species reference 'A1_sr2' | $1$ | variable |]
+

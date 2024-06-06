@@ -1,0 +1,84 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Compartment",
+    "id": "C",
+    "assignments": {
+      "start_": "3"
+    },
+    "boundary": true
+  },
+  {
+    "class": "Species",
+    "id": "S1",
+    "assignments": {
+      "start_": "2 / C"
+    },
+    "compartment": "C"
+  },
+  {
+    "class": "Species",
+    "id": "S2",
+    "assignments": {
+      "start_": "2 / C"
+    },
+    "compartment": "C"
+  },
+  {
+    "class": "Species",
+    "id": "S3",
+    "assignments": {
+      "start_": "2"
+    },
+    "compartment": "C",
+    "isAmount": true
+  },
+  {
+    "class": "Record",
+    "id": "x",
+    "assignments": {
+      "ode_": "S1"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "y",
+    "assignments": {
+      "ode_": "S2"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "z",
+    "assignments": {
+      "ode_": "S3"
+    }
+  },
+  {
+    "id": "volume",
+    "units": "litre",
+    "action": "defineUnit"
+  },
+  {
+    "id": "area",
+    "units": "metre^2",
+    "action": "defineUnit"
+  },
+  {
+    "id": "length",
+    "units": "metre",
+    "action": "defineUnit"
+  },
+  {
+    "id": "substance",
+    "units": "mole",
+    "action": "defineUnit"
+  },
+  {
+    "id": "time",
+    "units": "second",
+    "action": "defineUnit"
+  }
+]

@@ -63,3 +63,4 @@ The initial conditions are as follows:
 | Initial value of parameter k5 | $2.8$ | variable |
 | Initial volume of compartment 'comp' | $5$ | variable |
 | Initial volume of compartment 'comp2' | $k4$ | variable |]
+

@@ -29,3 +29,4 @@ The initial conditions are as follows:
 [{width:35em,margin: 1em auto}|       | *Value* | *Constant* |
 | Initial value of parameter P1 | $delay(S1, addtwo(0.5, 0.5))$ | variable |
 | Initial value of parameter S1 | $5$ | variable |]
+

@@ -23,3 +23,4 @@ The initial conditions are as follows:
 [{width:35em,margin: 1em auto}|       | *Value* | *Constant* |
 | Initial value of parameter conv | $0.1$ | constant |
 | Initial value of parameter p8 | $8$ | variable |]
+

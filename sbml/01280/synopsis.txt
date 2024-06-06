@@ -26,3 +26,4 @@ The initial conditions are as follows:
 | Initial value of parameter p1 | $max(-5, -time)$ | variable |
 | Initial value of parameter p2 | $max(time)$ | variable |
 | Initial value of parameter p3 | $max(5, time)$ | variable |]
+

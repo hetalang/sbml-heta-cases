@@ -27,3 +27,5 @@ The initial conditions are as follows:
 |Value of parameter k2       |$0.9$            |second^-1^                 |
 |Value of parameter k3       |$0.7$            |second^-1^                 |
 |Volume of compartment C     |$1$              |litre                      |]
+
+

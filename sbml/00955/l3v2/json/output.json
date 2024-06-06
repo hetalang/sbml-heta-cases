@@ -69,14 +69,14 @@
     "class": "Record",
     "id": "P10",
     "assignments": {
-      "ode_": "ceil(t)"
+      "ode_": "ceil(t - 0.001)"
     }
   },
   {
     "class": "Record",
     "id": "P11",
     "assignments": {
-      "ode_": "ceil((-t))"
+      "ode_": "ceil((-t) - 0.001)"
     }
   },
   {
@@ -111,14 +111,14 @@
     "class": "Record",
     "id": "P18",
     "assignments": {
-      "ode_": "floor(t)"
+      "ode_": "floor(t + 0.001)"
     }
   },
   {
     "class": "Record",
     "id": "P19",
     "assignments": {
-      "ode_": "floor((-t))"
+      "ode_": "floor((-t) + 0.001)"
     }
   },
   {

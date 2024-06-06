@@ -1,0 +1,20 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Const",
+    "id": "INF",
+    "num": 10
+  },
+  {
+    "class": "Const",
+    "id": "Inf",
+    "num": 1
+  },
+  {
+    "class": "Const",
+    "id": "inf",
+    "num": 0.1
+  }
+]

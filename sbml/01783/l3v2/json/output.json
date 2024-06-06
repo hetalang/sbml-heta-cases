@@ -1,0 +1,25 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Record",
+    "id": "x",
+    "assignments": {
+      "start_": "3"
+    }
+  },
+  {
+    "class": "Process",
+    "id": "x_proc",
+    "assignments": {
+      "ode_": "((2 > 0) ? 1 : 0)"
+    },
+    "actors": [
+      {
+        "target": "x",
+        "stoichiometry": 1
+      }
+    ]
+  }
+]

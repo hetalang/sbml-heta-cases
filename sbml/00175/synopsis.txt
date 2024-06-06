@@ -20,3 +20,5 @@ The initial conditions are as follows:
 
 [{width:30em,margin: 1em auto}|      |*Value*          |*Units*  |
 |Value of parameter S1 |$          0.0$ |any |]
+
+

@@ -35,3 +35,4 @@ The initial conditions are as follows:
 |Value of parameter k2       |$0.25$           |second^-1^                |
 |Value of parameter p1       |$1.25 \x 10^-5$ |mole                |
 |Volume of compartment C     |$1$              |litre                  |]
+

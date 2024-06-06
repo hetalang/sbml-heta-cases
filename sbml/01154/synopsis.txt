@@ -17,3 +17,4 @@ The initial conditions are as follows:
 [{width:35em,margin: 1em auto}|       | *Value* | *Constant* |
 | Initial value of parameter sub1__t1 | $1$ | variable |
 | Initial value of parameter sub1__t2 | $1$ | variable |]
+

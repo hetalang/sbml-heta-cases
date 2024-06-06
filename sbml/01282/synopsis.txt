@@ -18,3 +18,4 @@ The initial conditions are as follows:
 | Initial value of parameter p1 | $piecewise(0, 5, 1)$ | constant |
 | Initial value of parameter p2 | $true && (0 || 0.0)$ | constant |
 | Initial value of parameter p3 | $0 || (1 - 1) || (0^3)$ | constant |]
+

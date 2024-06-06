@@ -33,3 +33,4 @@ The initial conditions are as follows:
 | Initial value of parameter p2 | $my_implies(time > 5.5, time < 2.5)$ | variable |
 | Initial value of parameter p3 | $my_implies(time < 5.5, time > 2.5)$ | variable |
 | Initial value of parameter p4 | $my_implies(time < 5.5, time < 2.5)$ | variable |]
+

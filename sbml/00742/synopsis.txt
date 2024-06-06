@@ -40,3 +40,4 @@ The initial conditions are as follows:
 |Value of parameter p1               |$            1$ |second^-1^                |
 |Value of parameter p2               |$            1$ |litre mole^-1^                 |
 |Volume of compartment C |$            1.25$ |litre                     |]
+

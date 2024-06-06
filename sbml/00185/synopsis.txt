@@ -37,3 +37,4 @@ The initial conditions are as follows:
 |Value of parameter S3              |$   undeclared$ |same as S1 |
 |Value of parameter k1              |$         0.75$ |dimensionless |
 |Value of parameter k2              |$           50$ |second^-1^ |]
+

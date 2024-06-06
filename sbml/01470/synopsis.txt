@@ -26,3 +26,4 @@ The initial conditions are as follows:
 | Initial amount of species s1 | $1$ | variable |
 | Initial value of parameter extentconv | $1000$ | constant |
 | Initial volume of compartment 'C' | $1$ | constant |]
+

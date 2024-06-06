@@ -62,3 +62,4 @@ The initial conditions are as follows:
 | Initial value of parameter fb_negInf | $-inf$ | constant |
 | Initial value of parameter fb_1 | $1$ | constant |
 | Initial value of parameter fb_0 | $0$ | variable |]
+

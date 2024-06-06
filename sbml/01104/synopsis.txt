@@ -37,3 +37,4 @@ The initial conditions are as follows:
 | Initial amount of species Y | $1$ | variable |
 | Initial value of parameter k1 | $1$ | constant |
 | Initial volume of compartment 'default_compartment' | $1$ | constant |]
+

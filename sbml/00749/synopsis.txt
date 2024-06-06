@@ -39,3 +39,4 @@ The initial conditions are as follows:
 |Value of parameter k1               |$         0.75$ |dimensionless |
 |Value of parameter k2               |$            5$ |second^-1^ |
 |Volume of compartment C |$            0.79$ |litre                     |]
+

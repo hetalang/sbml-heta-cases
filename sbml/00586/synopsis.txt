@@ -22,3 +22,4 @@ The initial conditions are as follows:
 |Initial concentration of S2   |$            0$ |mole litre^-1^                      |
 |Value of parameter k1         |$          1.5$ |second^-1^ |
 |Volume of compartment C       |$          1.5$ |litre                     |]
+

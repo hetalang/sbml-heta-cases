@@ -38,3 +38,4 @@ a value of zero; i.e., the compartment represents a point, and therefore
 cannot have a value for the %size% or %units% attributes.  The quantities
 of species located in the compartment must be treated as amounts and not
 concentrations.
+

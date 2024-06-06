@@ -35,3 +35,5 @@ The initial conditions are as follows:
 |Value of parameter S3 |$   undeclared$ |any |
 |Value of parameter k1 |$          0.7$ |(units of S3) (units of S1)^-1^ |
 |Value of parameter k2 |$           40$ |second^-1^ |]
+
+

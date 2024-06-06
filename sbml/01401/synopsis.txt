@@ -26,3 +26,4 @@ The initial conditions are as follows:
 | Initial value of parameter P0 | $rateOf(S1)$ | variable |
 | Initial value of parameter S1 | $5$ | variable |
 | Initial value of parameter P1 | $delay(rateOf(S1), 1)$ | variable |]
+

@@ -35,3 +35,4 @@ The initial conditions are as follows:
 | Initial concentration of species submod2__ES | $1$ | variable |
 | Initial volume of compartment 'submod1__comp' | $1$ | constant |
 | Initial volume of compartment 'submod2__comp' | $1$ | constant |]
+

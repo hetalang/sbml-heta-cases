@@ -30,3 +30,5 @@ The initial conditions are as follows:
 |Value of parameter S1 |$          1.0$ |any |
 |Value of parameter S2 |$          0.0$ |same as S1 |
 |Value of parameter k1 |$            1$ |second^-1^ |]
+
+

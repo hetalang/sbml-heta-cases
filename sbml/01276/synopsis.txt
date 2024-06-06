@@ -18,3 +18,4 @@ The initial conditions are as follows:
 | Initial value of parameter p1 | $min(-1, -10)$ | constant |
 | Initial value of parameter p2 | $min(30)$ | constant |
 | Initial value of parameter p3 | $min(20, 200, 2, 2000)$ | constant |]
+

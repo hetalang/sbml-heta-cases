@@ -40,3 +40,4 @@ The initial conditions are as follows:
 | Initial value of parameter P0 | $delay(S1, 1)$ | variable |
 | Initial value of parameter P1 | $delay(S2, 1)$ | variable |
 | Initial volume of compartment 'C' | $1$ | constant |]
+

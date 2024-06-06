@@ -34,3 +34,4 @@ The initial conditions are as follows:
 | Initial concentration of species S1 | $0$ | variable |
 | Initial value of parameter x | $S1$ | variable |
 | Initial volume of compartment 'C1' | $0.5$ | variable |]
+

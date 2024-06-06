@@ -45,3 +45,4 @@ The initial conditions are as follows:
 | Initial value of parameter t4 | $1$ | variable |
 | Initial value of parameter t5 | $1$ | variable |
 | Initial volume of compartment 'C' | $1$ | constant |]
+

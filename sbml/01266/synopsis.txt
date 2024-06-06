@@ -29,3 +29,4 @@ The initial conditions are as follows:
 [{width:35em,margin: 1em auto}|       | *Value* | *Constant* |
 | Initial value of parameter p1 | $2$ | variable |
 | Initial value of parameter p2 | $10$ | variable |]
+

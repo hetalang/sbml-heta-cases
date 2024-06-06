@@ -28,3 +28,4 @@ The initial conditions are as follows:
 |Value of parameter k1               |$1.0 \x 10^4$   |(units of p1)^-1^ second^-1^  |
 |Value of parameter k2               |$undeclared$     |second^-1^                 |
 |Value of parameter k3               |$0.7$            |second^-1^                 |]
+

@@ -51,3 +51,4 @@ The initial conditions are as follows:
 | Initial value of parameter U2 | $23$ | variable |
 | Initial value of parameter A__y | $8.8$ | variable |
 | Initial volume of compartment 'A__default_compartment' | $1$ | constant |]
+

@@ -41,3 +41,4 @@ The initial conditions are as follows:
 | Initial value of parameter k1 | $1$ | constant |
 | Initial value of parameter p1 | $1$ | variable |
 | Initial volume of compartment 'default_compartment' | $1$ | constant |]
+

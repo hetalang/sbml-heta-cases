@@ -25,3 +25,4 @@ The initial conditions are as follows:
 | Initial concentration of species A | $20$ | variable |
 | Initial concentration of species B | $1$ | variable |
 | Initial volume of compartment 'C' | $1$ | constant |]
+

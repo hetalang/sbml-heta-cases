@@ -40,3 +40,4 @@ The initial conditions are as follows:
 | Initial value of species reference 'A_sr2' | $1$ | variable |
 | Initial value of species reference 'B_sr1' | $2$ | variable |
 | Initial value of species reference 'B_sr2' | $1$ | variable |]
+

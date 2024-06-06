@@ -33,3 +33,5 @@ The initial conditions are as follows:
 |Value of parameter S2 |$2.0 \x 10^-1$ |same as S1 |
 |Value of parameter k1 |$         0.75$ |dimensionless |
 |Value of parameter k2 |$         0.25$ |second^-1^ |]
+
+

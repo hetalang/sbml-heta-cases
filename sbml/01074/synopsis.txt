@@ -38,3 +38,4 @@ The species values are given as amounts of substance to make it easier to
 use the model in a discrete stochastic simulator, but (as per usual SBML
 principles) their symbols represent their values in concentration units
 where they appear in expressions.
+

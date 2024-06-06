@@ -36,3 +36,4 @@ The initial conditions are as follows:
 | Initial value of parameter conversion | $2$ | constant |
 | Initial value of parameter P0 | $unknown$ | variable |
 | Initial volume of compartment 'C' | $1$ | constant |]
+

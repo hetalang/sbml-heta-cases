@@ -9,7 +9,7 @@ synopsis:      Basic reactions with three species in a compartment
 
 componentTags: StoichiometryMath, Compartment, Species, Reaction, Parameter, FunctionDefinition 
 
-testTags:      Amount, AssignedConstantStoichiometry, NonUnityStoichiometry
+testTags:      Amount, AssignedConstantStoichiometry, DefaultValue, NonUnityStoichiometry
 
 testType:      TimeCourse
 
@@ -83,3 +83,6 @@ use the model in a discrete stochastic simulator, but (as per usual SBML
 principles) their symbols represent their values in concentration units
 
 where they appear in expressions.
+
+
+

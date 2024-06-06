@@ -33,3 +33,4 @@ The initial conditions are as follows:
 | Initial concentration of species S1 | $5$ | variable |
 | Initial value of parameter P1 | $delay(S1_stoich, 1)$ | variable |
 | Initial volume of compartment 'C' | $1$ | constant |]
+

@@ -36,3 +36,4 @@ The initial conditions are as follows:
 | Initial value of parameter x | $S1$ | variable |
 | Initial value of parameter x2 | $0$ | variable |
 | Initial volume of compartment 'C1' | $0.5$ | variable |]
+

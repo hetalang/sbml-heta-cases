@@ -35,3 +35,4 @@ The initial conditions are as follows:
 | Initial value of parameter k | $0$ | variable |
 | Initial value of local parameter 'J0.k' | $1$ | constant |
 | Initial volume of compartment 'C' | $1$ | constant |]
+

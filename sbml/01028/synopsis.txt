@@ -2,7 +2,7 @@
 category:      Test
 synopsis:      Single reversible reaction.
 componentTags: StoichiometryMath, Compartment, Species, Reaction, Parameter 
-testTags:      Amount, ReversibleReaction, AssignedConstantStoichiometry, NonUnityStoichiometry
+testTags:      Amount, DefaultValue, ReversibleReaction, AssignedConstantStoichiometry, NonUnityStoichiometry
 testType:      TimeCourse
 levels:        2.1, 2.2, 2.3, 2.4, 2.5
 generatedBy:   Numeric
@@ -37,3 +37,4 @@ The species values are given as amounts of substance to make it easier to
 use the model in a discrete stochastic simulator, but (as per usual SBML
 principles) their symbols represent their values in concentration units
 where they appear in expressions.
+

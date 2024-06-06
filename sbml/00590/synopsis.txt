@@ -25,3 +25,4 @@ The initial conditions are as follows:
 |Value of parameter k1         |$         0.75$ |metre^2^ mole^-1^ second^-1^ |
 |Value of parameter k2         |$         0.25$ |second^-1^                |
 |Area of compartment C         |$            1$ |metre^2^                  |]
+

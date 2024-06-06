@@ -25,3 +25,4 @@ The initial conditions are as follows:
 [{width:35em,margin: 1em auto}|       | *Value* | *Constant* |
 | Initial amount of species S1 | $5$ | variable |
 | Initial volume of compartment 'comp' | $5$ | constant |]
+

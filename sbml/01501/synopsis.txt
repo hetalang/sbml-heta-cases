@@ -40,3 +40,4 @@ The initial conditions are as follows:
 | Initial value of parameter P0 | $unknown$ | variable |
 | Initial value of parameter P1 | $unknown$ | variable |
 | Initial volume of compartment 'C' | $1$ | constant |]
+

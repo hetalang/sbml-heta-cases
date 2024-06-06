@@ -26,3 +26,5 @@ The initial conditions are as follows:
 |Value of parameter P2 |$            0$ |same as P1 |
 |Value of parameter P3 |$  1 \x 10^-3$ |second^-1^ |
 |Value of parameter k1 |$  0.5$ |second^-3^ |]
+
+

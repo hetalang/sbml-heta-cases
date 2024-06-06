@@ -31,3 +31,4 @@ The initial conditions are as follows:
 |Value of parameter k          |$            2$ |second^-1^ |
 |Value of local parameter S1   |$            1$ |second^-1^ |
 |Volume of compartment C       |$            1$ |litre                     |]
+

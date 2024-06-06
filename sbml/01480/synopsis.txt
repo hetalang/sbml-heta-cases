@@ -33,3 +33,4 @@ The initial conditions are as follows:
 | Initial concentration of species S1 | $1$ | variable |
 | Initial volume of compartment 'C' | $1$ | constant |
 | Initial value of species reference 'S1_sr' | $delay(S1, 1)$ | variable |]
+

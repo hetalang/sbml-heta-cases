@@ -28,3 +28,4 @@ The initial conditions are as follows:
 | Initial concentration of species A__D | $7$ | variable |
 | Initial concentration of species A__ES | $0.1$ | variable |
 | Initial volume of compartment 'A__comp' | $1$ | constant |]
+

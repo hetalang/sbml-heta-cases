@@ -59,3 +59,4 @@ The initial conditions are as follows:
 | Initial value of parameter fb_n1000 | $-1000$ | constant |
 | Initial value of parameter fb_1 | $1$ | constant |
 | Initial value of species reference 'R25_S_stoich' | $0.5$ | constant |]
+

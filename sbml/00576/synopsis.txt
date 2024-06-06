@@ -26,3 +26,4 @@ The initial conditions are as follows:
 |Initial value of parameter p4       |$1.0 \x 10^-3$  |same as p1                      |
 |Value of parameter k1               |$0.75$           |(units of p1)^-1^ second^-1^ |
 |Value of parameter k2               |$0.25$           |second^-1^                |]
+

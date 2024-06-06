@@ -40,3 +40,4 @@ The initial conditions are as follows:
 | Initial value of parameter P0 | $rateOf(S1)$ | variable |
 | Initial value of parameter P1 | $rateOf(S2)$ | variable |
 | Initial volume of compartment 'C' | $1$ | constant |]
+

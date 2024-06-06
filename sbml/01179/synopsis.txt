@@ -24,3 +24,4 @@ The initial conditions are as follows:
 | Initial value of parameter timeconv | $60$ | constant |
 | Initial value of parameter paramconv | $0.01$ | constant |
 | Initial value of parameter t1 | $1$ | variable |]
+

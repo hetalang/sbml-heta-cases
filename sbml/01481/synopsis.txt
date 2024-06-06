@@ -2,7 +2,7 @@
 category:        Test
 synopsis:        Stoichiometry math with a delay.
 componentTags:   CSymbolDelay, Compartment, Reaction, Species, StoichiometryMath
-testTags:        Amount, AssignedVariableStoichiometry, NonUnityStoichiometry
+testTags:        Amount, AssignedVariableStoichiometry, DefaultValue, NonUnityStoichiometry
 testType:        TimeCourse
 levels:          2.1, 2.2, 2.3, 2.4, 2.5
 generatedBy:     Numeric
@@ -27,3 +27,4 @@ The initial conditions are as follows:
 | Initial concentration of species S1 | $1$ | variable |
 | Initial volume of compartment 'C' | $1$ | constant |
 | Initial value of species reference 'S1_sr' | $delay(S1, 1)$ | variable |]
+

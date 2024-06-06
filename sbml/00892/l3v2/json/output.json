@@ -1,6 +1,7 @@
 [
   {
-    "id": "t"
+    "id": "t",
+    "units": "second"
   },
   {
     "class": "Record",

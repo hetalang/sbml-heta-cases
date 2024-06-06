@@ -58,3 +58,4 @@ The initial conditions are as follows:
 | Initial value of parameter fb_0_2 | $0.2$ | constant |
 | Initial value of parameter fb_1 | $1$ | constant |
 | Initial value of parameter fb_0_3 | $0.3$ | constant |]
+

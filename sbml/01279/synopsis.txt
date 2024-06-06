@@ -28,3 +28,4 @@ The initial conditions are as follows:
 | Initial value of parameter p2 | $implies((time > 5.5), (time < 2.5))$ | variable |
 | Initial value of parameter p3 | $implies((time < 5.5), (time > 2.5))$ | variable |
 | Initial value of parameter p4 | $implies((time < 5.5), (time < 2.5))$ | variable |]
+

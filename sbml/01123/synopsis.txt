@@ -31,3 +31,4 @@ The initial conditions are as follows:
 | Initial amount of species S1 | $1$ | variable |
 | Initial amount of species S3 | $4$ | variable |
 | Initial volume of compartment 'comp' | $5$ | variable |]
+

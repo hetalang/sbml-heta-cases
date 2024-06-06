@@ -33,3 +33,4 @@ The initial conditions are as follows:
 |Value of parameter k1       |$100$      |second^-1^ |
 |Value of parameter k2       |$50$       |second^-1^ |
 |Volume of compartment C     |$1$        |litre                     |]
+

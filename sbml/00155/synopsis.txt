@@ -41,3 +41,4 @@ The initial conditions are as follows:
 In this example the compartment has its spatialDimensions attribute set to
 zero; i.e., it represents a point and therefore cannot have size or units.
 The species values must be treated as amounts and not concentrations.
+

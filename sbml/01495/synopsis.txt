@@ -27,3 +27,4 @@ The initial conditions are as follows:
 
 [{width:35em,margin: 1em auto}|       | *Value* | *Constant* |
 | Initial value of parameter p1 | $my_quotient(time, 2)$ | variable |]
+

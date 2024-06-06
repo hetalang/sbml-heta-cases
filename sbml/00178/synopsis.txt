@@ -33,3 +33,5 @@ The initial conditions are as follows:
 |Value of parameter S3 |$1.0 \x 10^-1$ |same as S1 |
 |Value of parameter k1 |$         0.75$ |(units of S1)^-1^ second^-1^ |
 |Value of parameter k2 |$         0.25$ |second^-1^ |]
+
+
