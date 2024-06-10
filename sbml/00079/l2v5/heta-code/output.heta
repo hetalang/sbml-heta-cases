@@ -1,0 +1,27 @@
+
+volume #defineUnit { units: litre, };
+area #defineUnit { units: metre^2, };
+length #defineUnit { units: metre, };
+substance #defineUnit { units: mole, };
+time #defineUnit { units: second, };
+multiply #defineFunction { arguments: [x, y], math: x * y, };
+
+t @TimeScale { };
+
+compartment @Compartment 'compartment' { units: volume, boundary: true, } .= 1;
+
+S1 @Species 'S1' { units: substance/volume, compartment: compartment, } .= 1e-4 / compartment;
+S2 @Species 'S2' { units: substance/volume, compartment: compartment, } .= 2e-4 / compartment;
+S3 @Species 'S3' { units: substance/volume, compartment: compartment, } .= 1.5e-4 / compartment;
+S4 @Species 'S4' { units: substance/volume, compartment: compartment, };
+S4 := multiply(p1, S2);
+
+reaction1 @Reaction 'reaction1' { actors: S1 + S2 = S3, reversible: false, };
+reaction1 := compartment * k1 * S1 * S2;
+reaction2 @Reaction 'reaction2' { actors: S3 = S1 + S2, reversible: false, };
+reaction2 := compartment * k2 * S3;
+
+k1 @Record 'k1' { } .= 7500;
+k2 @Record 'k2' { } .= 0.0025;
+p1 @Record 'p1' { } .= 0.75;
+

@@ -3,58 +3,7 @@
 [info]	Compilation of module "index.heta" of type "heta"...
 [info]	Reading module of type "heta" from file "/home/runner/work/sbml-heta-cases/sbml-heta-cases/result/sbml/01485/l3v2/index.heta"...
 [info]	Reading module of type "sbml" from file "/home/runner/work/sbml-heta-cases/sbml-heta-cases/result/sbml/01485/model-sbml-l3v2.xml"...
-[error]	The #defineFunction my_abs must have "arguments".
-[error]	The #defineFunction my_acos must have "arguments".
-[error]	The #defineFunction my_asin must have "arguments".
-[error]	The #defineFunction my_atan must have "arguments".
-[error]	The #defineFunction my_ceil must have "arguments".
-[error]	The #defineFunction my_cos must have "arguments".
-[error]	The #defineFunction my_exp must have "arguments".
-[error]	The #defineFunction my_floor must have "arguments".
-[error]	The #defineFunction my_log must have "arguments".
-[error]	The #defineFunction my_log10 must have "arguments".
-[error]	The #defineFunction my_pow must have "arguments".
-[error]	The #defineFunction my_sqr must have "arguments".
-[error]	The #defineFunction my_sqrt must have "arguments".
-[error]	The #defineFunction my_sin must have "arguments".
-[error]	The #defineFunction my_tan must have "arguments".
-[error]	The #defineFunction my_tanh must have "arguments".
-[info]	Setting references in elements, total length 115
-[error]	FunctionDef "my_abs" is not found as expected here: P2 { math: undefined };
-[error]	FunctionDef "my_abs" is not found as expected here: P3 { math: undefined };
-[error]	FunctionDef "my_acos" is not found as expected here: P4 { math: undefined };
-[error]	FunctionDef "my_acos" is not found as expected here: P5 { math: undefined };
-[error]	FunctionDef "my_asin" is not found as expected here: P6 { math: undefined };
-[error]	FunctionDef "my_asin" is not found as expected here: P7 { math: undefined };
-[error]	FunctionDef "my_atan" is not found as expected here: P8 { math: undefined };
-[error]	FunctionDef "my_atan" is not found as expected here: P9 { math: undefined };
-[error]	FunctionDef "my_ceil" is not found as expected here: P10 { math: undefined };
-[error]	FunctionDef "my_ceil" is not found as expected here: P11 { math: undefined };
-[error]	FunctionDef "my_ceil" is not found as expected here: P12 { math: undefined };
-[error]	FunctionDef "my_cos" is not found as expected here: P13 { math: undefined };
-[error]	FunctionDef "my_cos" is not found as expected here: P14 { math: undefined };
-[error]	FunctionDef "my_exp" is not found as expected here: P15 { math: undefined };
-[error]	FunctionDef "my_exp" is not found as expected here: P16 { math: undefined };
-[error]	FunctionDef "my_exp" is not found as expected here: P17 { math: undefined };
-[error]	FunctionDef "my_floor" is not found as expected here: P18 { math: undefined };
-[error]	FunctionDef "my_floor" is not found as expected here: P19 { math: undefined };
-[error]	FunctionDef "my_log" is not found as expected here: P20 { math: undefined };
-[error]	FunctionDef "my_log" is not found as expected here: P21 { math: undefined };
-[error]	FunctionDef "my_log10" is not found as expected here: P22 { math: undefined };
-[error]	FunctionDef "my_log10" is not found as expected here: P23 { math: undefined };
-[error]	FunctionDef "my_pow" is not found as expected here: P24 { math: undefined };
-[error]	FunctionDef "my_pow" is not found as expected here: P25 { math: undefined };
-[error]	FunctionDef "my_pow" is not found as expected here: P26 { math: undefined };
-[error]	FunctionDef "my_sqr" is not found as expected here: P27 { math: undefined };
-[error]	FunctionDef "my_sqr" is not found as expected here: P28 { math: undefined };
-[error]	FunctionDef "my_sqrt" is not found as expected here: P29 { math: undefined };
-[error]	FunctionDef "my_sqrt" is not found as expected here: P30 { math: undefined };
-[error]	FunctionDef "my_sin" is not found as expected here: P31 { math: undefined };
-[error]	FunctionDef "my_sin" is not found as expected here: P32 { math: undefined };
-[error]	FunctionDef "my_sin" is not found as expected here: P33 { math: undefined };
-[error]	FunctionDef "my_tan" is not found as expected here: P34 { math: undefined };
-[error]	FunctionDef "my_tan" is not found as expected here: P35 { math: undefined };
-[error]	FunctionDef "my_tan" is not found as expected here: P36 { math: undefined };
-[error]	FunctionDef "my_tanh" is not found as expected here: P37 { math: undefined };
+[info]	Setting references in elements, total length 131
+[error]	FunctionDef "tanh" is not found as expected here: my_tanh { math: tanh(x) };
 [info]	Checking for circular references in Records.
 [warn]	Units checking and export were skipped because of errors in compilation.

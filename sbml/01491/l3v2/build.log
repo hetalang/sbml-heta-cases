@@ -13,21 +13,14 @@
     1. /math should NOT be shorter than 1 characters
 [error]	my_xor0 Some of properties do not satisfy requirements for class "FunctionDef"
     1. /math should NOT be shorter than 1 characters
-[error]	The #defineFunction my_plus must have "arguments".
-[error]	The #defineFunction my_times must have "arguments".
-[error]	The #defineFunction my_and must have "arguments".
 [error]	Function math "my_and" should be a numeric expression.
-[error]	The #defineFunction my_or must have "arguments".
 [error]	Function math "my_or" should be a numeric expression.
-[error]	The #defineFunction my_xor must have "arguments".
 [error]	Function math "my_xor" should be a numeric expression.
 [error]	id must not be a reserved word, got "e". Reserved words list: 
 	 include, block, namespace, abstract, concrete, begin, end, NaN, Infinity, e, E, pi, PI, time, SOLVERTIME, default
 [error]	e component does not exist which is not allowed for the "update" action.
-[info]	Setting references in elements, total length 83
-[error]	FunctionDef "my_plus" is not found as expected here: a { math: undefined };
+[info]	Setting references in elements, total length 85
 [error]	FunctionDef "my_plus0" is not found as expected here: a { math: undefined };
-[error]	FunctionDef "my_times" is not found as expected here: b { math: undefined };
 [error]	FunctionDef "my_times0" is not found as expected here: b { math: undefined };
 [error]	FunctionDef "my_and" is not found as expected here: c { math: undefined };
 [error]	FunctionDef "my_and0" is not found as expected here: c { math: undefined };

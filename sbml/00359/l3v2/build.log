@@ -3,9 +3,7 @@
 [info]	Compilation of module "index.heta" of type "heta"...
 [info]	Reading module of type "heta" from file "/home/runner/work/sbml-heta-cases/sbml-heta-cases/result/sbml/00359/l3v2/index.heta"...
 [info]	Reading module of type "sbml" from file "/home/runner/work/sbml-heta-cases/sbml-heta-cases/result/sbml/00359/model-sbml-l3v2.xml"...
-[error]	The #defineFunction lessthan must have "arguments".
 [error]	Function math "lessthan" should be a numeric expression.
-[error]	The #defineFunction add must have "arguments".
 [error]	DSwitcher trigger "event1" should be a boolean expression.
 [info]	Setting references in elements, total length 90
 [error]	No required "trigger" property for "event1" of DSwitcher.

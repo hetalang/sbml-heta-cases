@@ -3,18 +3,9 @@
 [info]	Compilation of module "index.heta" of type "heta"...
 [info]	Reading module of type "heta" from file "/home/runner/work/sbml-heta-cases/sbml-heta-cases/result/sbml/01490/l2v5/index.heta"...
 [info]	Reading module of type "sbml" from file "/home/runner/work/sbml-heta-cases/sbml-heta-cases/result/sbml/01490/model-sbml-l2v5.xml"...
-[error]	The #defineFunction my_plus must have "arguments".
-[error]	The #defineFunction my_times must have "arguments".
-[error]	The #defineFunction my_and must have "arguments".
-[error]	The #defineFunction my_or must have "arguments".
-[error]	The #defineFunction my_xor must have "arguments".
 [error]	id must not be a reserved word, got "e". Reserved words list: 
 	 include, block, namespace, abstract, concrete, begin, end, NaN, Infinity, e, E, pi, PI, time, SOLVERTIME, default
 [error]	e component does not exist which is not allowed for the "update" action.
-[info]	Setting references in elements, total length 88
-[error]	FunctionDef "my_plus" is not found as expected here: a { math: undefined };
-[error]	FunctionDef "my_times" is not found as expected here: b { math: undefined };
-[error]	FunctionDef "my_and" is not found as expected here: c { math: undefined };
-[error]	FunctionDef "my_or" is not found as expected here: d { math: undefined };
+[info]	Setting references in elements, total length 93
 [info]	Checking for circular references in Records.
 [warn]	Units checking and export were skipped because of errors in compilation.

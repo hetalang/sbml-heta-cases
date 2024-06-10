@@ -1,0 +1,17 @@
+
+getPointFour #defineFunction { arguments: [], math: 0.4, };
+
+t @TimeScale { };
+
+C1 @Compartment { } .= 0.5;
+
+S1 @Species { compartment: C1, } .= 0;
+
+S1_proc @Process { actors:  = S1, };
+S1_proc := getPointFour();
+C1_proc @Process { actors:  = C1, };
+C1_proc := 0.2;
+
+x @Record { };
+x := S1;
+
