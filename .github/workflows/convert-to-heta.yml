@@ -25,7 +25,7 @@ jobs:
           npm i -g hetalang/heta-compiler
           heta -v
 
-      - name: Download semantic cases
+      - name: Download semantic cases of version 3.4.0
         run: |
           mkdir -p cases
           curl -L -o cases/semantic_tests.zip https://github.com/sbmlteam/sbml-test-suite/releases/download/3.4.0/semantic_tests.v3.4.0.zip
