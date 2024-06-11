@@ -38,7 +38,7 @@ jobs:
       - name: Upload entire directory as artifact
         uses: actions/upload-artifact@v2
         with:
-          name: result-files
+          name: result
           path: result/
 
   prepare-heta:
@@ -49,11 +49,17 @@ jobs:
       - name: Download all artifacts
         uses: actions/download-artifact@v2
         with:
-          name: result-files
+          name: result
 
       - name: Create directory
         run: |
-          mkdir -p result/heta
+          bash ./bash/make-heta.sh
+      
+      - name: Upload entire directory as artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: result
+          path: result/
 
   commit-to-result:
     runs-on: ubuntu-latest
@@ -63,7 +69,7 @@ jobs:
       - name: Download all artifacts
         uses: actions/download-artifact@v2
         with:
-          name: result-files
+          name: result
 
       - name: copy static
         run: |
