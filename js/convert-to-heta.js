@@ -26,18 +26,21 @@ summary.cases.forEach((item) => {
     
     // write heta file
     let fullContent = `/*${synop}*/\n\n${heta}`;
-    fse.writeFileSync(path.resolve(BASE_DIR, item.id, 'output.heta'), fullContent);
+    fse.ensureDirSync(path.resolve(BASE_DIR, item.id));
+    fse.writeFileSync(path.resolve(BASE_DIR, item.id, 'output.heta'), fullContent,);
 
     // update html page
     html += `<li><a href="${item.id}/output.heta">${item.id}</a></li>`;
 
     // update lson
-    let synop1 = synop.replace(/"/g, '\\"');
-    let heta1 = heta.replace(/"/g, '\\"');
-    ljson += `{"prompt": "${synop1}", "completion": "${heta1}"},\n`;
+    let obj_i = {
+        prompt: `Create Heta model\n${synop}`,
+        completion: heta
+    };
+    ljson += JSON.stringify(obj_i) ;
 });
 
 html += '</ul></body></html>';
 
 fse.writeFileSync(path.resolve(BASE_DIR, 'index.html'), html);
-fse.writeFileSync(path.resolve(BASE_DIR, 'heta-finetune-0.ljson'), ljson);
+fse.writeFileSync(path.resolve(BASE_DIR, 'heta-finetune-0.jsonl'), ljson + '\n');
