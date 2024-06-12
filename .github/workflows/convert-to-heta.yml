@@ -24,6 +24,7 @@ jobs:
         run: |
           npm i -g hetalang/heta-compiler
           heta -v
+          npm ci
 
       - name: Download semantic cases of version 3.4.0
         run: |
