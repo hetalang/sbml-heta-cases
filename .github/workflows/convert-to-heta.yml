@@ -37,7 +37,9 @@ jobs:
 
       - name: Create collection of heta files
         run: |
-          bash ./bash/make-heta.sh
+          mkdir -p result/heta
+          rm -rf result/heta/*
+          BASE_DIR=./result/heta node ./js/convert-to-heta.js
 
       - name: copy static
         run: |
