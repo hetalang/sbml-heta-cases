@@ -1,0 +1,57 @@
+/*
+category:      Test
+synopsis:      Model using parameters and rules only.
+componentTags: Parameter, RateRule 
+testTags:      NonConstantParameter
+testType:      TimeCourse
+levels:        1.2, 2.1, 2.2, 2.3, 2.4, 2.5, 3.1, 3.2
+generatedBy:   Numeric
+
+The model contains four varying parameters called S1, S2, S3 and S4 and 
+four constant parameters called k1, k2, k3 and k4.  (Note that indeed S1, 
+S2, S3, and S4 are parameters and not species in this model.)
+
+The model contains three rules:
+
+[{width:30em,margin: 1em auto}|  *Type*  |  *Variable*  |  *Formula*  |
+ | Rate | S1       | $k2 * S2-k1 * S1$  |
+ | Rate | S3       | $k3 * S2-k4 * S3 * S4$  |
+ | Rate | S4       | $k3 * S2-k4 * S3 * S4$  |]
+
+
+The initial conditions are as follows:
+
+[{width:30em,margin: 1em auto}|      |*Value*          |*Units*  |
+|Value of parameter S1 |$1.0 \x 10^-4$ |any                       |
+|Value of parameter S2 |$2.0 \x 10^-4$ |any |
+|Value of parameter S3 |$            0$ |any |
+|Value of parameter S4 |$            0$ |same as S3 |
+|Value of parameter k1 |$         0.75$ |second^-1^ |
+|Value of parameter k2 |$         0.25$ |(units of S1) (units of S2)^-1^ second^-1^ |
+|Value of parameter k3 |$         0.15$ |(units of S3) (units of S2)^-1^ second^-1^ |
+|Value of parameter k4 |$          0.1$ |(units of S3)^-1^ second^-1^ |]
+
+
+*/
+
+
+
+t @TimeScale { units: second, };
+
+S1_proc @Process { actors:  = S1, aux: {{"metaid":"rule1"}}, };
+S1_proc := k2 * S2 + (-1) * k1 * S1;
+S3_proc @Process { actors:  = S3, aux: {{"metaid":"rule2"}}, };
+S3_proc := k3 * S2 + (-1) * k4 * S3 * S4;
+S4_proc @Process { actors:  = S4, aux: {{"metaid":"rule3"}}, };
+S4_proc := k3 * S2 + (-1) * k4 * S3 * S4;
+
+S1 @Record 'S1' { } .= 1e-4;
+S2 @Record 'S2' { } .= 2e-4;
+S3 @Record 'S3' { } .= 0;
+S4 @Record 'S4' { } .= 0;
+
+k1 @Const 'k1' { } = 0.75;
+k2 @Const 'k2' { } = 0.25;
+k3 @Const 'k3' { } = 0.15;
+k4 @Const 'k4' { } = 0.1;
+

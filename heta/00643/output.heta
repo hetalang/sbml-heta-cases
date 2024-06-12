@@ -1,0 +1,80 @@
+/*
+category:      Test
+synopsis:      Two reactions with four species in one
+compartment using an assignmentRule and a rateRule to vary species.
+componentTags: Compartment, Species, Reaction, Parameter, RateRule, AssignmentRule, InitialAssignment 
+testTags:      Amount, InitialValueReassigned
+testType:      TimeCourse
+levels:        2.2, 2.3, 2.4, 2.5, 3.1, 3.2
+generatedBy:   Numeric
+
+The model contains one compartment called C.  There are four
+species called S1, S2, S3 and S4 and four parameters called k1, k2, k3 and p1.
+The model contains two reactions defined as:
+
+[{width:30em,margin: 1em auto}|  *Reaction*  |  *Rate*  |
+| S1 -> S3 | $k1 * S1 * C$  |
+| S3 -> S1 | $k2 * S3 * C$  |]
+
+The model contains two rules:
+
+[{width:30em,margin: 1em auto}|  *Type*  |  *Variable*  |  *Formula*  |
+ | Assignment | S4 | $k3 * S1$  |
+ | Rate       | S2 | $k2 * S3-k1 * S1$  |]
+
+Note that in this case the initial value declared for species S4 is inconsistent
+with the value calculated by the assignmentRule.  The calculated value should be used.  
+
+The model contains one initialAssignment:
+
+[{width:30em,margin: 1em auto}| Variable | Formula |
+ | S1 | $p1 / 2000$  |]
+
+Note: InitialAssignments override any declared initial values.  In this case the 
+value of species S1 calculated by the initialAssignment is consisent with the value 
+declared by the model definition.
+
+The initial conditions are as follows:
+
+[{width:30em,margin: 1em auto}|       |*Value*          |*Units*  |
+|Initial amount of S1                |$   1 \x 10^-5$ |mole                      |
+|Initial amount of S2                |$ 1.5 \x 10^-5$ |mole                      |
+|Initial amount of S3                |$   1 \x 10^-5$ |mole                      |
+|Initial amount of S4                |$            5$ |mole                      |
+|Value of parameter k1               |$        0.015$ |second^-1^ |
+|Value of parameter k2               |$          0.5$ |second^-1^ |
+|Value of parameter k3               |$          1.5$ |dimensionless |
+|Value of parameter p1               |$   2 \x 10^-2$ |mole litre^-1^ |
+|Volume of compartment C |$            1$ |litre                     |]
+
+The species values are given as amounts of substance to make it easier to
+use the model in a discrete stochastic simulator, but (as per usual SBML
+principles) their symbols represent their values in concentration units
+where they appear in expressions.
+
+*/
+
+
+
+t @TimeScale { units: second, };
+
+C @Compartment 'C' { units: litre, boundary: true, } .= 1;
+
+S1 @Species 'S1' { units: mole/litre, compartment: C, } .= p1 * pow(2000, (-1));
+S2 @Species 'S2' { units: mole/litre, compartment: C, } .= 1.5e-5 / C;
+S3 @Species 'S3' { units: mole/litre, compartment: C, } .= 1e-5 / C;
+S4 @Species 'S4' { units: mole/litre, compartment: C, } .= 5 / C;
+S4 := k3 * S1;
+
+reaction1 @Reaction 'reaction1' { actors: S1 = S3, reversible: false, };
+reaction1 := C * k1 * S1;
+reaction2 @Reaction 'reaction2' { actors: S3 = S1, reversible: false, };
+reaction2 := C * k2 * S3;
+S2_proc @Process { actors:  = S2, aux: {{"metaid":"rule2"}}, };
+S2_proc := k2 * S3 + (-1) * k1 * S1;
+
+k1 @Const 'k1' { } = 0.015;
+k2 @Const 'k2' { } = 0.5;
+k3 @Const 'k3' { } = 1.5;
+p1 @Const 'p1' { } = 0.02;
+
