@@ -5,8 +5,10 @@ const summaryPath = path.resolve(BASE_DIR, '../sbml/summary');
 const summary = require(summaryPath);
 
 
-let html = ''
-html += '<html><head><style></style></head><body><ul>'
+let html = '';
+html += '<html><head><style></style></head><body><h2>SBML Heta cases</h2><ul>'
+
+let ljson = '';
 summary.cases.forEach((item) => {
     if (!item.l3v2RetCode) {
         var hetaPath = path.resolve(BASE_DIR, '../sbml', item.id, 'l3v2/heta-code/output.heta');
@@ -28,8 +30,14 @@ summary.cases.forEach((item) => {
 
     // update html page
     html += `<li><a href="${item.id}/output.heta">${item.id}</a></li>`;
+
+    // update lson
+    let synop1 = synop.replace(/"/g, '\\"');
+    let heta1 = heta.replace(/"/g, '\\"');
+    ljson += `{"prompt": "${synop1}", "completion": "${heta1}"},\n`;
 });
 
 html += '</ul></body></html>';
 
 fse.writeFileSync(path.resolve(BASE_DIR, 'index.html'), html);
+fse.writeFileSync(path.resolve(BASE_DIR, 'heta-finetune-0.ljson'), ljson);
