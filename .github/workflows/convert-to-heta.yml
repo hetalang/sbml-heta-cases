@@ -4,7 +4,8 @@ on:
   workflow_dispatch: {}
   push:
     branches: [ master, '*-result' ]
-  repository_dispatch: {}
+  repository_dispatch:
+    types: [ push, webhook ]
     
 jobs:
   main-job:
