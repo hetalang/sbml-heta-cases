@@ -41,34 +41,34 @@ $(window).ready(() => {
             item.on('click', () => {
                 $('#caseId').html(x.id);
                 $('#caseId').removeClass().addClass('retCode_' + x.l2v5RetCode);
-                $('#casePath').html(`${config.path}/${x.id}/`);
+                $('#casePath').html(`${config.path}/cases/${x.id}/`);
                 $('#retCode').html(x.l2v5RetCode);
                 $('#modal').show();
 
-                $.get(`${config.path}/${x.id}/synopsis.txt`, (data) => {
+                $.get(`${config.path}/cases/${x.id}/synopsis.txt`, (data) => {
                     let shorted = splitLines(data);
                     $('#modal #synopsis pre code').html(shorted);
                 }).fail(() => {
                     $('#modal #synopsis pre code').html('No synopsis.txt file found');
                 });
 
-                $.get(`${config.path}/${x.id}/l2v5/heta-code/output.heta`, (data) => {
+                $.get(`${config.path}/cases/${x.id}/l2v5/heta-code/output.heta`, (data) => {
                     $('#modal #heta-code-l2v5 pre code').html(data);
                 }).fail(() => {
                     $('#modal #heta-code-l2v5 pre code').html('No l2v5/heta-code/output.heta file found');
                 });
-                $.get(`${config.path}/${x.id}/l2v5/build.log`, (data) => {
+                $.get(`${config.path}/cases/${x.id}/l2v5/build.log`, (data) => {
                     $('#modal #logs-l2v5 pre code').html(data);
                 }).fail(() => {
                     $('#modal #logs-l2v5 pre code').html('No l2v5/build.log file found');
                 });
                 
-                $.get(`${config.path}/${x.id}/l3v2/heta-code/output.heta`, (data) => {
+                $.get(`${config.path}/cases/${x.id}/l3v2/heta-code/output.heta`, (data) => {
                     $('#modal #heta-code-l3v2 pre code').html(data);
                 }).fail(() => {
                     $('#modal #heta-code-l3v2 pre code').html('No l3v2/heta-code/output.heta file found');
                 });
-                $.get(`${config.path}/${x.id}/l3v2/build.log`, (data) => {
+                $.get(`${config.path}/cases/${x.id}/l3v2/build.log`, (data) => {
                     $('#modal #logs-l3v2 pre code').html(data);
                 }).fail(() => {
                     $('#modal #logs-l3v2 pre code').html('No l3v2/build.log file found');

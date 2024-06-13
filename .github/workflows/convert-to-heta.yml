@@ -22,9 +22,9 @@ jobs:
 
       - name: Installations of heta-compiler from repository
         run: |
-          npm i -g hetalang/heta-compiler
-          heta -v
           npm ci
+          npm i hetalang/heta-compiler
+          npx heta -v
 
       - name: Download semantic cases of version 3.4.0
         run: |
@@ -36,11 +36,9 @@ jobs:
         run: |
           bash ./bash/make-summary.sh
 
-      - name: Create collection of heta files
+      - name: Create collection of heta files with comments as synopsis
         run: |
-          mkdir -p result/heta
-          rm -rf result/heta/*
-          BASE_DIR=./result/heta node ./js/convert-to-heta.js
+          BASE_DIR=./result/latest node ./js/convert-to-heta.js
 
       - name: copy static
         run: |
