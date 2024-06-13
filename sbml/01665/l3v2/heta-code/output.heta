@@ -1,9 +1,0 @@
-
-
-t @TimeScale { };
-
-p1_proc @Process { actors:  = p1, };
-p1_proc := 6.02214076e+23 / (1e+23);
-
-p1 @Record { } .= 1;
-

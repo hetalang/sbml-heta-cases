@@ -1,9 +1,0 @@
-
-
-t @TimeScale { };
-
-p1 @Record { } .= 1;
-p1 [E0]= 5;
-
-E0 @DSwitcher { trigger: 6.02214076e+23 > (6.022e+23), };
-

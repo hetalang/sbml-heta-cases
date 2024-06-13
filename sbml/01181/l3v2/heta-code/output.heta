@@ -1,7 +1,0 @@
-
-
-t @TimeScale { };
-
-extentconv @Const { } = 1000;
-timeconv @Const { } = 60;
-

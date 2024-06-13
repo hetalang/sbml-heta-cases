@@ -1,6 +1,0 @@
-
-
-t @TimeScale { };
-
-P @Const { } = 3.7;
-

@@ -1,8 +1,0 @@
-
-
-t @TimeScale { };
-
-true @Const { } = 10;
-True @Const { } = 20;
-TRUE @Const { } = 30;
-

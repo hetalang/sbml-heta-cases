@@ -1,9 +1,0 @@
-
-
-t @TimeScale { };
-
-x @Record { } .= 3;
-x [E0]= ((1 == 1) ? 5 : 7);
-
-E0 @DSwitcher { trigger: t > 0.01, };
-

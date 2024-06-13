@@ -1,7 +1,0 @@
-
-
-t @TimeScale { units: second, };
-
-S1 @Record 'S1' { } .= 0;
-S1 := 7;
-

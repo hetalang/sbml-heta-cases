@@ -1,9 +1,0 @@
-
-
-t @TimeScale { units: second, };
-
-c @Compartment 'c' { units: metre, } .= 1.5e-4;
-
-c_proc @Process { actors:  = c, aux: {{"metaid":"rule1"}}, };
-c_proc := 0.1 * c;
-

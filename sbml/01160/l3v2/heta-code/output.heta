@@ -1,6 +1,0 @@
-
-
-t @TimeScale { };
-
-new_p1 @Const { aux: {{"metaid":"new_p1_metaid"}}, } = 10;
-

@@ -1,6 +1,0 @@
-
-
-t @TimeScale { };
-
-J1 @Const { } = 5;
-

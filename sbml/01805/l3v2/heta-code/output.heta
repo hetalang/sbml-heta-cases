@@ -1,8 +1,0 @@
-
-
-t @TimeScale { };
-
-comp @Compartment { boundary: true, } .= 3;
-Comp @Compartment { boundary: true, } .= 4;
-cOmP @Compartment { boundary: true, } .= 5;
-

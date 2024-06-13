@@ -1,8 +1,0 @@
-
-
-t @TimeScale { };
-
-C @Compartment { } .= 10;
-
-S1 @Species { compartment: C, } .= 5 / C;
-

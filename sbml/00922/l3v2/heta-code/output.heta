@@ -1,7 +1,0 @@
-
-
-t @TimeScale { units: second, };
-
-k1 @Const 'k1' { } = 0.6;
-k2 @Const 'k2' { } = 0.3;
-
