@@ -29,7 +29,7 @@ summary.cases.forEach((item) => {
     fse.writeFileSync(path.resolve(BASE_DIR, 'cases', item.id, 'output.heta'), fullContent);
 
     // update html page
-    html += `<li><a href="cases/${item.id}/output.heta">${item.id}</a></li>`;
+    html += `<li><a href="${item.id}/output.heta">${item.id}</a></li>`;
 
     // update lson
     let obj_i = {
