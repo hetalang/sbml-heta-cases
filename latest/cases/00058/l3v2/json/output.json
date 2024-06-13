@@ -63,11 +63,16 @@
     "reversible": false
   },
   {
+    "class": "Const",
+    "id": "k__reaction2_local",
+    "num": 2
+  },
+  {
     "class": "Reaction",
     "id": "reaction2",
     "title": "reaction2",
     "assignments": {
-      "ode_": "compartment * k * S2"
+      "ode_": "compartment * k__reaction2_local * S2"
     },
     "actors": [
       {

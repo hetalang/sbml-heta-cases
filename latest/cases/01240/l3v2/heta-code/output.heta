@@ -1,0 +1,8 @@
+
+
+t @TimeScale { };
+
+p @Record { } .= 3;
+
+E0 @DSwitcher { trigger: t > 5.5, };
+

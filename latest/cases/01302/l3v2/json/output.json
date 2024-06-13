@@ -1,0 +1,33 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Reaction",
+    "id": "J0",
+    "assignments": {
+      "ode_": "3"
+    },
+    "actors": []
+  },
+  {
+    "class": "Record",
+    "id": "p1",
+    "assignments": {
+      "start_": "0"
+    }
+  },
+  {
+    "class": "Process",
+    "id": "p1_proc",
+    "assignments": {
+      "ode_": "J0"
+    },
+    "actors": [
+      {
+        "target": "p1",
+        "stoichiometry": 1
+      }
+    ]
+  }
+]

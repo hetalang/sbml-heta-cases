@@ -1,0 +1,17 @@
+
+
+t @TimeScale { };
+
+C @Compartment { boundary: true, } .= 1;
+
+S1 @Species { compartment: C, } .= 2 / C;
+S2 @Species { compartment: C, } .= 3 / C;
+S3 @Species { boundary: true, compartment: C, } .= 2 / C;
+S4 @Species { boundary: true, compartment: C, } .= 3 / C;
+
+J0 @Reaction { actors: S3 + S1 = S2 + S4, };
+J0 := 0.01;
+
+m_cf @Const { } = 3;
+s1_cf @Const { } = 5;
+

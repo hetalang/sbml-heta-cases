@@ -1,0 +1,6 @@
+
+
+t @TimeScale { };
+
+param1 @Const { } = 10.42;
+

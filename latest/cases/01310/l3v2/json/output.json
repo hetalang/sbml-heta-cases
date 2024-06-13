@@ -1,0 +1,13 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Compartment",
+    "id": "C",
+    "assignments": {
+      "start_": "4"
+    },
+    "boundary": true
+  }
+]

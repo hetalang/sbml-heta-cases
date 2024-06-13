@@ -1,0 +1,9 @@
+
+
+t @TimeScale { units: second, };
+
+k1 @Record 'k1' { };
+k1 := 4 * k2;
+
+k2 @Const 'k2' { } = 0.3;
+

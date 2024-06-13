@@ -1,0 +1,14 @@
+
+
+t @TimeScale { units: second, };
+
+compartment @Compartment 'compartment' { units: metre, boundary: true, } .= 10;
+
+S1 @Species 'S1' { units: mole, compartment: compartment, isAmount: true, } .= 1.5e-6;
+S2 @Species 'S2' { units: mole, compartment: compartment, isAmount: true, } .= 1e-6;
+
+reaction1 @Reaction 'reaction1' { actors: S1 = S2, reversible: false, };
+reaction1 := k1 * S1;
+
+k1 @Const 'k1' { } = 1.5;
+

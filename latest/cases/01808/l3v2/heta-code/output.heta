@@ -1,0 +1,19 @@
+
+
+t @TimeScale { };
+
+C @Compartment { boundary: true, } .= 1;
+c @Compartment { boundary: true, } .= 2;
+
+spec @Species { compartment: C, } .= 3;
+Spec @Species { compartment: c, } .= 4;
+sPeC @Species { compartment: C, } .= 5;
+
+J @Reaction { actors:  = spec, };
+J := K;
+j @Reaction { actors:  = Spec + 2*sPeC, };
+j := k;
+
+K @Const { } = 1;
+k @Const { } = 2;
+

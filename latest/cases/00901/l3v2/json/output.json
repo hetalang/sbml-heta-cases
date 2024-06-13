@@ -1,0 +1,37 @@
+[
+  {
+    "id": "t",
+    "units": "second"
+  },
+  {
+    "class": "Compartment",
+    "id": "c",
+    "title": "c",
+    "units": "litre",
+    "assignments": {
+      "start_": "5"
+    }
+  },
+  {
+    "class": "Const",
+    "id": "k1",
+    "title": "k1",
+    "num": 1
+  },
+  {
+    "class": "Process",
+    "id": "c_proc",
+    "aux": {
+      "metaid": "rule1"
+    },
+    "assignments": {
+      "ode_": "(-1) * c * k1"
+    },
+    "actors": [
+      {
+        "target": "c",
+        "stoichiometry": 1
+      }
+    ]
+  }
+]

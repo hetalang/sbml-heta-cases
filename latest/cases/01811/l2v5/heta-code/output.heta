@@ -1,0 +1,17 @@
+
+volume #defineUnit { units: litre, };
+area #defineUnit { units: metre^2, };
+length #defineUnit { units: metre, };
+substance #defineUnit { units: mole, };
+time #defineUnit { units: second, };
+
+t @TimeScale { };
+
+INF @Record { } .= 10;
+Inf @Record { } .= 1;
+inf @Record { } .= 0.1;
+a @Record { } .= INF;
+b @Record { } .= Inf;
+c @Record { } .= inf;
+d @Record { } .= Infinity;
+

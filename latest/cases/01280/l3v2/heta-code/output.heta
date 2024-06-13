@@ -1,0 +1,11 @@
+
+
+t @TimeScale { };
+
+p1 @Record { };
+p1 := max((-5), (-t));
+p2 @Record { };
+p2 := max(t);
+p3 @Record { };
+p3 := max(5, t);
+

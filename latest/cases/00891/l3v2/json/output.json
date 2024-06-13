@@ -1,0 +1,60 @@
+[
+  {
+    "id": "t",
+    "units": "second"
+  },
+  {
+    "class": "Record",
+    "id": "k1",
+    "title": "k1",
+    "assignments": {
+      "start_": "1.5e-4"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "k2",
+    "title": "k2",
+    "assignments": {
+      "start_": "0"
+    }
+  },
+  {
+    "class": "Const",
+    "id": "k3",
+    "title": "k3",
+    "num": 1
+  },
+  {
+    "class": "Process",
+    "id": "k1_proc",
+    "aux": {
+      "metaid": "rule1"
+    },
+    "assignments": {
+      "ode_": "(-1) * k1 * k3 * t"
+    },
+    "actors": [
+      {
+        "target": "k1",
+        "stoichiometry": 1
+      }
+    ]
+  },
+  {
+    "class": "Process",
+    "id": "k2_proc",
+    "aux": {
+      "metaid": "rule2"
+    },
+    "assignments": {
+      "ode_": "k1 * k3 * t"
+    },
+    "actors": [
+      {
+        "target": "k2",
+        "stoichiometry": 1
+      }
+    ]
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Compartment",
+    "id": "c",
+    "assignments": {
+      "start_": "1"
+    },
+    "boundary": true
+  },
+  {
+    "class": "Species",
+    "id": "S1",
+    "assignments": {
+      "start_": "0"
+    },
+    "compartment": "c"
+  },
+  {
+    "class": "Reaction",
+    "id": "J0",
+    "assignments": {
+      "ode_": "1"
+    },
+    "actors": [
+      {
+        "target": "S1",
+        "stoichiometry": 1
+      }
+    ],
+    "reversible": false
+  },
+  {
+    "class": "Record",
+    "id": "p1",
+    "assignments": {
+      "start_": "J0"
+    }
+  }
+]

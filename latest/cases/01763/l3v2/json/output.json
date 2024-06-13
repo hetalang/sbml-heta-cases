@@ -1,0 +1,39 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Compartment",
+    "id": "C",
+    "assignments": {
+      "start_": "1"
+    },
+    "boundary": true
+  },
+  {
+    "class": "Species",
+    "id": "S1",
+    "assignments": {
+      "start_": "1"
+    },
+    "compartment": "C"
+  },
+  {
+    "class": "Reaction",
+    "id": "J0",
+    "assignments": {
+      "ode_": "6.02214076e+23 / avogadro"
+    },
+    "actors": [
+      {
+        "target": "S1",
+        "stoichiometry": 1
+      }
+    ]
+  },
+  {
+    "class": "Const",
+    "id": "avogadro",
+    "num": 1e+24
+  }
+]

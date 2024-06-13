@@ -1,0 +1,23 @@
+
+multiply #defineFunction { arguments: [x, y], math: x * y, };
+
+t @TimeScale { units: second, };
+
+C @Compartment 'C' { units: litre, boundary: true, } .= 1;
+
+S1 @Species 'S1' { units: mole/litre, compartment: C, } .= 2 / C;
+S2 @Species 'S2' { units: mole/litre, compartment: C, } .= 2 / C;
+S3 @Species 'S3' { units: mole/litre, compartment: C, } .= 0 / C;
+S4 @Species 'S4' { units: mole/litre, compartment: C, } .= 0 / C;
+
+reaction1 @Reaction 'reaction1' { actors: S1 + S2 = S3, reversible: false, };
+reaction1 := C * k1 * S1 * S2 * t;
+reaction2 @Reaction 'reaction2' { actors: S3 = S1 + S2, reversible: false, };
+reaction2 := multiply(multiply(k2, S3), multiply(C, t));
+reaction3 @Reaction 'reaction3' { actors: S3 = S1 + S4, reversible: false, };
+reaction3 := C * k3 * S3 * t;
+
+k1 @Const 'k1' { } = 1;
+k2 @Const 'k2' { } = 0.9;
+k3 @Const 'k3' { } = 0.7;
+

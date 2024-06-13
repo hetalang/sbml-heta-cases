@@ -1,0 +1,9 @@
+
+
+t @TimeScale { };
+
+p2 @Record { };
+p2 := 1 + t;
+
+p1 @Const { } = 5;
+

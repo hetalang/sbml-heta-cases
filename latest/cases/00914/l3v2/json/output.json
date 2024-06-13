@@ -1,0 +1,40 @@
+[
+  {
+    "id": "t",
+    "units": "second"
+  },
+  {
+    "class": "Compartment",
+    "id": "c",
+    "title": "c",
+    "units": "metre^2",
+    "assignments": {
+      "start_": "0.5"
+    }
+  },
+  {
+    "class": "Process",
+    "id": "c_proc",
+    "aux": {
+      "metaid": "rule1"
+    },
+    "assignments": {
+      "ode_": "multiply(c, 0.5)"
+    },
+    "actors": [
+      {
+        "target": "c",
+        "stoichiometry": 1
+      }
+    ]
+  },
+  {
+    "id": "multiply",
+    "arguments": [
+      "x",
+      "y"
+    ],
+    "math": "x * y",
+    "action": "defineFunction"
+  }
+]

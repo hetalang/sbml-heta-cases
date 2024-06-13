@@ -1,0 +1,18 @@
+
+volume #defineUnit { units: litre, };
+area #defineUnit { units: metre^2, };
+length #defineUnit { units: metre, };
+substance #defineUnit { units: mole, };
+time #defineUnit { units: second, };
+
+t @TimeScale { };
+
+k1_proc @Process { actors:  = k1, aux: {{"metaid":"rule1"}}, };
+k1_proc := (-1) * k1 * k3 * t;
+k2_proc @Process { actors:  = k2, aux: {{"metaid":"rule2"}}, };
+k2_proc := k1 * k3 * t;
+
+k1 @Record 'k1' { } .= 1.5e-4;
+k2 @Record 'k2' { } .= 0;
+k3 @Record 'k3' { } .= 1;
+

@@ -1,0 +1,17 @@
+
+
+t @TimeScale { units: second, };
+
+compartment @Compartment 'compartment' { boundary: true, } .= 0;
+
+S1 @Species 'S1' { units: mole, compartment: compartment, isAmount: true, } .= 1.5;
+S2 @Species 'S2' { units: mole, compartment: compartment, isAmount: true, } .= 0;
+S3 @Species 'S3' { units: mole, compartment: compartment, isAmount: true, } .= 0;
+
+reaction1 @Reaction 'reaction1' { actors: S1 = S2, reversible: false, };
+reaction1 := k1 * S1;
+S3_proc @Process { actors:  = S3, aux: {{"metaid":"rule1"}}, };
+S3_proc := 0.65;
+
+k1 @Const 'k1' { } = 1.546;
+

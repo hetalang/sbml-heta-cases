@@ -1,0 +1,11 @@
+
+
+t @TimeScale { };
+
+C @Compartment { } .= 3;
+
+S1 @Species { boundary: true, compartment: C, isAmount: true, } .= 2;
+
+C_proc @Process { actors:  = C, };
+C_proc := 1;
+

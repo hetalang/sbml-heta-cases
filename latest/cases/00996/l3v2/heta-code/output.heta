@@ -1,0 +1,16 @@
+
+
+t @TimeScale { };
+
+p1_proc @Process { actors:  = p1, };
+p1_proc := (-1);
+
+p1 @Record { } .= 1;
+p2 @Record { } .= 0;
+p2 [E0]= 1;
+p3 @Record { } .= 0;
+p3 [E1]= 1;
+
+E0 @DSwitcher { trigger: p1 >= 1, };
+E1 @DSwitcher { trigger: p1 >= 1, };
+

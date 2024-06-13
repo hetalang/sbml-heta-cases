@@ -1,0 +1,100 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Compartment",
+    "id": "default_compartment",
+    "aux": {
+      "sboTerm": "SBO:0000410"
+    },
+    "assignments": {
+      "start_": "1"
+    },
+    "boundary": true
+  },
+  {
+    "class": "Species",
+    "id": "S1",
+    "assignments": {
+      "start_": "0"
+    },
+    "compartment": "default_compartment"
+  },
+  {
+    "class": "Species",
+    "id": "S2",
+    "assignments": {
+      "start_": "0.001"
+    },
+    "compartment": "default_compartment"
+  },
+  {
+    "class": "Reaction",
+    "id": "_J0",
+    "assignments": {
+      "ode_": "k1"
+    },
+    "actors": [
+      {
+        "target": "S1",
+        "stoichiometry": 1
+      }
+    ]
+  },
+  {
+    "class": "Reaction",
+    "id": "_J1",
+    "assignments": {
+      "ode_": "(k2 * S1) / S2"
+    },
+    "actors": [
+      {
+        "target": "S2",
+        "stoichiometry": 3
+      },
+      {
+        "target": "S1",
+        "stoichiometry": -2
+      }
+    ]
+  },
+  {
+    "class": "Reaction",
+    "id": "_J2",
+    "assignments": {
+      "ode_": "k3 * S2"
+    },
+    "actors": [
+      {
+        "target": "S2",
+        "stoichiometry": -1
+      }
+    ]
+  },
+  {
+    "class": "Const",
+    "id": "k1",
+    "num": 1
+  },
+  {
+    "class": "Const",
+    "id": "k2",
+    "num": 3
+  },
+  {
+    "class": "Const",
+    "id": "k3",
+    "num": 1.4
+  },
+  {
+    "class": "Const",
+    "id": "S1conv",
+    "num": 3
+  },
+  {
+    "class": "Const",
+    "id": "modelconv",
+    "num": 4
+  }
+]

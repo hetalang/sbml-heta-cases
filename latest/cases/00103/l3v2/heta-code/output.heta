@@ -1,0 +1,20 @@
+
+multiply #defineFunction { arguments: [x, y], math: x * y, };
+
+t @TimeScale { units: second, };
+
+compartment @Compartment 'compartment' { boundary: true, } .= 0;
+
+S1 @Species 'S1' { units: mole, compartment: compartment, isAmount: true, } .= 1e-4;
+S2 @Species 'S2' { units: mole, compartment: compartment, isAmount: true, } .= 1e-4;
+S3 @Species 'S3' { units: mole, compartment: compartment, isAmount: true, } .= 2e-4;
+S4 @Species 'S4' { units: mole, compartment: compartment, isAmount: true, } .= 1e-4;
+
+reaction1 @Reaction 'reaction1' { actors: S1 + S2 = S3 + S4, reversible: false, };
+reaction1 := multiply(k1, multiply(S1, S2));
+reaction2 @Reaction 'reaction2' { actors: S3 + S4 = S1 + S2, reversible: false, };
+reaction2 := k2 * S3 * S4;
+
+k1 @Const 'k1' { } = 7500;
+k2 @Const 'k2' { } = 2500;
+

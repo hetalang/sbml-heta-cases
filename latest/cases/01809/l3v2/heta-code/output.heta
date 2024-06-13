@@ -1,0 +1,11 @@
+
+
+t @TimeScale { };
+
+C @Compartment { boundary: true, } .= 0;
+
+S1 @Species { compartment: C, isAmount: true, } .= 1 * C;
+
+J @Reaction { actors:  = S1, };
+J := 1.5;
+

@@ -1,0 +1,25 @@
+
+
+t @TimeScale { units: second, };
+
+C @Compartment 'C' { units: litre, };
+C := p1 * p2;
+
+S1 @Species 'S1' { units: mole/litre, compartment: C, } .= 1 / C;
+S2 @Species 'S2' { units: mole/litre, compartment: C, } .= 1.5 / C;
+S3 @Species 'S3' { units: mole/litre, compartment: C, } .= 1.1 / C;
+S4 @Species 'S4' { units: mole/litre, compartment: C, } .= 1 / C;
+
+reaction1 @Reaction 'reaction1' { actors: S1 + S2 = S3 + S4, reversible: false, };
+reaction1 := C * k1 * S1 * S2;
+reaction2 @Reaction 'reaction2' { actors: S3 + S4 = S1 + S2, reversible: false, };
+reaction2 := C * k2 * S3 * S4;
+p2_proc @Process { actors:  = p2, aux: {{"metaid":"rule2"}}, };
+p2_proc := 0.1;
+
+p2 @Record 'p2' { } .= 0.9;
+
+k1 @Const 'k1' { } = 0.0365;
+k2 @Const 'k2' { } = 0.0025;
+p1 @Const 'p1' { } = 0.1;
+

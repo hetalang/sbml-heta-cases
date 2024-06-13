@@ -1,0 +1,31 @@
+[
+  {
+    "id": "t",
+    "units": "second"
+  },
+  {
+    "class": "Compartment",
+    "id": "c",
+    "title": "c",
+    "units": "metre^2",
+    "assignments": {
+      "start_": "3.3 / 2"
+    }
+  },
+  {
+    "class": "Process",
+    "id": "c_proc",
+    "aux": {
+      "metaid": "rule1"
+    },
+    "assignments": {
+      "ode_": "1.25 * c"
+    },
+    "actors": [
+      {
+        "target": "c",
+        "stoichiometry": 1
+      }
+    ]
+  }
+]

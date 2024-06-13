@@ -1,0 +1,62 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Compartment",
+    "id": "c",
+    "assignments": {
+      "start_": "1"
+    },
+    "boundary": true
+  },
+  {
+    "class": "Species",
+    "id": "S1",
+    "assignments": {
+      "start_": "0"
+    },
+    "compartment": "c"
+  },
+  {
+    "class": "Species",
+    "id": "S2",
+    "assignments": {
+      "start_": "0"
+    },
+    "compartment": "c"
+  },
+  {
+    "class": "Reaction",
+    "id": "J0",
+    "assignments": {
+      "ode_": "k1"
+    },
+    "actors": [
+      {
+        "target": "S1",
+        "stoichiometry": 1
+      }
+    ],
+    "reversible": false
+  },
+  {
+    "class": "Reaction",
+    "id": "J1",
+    "assignments": {
+      "ode_": "J0 + 1"
+    },
+    "actors": [
+      {
+        "target": "S2",
+        "stoichiometry": 1
+      }
+    ],
+    "reversible": false
+  },
+  {
+    "class": "Const",
+    "id": "k1",
+    "num": 1
+  }
+]

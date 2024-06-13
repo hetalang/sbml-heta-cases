@@ -1,0 +1,19 @@
+
+
+t @TimeScale { };
+
+C @Compartment { boundary: true, } .= 1;
+
+S1 @Species { compartment: C, } .= 0 / C;
+S1 [A]= 1;
+S1 [B]= 2;
+S1 [C1]= 3;
+S2 @Species { compartment: C, } .= 1 / C;
+S2 [A]= 0;
+S2 [B]= 1;
+S2 [C1]= 2;
+
+A @DSwitcher { trigger: t >= 0.99, };
+B @DSwitcher { trigger: t >= 0.99, };
+C1 @DSwitcher { trigger: t >= 0.99, };
+

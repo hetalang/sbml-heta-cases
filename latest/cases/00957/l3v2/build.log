@@ -1,0 +1,16 @@
+[info]	Namespace "nameless" was set as "concrete"
+[info]	Builder initialized in directory "/home/runner/work/sbml-heta-cases/sbml-heta-cases/result/latest/cases/00957/l3v2".
+[info]	Compilation of module "index.heta" of type "heta"...
+[info]	Reading module of type "heta" from file "/home/runner/work/sbml-heta-cases/sbml-heta-cases/result/latest/cases/00957/l3v2/index.heta"...
+[info]	Reading module of type "sbml" from file "/home/runner/work/sbml-heta-cases/sbml-heta-cases/result/latest/cases/00957/model-sbml-l3v2.xml"...
+[info]	Setting references in elements, total length 107
+[error]	FunctionDef "sinh" is not found as expected here: P17 { math: undefined };
+[error]	FunctionDef "cosh" is not found as expected here: P18 { math: undefined };
+[error]	FunctionDef "asinh" is not found as expected here: P22 { math: undefined };
+[error]	FunctionDef "acosh" is not found as expected here: P23 { math: undefined };
+[error]	FunctionDef "atanh" is not found as expected here: P24 { math: undefined };
+[error]	FunctionDef "asech" is not found as expected here: P25 { math: undefined };
+[error]	FunctionDef "acsch" is not found as expected here: P26 { math: undefined };
+[error]	FunctionDef "acoth" is not found as expected here: P27 { math: undefined };
+[info]	Checking for circular references in Records.
+[warn]	Units checking and export were skipped because of errors in compilation.

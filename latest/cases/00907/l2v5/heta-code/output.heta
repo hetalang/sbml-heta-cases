@@ -1,0 +1,16 @@
+
+volume #defineUnit { units: litre, };
+area #defineUnit { units: metre^2, };
+length #defineUnit { units: metre, };
+substance #defineUnit { units: mole, };
+time #defineUnit { units: second, };
+
+t @TimeScale { };
+
+c @Compartment 'c' { units: length, } .= 22.5;
+
+c_proc @Process { actors:  = c, aux: {{"metaid":"rule1"}}, };
+c_proc := (-1) * c / k1;
+
+k1 @Record 'k1' { } .= 0.175;
+

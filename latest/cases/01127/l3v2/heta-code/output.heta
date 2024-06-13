@@ -1,0 +1,6 @@
+
+
+t @TimeScale { };
+
+param1 @Record { } .= 10.42;
+

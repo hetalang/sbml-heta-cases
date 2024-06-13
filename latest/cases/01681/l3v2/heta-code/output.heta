@@ -1,0 +1,22 @@
+
+
+t @TimeScale { };
+
+C @Compartment { boundary: true, } .= 1;
+
+S1 @Species { compartment: C, } .= 2 / C;
+S1 [E0]= 1;
+S1 [E1]= 4;
+S2 @Species { compartment: C, } .= 3 / C;
+S2 [E0]= 3;
+S2 [E1]= 4;
+
+J0 @Reaction { actors: S1 = S2, };
+J0 := 0.01;
+
+m_cf @Const { } = 3;
+s1_cf @Const { } = 5;
+
+E0 @DSwitcher { trigger: t > 3.5, };
+E1 @DSwitcher { trigger: t > 3.5, };
+

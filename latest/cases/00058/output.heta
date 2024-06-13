@@ -52,7 +52,8 @@ S3 @Species 'S3' { units: mole/litre, compartment: compartment, } .= 0 / compart
 reaction1 @Reaction 'reaction1' { actors: S1 = S2, reversible: false, };
 reaction1 := compartment * k * S1;
 reaction2 @Reaction 'reaction2' { actors: S2 = S3, reversible: false, };
-reaction2 := compartment * k * S2;
+reaction2 := compartment * k__reaction2_local * S2;
 
+k__reaction2_local @Const { } = 2;
 k @Const 'k' { } = 1;
 

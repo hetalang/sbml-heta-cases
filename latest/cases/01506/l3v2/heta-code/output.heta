@@ -1,0 +1,20 @@
+
+
+t @TimeScale { };
+
+C1 @Compartment { } .= 0.5;
+C1 [E0]= 0.2;
+
+S1 @Species { compartment: C1, } .= 0;
+S1 [E0]= 0.2;
+
+S1_proc @Process { actors:  = S1, };
+S1_proc := 0.4;
+C1_proc @Process { actors:  = C1, };
+C1_proc := 0.2;
+
+x @Record { };
+x := S1;
+
+E0 @DSwitcher { trigger: t >= 0.45, };
+

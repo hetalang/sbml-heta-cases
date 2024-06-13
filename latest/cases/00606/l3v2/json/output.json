@@ -1,0 +1,131 @@
+[
+  {
+    "id": "t",
+    "units": "second"
+  },
+  {
+    "class": "Compartment",
+    "id": "C",
+    "title": "C",
+    "units": "litre",
+    "assignments": {
+      "start_": "12.5"
+    },
+    "boundary": true
+  },
+  {
+    "class": "Species",
+    "id": "S1",
+    "title": "S1",
+    "units": "mole/litre",
+    "assignments": {
+      "start_": "5e-4"
+    },
+    "compartment": "C"
+  },
+  {
+    "class": "Species",
+    "id": "S2",
+    "title": "S2",
+    "units": "mole/litre",
+    "assignments": {
+      "start_": "0.001"
+    },
+    "compartment": "C"
+  },
+  {
+    "class": "Species",
+    "id": "S3",
+    "title": "S3",
+    "units": "mole/litre",
+    "assignments": {
+      "start_": "0.002"
+    },
+    "compartment": "C"
+  },
+  {
+    "class": "Species",
+    "id": "S4",
+    "title": "S4",
+    "units": "mole/litre",
+    "assignments": {
+      "start_": "0.0015"
+    },
+    "compartment": "C"
+  },
+  {
+    "class": "Reaction",
+    "id": "reaction1",
+    "title": "reaction1",
+    "assignments": {
+      "ode_": "C * multiply(k1, multiply(S1, S2))"
+    },
+    "actors": [
+      {
+        "target": "S3",
+        "stoichiometry": 1
+      },
+      {
+        "target": "S4",
+        "stoichiometry": 1
+      },
+      {
+        "target": "S1",
+        "stoichiometry": -1
+      },
+      {
+        "target": "S2",
+        "stoichiometry": -1
+      }
+    ],
+    "reversible": false
+  },
+  {
+    "class": "Reaction",
+    "id": "reaction2",
+    "title": "reaction2",
+    "assignments": {
+      "ode_": "C * k2 * S3 * S4"
+    },
+    "actors": [
+      {
+        "target": "S1",
+        "stoichiometry": 1
+      },
+      {
+        "target": "S2",
+        "stoichiometry": 1
+      },
+      {
+        "target": "S3",
+        "stoichiometry": -1
+      },
+      {
+        "target": "S4",
+        "stoichiometry": -1
+      }
+    ],
+    "reversible": false
+  },
+  {
+    "class": "Const",
+    "id": "k1",
+    "title": "k1",
+    "num": 75
+  },
+  {
+    "class": "Const",
+    "id": "k2",
+    "title": "k2",
+    "num": 250
+  },
+  {
+    "id": "multiply",
+    "arguments": [
+      "x",
+      "y"
+    ],
+    "math": "x * y",
+    "action": "defineFunction"
+  }
+]

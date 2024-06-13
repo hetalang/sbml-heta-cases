@@ -1,0 +1,53 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Compartment",
+    "id": "C",
+    "assignments": {
+      "start_": "1"
+    },
+    "boundary": true
+  },
+  {
+    "class": "Species",
+    "id": "S1",
+    "assignments": {
+      "start_": "0 / C",
+      "_E0": "4",
+      "_E1": "1"
+    },
+    "compartment": "C"
+  },
+  {
+    "class": "Species",
+    "id": "S2",
+    "assignments": {
+      "start_": "0 / C",
+      "_E0": "5",
+      "_E1": "2"
+    },
+    "compartment": "C"
+  },
+  {
+    "class": "Species",
+    "id": "S3",
+    "assignments": {
+      "start_": "0 / C",
+      "_E0": "6",
+      "_E1": "3"
+    },
+    "compartment": "C"
+  },
+  {
+    "class": "DSwitcher",
+    "id": "_E0",
+    "trigger": "t >= 0.99"
+  },
+  {
+    "class": "DSwitcher",
+    "id": "_E1",
+    "trigger": "t >= 0.99"
+  }
+]

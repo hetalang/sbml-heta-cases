@@ -1,0 +1,20 @@
+
+volume #defineUnit { units: litre, };
+area #defineUnit { units: metre^2, };
+length #defineUnit { units: metre, };
+substance #defineUnit { units: mole, };
+time #defineUnit { units: second, };
+
+t @TimeScale { };
+
+compartment @Compartment 'compartment' { units: volume, boundary: true, } .= 1;
+
+S1 @Species 'S1' { units: substance/volume, compartment: compartment, } .= 0.1 / compartment;
+S2 @Species 'S2' { units: substance/volume, compartment: compartment, } .= 0.15 / compartment;
+
+reaction1 @Reaction 'reaction1' { actors: S1 = S2, reversible: false, };
+reaction1 := compartment * k1 * S1;
+
+k1 @Record 'k1' { } .= 0.75;
+k1 := 0.75;
+

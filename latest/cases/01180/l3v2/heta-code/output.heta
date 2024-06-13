@@ -1,0 +1,6 @@
+
+
+t @TimeScale { };
+
+timeconv @Const { } = 60;
+

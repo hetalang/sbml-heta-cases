@@ -1,0 +1,148 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Compartment",
+    "id": "C",
+    "title": "C",
+    "assignments": {
+      "start_": "0"
+    },
+    "boundary": true
+  },
+  {
+    "class": "Species",
+    "id": "S1",
+    "title": "S1",
+    "units": "substance",
+    "assignments": {
+      "start_": "1",
+      "event2": "0.95"
+    },
+    "compartment": "C",
+    "isAmount": true
+  },
+  {
+    "class": "Species",
+    "id": "S2",
+    "title": "S2",
+    "units": "substance",
+    "assignments": {
+      "start_": "2",
+      "event1": "1"
+    },
+    "compartment": "C",
+    "isAmount": true
+  },
+  {
+    "class": "Species",
+    "id": "S3",
+    "title": "S3",
+    "units": "substance",
+    "assignments": {
+      "start_": "1"
+    },
+    "compartment": "C",
+    "isAmount": true
+  },
+  {
+    "class": "Reaction",
+    "id": "reaction1",
+    "title": "reaction1",
+    "assignments": {
+      "ode_": "k1 * S1 * S2"
+    },
+    "actors": [
+      {
+        "target": "S3",
+        "stoichiometry": 1
+      },
+      {
+        "target": "S1",
+        "stoichiometry": -1
+      },
+      {
+        "target": "S2",
+        "stoichiometry": -1
+      }
+    ],
+    "reversible": false
+  },
+  {
+    "class": "Reaction",
+    "id": "reaction2",
+    "title": "reaction2",
+    "assignments": {
+      "ode_": "k2 * S3"
+    },
+    "actors": [
+      {
+        "target": "S1",
+        "stoichiometry": 1
+      },
+      {
+        "target": "S2",
+        "stoichiometry": 1
+      },
+      {
+        "target": "S3",
+        "stoichiometry": -1
+      }
+    ],
+    "reversible": false
+  },
+  {
+    "class": "Record",
+    "id": "k1",
+    "title": "k1",
+    "assignments": {
+      "start_": "0.075"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "k2",
+    "title": "k2",
+    "assignments": {
+      "start_": "0.025"
+    }
+  },
+  {
+    "class": "DSwitcher",
+    "id": "event1",
+    "title": "event1",
+    "trigger": "S1 < 0.7"
+  },
+  {
+    "class": "DSwitcher",
+    "id": "event2",
+    "title": "event2",
+    "trigger": "S3 > 1.2"
+  },
+  {
+    "id": "volume",
+    "units": "litre",
+    "action": "defineUnit"
+  },
+  {
+    "id": "area",
+    "units": "metre^2",
+    "action": "defineUnit"
+  },
+  {
+    "id": "length",
+    "units": "metre",
+    "action": "defineUnit"
+  },
+  {
+    "id": "substance",
+    "units": "mole",
+    "action": "defineUnit"
+  },
+  {
+    "id": "time",
+    "units": "second",
+    "action": "defineUnit"
+  }
+]

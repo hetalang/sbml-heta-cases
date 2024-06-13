@@ -1,0 +1,6 @@
+
+
+t @TimeScale { };
+
+p2 @Record { } .= 2;
+

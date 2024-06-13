@@ -1,0 +1,16 @@
+
+volume #defineUnit { units: litre, };
+area #defineUnit { units: metre^2, };
+length #defineUnit { units: metre, };
+substance #defineUnit { units: mole, };
+time #defineUnit { units: second, };
+
+t @TimeScale { };
+
+C @Compartment { } .= 1;
+
+S1 @Species { boundary: true, compartment: C, } .= 1;
+
+C_proc @Process { actors:  = C, };
+C_proc := 1;
+

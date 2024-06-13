@@ -1,0 +1,13 @@
+
+
+t @TimeScale { };
+
+C @Compartment { boundary: true, } .= 1;
+
+S1 @Species { compartment: C, } .= 1;
+
+J0 @Reaction { actors:  = S1, };
+J0 := avogadro;
+
+avogadro @Const { } = 0.1;
+

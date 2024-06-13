@@ -1,0 +1,9 @@
+
+
+t @TimeScale { };
+
+C @Compartment { boundary: true, } .= 1;
+J1 @Compartment { boundary: true, } .= 5;
+
+S1 @Species { compartment: C, } .= 3;
+

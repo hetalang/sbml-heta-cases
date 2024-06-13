@@ -1,0 +1,83 @@
+[
+  {
+    "id": "t",
+    "units": "second"
+  },
+  {
+    "class": "Record",
+    "id": "S1",
+    "title": "S1",
+    "assignments": {
+      "start_": "1"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "S2",
+    "title": "S2",
+    "assignments": {
+      "start_": "0.5"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "S3",
+    "title": "S3",
+    "assignments": {
+      "ode_": "multiply(k1, S2)"
+    }
+  },
+  {
+    "class": "Const",
+    "id": "k1",
+    "title": "k1",
+    "num": 0.7
+  },
+  {
+    "class": "Const",
+    "id": "k2",
+    "title": "k2",
+    "num": 40
+  },
+  {
+    "class": "Process",
+    "id": "S1_proc",
+    "aux": {
+      "metaid": "rule2"
+    },
+    "assignments": {
+      "ode_": "(-1) * multiply(k2, S1)"
+    },
+    "actors": [
+      {
+        "target": "S1",
+        "stoichiometry": 1
+      }
+    ]
+  },
+  {
+    "class": "Process",
+    "id": "S2_proc",
+    "aux": {
+      "metaid": "rule3"
+    },
+    "assignments": {
+      "ode_": "k2 * S1"
+    },
+    "actors": [
+      {
+        "target": "S2",
+        "stoichiometry": 1
+      }
+    ]
+  },
+  {
+    "id": "multiply",
+    "arguments": [
+      "x",
+      "y"
+    ],
+    "math": "x * y",
+    "action": "defineFunction"
+  }
+]

@@ -1,0 +1,14 @@
+
+
+t @TimeScale { };
+
+p2 @Record { } .= 0;
+p2 [E0]= 1;
+p3 @Record { } .= 0;
+p3 [E1]= 1;
+
+p1 @Const { } = 1;
+
+E0 @DSwitcher { trigger: p1 > 0, };
+E1 @DSwitcher { trigger: p1 > 0, };
+

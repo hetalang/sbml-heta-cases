@@ -1,0 +1,284 @@
+[
+  {
+    "id": "t",
+    "units": "second"
+  },
+  {
+    "class": "Const",
+    "id": "P1",
+    "num": 3.7
+  },
+  {
+    "class": "Record",
+    "id": "P2",
+    "assignments": {
+      "ode_": "abs((-1))"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "P3",
+    "assignments": {
+      "ode_": "abs(1)"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "P4",
+    "assignments": {
+      "ode_": "acos((-1))"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "P5",
+    "assignments": {
+      "ode_": "acos(0.5)"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "P6",
+    "assignments": {
+      "ode_": "asin(1)"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "P7",
+    "assignments": {
+      "ode_": "asin((-0.5))"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "P8",
+    "assignments": {
+      "ode_": "atan(2.8)"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "P9",
+    "assignments": {
+      "ode_": "atan((-7.09))"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "P10",
+    "assignments": {
+      "ode_": "ceil(0.5)"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "P11",
+    "assignments": {
+      "ode_": "ceil(3.55)"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "P12",
+    "assignments": {
+      "ode_": "ceil((-4.6))"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "P13",
+    "assignments": {
+      "ode_": "cos(9.1)"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "P14",
+    "assignments": {
+      "ode_": "cos((-0.22))"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "P15",
+    "assignments": {
+      "ode_": "exp(0)"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "P16",
+    "assignments": {
+      "ode_": "exp(1)"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "P17",
+    "assignments": {
+      "ode_": "exp(0.77)"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "P18",
+    "assignments": {
+      "ode_": "floor((-4.6))"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "P19",
+    "assignments": {
+      "ode_": "floor(9.1)"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "P20",
+    "assignments": {
+      "ode_": "ln(0.2)"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "P21",
+    "assignments": {
+      "ode_": "ln(1)"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "P22",
+    "assignments": {
+      "ode_": "logbase(0.2, 10)"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "P23",
+    "assignments": {
+      "ode_": "logbase(1, 10)"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "P24",
+    "assignments": {
+      "ode_": "pow(1, 2)"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "P25",
+    "assignments": {
+      "ode_": "pow(2, 2)"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "P26",
+    "assignments": {
+      "ode_": "pow(1.4, 5.1)"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "P27",
+    "assignments": {
+      "ode_": "pow(4, 2)"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "P28",
+    "assignments": {
+      "ode_": "pow(3.1, 2)"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "P29",
+    "assignments": {
+      "ode_": "pow(4, 1 / 2)"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "P30",
+    "assignments": {
+      "ode_": "pow(7.4, 1 / 2)"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "P31",
+    "assignments": {
+      "ode_": "sin(2.1)"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "P32",
+    "assignments": {
+      "ode_": "sin(0)"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "P33",
+    "assignments": {
+      "ode_": "sin((-5.9))"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "P34",
+    "assignments": {
+      "ode_": "tan(0)"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "P35",
+    "assignments": {
+      "ode_": "tan(1.11)"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "P36",
+    "assignments": {
+      "ode_": "tan((-6))"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "P37",
+    "assignments": {
+      "ode_": "1 + 2"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "P38",
+    "assignments": {
+      "ode_": "1 - 2"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "P39",
+    "assignments": {
+      "ode_": "5 / 2"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "P40",
+    "assignments": {
+      "ode_": "8 * 3"
+    }
+  }
+]

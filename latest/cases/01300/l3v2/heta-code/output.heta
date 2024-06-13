@@ -1,0 +1,9 @@
+
+
+t @TimeScale { };
+
+J0 @Reaction { actors:  = , };
+J0 := 3;
+
+p1 @Record { } .= J0;
+

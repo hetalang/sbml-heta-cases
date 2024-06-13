@@ -1,0 +1,16 @@
+
+
+t @TimeScale { };
+
+C @Compartment { boundary: true, } .= 1;
+
+S1 @Species { compartment: C, } .= 2 / C;
+S2 @Species { compartment: C, } .= 3 / C;
+
+J0 @Reaction { actors: S1 = S2, };
+J0 := m_cf__J0_local * s1_cf__J0_local * 0.01;
+
+m_cf__J0_local @Const { } = 1;
+s1_cf__J0_local @Const { } = 1;
+m_cf @Const { } = 3;
+

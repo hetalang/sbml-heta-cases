@@ -1,0 +1,50 @@
+
+volume #defineUnit { units: litre, };
+area #defineUnit { units: metre^2, };
+length #defineUnit { units: metre, };
+substance #defineUnit { units: mole, };
+time #defineUnit { units: second, };
+
+t @TimeScale { };
+
+P1 @Record { } .= 3.7;
+P2 @Record { } .= abs((-1));
+P3 @Record { } .= abs(1);
+P4 @Record { } .= acos((-1));
+P5 @Record { } .= acos(0.5);
+P6 @Record { } .= asin(1);
+P7 @Record { } .= asin((-0.5));
+P8 @Record { } .= atan(2.8);
+P9 @Record { } .= atan((-7.09));
+P10 @Record { } .= ceil(0.5);
+P11 @Record { } .= ceil(3.55);
+P12 @Record { } .= ceil((-4.6));
+P13 @Record { } .= cos(9.1);
+P14 @Record { } .= cos((-0.22));
+P15 @Record { } .= exp(0);
+P16 @Record { } .= exp(1);
+P17 @Record { } .= exp(0.77);
+P18 @Record { } .= floor((-4.6));
+P19 @Record { } .= floor(9.1);
+P20 @Record { } .= ln(0.2);
+P21 @Record { } .= ln(1);
+P22 @Record { } .= logbase(0.2, 10);
+P23 @Record { } .= logbase(1, 10);
+P24 @Record { } .= pow(1, 2);
+P25 @Record { } .= pow(2, 2);
+P26 @Record { } .= pow(1.4, 5.1);
+P27 @Record { } .= pow(4, 2);
+P28 @Record { } .= pow(3.1, 2);
+P29 @Record { } .= pow(4, 1 / 2);
+P30 @Record { } .= pow(7.4, 1 / 2);
+P31 @Record { } .= sin(2.1);
+P32 @Record { } .= sin(0);
+P33 @Record { } .= sin((-5.9));
+P34 @Record { } .= tan(0);
+P35 @Record { } .= tan(1.11);
+P36 @Record { } .= tan((-6));
+P37 @Record { } .= 1 + 2;
+P38 @Record { } .= 1 - 2;
+P39 @Record { } .= 5 / 2;
+P40 @Record { } .= 8 * 3;
+

@@ -1,0 +1,97 @@
+[
+  {
+    "id": "t",
+    "units": "second"
+  },
+  {
+    "class": "Compartment",
+    "id": "compartment",
+    "title": "compartment",
+    "units": "litre",
+    "assignments": {
+      "start_": "1"
+    },
+    "boundary": true
+  },
+  {
+    "class": "Species",
+    "id": "S1",
+    "title": "S1",
+    "units": "mole/litre",
+    "assignments": {
+      "start_": "0.0015 / compartment"
+    },
+    "boundary": true,
+    "compartment": "compartment"
+  },
+  {
+    "class": "Species",
+    "id": "S2",
+    "title": "S2",
+    "units": "mole/litre",
+    "assignments": {
+      "start_": "0.001 / compartment"
+    },
+    "boundary": true,
+    "compartment": "compartment"
+  },
+  {
+    "class": "Reaction",
+    "id": "reaction1",
+    "title": "reaction1",
+    "assignments": {
+      "ode_": "compartment * multiply(k1, S1)"
+    },
+    "actors": [
+      {
+        "target": "S2",
+        "stoichiometry": 1
+      },
+      {
+        "target": "S1",
+        "stoichiometry": -1
+      }
+    ],
+    "reversible": false
+  },
+  {
+    "class": "Reaction",
+    "id": "reaction2",
+    "title": "reaction2",
+    "assignments": {
+      "ode_": "compartment * k2 * S2"
+    },
+    "actors": [
+      {
+        "target": "S1",
+        "stoichiometry": 1
+      },
+      {
+        "target": "S2",
+        "stoichiometry": -1
+      }
+    ],
+    "reversible": false
+  },
+  {
+    "class": "Const",
+    "id": "k1",
+    "title": "k1",
+    "num": 0.5
+  },
+  {
+    "class": "Const",
+    "id": "k2",
+    "title": "k2",
+    "num": 0.25
+  },
+  {
+    "id": "multiply",
+    "arguments": [
+      "x",
+      "y"
+    ],
+    "math": "x * y",
+    "action": "defineFunction"
+  }
+]

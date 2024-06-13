@@ -1,0 +1,35 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Compartment",
+    "id": "C1",
+    "assignments": {
+      "start_": "0.5",
+      "E0": "0.2"
+    }
+  },
+  {
+    "class": "Species",
+    "id": "S1",
+    "assignments": {
+      "start_": "2",
+      "E0": "0.2"
+    },
+    "boundary": true,
+    "compartment": "C1"
+  },
+  {
+    "class": "Record",
+    "id": "x",
+    "assignments": {
+      "ode_": "S1"
+    }
+  },
+  {
+    "class": "DSwitcher",
+    "id": "E0",
+    "trigger": "t >= 0.45"
+  }
+]

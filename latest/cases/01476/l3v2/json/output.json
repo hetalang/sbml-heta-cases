@@ -1,0 +1,26 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Compartment",
+    "id": "C",
+    "assignments": {
+      "start_": "1"
+    },
+    "boundary": true
+  },
+  {
+    "class": "Species",
+    "id": "s1",
+    "assignments": {
+      "start_": "0 / C"
+    },
+    "compartment": "C"
+  },
+  {
+    "class": "Const",
+    "id": "extentconv",
+    "num": 1000
+  }
+]

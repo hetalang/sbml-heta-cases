@@ -1,0 +1,51 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Record",
+    "id": "true",
+    "assignments": {
+      "start_": "10"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "True",
+    "assignments": {
+      "start_": "20"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "TRUE",
+    "assignments": {
+      "start_": "30"
+    }
+  },
+  {
+    "id": "volume",
+    "units": "litre",
+    "action": "defineUnit"
+  },
+  {
+    "id": "area",
+    "units": "metre^2",
+    "action": "defineUnit"
+  },
+  {
+    "id": "length",
+    "units": "metre",
+    "action": "defineUnit"
+  },
+  {
+    "id": "substance",
+    "units": "mole",
+    "action": "defineUnit"
+  },
+  {
+    "id": "time",
+    "units": "second",
+    "action": "defineUnit"
+  }
+]

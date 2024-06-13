@@ -1,0 +1,20 @@
+
+
+t @TimeScale { };
+
+C @Compartment { boundary: true, } .= 1;
+
+S1 @Species { compartment: C, } .= 0;
+
+J0 @Reaction { actors:  = S1, };
+J0 := k1__J0_local;
+
+k1 @Record { } .= 2;
+k1 [E0]= 5;
+k1 [E1]= 10;
+
+k1__J0_local @Const { } = 3;
+
+E0 @DSwitcher { trigger: t > 2.5, };
+E1 @DSwitcher { trigger: t > 2.5, };
+

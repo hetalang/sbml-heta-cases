@@ -1,0 +1,21 @@
+
+
+t @TimeScale { units: second, };
+
+compartment @Compartment 'compartment' { units: litre, boundary: true, } .= 0.01;
+
+S1 @Species 'S1' { units: mole/litre, compartment: compartment, } .= 0.01 / compartment;
+S2 @Species 'S2' { units: mole/litre, compartment: compartment, } .= 0.015 / compartment;
+S3 @Species 'S3' { units: mole/litre, compartment: compartment, } .= 0.01 / compartment;
+S4 @Species 'S4' { units: mole/litre, compartment: compartment, };
+S4 := k3 * S2;
+
+reaction1 @Reaction 'reaction1' { actors: S1 + S2 = S3, reversible: false, };
+reaction1 := compartment * k1 * S1 * S2;
+reaction2 @Reaction 'reaction2' { actors: S3 = S1 + S2, reversible: false, };
+reaction2 := compartment * k2 * S3;
+
+k1 @Const 'k1' { } = 3.25;
+k2 @Const 'k2' { } = 1.75;
+k3 @Const 'k3' { } = 1.5;
+

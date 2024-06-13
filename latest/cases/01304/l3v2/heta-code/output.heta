@@ -1,0 +1,12 @@
+
+
+t @TimeScale { };
+
+J0 @Reaction { actors:  = , };
+J0 := 3;
+
+p1 @Record { } .= 0;
+p1 [E0]= 5;
+
+E0 @DSwitcher { trigger: t > (J0 + 1.5), };
+

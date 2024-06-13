@@ -1,0 +1,8 @@
+
+
+t @TimeScale { };
+
+param @Const { } = 3;
+Param @Const { } = 4;
+pArAm @Const { } = 5;
+

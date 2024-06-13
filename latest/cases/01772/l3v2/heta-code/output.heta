@@ -1,0 +1,23 @@
+
+
+t @TimeScale { };
+
+C @Compartment { boundary: true, } .= 2;
+
+S1 @Species { compartment: C, isAmount: true, } .= 2;
+S2 @Species { compartment: C, isAmount: true, } .= 3;
+
+J0 @Reaction { actors: 2*S1 = , };
+J0 := 0.01;
+J1 @Reaction { actors:  = S2, };
+J1 := S1_stoich__J1_local;
+
+k0 @Record { } .= 0;
+k0 [E0]= 4;
+k0 [E1]= 6;
+
+S1_stoich__J1_local @Const { } = 0.01;
+
+E0 @DSwitcher { trigger: S1 < 1.885, };
+E1 @DSwitcher { trigger: S1 < 1.885, };
+

@@ -1,0 +1,13 @@
+
+volume #defineUnit { units: litre, };
+area #defineUnit { units: metre^2, };
+length #defineUnit { units: metre, };
+substance #defineUnit { units: mole, };
+time #defineUnit { units: second, };
+
+t @TimeScale { };
+
+param @Record { } .= 3;
+Param @Record { } .= 4;
+pArAm @Record { } .= 5;
+

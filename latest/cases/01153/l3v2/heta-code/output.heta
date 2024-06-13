@@ -1,0 +1,8 @@
+
+
+t @TimeScale { };
+
+z @Record { } .= 34 * i;
+
+i @Const { } = 2;
+

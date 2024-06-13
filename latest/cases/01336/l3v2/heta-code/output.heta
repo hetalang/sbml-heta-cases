@@ -1,0 +1,12 @@
+
+
+t @TimeScale { };
+
+x @Record { } .= 3;
+x [E1]= 0;
+y @Record { } .= 6;
+y [E2]= 7;
+
+E1 @DSwitcher { trigger: x > 2, };
+E2 @DSwitcher { trigger: x > 2, };
+

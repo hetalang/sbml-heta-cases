@@ -1,0 +1,16 @@
+
+
+t @TimeScale { };
+
+C @Compartment { boundary: true, } .= 1;
+
+S1 @Species { compartment: C, isAmount: true, } .= 2;
+S2 @Species { compartment: C, isAmount: true, } .= 3;
+
+J1 @Reaction { actors: S1 = S2, };
+J1 := S1_stoich__J1_local * S2_stoich__J1_local * J1__J1_local * 200;
+
+S1_stoich__J1_local @Const { } = 0.1;
+S2_stoich__J1_local @Const { } = 0.1;
+J1__J1_local @Const { } = 0.1;
+

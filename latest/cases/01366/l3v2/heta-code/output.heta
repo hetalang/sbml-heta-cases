@@ -1,0 +1,6 @@
+
+
+t @TimeScale { };
+
+J1 @Compartment { boundary: true, } .= 5;
+

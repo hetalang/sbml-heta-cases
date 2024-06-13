@@ -1,0 +1,8 @@
+
+
+t @TimeScale { };
+
+INF @Const { } = 10;
+Inf @Const { } = 1;
+inf @Const { } = 0.1;
+

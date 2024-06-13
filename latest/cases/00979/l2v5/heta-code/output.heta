@@ -1,0 +1,21 @@
+
+volume #defineUnit { units: litre, };
+area #defineUnit { units: metre^2, };
+length #defineUnit { units: metre, };
+substance #defineUnit { units: mole, };
+time #defineUnit { units: second, };
+
+t @TimeScale { };
+
+x @Record { } .= 0;
+x [_E0]= 2;
+y @Record { } .= 0;
+y [_E0]= y + x;
+p @Record { } .= 0;
+p [_E1]= 3;
+q @Record { } .= 0;
+q [_E1]= p + 1;
+
+_E0 @DSwitcher { trigger: t >= 0.98, };
+_E1 @DSwitcher { trigger: t >= 0.99, };
+

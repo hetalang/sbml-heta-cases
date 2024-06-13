@@ -1,0 +1,8 @@
+
+
+t @TimeScale { };
+
+C8 @Compartment { } .= 8;
+
+conv @Const { } = 0.1;
+

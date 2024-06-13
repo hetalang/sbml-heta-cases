@@ -1,0 +1,160 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Compartment",
+    "id": "C1",
+    "assignments": {
+      "start_": "1"
+    }
+  },
+  {
+    "class": "Species",
+    "id": "S2",
+    "assignments": {
+      "start_": "0"
+    },
+    "compartment": "C1"
+  },
+  {
+    "class": "Record",
+    "id": "S",
+    "assignments": {
+      "ode_": "Q + R"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "Q",
+    "assignments": {
+      "start_": "1",
+      "Qinc": "Q + 0.01"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "R",
+    "assignments": {
+      "start_": "1",
+      "Rinc": "R + 0.01"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "reset",
+    "assignments": {
+      "start_": "0",
+      "Qinc": "0",
+      "Rinc": "0"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "maxdiff",
+    "assignments": {
+      "start_": "0",
+      "maxcheck": "abs(Q - R)"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "errorLow",
+    "assignments": {
+      "start_": "0",
+      "error_check": "1"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "errorHigh",
+    "assignments": {
+      "start_": "0",
+      "error_check2": "1"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "errorS2",
+    "assignments": {
+      "start_": "0",
+      "error_check3": "1"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "S2_det",
+    "assignments": {
+      "start_": "0"
+    }
+  },
+  {
+    "class": "Process",
+    "id": "S2_proc",
+    "assignments": {
+      "ode_": "Q - R"
+    },
+    "actors": [
+      {
+        "target": "S2",
+        "stoichiometry": 1
+      }
+    ]
+  },
+  {
+    "class": "Process",
+    "id": "C1_proc",
+    "assignments": {
+      "ode_": "0.002"
+    },
+    "actors": [
+      {
+        "target": "C1",
+        "stoichiometry": 1
+      }
+    ]
+  },
+  {
+    "class": "Process",
+    "id": "reset_proc",
+    "assignments": {
+      "ode_": "1"
+    },
+    "actors": [
+      {
+        "target": "reset",
+        "stoichiometry": 1
+      }
+    ]
+  },
+  {
+    "class": "DSwitcher",
+    "id": "Qinc",
+    "trigger": "reset >= 0.01"
+  },
+  {
+    "class": "DSwitcher",
+    "id": "Rinc",
+    "trigger": "reset >= 0.01"
+  },
+  {
+    "class": "DSwitcher",
+    "id": "maxcheck",
+    "trigger": "abs(Q - R) > maxdiff"
+  },
+  {
+    "class": "DSwitcher",
+    "id": "error_check",
+    "trigger": "t >= 99 and maxdiff < 0.2"
+  },
+  {
+    "class": "DSwitcher",
+    "id": "error_check2",
+    "trigger": "maxdiff >= 4"
+  },
+  {
+    "class": "DSwitcher",
+    "id": "error_check3",
+    "trigger": "abs(S2) >= 250"
+  }
+]

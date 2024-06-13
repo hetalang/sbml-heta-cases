@@ -1,0 +1,8 @@
+
+
+t @TimeScale { units: second, };
+
+P @Const { } = Infinity;
+Q @Const { } = -Infinity;
+R @Const { } = NaN;
+

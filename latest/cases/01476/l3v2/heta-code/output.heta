@@ -1,0 +1,10 @@
+
+
+t @TimeScale { };
+
+C @Compartment { boundary: true, } .= 1;
+
+s1 @Species { compartment: C, } .= 0 / C;
+
+extentconv @Const { } = 1000;
+

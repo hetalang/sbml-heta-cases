@@ -1,0 +1,54 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Compartment",
+    "id": "C",
+    "assignments": {
+      "start_": "1"
+    },
+    "boundary": true
+  },
+  {
+    "class": "Species",
+    "id": "A",
+    "assignments": {
+      "start_": "1"
+    },
+    "compartment": "C"
+  },
+  {
+    "class": "Species",
+    "id": "B",
+    "assignments": {
+      "start_": "1"
+    },
+    "compartment": "C"
+  },
+  {
+    "class": "Reaction",
+    "id": "J0",
+    "assignments": {
+      "ode_": "1"
+    },
+    "actors": [
+      {
+        "target": "A",
+        "stoichiometry": 1
+      },
+      {
+        "target": "B",
+        "stoichiometry": 1
+      },
+      {
+        "target": "A",
+        "stoichiometry": -1
+      },
+      {
+        "target": "B",
+        "stoichiometry": -1
+      }
+    ]
+  }
+]

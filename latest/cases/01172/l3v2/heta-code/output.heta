@@ -1,0 +1,8 @@
+
+
+t @TimeScale { };
+
+t1 @Record { } .= 1;
+
+timeconv @Const { } = 60;
+

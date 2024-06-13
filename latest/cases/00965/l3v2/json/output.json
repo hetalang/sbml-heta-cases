@@ -1,0 +1,98 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Record",
+    "id": "S",
+    "assignments": {
+      "start_": "0",
+      "ode_": "Q + R"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "Q",
+    "assignments": {
+      "start_": "0",
+      "Qinc": "Q + 0.01"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "R",
+    "assignments": {
+      "start_": "0",
+      "Rinc": "R + 0.01"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "reset",
+    "assignments": {
+      "start_": "0",
+      "Qinc": "t",
+      "Rinc": "t"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "Qrun",
+    "assignments": {
+      "start_": "0",
+      "Qinc": "Qrun + 1",
+      "Rinc": "0"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "Rrun",
+    "assignments": {
+      "start_": "0",
+      "Qinc": "0",
+      "Rinc": "Rrun + 1"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "maxrun",
+    "assignments": {
+      "start_": "0",
+      "maxrun_check1": "Qrun",
+      "maxrun_check2": "Rrun"
+    }
+  },
+  {
+    "class": "Record",
+    "id": "error",
+    "assignments": {
+      "start_": "0",
+      "error_check": "1"
+    }
+  },
+  {
+    "class": "DSwitcher",
+    "id": "Qinc",
+    "trigger": "(t - reset) >= 0.01"
+  },
+  {
+    "class": "DSwitcher",
+    "id": "Rinc",
+    "trigger": "(t - reset) >= 0.01"
+  },
+  {
+    "class": "DSwitcher",
+    "id": "maxrun_check1",
+    "trigger": "Qrun > maxrun"
+  },
+  {
+    "class": "DSwitcher",
+    "id": "maxrun_check2",
+    "trigger": "Rrun > maxrun"
+  },
+  {
+    "class": "DSwitcher",
+    "id": "error_check",
+    "trigger": "maxrun > 300"
+  }
+]

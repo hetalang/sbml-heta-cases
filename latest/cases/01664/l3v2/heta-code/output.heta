@@ -1,0 +1,9 @@
+
+
+t @TimeScale { };
+
+p1 @Record { } .= 1;
+p1 [E0]= 6.02214076e+23;
+
+E0 @DSwitcher { trigger: t > 1.5, };
+

@@ -1,0 +1,17 @@
+
+
+t @TimeScale { units: second, };
+
+C @Compartment 'C' { units: litre, boundary: true, } .= 1;
+
+S1 @Species 'S1' { units: mole/litre, compartment: C, } .= 1.5 / C;
+S2 @Species 'S2' { units: mole/litre, compartment: C, } .= 0 / C;
+S3 @Species 'S3' { units: mole/litre, compartment: C, } .= 0 / C;
+
+reaction1 @Reaction 'reaction1' { actors: S1 = S2, reversible: false, };
+reaction1 := C * k1 * S1;
+S3_proc @Process { actors:  = S3, aux: {{"metaid":"rule1"}}, };
+S3_proc := 1.5 * pow(exp(t), (-1));
+
+k1 @Const 'k1' { } = 1.5;
+

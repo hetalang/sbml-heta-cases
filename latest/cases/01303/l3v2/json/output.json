@@ -1,0 +1,26 @@
+[
+  {
+    "id": "t"
+  },
+  {
+    "class": "Reaction",
+    "id": "J0",
+    "assignments": {
+      "ode_": "3"
+    },
+    "actors": []
+  },
+  {
+    "class": "Record",
+    "id": "p1",
+    "assignments": {
+      "start_": "0",
+      "_E0": "J0"
+    }
+  },
+  {
+    "class": "DSwitcher",
+    "id": "_E0",
+    "trigger": "t > 4.5"
+  }
+]

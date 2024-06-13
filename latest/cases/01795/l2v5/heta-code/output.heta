@@ -1,0 +1,22 @@
+
+volume #defineUnit { units: litre, };
+area #defineUnit { units: metre^2, };
+length #defineUnit { units: metre, };
+substance #defineUnit { units: mole, };
+time #defineUnit { units: second, };
+
+t @TimeScale { };
+
+C @Compartment { boundary: true, } .= 1;
+
+S1 @Species { compartment: C, } .= 2;
+S2 @Species { boundary: true, compartment: C, } .= 2;
+S3 @Species { compartment: C, } .= 2;
+
+J0 @Reaction { actors:  = S1, };
+J0 := 1;
+J1 @Reaction { actors:  = S2, };
+J1 := 1;
+J2 @Reaction { actors:  = S3, };
+J2 := 1;
+
