@@ -4,7 +4,9 @@ on:
   workflow_dispatch: {}
   push:
     branches: [ master, '*-result' ]
-
+  repository_dispatch:
+    types: [webhook-event]
+    
 jobs:
   main-job:
     runs-on: ubuntu-latest
