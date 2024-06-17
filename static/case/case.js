@@ -1,12 +1,12 @@
 const url = new URL(window.location.href);
 let p = new URLSearchParams(url.search);
 let caseId = p.get('id');
-const path = '../../' + config.path;
+const path = '../' + config.path;
 
 $(window).ready(() => {
     $.get(`${path}/summary.json`, (data) => {
         let x = data.cases.find((x) => x.id == caseId);
-        console.log(x);
+        //console.log(x);
 
         $('#caseId').html(x.id);
         $('#caseId').removeClass().addClass('retCode_' + x.l2v5RetCode);
