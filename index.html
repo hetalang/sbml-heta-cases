@@ -4,61 +4,43 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="config.js"></script>
-    <script src="main.js"></script>
-    <link rel="stylesheet" href="style.css"/>
-    <title>SBML cases testing</title>
+    <script src="../config.js"></script>
+    <script src="case.js"></script>
+    <link rel="stylesheet" href="../style.css"/>
+    <title>SBML case result</title>
 </head>
 <body>
-    <h1>Result of testing SBML cases</h1>
-    <p><i>Repository's home is <a href="https://github.com/insysbio/sbml-heta-cases">HERE</a></i></p>
-    <p><i>List of models in Heta format <a href="latest/cases">HERE</a></i></p>
-    <p><i>JSONL is <a href="latest/finetune-0.jsonl">HERE</a></i></p>
-    <!-- BEGIN -->
     <div>
-        <h2>From SBML L2V5/L3V2</h2>
-        
-        <div class="itemContainer">
-            <div class="item part3">SBML L2V5</div>
-            <div class="item part3 retCode_0">Success <span id="l2v5_code_0_stat"/></div>
-            <div class="item part3 retCode_1">Compiler error <span id="l2v5_code_1_stat"/></div>
-            <div class="item part3 retCode_2">Platform error <span id="l2v5_code_2_stat"/></div>
-            <div class="item part3 retCode_9">No SBML <span id="l2v5_code_9_stat"/></div>
+        <h1>SBML case results</h1>
+        <div id="preamble">
+            <h2 id="caseId" class="item">
+                <div class="part3"></div>
+                <div class="part1"></div>
+                <div class="part2"></div>
+            </h2>
+            <p>Case path: <span id="casePath"></span></p>
+            <p>Return code: <span id="retCode"></span></p>
         </div>
-        <div class="itemContainer">
-            <div class="item part3">SBML L3V2</div>
-            <div class="item part3 retCode_0">Success <span id="l3v2_code_0_stat"/></div>
-            <div class="item part3 retCode_1">Compiler error <span id="l3v2_code_1_stat"/></div>
-            <div class="item part3 retCode_2">Platform error <span id="l3v2_code_2_stat"/></div>
-            <div class="item part3 retCode_9">No SBML <span id="l3v2_code_9_stat"/></div>
+        <div id="synopsis">
+            <h3>Description</h3>
+            <pre><code class="text"></code></pre>
         </div>
-        
-        <div>
-            <p>Heta compiler: <span id="heta_version">-</span></p>
-            <p>Started: <span id="started">-</span></p>
-            <p>Finished: <span id="finished">-</span></p>
-            <p>Cases count: <span id="totalCasesCount">-</span></p>
-            <p id="solver"/>
-            <p id="solver_version"/>
-            <p id="required_time"/>
+        <div id="heta-code-l2v5">
+            <h3>Heta code: L2V5</h3>
+            <pre class="heta"><code></code></pre>
         </div>
-
-        <div id="summary" class="itemContainer"/>
-
-    </div>
-    <!-- END L2V5 -->
-
-    <div id="statistics">
-        <p id="SUCCESS_status"/>
-        <p id="TOLERANCE_FAIL_status"/>
-        <p id="ERROR_status"/>
-        <p id="SKIPPED_status"/>
-        <p id="undefined_status"/>
-    </div>
-    </div>
-    <div id="main">
-        <div id="container"></div>
-        <div id="figure"><img/></div>
+        <div id="logs-l2v5">
+            <h3>Logs: L2V5</h3>
+            <pre><code class="text"></code></pre>
+        </div>
+        <div id="heta-code-l3v2">
+            <h3>Heta code: L3V2</h3>
+            <pre class="heta"><code></code></pre>
+        </div>
+        <div id="logs-l3v2">
+            <h3>Logs: L3V2</h3>
+            <pre><code class="text"></code></pre>
+        </div>
     </div>
 </body>
 </HTML>
