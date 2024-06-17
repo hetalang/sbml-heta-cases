@@ -6,16 +6,17 @@ const path = '../' + config.path;
 $(window).ready(() => {
     $.get(`${path}/summary.json`, (data) => {
         let x = data.cases.find((x) => x.id == caseId);
-        console.log(x);
+        //console.log(x);
 
-        $('#caseId').html(x.id);
-        $('#caseId').removeClass().addClass('retCode_' + x.l2v5RetCode);
+        $('#caseId div.part3').html(x.id);
+        $('#caseId div.part1').removeClass().addClass('retCode_' + x.l2v5RetCode);
+        $('#caseId div.part2').removeClass().addClass('retCode_' + x.l3v2RetCode);
         $('#casePath').html(`${path}/cases/${x.id}/`);
         $('#retCode').html(x.l2v5RetCode);
 
         $.get(`${path}/cases/${x.id}/synopsis.txt`, (data) => {
-            let shorted = splitLines(data);
-            $('#synopsis pre code').html(shorted);
+            //let shorted = splitLines(data);
+            $('#synopsis pre code').html(data);
         }).fail(() => {
             $('#synopsis pre code').html('No synopsis.txt file found');
         });
