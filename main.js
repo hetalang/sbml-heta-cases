@@ -110,20 +110,3 @@ $(window).ready(() => {
     });
     */
 });
-
-function splitLines(s) {
-    let newS = [];
-    s.split('\n').forEach((line) => {
-        if (line.length <= 180) {
-            newS.push(line);
-        } else {
-            let i = 0;
-            while (i < line.length) {
-                newS.push(line.slice(i, i + 100));
-                i += 100;
-            }
-        }
-    });
-
-    return newS.join('\n');
-}
