@@ -9,8 +9,8 @@ $(window).ready(() => {
         //console.log(x);
 
         $('#caseId div.part3').html(x.id);
-        $('#caseId div.part1').removeClass().addClass('retCode_' + x.l2v5RetCode);
-        $('#caseId div.part2').removeClass().addClass('retCode_' + x.l3v2RetCode);
+        $('#caseId div.part1').addClass('retCode_' + x.l2v5RetCode);
+        $('#caseId div.part2').addClass('retCode_' + x.l3v2RetCode);
         $('#casePath').html(`${path}/cases/${x.id}/`);
         $('#retCode').html(x.l2v5RetCode);
 
