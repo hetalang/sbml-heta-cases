@@ -1,7 +1,7 @@
 const url = new URL(window.location.href);
 let p = new URLSearchParams(url.search);
 let caseId = p.get('id');
-const path = '../../' + config.path;
+const path = '../' + config.path;
 
 $(window).ready(() => {
     $.get(`${path}/summary.json`, (data) => {
