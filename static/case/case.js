@@ -8,8 +8,9 @@ $(window).ready(() => {
         let x = data.cases.find((x) => x.id == caseId);
         //console.log(x);
 
-        $('#caseId').html(x.id);
-        $('#caseId').removeClass().addClass('retCode_' + x.l2v5RetCode);
+        $('#caseId div.part3').html(x.id);
+        $('#caseId div.part1').addClass('retCode_' + x.l2v5RetCode);
+        $('#caseId div.part2').addClass('retCode_' + x.l3v2RetCode);
         $('#casePath').html(`${path}/cases/${x.id}/`);
         $('#retCode').html(x.l2v5RetCode);
 
