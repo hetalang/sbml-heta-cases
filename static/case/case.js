@@ -14,8 +14,8 @@ $(window).ready(() => {
         $('#retCode').html(x.l2v5RetCode);
 
         $.get(`${path}/cases/${x.id}/synopsis.txt`, (data) => {
-            let shorted = splitLines(data);
-            $('#synopsis pre code').html(shorted);
+            //let shorted = splitLines(data);
+            $('#synopsis pre code').html(data);
         }).fail(() => {
             $('#synopsis pre code').html('No synopsis.txt file found');
         });
