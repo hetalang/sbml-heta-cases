@@ -8,11 +8,11 @@ multiply #defineFunction { arguments: [x, y], math: x * y, };
 
 t @TimeScale { };
 
-S3_proc @Process { actors:  = S3, aux: {{"metaid":"rule1"}}, };
+S3_proc @Process { actors:  = S3, aux: {metaid: "rule1"}, };
 S3_proc := multiply(k1, S1 * S2) + (-1) * k2 * S3 * S4;
-S1_proc @Process { actors:  = S1, aux: {{"metaid":"rule2"}}, };
+S1_proc @Process { actors:  = S1, aux: {metaid: "rule2"}, };
 S1_proc := k2 * S3 * S4 + (-1) * multiply(k1, multiply(S1, S2));
-S2_proc @Process { actors:  = S2, aux: {{"metaid":"rule3"}}, };
+S2_proc @Process { actors:  = S2, aux: {metaid: "rule3"}, };
 S2_proc := k2 * S3 * S4 + (-1) * multiply(k1, multiply(S1, S2));
 
 S1 @Record 'S1' { } .= 0.1;

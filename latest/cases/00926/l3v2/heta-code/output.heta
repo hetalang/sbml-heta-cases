@@ -6,6 +6,6 @@ c @Compartment 'c' { units: litre, } .= 1;
 
 s @Species 's' { units: mole/litre, compartment: c, } .= 2;
 
-c_proc @Process { actors:  = c, aux: {{"metaid":"rule1"}}, };
+c_proc @Process { actors:  = c, aux: {metaid: "rule1"}, };
 c_proc := 0.5 * c;
 

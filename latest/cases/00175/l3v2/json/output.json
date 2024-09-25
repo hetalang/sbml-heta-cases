@@ -4,16 +4,16 @@
     "units": "second"
   },
   {
-    "class": "Record",
     "id": "S1",
+    "class": "Record",
     "title": "S1",
     "assignments": {
       "start_": "0"
     }
   },
   {
-    "class": "Process",
     "id": "S1_proc",
+    "class": "Process",
     "aux": {
       "metaid": "rule1"
     },

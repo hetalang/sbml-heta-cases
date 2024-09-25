@@ -4,8 +4,8 @@
     "units": "second"
   },
   {
-    "class": "Compartment",
     "id": "C",
+    "class": "Compartment",
     "title": "C",
     "units": "litre",
     "assignments": {
@@ -14,8 +14,8 @@
     "boundary": true
   },
   {
-    "class": "Species",
     "id": "S1",
+    "class": "Species",
     "title": "S1",
     "units": "mole/litre",
     "assignments": {
@@ -24,8 +24,8 @@
     "compartment": "C"
   },
   {
-    "class": "Species",
     "id": "S2",
+    "class": "Species",
     "title": "S2",
     "units": "mole/litre",
     "assignments": {
@@ -34,8 +34,8 @@
     "compartment": "C"
   },
   {
-    "class": "Species",
     "id": "S3",
+    "class": "Species",
     "title": "S3",
     "units": "mole/litre",
     "assignments": {
@@ -44,8 +44,8 @@
     "compartment": "C"
   },
   {
-    "class": "Species",
     "id": "S4",
+    "class": "Species",
     "title": "S4",
     "units": "mole/litre",
     "assignments": {
@@ -54,13 +54,13 @@
     "compartment": "C"
   },
   {
-    "class": "Const",
     "id": "k2__reaction1_local",
+    "class": "Const",
     "num": 0.7
   },
   {
-    "class": "Reaction",
     "id": "reaction1",
+    "class": "Reaction",
     "title": "reaction1",
     "assignments": {
       "ode_": "C * k2__reaction1_local * S1 * t"
@@ -78,8 +78,8 @@
     "reversible": false
   },
   {
-    "class": "Reaction",
     "id": "reaction2",
+    "class": "Reaction",
     "title": "reaction2",
     "assignments": {
       "ode_": "C * k2 * S2 * t"
@@ -97,13 +97,13 @@
     "reversible": false
   },
   {
-    "class": "Const",
     "id": "k2__reaction3_local",
+    "class": "Const",
     "num": 1
   },
   {
-    "class": "Reaction",
     "id": "reaction3",
+    "class": "Reaction",
     "title": "reaction3",
     "assignments": {
       "ode_": "C * k2__reaction3_local * S3 * t"
@@ -121,8 +121,8 @@
     "reversible": false
   },
   {
-    "class": "Const",
     "id": "k2",
+    "class": "Const",
     "title": "k2",
     "num": 0.5
   }

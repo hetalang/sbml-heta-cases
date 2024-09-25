@@ -3,15 +3,15 @@
     "id": "t"
   },
   {
-    "class": "Record",
     "id": "P1",
+    "class": "Record",
     "assignments": {
       "start_": "0"
     }
   },
   {
-    "class": "Record",
     "id": "P2",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "E0": "3",
@@ -19,8 +19,8 @@
     }
   },
   {
-    "class": "Process",
     "id": "P1_proc",
+    "class": "Process",
     "assignments": {
       "ode_": "1"
     },
@@ -32,13 +32,13 @@
     ]
   },
   {
-    "class": "DSwitcher",
     "id": "E0",
+    "class": "DSwitcher",
     "trigger": "P1 > 1.5"
   },
   {
-    "class": "DSwitcher",
     "id": "E1",
+    "class": "DSwitcher",
     "trigger": "P1 > 1.5"
   }
 ]

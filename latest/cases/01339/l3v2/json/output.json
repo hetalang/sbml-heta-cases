@@ -3,24 +3,24 @@
     "id": "t"
   },
   {
-    "class": "Compartment",
     "id": "C",
+    "class": "Compartment",
     "assignments": {
       "start_": "1"
     },
     "boundary": true
   },
   {
-    "class": "Species",
     "id": "S1",
+    "class": "Species",
     "assignments": {
       "start_": "0"
     },
     "compartment": "C"
   },
   {
-    "class": "Reaction",
     "id": "J0",
+    "class": "Reaction",
     "assignments": {
       "ode_": "k1"
     },
@@ -32,15 +32,15 @@
     ]
   },
   {
-    "class": "Record",
     "id": "k1",
+    "class": "Record",
     "assignments": {
       "start_": "-5"
     }
   },
   {
-    "class": "Process",
     "id": "k1_proc",
+    "class": "Process",
     "assignments": {
       "ode_": "1"
     },

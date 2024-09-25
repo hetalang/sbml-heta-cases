@@ -3,8 +3,8 @@
     "id": "t"
   },
   {
-    "class": "Record",
     "id": "k1",
+    "class": "Record",
     "title": "k1",
     "assignments": {
       "start_": "0.6",
@@ -12,8 +12,8 @@
     }
   },
   {
-    "class": "Record",
     "id": "k2",
+    "class": "Record",
     "title": "k2",
     "assignments": {
       "start_": "0.2"
@@ -21,27 +21,27 @@
   },
   {
     "id": "volume",
-    "units": "litre",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "litre"
   },
   {
     "id": "area",
-    "units": "metre^2",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "metre^2"
   },
   {
     "id": "length",
-    "units": "metre",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "metre"
   },
   {
     "id": "substance",
-    "units": "mole",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "mole"
   },
   {
     "id": "time",
-    "units": "second",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "second"
   }
 ]

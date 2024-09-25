@@ -60,7 +60,7 @@ reaction1 @Reaction 'reaction1' { actors: S1 = S3, reversible: false, };
 reaction1 := compartment * k1 * S1;
 reaction2 @Reaction 'reaction2' { actors: S3 = S1, reversible: false, };
 reaction2 := compartment * k2 * S3;
-S2_proc @Process { actors:  = S2, aux: {{"metaid":"rule2"}}, };
+S2_proc @Process { actors:  = S2, aux: {metaid: "rule2"}, };
 S2_proc := k2 * S3 + (-1) * k1 * S1;
 
 k1 @Const 'k1' { } = 0.015;

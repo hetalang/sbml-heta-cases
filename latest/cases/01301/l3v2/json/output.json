@@ -3,16 +3,16 @@
     "id": "t"
   },
   {
-    "class": "Reaction",
     "id": "J0",
+    "class": "Reaction",
     "assignments": {
       "ode_": "3"
     },
     "actors": []
   },
   {
-    "class": "Record",
     "id": "p1",
+    "class": "Record",
     "assignments": {
       "ode_": "J0"
     }

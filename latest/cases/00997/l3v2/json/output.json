@@ -3,42 +3,42 @@
     "id": "t"
   },
   {
-    "class": "Record",
     "id": "p1",
+    "class": "Record",
     "assignments": {
       "start_": "1",
       "E2": "0"
     }
   },
   {
-    "class": "Record",
     "id": "p2",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "E0": "1"
     }
   },
   {
-    "class": "Record",
     "id": "p3",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "E1": "1"
     }
   },
   {
-    "class": "DSwitcher",
     "id": "E0",
+    "class": "DSwitcher",
     "trigger": "p1 >= 1"
   },
   {
-    "class": "DSwitcher",
     "id": "E1",
+    "class": "DSwitcher",
     "trigger": "p1 >= 1"
   },
   {
-    "class": "DSwitcher",
     "id": "E2",
+    "class": "DSwitcher",
     "trigger": "p1 >= 1"
   }
 ]

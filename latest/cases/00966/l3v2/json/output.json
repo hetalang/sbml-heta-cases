@@ -3,32 +3,32 @@
     "id": "t"
   },
   {
-    "class": "Record",
     "id": "S",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "ode_": "Q + R"
     }
   },
   {
-    "class": "Record",
     "id": "Q",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "Qinc": "Q + 0.01"
     }
   },
   {
-    "class": "Record",
     "id": "R",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "Rinc": "R + 0.01"
     }
   },
   {
-    "class": "Record",
     "id": "reset",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "Rinc": "t",
@@ -36,8 +36,8 @@
     }
   },
   {
-    "class": "Record",
     "id": "chicount",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "Rinc": "chicount + 1",
@@ -46,8 +46,8 @@
     }
   },
   {
-    "class": "Record",
     "id": "chitest",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "Qinc": "chitest + 1",
@@ -55,8 +55,8 @@
     }
   },
   {
-    "class": "Record",
     "id": "assemble",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "repeat": "1.5",
@@ -64,282 +64,283 @@
     }
   },
   {
-    "class": "Record",
     "id": "chi0",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "_E0": "chi0 + 1"
     }
   },
   {
-    "class": "Record",
     "id": "chi1",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "_E1": "chi1 + 1"
     }
   },
   {
-    "class": "Record",
     "id": "chi2",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "_E2": "chi2 + 1"
     }
   },
   {
-    "class": "Record",
     "id": "chi3",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "_E3": "chi3 + 1"
     }
   },
   {
-    "class": "Record",
     "id": "chi4",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "_E4": "chi4 + 1"
     }
   },
   {
-    "class": "Record",
     "id": "chi5",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "_E5": "chi5 + 1"
     }
   },
   {
-    "class": "Record",
     "id": "chi6",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "_E6": "chi6 + 1"
     }
   },
   {
-    "class": "Record",
     "id": "chi7",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "_E7": "chi7 + 1"
     }
   },
   {
-    "class": "Record",
     "id": "chi8",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "_E8": "chi8 + 1"
     }
   },
   {
-    "class": "Record",
     "id": "chi9",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "_E9": "chi9 + 1"
     }
   },
   {
-    "class": "Record",
     "id": "chi10",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "_E10": "chi10 + 1"
     }
   },
   {
-    "class": "Record",
     "id": "chi11",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "_E11": "chi11 + 1"
     }
   },
   {
-    "class": "Record",
     "id": "chi12",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "_E12": "chi12 + 1"
     }
   },
   {
-    "class": "Record",
     "id": "chi13",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "_E13": "chi13 + 1"
     }
   },
   {
-    "class": "Record",
     "id": "chi14",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "_E14": "chi14 + 1"
     }
   },
   {
-    "class": "Record",
     "id": "chi15",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "_E15": "chi15 + 1"
     }
   },
   {
-    "class": "Record",
     "id": "chi16",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "_E16": "chi16 + 1"
     }
   },
   {
-    "class": "Record",
     "id": "tests",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "_E17": "tests + 1"
     }
   },
   {
-    "class": "Record",
     "id": "finalchi",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "_E18": "calculateerror(chi0, chi1, chi2, chi3, chi4, chi5, chi6, chi7, chi8, chi9, chi10, chi11, chi12, chi13, chi14, chi15, chi16)"
     }
   },
   {
-    "class": "Record",
     "id": "error",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "error_check": "1"
     }
   },
   {
-    "class": "DSwitcher",
     "id": "Rinc",
+    "class": "DSwitcher",
     "trigger": "(t - reset) >= 0.01"
   },
   {
-    "class": "DSwitcher",
     "id": "Qinc",
+    "class": "DSwitcher",
     "trigger": "(t - reset) >= 0.01"
   },
   {
-    "class": "DSwitcher",
     "id": "repeat",
+    "class": "DSwitcher",
     "trigger": "floor(chicount / 16) >= 1"
   },
   {
-    "class": "DSwitcher",
     "id": "_E0",
+    "class": "DSwitcher",
     "trigger": "assemble >= 1 and chitest == 0"
   },
   {
-    "class": "DSwitcher",
     "id": "_E1",
+    "class": "DSwitcher",
     "trigger": "assemble >= 1 and chitest == 1"
   },
   {
-    "class": "DSwitcher",
     "id": "_E2",
+    "class": "DSwitcher",
     "trigger": "assemble >= 1 and chitest == 2"
   },
   {
-    "class": "DSwitcher",
     "id": "_E3",
+    "class": "DSwitcher",
     "trigger": "assemble >= 1 and chitest == 3"
   },
   {
-    "class": "DSwitcher",
     "id": "_E4",
+    "class": "DSwitcher",
     "trigger": "assemble >= 1 and chitest == 4"
   },
   {
-    "class": "DSwitcher",
     "id": "_E5",
+    "class": "DSwitcher",
     "trigger": "assemble >= 1 and chitest == 5"
   },
   {
-    "class": "DSwitcher",
     "id": "_E6",
+    "class": "DSwitcher",
     "trigger": "assemble >= 1 and chitest == 6"
   },
   {
-    "class": "DSwitcher",
     "id": "_E7",
+    "class": "DSwitcher",
     "trigger": "assemble >= 1 and chitest == 7"
   },
   {
-    "class": "DSwitcher",
     "id": "_E8",
+    "class": "DSwitcher",
     "trigger": "assemble >= 1 and chitest == 8"
   },
   {
-    "class": "DSwitcher",
     "id": "_E9",
+    "class": "DSwitcher",
     "trigger": "assemble >= 1 and chitest == 9"
   },
   {
-    "class": "DSwitcher",
     "id": "_E10",
+    "class": "DSwitcher",
     "trigger": "assemble >= 1 and chitest == 10"
   },
   {
-    "class": "DSwitcher",
     "id": "_E11",
+    "class": "DSwitcher",
     "trigger": "assemble >= 1 and chitest == 11"
   },
   {
-    "class": "DSwitcher",
     "id": "_E12",
+    "class": "DSwitcher",
     "trigger": "assemble >= 1 and chitest == 12"
   },
   {
-    "class": "DSwitcher",
     "id": "_E13",
+    "class": "DSwitcher",
     "trigger": "assemble >= 1 and chitest == 13"
   },
   {
-    "class": "DSwitcher",
     "id": "_E14",
+    "class": "DSwitcher",
     "trigger": "assemble >= 1 and chitest == 14"
   },
   {
-    "class": "DSwitcher",
     "id": "_E15",
+    "class": "DSwitcher",
     "trigger": "assemble >= 1 and chitest == 15"
   },
   {
-    "class": "DSwitcher",
     "id": "_E16",
+    "class": "DSwitcher",
     "trigger": "assemble >= 1 and chitest == 16"
   },
   {
-    "class": "DSwitcher",
     "id": "_E17",
+    "class": "DSwitcher",
     "trigger": "assemble >= 1"
   },
   {
-    "class": "DSwitcher",
     "id": "_E18",
+    "class": "DSwitcher",
     "trigger": "tests >= 6240 and finalchi == 0"
   },
   {
-    "class": "DSwitcher",
     "id": "error_check",
+    "class": "DSwitcher",
     "trigger": "finalchi > 50"
   },
   {
     "id": "calculateerror",
+    "action": "defineFunction",
     "arguments": [
       "x0",
       "x1",
@@ -359,7 +360,6 @@
       "x15",
       "x16"
     ],
-    "math": "pow(x0 - 0.0952, 2) / 0.0952 + pow(x1 - 1.523, 2) / 1.523 + pow(x2 - 11.428, 2) / 11.428 + pow(x3 - 53.32, 2) / 53.32 + pow(x4 - 173.29, 2) / 173.29 + pow(x5 - 415.898, 2) / 415.898 + pow(x6 - 762.48, 2) / 762.48 + pow(x7 - 1089.26, 2) / 1089.26 + pow(x8 - 1225.415, 2) / 1225.415 + pow(x9 - 1089.26, 2) / 1089.26 + pow(x10 - 762.48, 2) / 762.48 + pow(x11 - 415.898, 2) / 415.898 + pow(x12 - 173.29, 2) / 173.29 + pow(x13 - 53.32, 2) / 53.32 + pow(x14 - 11.428, 2) / 11.428 + pow(x15 - 1.523, 2) / 1.523 + pow(x16 - 0.0952, 2) / 0.0952",
-    "action": "defineFunction"
+    "math": "pow(x0 - 0.0952, 2) / 0.0952 + pow(x1 - 1.523, 2) / 1.523 + pow(x2 - 11.428, 2) / 11.428 + pow(x3 - 53.32, 2) / 53.32 + pow(x4 - 173.29, 2) / 173.29 + pow(x5 - 415.898, 2) / 415.898 + pow(x6 - 762.48, 2) / 762.48 + pow(x7 - 1089.26, 2) / 1089.26 + pow(x8 - 1225.415, 2) / 1225.415 + pow(x9 - 1089.26, 2) / 1089.26 + pow(x10 - 762.48, 2) / 762.48 + pow(x11 - 415.898, 2) / 415.898 + pow(x12 - 173.29, 2) / 173.29 + pow(x13 - 53.32, 2) / 53.32 + pow(x14 - 11.428, 2) / 11.428 + pow(x15 - 1.523, 2) / 1.523 + pow(x16 - 0.0952, 2) / 0.0952"
   }
 ]

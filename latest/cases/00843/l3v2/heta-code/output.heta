@@ -11,7 +11,7 @@ S4 @Species 'S4' { units: mole/litre, compartment: C, } .= 0.5 / C;
 
 reaction1 @Reaction 'reaction1' { actors: S1 = S2 + S3, };
 reaction1 := C * (kf * S1 + (-1) * kr * S2 * S3);
-S4_proc @Process { actors:  = S4, aux: {{"metaid":"rule1"}}, };
+S4_proc @Process { actors:  = S4, aux: {metaid: "rule1"}, };
 S4_proc := 0.15;
 
 kf @Const 'kf' { } = 2.5;

@@ -1,0 +1,26 @@
+[info]	Namespace "nameless" was set as "concrete"
+[info]	Builder initialized in directory "result/latest/cases/00951/l2v5".
+[info]	Compilation of module "index.heta" of type "heta"...
+[info]	Reading module of type "heta" from file "result/latest/cases/00951/l2v5/index.heta"...
+[info]	Reading module of type "sbml" from file "result/latest/cases/00951/model-sbml-l2v5.xml"...
+[error]	P Some of properties do not satisfy requirements for class "Record"
+    1. undefined must be string
+    2. undefined must be number
+    3. undefined must be null
+    4. undefined must match exactly one schema in oneOf
+[error]	Q Some of properties do not satisfy requirements for class "Record"
+    1. undefined must be string
+    2. undefined must be number
+    3. undefined must be null
+    4. undefined must match exactly one schema in oneOf
+[error]	R Some of properties do not satisfy requirements for class "Record"
+    1. undefined must be string
+    2. undefined must be number
+    3. undefined must be null
+    4. undefined must match exactly one schema in oneOf
+[info]	Setting references in elements, total length 85
+[error]	Record "P" is not initialized. You must set "start_" or "ode_" for the record or use abstract namespace.
+[error]	Record "Q" is not initialized. You must set "start_" or "ode_" for the record or use abstract namespace.
+[error]	Record "R" is not initialized. You must set "start_" or "ode_" for the record or use abstract namespace.
+[info]	Checking for circular references in Records.
+[warn]	Units checking and export were skipped because of errors in compilation.

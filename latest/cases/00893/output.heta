@@ -34,11 +34,11 @@ The initial conditions are as follows:
 
 t @TimeScale { units: second, };
 
-P3_proc @Process { actors:  = P3, aux: {{"metaid":"rule1"}}, };
+P3_proc @Process { actors:  = P3, aux: {metaid: "rule1"}, };
 P3_proc := k1 * t;
-P1_proc @Process { actors:  = P1, aux: {{"metaid":"rule2"}}, };
+P1_proc @Process { actors:  = P1, aux: {metaid: "rule2"}, };
 P1_proc := (-1) * P1 * P3;
-P2_proc @Process { actors:  = P2, aux: {{"metaid":"rule3"}}, };
+P2_proc @Process { actors:  = P2, aux: {metaid: "rule3"}, };
 P2_proc := P1 * P3;
 
 P1 @Record 'P1' { } .= 0.0015;

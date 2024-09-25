@@ -11,6 +11,6 @@ c @Compartment 'c' { units: volume, } .= 1;
 
 s @Species 's' { units: substance/volume, compartment: c, } .= 2 / c;
 
-c_proc @Process { actors:  = c, aux: {{"metaid":"rule1"}}, };
+c_proc @Process { actors:  = c, aux: {metaid: "rule1"}, };
 c_proc := 0.5 * c;
 

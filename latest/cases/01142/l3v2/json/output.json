@@ -3,16 +3,16 @@
     "id": "t"
   },
   {
-    "class": "Compartment",
     "id": "C",
+    "class": "Compartment",
     "assignments": {
       "start_": "1"
     },
     "boundary": true
   },
   {
-    "class": "Species",
     "id": "s1",
+    "class": "Species",
     "assignments": {
       "start_": "0.001"
     },
@@ -20,41 +20,41 @@
     "isAmount": true
   },
   {
-    "class": "Const",
     "id": "timeconv",
+    "class": "Const",
     "num": 60
   },
   {
-    "class": "Record",
     "id": "t1",
+    "class": "Record",
     "assignments": {
       "start_": "1"
     }
   },
   {
-    "class": "Record",
     "id": "t2",
+    "class": "Record",
     "assignments": {
       "start_": "1"
     }
   },
   {
-    "class": "Record",
     "id": "t3",
+    "class": "Record",
     "assignments": {
       "start_": "1"
     }
   },
   {
-    "class": "Record",
     "id": "t4",
+    "class": "Record",
     "assignments": {
       "start_": "1"
     }
   },
   {
-    "class": "Record",
     "id": "t5",
+    "class": "Record",
     "assignments": {
       "start_": "1"
     }

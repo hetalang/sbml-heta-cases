@@ -1,11 +1,11 @@
 [info]	Namespace "nameless" was set as "concrete"
-[info]	Builder initialized in directory "/home/runner/work/sbml-heta-cases/sbml-heta-cases/result/latest/cases/01196/l3v2".
+[info]	Builder initialized in directory "result/latest/cases/01196/l3v2".
 [info]	Compilation of module "index.heta" of type "heta"...
-[info]	Reading module of type "heta" from file "/home/runner/work/sbml-heta-cases/sbml-heta-cases/result/latest/cases/01196/l3v2/index.heta"...
-[info]	Reading module of type "sbml" from file "/home/runner/work/sbml-heta-cases/sbml-heta-cases/result/latest/cases/01196/model-sbml-l3v2.xml"...
+[info]	Reading module of type "heta" from file "result/latest/cases/01196/l3v2/index.heta"...
+[info]	Reading module of type "sbml" from file "result/latest/cases/01196/model-sbml-l3v2.xml"...
 [error]	id must not be a reserved word, got "E". Reserved words list: 
-	 include, block, namespace, abstract, concrete, begin, end, NaN, Infinity, e, E, pi, PI, time, SOLVERTIME, default
-[info]	Setting references in elements, total length 128
+	 include, block, namespace, abstract, concrete, begin, end, NaN, Infinity, e, E, pi, PI, time, SOLVERTIME, default, null
+[info]	Setting references in elements, total length 126
 [error]	Record "R16" is not initialized. You must set "start_" or "ode_" for the record or use abstract namespace.
 [error]	Record "R14" is not initialized. You must set "start_" or "ode_" for the record or use abstract namespace.
 [error]	Record "R15" is not initialized. You must set "start_" or "ode_" for the record or use abstract namespace.

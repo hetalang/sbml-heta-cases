@@ -3,16 +3,16 @@
     "id": "t"
   },
   {
-    "class": "Compartment",
     "id": "C",
+    "class": "Compartment",
     "assignments": {
       "start_": "1"
     },
     "boundary": true
   },
   {
-    "class": "Species",
     "id": "s1",
+    "class": "Species",
     "assignments": {
       "start_": "1"
     },
@@ -20,8 +20,8 @@
     "isAmount": true
   },
   {
-    "class": "Reaction",
     "id": "J0",
+    "class": "Reaction",
     "assignments": {
       "ode_": "10"
     },
@@ -33,13 +33,13 @@
     ]
   },
   {
-    "class": "Const",
     "id": "extentconv",
+    "class": "Const",
     "num": 1000
   },
   {
-    "class": "Const",
     "id": "timeconv",
+    "class": "Const",
     "num": 60
   }
 ]

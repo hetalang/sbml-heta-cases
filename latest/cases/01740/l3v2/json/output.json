@@ -3,42 +3,42 @@
     "id": "t"
   },
   {
-    "class": "Compartment",
     "id": "C",
+    "class": "Compartment",
     "assignments": {
       "start_": "1"
     },
     "boundary": true
   },
   {
-    "class": "Species",
     "id": "S1",
+    "class": "Species",
     "assignments": {
       "start_": "2 / C"
     },
     "compartment": "C"
   },
   {
-    "class": "Species",
     "id": "S2",
+    "class": "Species",
     "assignments": {
       "start_": "3 / C"
     },
     "compartment": "C"
   },
   {
-    "class": "Const",
     "id": "m_cf__J0_local",
-    "num": 1
-  },
-  {
     "class": "Const",
-    "id": "s1_cf__J0_local",
     "num": 1
   },
   {
-    "class": "Reaction",
+    "id": "s1_cf__J0_local",
+    "class": "Const",
+    "num": 1
+  },
+  {
     "id": "J0",
+    "class": "Reaction",
     "assignments": {
       "ode_": "m_cf__J0_local * s1_cf__J0_local * 0.01"
     },
@@ -54,8 +54,8 @@
     ]
   },
   {
-    "class": "Const",
     "id": "s1_cf",
+    "class": "Const",
     "num": 5
   }
 ]

@@ -52,7 +52,7 @@ S2 @Species 'S2' { units: mole/litre, compartment: C, } .= 0;
 
 reaction1 @Reaction 'reaction1' { actors: S1 = S2, reversible: false, };
 reaction1 := C * k1 * S1;
-k1_proc @Process { actors:  = k1, aux: {{"metaid":"rule1"}}, };
+k1_proc @Process { actors:  = k1, aux: {metaid: "rule1"}, };
 k1_proc := add(k2, k3);
 
 k1 @Record 'k1' { } .= 1;

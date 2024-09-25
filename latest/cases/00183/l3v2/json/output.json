@@ -4,44 +4,44 @@
     "units": "second"
   },
   {
-    "class": "Record",
     "id": "S1",
+    "class": "Record",
     "title": "S1",
     "assignments": {
       "start_": "1"
     }
   },
   {
-    "class": "Record",
     "id": "S2",
+    "class": "Record",
     "title": "S2",
     "assignments": {
       "start_": "0.5"
     }
   },
   {
-    "class": "Record",
     "id": "S3",
+    "class": "Record",
     "title": "S3",
     "assignments": {
       "ode_": "multiply(k1, S2)"
     }
   },
   {
-    "class": "Const",
     "id": "k1",
+    "class": "Const",
     "title": "k1",
     "num": 0.7
   },
   {
-    "class": "Const",
     "id": "k2",
+    "class": "Const",
     "title": "k2",
     "num": 40
   },
   {
-    "class": "Process",
     "id": "S1_proc",
+    "class": "Process",
     "aux": {
       "metaid": "rule2"
     },
@@ -56,8 +56,8 @@
     ]
   },
   {
-    "class": "Process",
     "id": "S2_proc",
+    "class": "Process",
     "aux": {
       "metaid": "rule3"
     },
@@ -73,11 +73,11 @@
   },
   {
     "id": "multiply",
+    "action": "defineFunction",
     "arguments": [
       "x",
       "y"
     ],
-    "math": "x * y",
-    "action": "defineFunction"
+    "math": "x * y"
   }
 ]

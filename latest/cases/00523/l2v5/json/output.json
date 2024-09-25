@@ -3,8 +3,8 @@
     "id": "t"
   },
   {
-    "class": "Compartment",
     "id": "C",
+    "class": "Compartment",
     "title": "C",
     "units": "volume",
     "assignments": {
@@ -13,8 +13,8 @@
     "boundary": true
   },
   {
-    "class": "Species",
     "id": "S1",
+    "class": "Species",
     "title": "S1",
     "units": "substance/volume",
     "assignments": {
@@ -23,8 +23,8 @@
     "compartment": "C"
   },
   {
-    "class": "Species",
     "id": "S2",
+    "class": "Species",
     "title": "S2",
     "units": "substance/volume",
     "assignments": {
@@ -33,8 +33,8 @@
     "compartment": "C"
   },
   {
-    "class": "Species",
     "id": "S3",
+    "class": "Species",
     "title": "S3",
     "units": "substance/volume",
     "assignments": {
@@ -43,13 +43,13 @@
     "compartment": "C"
   },
   {
-    "class": "Const",
     "id": "k__reaction1_local",
+    "class": "Const",
     "num": 0.75
   },
   {
-    "class": "Reaction",
     "id": "reaction1",
+    "class": "Reaction",
     "title": "reaction1",
     "assignments": {
       "ode_": "C * k__reaction1_local * S1 * S2"
@@ -71,13 +71,13 @@
     "reversible": false
   },
   {
-    "class": "Const",
     "id": "k__reaction2_local",
+    "class": "Const",
     "num": 0.25
   },
   {
-    "class": "Reaction",
     "id": "reaction2",
+    "class": "Reaction",
     "title": "reaction2",
     "assignments": {
       "ode_": "C * k__reaction2_local * S3"
@@ -99,8 +99,8 @@
     "reversible": false
   },
   {
-    "class": "Record",
     "id": "p1",
+    "class": "Record",
     "title": "p1",
     "assignments": {
       "start_": "0.00125"
@@ -108,27 +108,27 @@
   },
   {
     "id": "volume",
-    "units": "litre",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "litre"
   },
   {
     "id": "area",
-    "units": "metre^2",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "metre^2"
   },
   {
     "id": "length",
-    "units": "metre",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "metre"
   },
   {
     "id": "substance",
-    "units": "mole",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "mole"
   },
   {
     "id": "time",
-    "units": "second",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "second"
   }
 ]

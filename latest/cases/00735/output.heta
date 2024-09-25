@@ -64,9 +64,9 @@ S4 @Species 'S4' { units: mole/litre, compartment: C, } .= 4 / C;
 
 reaction1 @Reaction 'reaction1' { actors: S1 = S2, reversible: false, };
 reaction1 := C * k1__reaction1_local * S1;
-S3_proc @Process { actors:  = S3, aux: {{"metaid":"rule1"}}, };
+S3_proc @Process { actors:  = S3, aux: {metaid: "rule1"}, };
 S3_proc := k2 * S4;
-S4_proc @Process { actors:  = S4, aux: {{"metaid":"rule2"}}, };
+S4_proc @Process { actors:  = S4, aux: {metaid: "rule2"}, };
 S4_proc := (-1) * k2 * S4;
 
 k1__reaction1_local @Const { } = 0.8;

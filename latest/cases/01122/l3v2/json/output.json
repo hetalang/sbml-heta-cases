@@ -3,23 +3,23 @@
     "id": "t"
   },
   {
-    "class": "Compartment",
     "id": "comp",
+    "class": "Compartment",
     "assignments": {
       "start_": "5"
     }
   },
   {
-    "class": "Species",
     "id": "S1",
+    "class": "Species",
     "assignments": {
       "start_": "1 / comp"
     },
     "compartment": "comp"
   },
   {
-    "class": "Species",
     "id": "S3",
+    "class": "Species",
     "assignments": {
       "start_": "4 / comp"
     },
@@ -27,8 +27,8 @@
     "compartment": "comp"
   },
   {
-    "class": "Reaction",
     "id": "_J0",
+    "class": "Reaction",
     "assignments": {
       "ode_": "S3 / 10"
     },
@@ -45,8 +45,8 @@
     ]
   },
   {
-    "class": "Process",
     "id": "comp_proc",
+    "class": "Process",
     "assignments": {
       "ode_": "1"
     },

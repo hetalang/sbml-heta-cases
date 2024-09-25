@@ -3,8 +3,8 @@
     "id": "t"
   },
   {
-    "class": "Compartment",
     "id": "C1",
+    "class": "Compartment",
     "title": "C1",
     "units": "length",
     "assignments": {
@@ -12,8 +12,8 @@
     }
   },
   {
-    "class": "Compartment",
     "id": "C2",
+    "class": "Compartment",
     "title": "C2",
     "units": "area",
     "assignments": {
@@ -21,8 +21,8 @@
     }
   },
   {
-    "class": "Process",
     "id": "C1_proc",
+    "class": "Process",
     "aux": {
       "metaid": "rule1"
     },
@@ -37,8 +37,8 @@
     ]
   },
   {
-    "class": "Process",
     "id": "C2_proc",
+    "class": "Process",
     "aux": {
       "metaid": "rule2"
     },
@@ -54,27 +54,27 @@
   },
   {
     "id": "volume",
-    "units": "litre",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "litre"
   },
   {
     "id": "area",
-    "units": "metre^2",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "metre^2"
   },
   {
     "id": "length",
-    "units": "metre",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "metre"
   },
   {
     "id": "substance",
-    "units": "mole",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "mole"
   },
   {
     "id": "time",
-    "units": "second",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "second"
   }
 ]

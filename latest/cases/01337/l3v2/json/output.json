@@ -3,29 +3,29 @@
     "id": "t"
   },
   {
-    "class": "Record",
     "id": "x",
+    "class": "Record",
     "assignments": {
       "start_": "3",
       "E1": "0"
     }
   },
   {
-    "class": "Record",
     "id": "y",
+    "class": "Record",
     "assignments": {
       "start_": "6",
       "E2": "7"
     }
   },
   {
-    "class": "DSwitcher",
     "id": "E1",
+    "class": "DSwitcher",
     "trigger": "x > 2"
   },
   {
-    "class": "DSwitcher",
     "id": "E2",
+    "class": "DSwitcher",
     "trigger": "x > 2"
   }
 ]

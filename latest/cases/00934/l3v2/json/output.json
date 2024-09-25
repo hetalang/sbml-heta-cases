@@ -3,16 +3,16 @@
     "id": "t"
   },
   {
-    "class": "Compartment",
     "id": "C",
+    "class": "Compartment",
     "assignments": {
       "start_": "1"
     },
     "boundary": true
   },
   {
-    "class": "Species",
     "id": "S1",
+    "class": "Species",
     "assignments": {
       "start_": "0 / C",
       "A": "1",
@@ -22,8 +22,8 @@
     "compartment": "C"
   },
   {
-    "class": "Species",
     "id": "S2",
+    "class": "Species",
     "assignments": {
       "start_": "1 / C",
       "A": "0",
@@ -33,18 +33,18 @@
     "compartment": "C"
   },
   {
-    "class": "DSwitcher",
     "id": "A",
+    "class": "DSwitcher",
     "trigger": "t >= 0.99"
   },
   {
-    "class": "DSwitcher",
     "id": "B",
+    "class": "DSwitcher",
     "trigger": "t >= 0.99"
   },
   {
-    "class": "DSwitcher",
     "id": "C1",
+    "class": "DSwitcher",
     "trigger": "t >= 0.99"
   }
 ]

@@ -3,8 +3,8 @@
     "id": "t"
   },
   {
-    "class": "Compartment",
     "id": "compartment",
+    "class": "Compartment",
     "title": "compartment",
     "units": "volume",
     "assignments": {
@@ -12,8 +12,8 @@
     }
   },
   {
-    "class": "Species",
     "id": "S1",
+    "class": "Species",
     "title": "S1",
     "units": "substance/volume",
     "assignments": {
@@ -22,8 +22,8 @@
     "compartment": "compartment"
   },
   {
-    "class": "Species",
     "id": "S2",
+    "class": "Species",
     "title": "S2",
     "units": "substance/volume",
     "assignments": {
@@ -32,8 +32,8 @@
     "compartment": "compartment"
   },
   {
-    "class": "Species",
     "id": "S3",
+    "class": "Species",
     "title": "S3",
     "units": "substance/volume",
     "assignments": {
@@ -42,8 +42,8 @@
     "compartment": "compartment"
   },
   {
-    "class": "Reaction",
     "id": "reaction1",
+    "class": "Reaction",
     "title": "reaction1",
     "assignments": {
       "ode_": "compartment * k2 * S1"
@@ -61,16 +61,16 @@
     "reversible": false
   },
   {
-    "class": "Record",
     "id": "k1",
+    "class": "Record",
     "title": "k1",
     "assignments": {
       "start_": "0.75"
     }
   },
   {
-    "class": "Record",
     "id": "k2",
+    "class": "Record",
     "title": "k2",
     "assignments": {
       "start_": "50"
@@ -78,27 +78,27 @@
   },
   {
     "id": "volume",
-    "units": "litre",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "litre"
   },
   {
     "id": "area",
-    "units": "metre^2",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "metre^2"
   },
   {
     "id": "length",
-    "units": "metre",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "metre"
   },
   {
     "id": "substance",
-    "units": "mole",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "mole"
   },
   {
     "id": "time",
-    "units": "second",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "second"
   }
 ]

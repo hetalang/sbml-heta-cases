@@ -3,24 +3,24 @@
     "id": "t"
   },
   {
-    "class": "Compartment",
     "id": "c",
+    "class": "Compartment",
     "assignments": {
       "start_": "1"
     },
     "boundary": true
   },
   {
-    "class": "Species",
     "id": "S1",
+    "class": "Species",
     "assignments": {
       "start_": "0"
     },
     "compartment": "c"
   },
   {
-    "class": "Reaction",
     "id": "J0",
+    "class": "Reaction",
     "assignments": {
       "ode_": "1"
     },
@@ -33,18 +33,18 @@
     "reversible": false
   },
   {
-    "class": "Record",
     "id": "p1",
+    "class": "Record",
     "assignments": {
       "start_": "addone(J0)"
     }
   },
   {
     "id": "addone",
+    "action": "defineFunction",
     "arguments": [
       "x"
     ],
-    "math": "x + 1",
-    "action": "defineFunction"
+    "math": "x + 1"
   }
 ]

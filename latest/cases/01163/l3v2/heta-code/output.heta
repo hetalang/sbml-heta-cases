@@ -2,7 +2,7 @@
 
 t @TimeScale { };
 
-p8_proc @Process { actors:  = p8, aux: {{"metaid":"p8_raterule"}}, };
+p8_proc @Process { actors:  = p8, aux: {metaid: "p8_raterule"}, };
 p8_proc := 3;
 
 p8 @Record { } .= 8;

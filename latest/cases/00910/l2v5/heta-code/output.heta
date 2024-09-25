@@ -10,8 +10,8 @@ t @TimeScale { };
 C1 @Compartment 'C1' { units: length, } .= 0.015;
 C2 @Compartment 'C2' { units: area, } .= 0.01;
 
-C1_proc @Process { actors:  = C1, aux: {{"metaid":"rule1"}}, };
+C1_proc @Process { actors:  = C1, aux: {metaid: "rule1"}, };
 C1_proc := 0.3 * C1 + 0.5 * C2;
-C2_proc @Process { actors:  = C2, aux: {{"metaid":"rule2"}}, };
+C2_proc @Process { actors:  = C2, aux: {metaid: "rule2"}, };
 C2_proc := 0.1 * C1 + 0.2 * C2;
 

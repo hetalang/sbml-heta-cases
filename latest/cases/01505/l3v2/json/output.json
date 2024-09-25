@@ -3,31 +3,31 @@
     "id": "t"
   },
   {
-    "class": "Compartment",
     "id": "C1",
+    "class": "Compartment",
     "assignments": {
       "start_": "0.5",
       "_E0": "0.2"
     }
   },
   {
-    "class": "Species",
     "id": "S1",
+    "class": "Species",
     "assignments": {
       "start_": "0"
     },
     "compartment": "C1"
   },
   {
-    "class": "Record",
     "id": "x",
+    "class": "Record",
     "assignments": {
       "ode_": "S1"
     }
   },
   {
-    "class": "Process",
     "id": "S1_proc",
+    "class": "Process",
     "assignments": {
       "ode_": "0.4"
     },
@@ -39,8 +39,8 @@
     ]
   },
   {
-    "class": "Process",
     "id": "C1_proc",
+    "class": "Process",
     "assignments": {
       "ode_": "0.2"
     },
@@ -52,8 +52,8 @@
     ]
   },
   {
-    "class": "DSwitcher",
     "id": "_E0",
+    "class": "DSwitcher",
     "trigger": "t >= 0.45"
   }
 ]

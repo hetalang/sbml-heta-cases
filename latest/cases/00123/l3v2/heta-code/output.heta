@@ -14,7 +14,7 @@ reaction1 @Reaction 'reaction1' { actors: S1 + S2 = S3 + S4, reversible: false, 
 reaction1 := compartment * k1 * S1 * S2;
 reaction2 @Reaction 'reaction2' { actors: S3 + S4 = S1 + S2, reversible: false, };
 reaction2 := compartment * k2 * S3 * S4;
-k1_proc @Process { actors:  = k1, aux: {{"metaid":"rule1"}}, };
+k1_proc @Process { actors:  = k1, aux: {metaid: "rule1"}, };
 k1_proc := p1 * add(k2, k3);
 
 k1 @Record 'k1' { } .= 1e+6;

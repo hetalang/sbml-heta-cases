@@ -3,16 +3,16 @@
     "id": "t"
   },
   {
-    "class": "Compartment",
     "id": "C",
+    "class": "Compartment",
     "assignments": {
       "start_": "2"
     },
     "boundary": true
   },
   {
-    "class": "Species",
     "id": "S1",
+    "class": "Species",
     "assignments": {
       "start_": "10",
       "E0": "5",
@@ -22,8 +22,8 @@
     "isAmount": true
   },
   {
-    "class": "Process",
     "id": "S1_proc",
+    "class": "Process",
     "assignments": {
       "ode_": "(-1)"
     },
@@ -35,13 +35,13 @@
     ]
   },
   {
-    "class": "DSwitcher",
     "id": "E0",
+    "class": "DSwitcher",
     "trigger": "t >= 2.5"
   },
   {
-    "class": "DSwitcher",
     "id": "E1",
+    "class": "DSwitcher",
     "trigger": "t >= 2.5"
   }
 ]

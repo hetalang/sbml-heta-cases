@@ -3,16 +3,16 @@
     "id": "t"
   },
   {
-    "class": "Compartment",
     "id": "C",
+    "class": "Compartment",
     "assignments": {
       "start_": "1"
     },
     "boundary": true
   },
   {
-    "class": "Species",
     "id": "S1",
+    "class": "Species",
     "assignments": {
       "start_": "1 / C",
       "E0": "2"
@@ -20,8 +20,8 @@
     "compartment": "C"
   },
   {
-    "class": "Species",
     "id": "S2",
+    "class": "Species",
     "assignments": {
       "start_": "0 / C",
       "E0": "3"
@@ -29,8 +29,8 @@
     "compartment": "C"
   },
   {
-    "class": "Reaction",
     "id": "J0",
+    "class": "Reaction",
     "assignments": {
       "ode_": "0.01"
     },
@@ -46,13 +46,13 @@
     ]
   },
   {
-    "class": "Const",
     "id": "m_cf",
+    "class": "Const",
     "num": 3
   },
   {
-    "class": "DSwitcher",
     "id": "E0",
+    "class": "DSwitcher",
     "trigger": "S1 > 0.9"
   }
 ]

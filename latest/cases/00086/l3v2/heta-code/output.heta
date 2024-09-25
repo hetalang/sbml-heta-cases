@@ -12,9 +12,9 @@ S4 @Species 'S4' { units: mole/litre, compartment: compartment, } .= 4 / compart
 
 reaction1 @Reaction 'reaction1' { actors: S1 = S2, reversible: false, };
 reaction1 := compartment * k1 * S1;
-S3_proc @Process { actors:  = S3, aux: {{"metaid":"rule1"}}, };
+S3_proc @Process { actors:  = S3, aux: {metaid: "rule1"}, };
 S3_proc := multiply(k1, 0.5);
-S4_proc @Process { actors:  = S4, aux: {{"metaid":"rule2"}}, };
+S4_proc @Process { actors:  = S4, aux: {metaid: "rule2"}, };
 S4_proc := multiply((-1) * k2, 0.5);
 
 k1 @Const 'k1' { } = 0.75;

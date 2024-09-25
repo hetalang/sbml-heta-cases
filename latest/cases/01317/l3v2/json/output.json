@@ -3,13 +3,13 @@
     "id": "t"
   },
   {
-    "class": "Const",
     "id": "p1",
+    "class": "Const",
     "num": 5
   },
   {
-    "class": "Record",
     "id": "p2",
+    "class": "Record",
     "assignments": {
       "ode_": "1 + t"
     }

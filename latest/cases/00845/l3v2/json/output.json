@@ -4,8 +4,8 @@
     "units": "second"
   },
   {
-    "class": "Compartment",
     "id": "C",
+    "class": "Compartment",
     "title": "C",
     "units": "litre",
     "assignments": {
@@ -14,8 +14,8 @@
     "boundary": true
   },
   {
-    "class": "Species",
     "id": "S1",
+    "class": "Species",
     "title": "S1",
     "units": "mole/litre",
     "assignments": {
@@ -24,8 +24,8 @@
     "compartment": "C"
   },
   {
-    "class": "Species",
     "id": "S2",
+    "class": "Species",
     "title": "S2",
     "units": "mole/litre",
     "assignments": {
@@ -35,8 +35,8 @@
     "compartment": "C"
   },
   {
-    "class": "Reaction",
     "id": "reaction1",
+    "class": "Reaction",
     "title": "reaction1",
     "assignments": {
       "ode_": "C * (kf * S1 + (-1) * kr * S2)"
@@ -53,20 +53,20 @@
     ]
   },
   {
-    "class": "Const",
     "id": "kf",
+    "class": "Const",
     "title": "kf",
     "num": 0.9
   },
   {
-    "class": "Const",
     "id": "kr",
+    "class": "Const",
     "title": "kr",
     "num": 0.075
   },
   {
-    "class": "DSwitcher",
     "id": "event1",
+    "class": "DSwitcher",
     "title": "event1",
     "trigger": "S1 < 0.75"
   }

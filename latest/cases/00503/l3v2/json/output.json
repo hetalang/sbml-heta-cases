@@ -4,8 +4,8 @@
     "units": "second"
   },
   {
-    "class": "Compartment",
     "id": "C",
+    "class": "Compartment",
     "title": "C",
     "units": "litre",
     "assignments": {
@@ -14,8 +14,8 @@
     "boundary": true
   },
   {
-    "class": "Species",
     "id": "S1",
+    "class": "Species",
     "title": "S1",
     "units": "mole/litre",
     "assignments": {
@@ -25,8 +25,8 @@
     "compartment": "C"
   },
   {
-    "class": "Species",
     "id": "S2",
+    "class": "Species",
     "title": "S2",
     "units": "mole/litre",
     "assignments": {
@@ -35,8 +35,8 @@
     "compartment": "C"
   },
   {
-    "class": "Species",
     "id": "S3",
+    "class": "Species",
     "title": "S3",
     "units": "mole/litre",
     "assignments": {
@@ -45,8 +45,8 @@
     "compartment": "C"
   },
   {
-    "class": "Reaction",
     "id": "reaction1",
+    "class": "Reaction",
     "title": "reaction1",
     "assignments": {
       "ode_": "C * k1 * S1 * S2"
@@ -68,8 +68,8 @@
     "reversible": false
   },
   {
-    "class": "Reaction",
     "id": "reaction2",
+    "class": "Reaction",
     "title": "reaction2",
     "assignments": {
       "ode_": "C * k2 * S3"
@@ -91,20 +91,20 @@
     "reversible": false
   },
   {
-    "class": "Const",
     "id": "k1",
+    "class": "Const",
     "title": "k1",
     "num": 0.75
   },
   {
-    "class": "Const",
     "id": "k2",
+    "class": "Const",
     "title": "k2",
     "num": 0.25
   },
   {
-    "class": "Const",
     "id": "p1",
+    "class": "Const",
     "title": "p1",
     "num": 0.0000125
   }

@@ -3,8 +3,8 @@
     "id": "t"
   },
   {
-    "class": "Compartment",
     "id": "default_compartment",
+    "class": "Compartment",
     "aux": {
       "sboTerm": "SBO:0000410"
     },
@@ -14,29 +14,29 @@
     "boundary": true
   },
   {
-    "class": "Species",
     "id": "S1",
-    "assignments": {
-      "start_": "5"
-    },
-    "compartment": "default_compartment"
-  },
-  {
     "class": "Species",
-    "id": "S2",
     "assignments": {
       "start_": "5"
     },
     "compartment": "default_compartment"
   },
   {
-    "class": "Const",
+    "id": "S2",
+    "class": "Species",
+    "assignments": {
+      "start_": "5"
+    },
+    "compartment": "default_compartment"
+  },
+  {
     "id": "k1__J0_local",
+    "class": "Const",
     "num": -1
   },
   {
-    "class": "Reaction",
     "id": "J0",
+    "class": "Reaction",
     "assignments": {
       "ode_": "k1__J0_local * S1 * S2"
     },
@@ -53,27 +53,27 @@
   },
   {
     "id": "volume",
-    "units": "litre",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "litre"
   },
   {
     "id": "area",
-    "units": "metre^2",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "metre^2"
   },
   {
     "id": "length",
-    "units": "metre",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "metre"
   },
   {
     "id": "substance",
-    "units": "mole",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "mole"
   },
   {
     "id": "time",
-    "units": "second",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "second"
   }
 ]

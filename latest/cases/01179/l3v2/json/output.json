@@ -3,18 +3,18 @@
     "id": "t"
   },
   {
-    "class": "Const",
     "id": "timeconv",
+    "class": "Const",
     "num": 60
   },
   {
-    "class": "Const",
     "id": "paramconv",
+    "class": "Const",
     "num": 0.01
   },
   {
-    "class": "Record",
     "id": "t1",
+    "class": "Record",
     "assignments": {
       "start_": "1"
     }

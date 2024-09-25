@@ -4,16 +4,16 @@
     "units": "second"
   },
   {
-    "class": "Record",
     "id": "k1",
+    "class": "Record",
     "title": "k1",
     "assignments": {
       "ode_": "4 * k2"
     }
   },
   {
-    "class": "Const",
     "id": "k2",
+    "class": "Const",
     "title": "k2",
     "num": 0.3
   }

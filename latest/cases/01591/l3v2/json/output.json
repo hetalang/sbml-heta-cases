@@ -3,31 +3,31 @@
     "id": "t"
   },
   {
-    "class": "Record",
     "id": "S",
+    "class": "Record",
     "assignments": {
       "ode_": "Q + R"
     }
   },
   {
-    "class": "Record",
     "id": "Q",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "Qinc": "Q + 0.01"
     }
   },
   {
-    "class": "Record",
     "id": "R",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "Rinc": "R + 0.01"
     }
   },
   {
-    "class": "Record",
     "id": "reset",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "Qinc": "0",
@@ -35,32 +35,32 @@
     }
   },
   {
-    "class": "Record",
     "id": "maxdiff",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "maxcheck": "abs(Q - R)"
     }
   },
   {
-    "class": "Record",
     "id": "errorLow",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "error_check": "1"
     }
   },
   {
-    "class": "Record",
     "id": "errorHigh",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "error_check2": "1"
     }
   },
   {
-    "class": "Process",
     "id": "reset_proc",
+    "class": "Process",
     "assignments": {
       "ode_": "1"
     },
@@ -72,28 +72,28 @@
     ]
   },
   {
-    "class": "DSwitcher",
     "id": "Qinc",
+    "class": "DSwitcher",
     "trigger": "reset >= 0.01"
   },
   {
-    "class": "DSwitcher",
     "id": "Rinc",
+    "class": "DSwitcher",
     "trigger": "reset >= 0.01"
   },
   {
-    "class": "DSwitcher",
     "id": "maxcheck",
+    "class": "DSwitcher",
     "trigger": "abs(Q - R) > maxdiff"
   },
   {
-    "class": "DSwitcher",
     "id": "error_check",
+    "class": "DSwitcher",
     "trigger": "t >= 99 and maxdiff < 0.2"
   },
   {
-    "class": "DSwitcher",
     "id": "error_check2",
+    "class": "DSwitcher",
     "trigger": "maxdiff >= 4"
   }
 ]

@@ -3,24 +3,24 @@
     "id": "t"
   },
   {
-    "class": "Compartment",
     "id": "C",
+    "class": "Compartment",
     "assignments": {
       "start_": "1"
     },
     "boundary": true
   },
   {
-    "class": "Species",
     "id": "p1",
+    "class": "Species",
     "assignments": {
       "start_": "1"
     },
     "compartment": "C"
   },
   {
-    "class": "Reaction",
     "id": "J0",
+    "class": "Reaction",
     "assignments": {
       "ode_": "1"
     },
@@ -32,8 +32,8 @@
     ]
   },
   {
-    "class": "Record",
     "id": "p2",
+    "class": "Record",
     "assignments": {
       "start_": "10",
       "E0": "5",
@@ -41,13 +41,13 @@
     }
   },
   {
-    "class": "DSwitcher",
     "id": "E0",
+    "class": "DSwitcher",
     "trigger": "t > 5.5"
   },
   {
-    "class": "DSwitcher",
     "id": "E1",
+    "class": "DSwitcher",
     "trigger": "t > 5.5"
   }
 ]

@@ -3,15 +3,15 @@
     "id": "t"
   },
   {
-    "class": "Record",
     "id": "z",
+    "class": "Record",
     "assignments": {
       "start_": "34 * i"
     }
   },
   {
-    "class": "Const",
     "id": "i",
+    "class": "Const",
     "num": 2
   }
 ]

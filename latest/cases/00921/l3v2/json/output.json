@@ -4,14 +4,14 @@
     "units": "second"
   },
   {
-    "class": "Const",
     "id": "k1",
+    "class": "Const",
     "title": "k1",
     "num": 0.5
   },
   {
-    "class": "Const",
     "id": "k2",
+    "class": "Const",
     "title": "k2",
     "num": 0.3
   }

@@ -8,9 +8,9 @@ multiply #defineFunction { arguments: [x, y], math: x * y, };
 
 t @TimeScale { };
 
-S1_proc @Process { actors:  = S1, aux: {{"metaid":"rule1"}}, };
+S1_proc @Process { actors:  = S1, aux: {metaid: "rule1"}, };
 S1_proc := (-1) * multiply(k1, S1);
-S2_proc @Process { actors:  = S2, aux: {{"metaid":"rule2"}}, };
+S2_proc @Process { actors:  = S2, aux: {metaid: "rule2"}, };
 S2_proc := multiply(k1, S1);
 
 S1 @Record 'S1' { } .= 0.015;

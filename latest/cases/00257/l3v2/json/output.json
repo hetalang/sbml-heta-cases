@@ -4,8 +4,8 @@
     "units": "second"
   },
   {
-    "class": "Compartment",
     "id": "compartment",
+    "class": "Compartment",
     "title": "compartment",
     "assignments": {
       "start_": "0"
@@ -13,8 +13,8 @@
     "boundary": true
   },
   {
-    "class": "Species",
     "id": "S1",
+    "class": "Species",
     "title": "S1",
     "units": "mole",
     "assignments": {
@@ -24,8 +24,8 @@
     "isAmount": true
   },
   {
-    "class": "Species",
     "id": "S2",
+    "class": "Species",
     "title": "S2",
     "units": "mole",
     "assignments": {
@@ -35,8 +35,8 @@
     "isAmount": true
   },
   {
-    "class": "Species",
     "id": "S3",
+    "class": "Species",
     "title": "S3",
     "units": "mole",
     "assignments": {
@@ -47,8 +47,8 @@
     "isAmount": true
   },
   {
-    "class": "Reaction",
     "id": "reaction1",
+    "class": "Reaction",
     "title": "reaction1",
     "assignments": {
       "ode_": "k1 * S1 * S3"
@@ -71,8 +71,8 @@
     ]
   },
   {
-    "class": "Const",
     "id": "k1",
+    "class": "Const",
     "title": "k1",
     "num": 1.78
   }

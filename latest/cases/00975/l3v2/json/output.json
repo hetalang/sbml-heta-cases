@@ -3,8 +3,8 @@
     "id": "t"
   },
   {
-    "class": "Compartment",
     "id": "default_compartment",
+    "class": "Compartment",
     "aux": {
       "sboTerm": "SBO:0000410"
     },
@@ -14,24 +14,24 @@
     "boundary": true
   },
   {
-    "class": "Species",
     "id": "S1",
+    "class": "Species",
     "assignments": {
       "start_": "0 / default_compartment"
     },
     "compartment": "default_compartment"
   },
   {
-    "class": "Species",
     "id": "S2",
+    "class": "Species",
     "assignments": {
       "start_": "0.001 / default_compartment"
     },
     "compartment": "default_compartment"
   },
   {
-    "class": "Reaction",
     "id": "_J0",
+    "class": "Reaction",
     "assignments": {
       "ode_": "k1"
     },
@@ -43,8 +43,8 @@
     ]
   },
   {
-    "class": "Reaction",
     "id": "_J1",
+    "class": "Reaction",
     "assignments": {
       "ode_": "(k2 * S1) / S2"
     },
@@ -60,8 +60,8 @@
     ]
   },
   {
-    "class": "Reaction",
     "id": "_J2",
+    "class": "Reaction",
     "assignments": {
       "ode_": "k3 * S2"
     },
@@ -73,28 +73,28 @@
     ]
   },
   {
-    "class": "Const",
     "id": "k1",
+    "class": "Const",
     "num": 1
   },
   {
-    "class": "Const",
     "id": "k2",
+    "class": "Const",
     "num": 3
   },
   {
-    "class": "Const",
     "id": "k3",
+    "class": "Const",
     "num": 1.4
   },
   {
-    "class": "Const",
     "id": "S1conv",
+    "class": "Const",
     "num": 3
   },
   {
-    "class": "Const",
     "id": "modelconv",
+    "class": "Const",
     "num": 4
   }
 ]

@@ -4,38 +4,38 @@
     "units": "second"
   },
   {
-    "class": "Record",
     "id": "P1",
+    "class": "Record",
     "title": "P1",
     "assignments": {
       "start_": "0.0015"
     }
   },
   {
-    "class": "Record",
     "id": "P2",
+    "class": "Record",
     "title": "P2",
     "assignments": {
       "start_": "0"
     }
   },
   {
-    "class": "Record",
     "id": "P3",
+    "class": "Record",
     "title": "P3",
     "assignments": {
       "start_": "0.001"
     }
   },
   {
-    "class": "Const",
     "id": "k1",
+    "class": "Const",
     "title": "k1",
     "num": 0.5
   },
   {
-    "class": "Process",
     "id": "P3_proc",
+    "class": "Process",
     "aux": {
       "metaid": "rule1"
     },
@@ -50,8 +50,8 @@
     ]
   },
   {
-    "class": "Process",
     "id": "P1_proc",
+    "class": "Process",
     "aux": {
       "metaid": "rule2"
     },
@@ -66,8 +66,8 @@
     ]
   },
   {
-    "class": "Process",
     "id": "P2_proc",
+    "class": "Process",
     "aux": {
       "metaid": "rule3"
     },

@@ -3,77 +3,77 @@
     "id": "t"
   },
   {
-    "class": "Record",
     "id": "INF",
+    "class": "Record",
     "assignments": {
       "start_": "10"
     }
   },
   {
-    "class": "Record",
     "id": "Inf",
+    "class": "Record",
     "assignments": {
       "start_": "1"
     }
   },
   {
-    "class": "Record",
     "id": "inf",
+    "class": "Record",
     "assignments": {
       "start_": "0.1"
     }
   },
   {
-    "class": "Record",
     "id": "a",
+    "class": "Record",
     "assignments": {
       "start_": "INF"
     }
   },
   {
-    "class": "Record",
     "id": "b",
+    "class": "Record",
     "assignments": {
       "start_": "Inf"
     }
   },
   {
-    "class": "Record",
     "id": "c",
+    "class": "Record",
     "assignments": {
       "start_": "inf"
     }
   },
   {
-    "class": "Record",
     "id": "d",
+    "class": "Record",
     "assignments": {
       "start_": "Infinity"
     }
   },
   {
     "id": "volume",
-    "units": "litre",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "litre"
   },
   {
     "id": "area",
-    "units": "metre^2",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "metre^2"
   },
   {
     "id": "length",
-    "units": "metre",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "metre"
   },
   {
     "id": "substance",
-    "units": "mole",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "mole"
   },
   {
     "id": "time",
-    "units": "second",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "second"
   }
 ]

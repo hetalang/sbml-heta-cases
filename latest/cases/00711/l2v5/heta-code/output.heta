@@ -18,7 +18,7 @@ reaction1 @Reaction 'reaction1' { actors: S1 + S2 = S3, reversible: false, };
 reaction1 := C * k1 * S1 * S2;
 reaction2 @Reaction 'reaction2' { actors: S3 = S1 + S2, reversible: false, };
 reaction2 := C * k2 * S3;
-S4_proc @Process { actors:  = S4, aux: {{"metaid":"rule1"}}, };
+S4_proc @Process { actors:  = S4, aux: {metaid: "rule1"}, };
 S4_proc := 1e-4;
 
 k1 @Record 'k1' { } .= 7500;

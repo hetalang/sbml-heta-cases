@@ -3,16 +3,16 @@
     "id": "t"
   },
   {
-    "class": "Compartment",
     "id": "C1",
+    "class": "Compartment",
     "assignments": {
       "start_": "0.5",
       "E0": "0.2"
     }
   },
   {
-    "class": "Species",
     "id": "S1",
+    "class": "Species",
     "assignments": {
       "start_": "2",
       "E0": "0.2"
@@ -21,15 +21,15 @@
     "compartment": "C1"
   },
   {
-    "class": "Record",
     "id": "x",
+    "class": "Record",
     "assignments": {
       "ode_": "S1"
     }
   },
   {
-    "class": "DSwitcher",
     "id": "E0",
+    "class": "DSwitcher",
     "trigger": "t >= 0.45"
   }
 ]

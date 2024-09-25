@@ -3,15 +3,15 @@
     "id": "t"
   },
   {
-    "class": "Compartment",
     "id": "C8",
+    "class": "Compartment",
     "assignments": {
       "start_": "8"
     }
   },
   {
-    "class": "Const",
     "id": "conv",
+    "class": "Const",
     "num": 0.1
   }
 ]

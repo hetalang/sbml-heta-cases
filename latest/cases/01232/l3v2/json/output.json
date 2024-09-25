@@ -3,32 +3,32 @@
     "id": "t"
   },
   {
-    "class": "Compartment",
     "id": "c",
+    "class": "Compartment",
     "assignments": {
       "start_": "1"
     },
     "boundary": true
   },
   {
-    "class": "Species",
     "id": "S1",
-    "assignments": {
-      "start_": "0"
-    },
-    "compartment": "c"
-  },
-  {
     "class": "Species",
-    "id": "S2",
     "assignments": {
       "start_": "0"
     },
     "compartment": "c"
   },
   {
-    "class": "Reaction",
+    "id": "S2",
+    "class": "Species",
+    "assignments": {
+      "start_": "0"
+    },
+    "compartment": "c"
+  },
+  {
     "id": "J0",
+    "class": "Reaction",
     "assignments": {
       "ode_": "k1"
     },
@@ -41,13 +41,13 @@
     "reversible": false
   },
   {
-    "class": "Const",
     "id": "J0__J1_local",
+    "class": "Const",
     "num": 2
   },
   {
-    "class": "Reaction",
     "id": "J1",
+    "class": "Reaction",
     "assignments": {
       "ode_": "J0__J1_local"
     },
@@ -60,8 +60,8 @@
     "reversible": false
   },
   {
-    "class": "Record",
     "id": "k1",
+    "class": "Record",
     "assignments": {
       "start_": "1"
     }

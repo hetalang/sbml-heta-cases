@@ -4,7 +4,7 @@ t @TimeScale { units: second, };
 
 c @Compartment 'c' { units: metre^2, } .= 0.002;
 
-c_proc @Process { actors:  = c, aux: {{"metaid":"rule1"}}, };
+c_proc @Process { actors:  = c, aux: {metaid: "rule1"}, };
 c_proc := (-1) * c * k1;
 
 k1 @Const 'k1' { } = 1.1;

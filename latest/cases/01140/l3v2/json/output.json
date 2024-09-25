@@ -3,16 +3,16 @@
     "id": "t"
   },
   {
-    "class": "Compartment",
     "id": "C",
+    "class": "Compartment",
     "assignments": {
       "start_": "1"
     },
     "boundary": true
   },
   {
-    "class": "Species",
     "id": "s8",
+    "class": "Species",
     "assignments": {
       "start_": "8"
     },
@@ -20,8 +20,8 @@
     "isAmount": true
   },
   {
-    "class": "Const",
     "id": "conv",
+    "class": "Const",
     "num": 0.1
   }
 ]

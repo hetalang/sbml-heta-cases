@@ -4,8 +4,8 @@
     "units": "second"
   },
   {
-    "class": "Compartment",
     "id": "C",
+    "class": "Compartment",
     "title": "C",
     "units": "litre",
     "assignments": {
@@ -14,8 +14,8 @@
     "boundary": true
   },
   {
-    "class": "Species",
     "id": "S1",
+    "class": "Species",
     "title": "S1",
     "units": "mole/litre",
     "assignments": {
@@ -24,8 +24,8 @@
     "compartment": "C"
   },
   {
-    "class": "Species",
     "id": "S2",
+    "class": "Species",
     "title": "S2",
     "units": "mole/litre",
     "assignments": {
@@ -34,13 +34,13 @@
     "compartment": "C"
   },
   {
-    "class": "Const",
     "id": "k__reaction1_local",
+    "class": "Const",
     "num": 0.75
   },
   {
-    "class": "Reaction",
     "id": "reaction1",
+    "class": "Reaction",
     "title": "reaction1",
     "assignments": {
       "ode_": "C * k__reaction1_local * S1"
@@ -58,8 +58,8 @@
     "reversible": false
   },
   {
-    "class": "Record",
     "id": "k",
+    "class": "Record",
     "title": "k",
     "assignments": {
       "ode_": "0.75"

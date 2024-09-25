@@ -46,7 +46,7 @@ S2 @Species 'S2' { units: mole/litre, compartment: compartment, } .= 0 / compart
 
 reaction1 @Reaction 'reaction1' { actors: S1 = S2, reversible: false, };
 reaction1 := compartment * k1 * S1;
-k1_proc @Process { actors:  = k1, aux: {{"metaid":"rule1"}}, };
+k1_proc @Process { actors:  = k1, aux: {metaid: "rule1"}, };
 k1_proc := 0.5;
 
 k1 @Record 'k1' { } .= 1;

@@ -3,29 +3,29 @@
     "id": "t"
   },
   {
-    "class": "Record",
     "id": "z",
+    "class": "Record",
     "assignments": {
       "ode_": "((x <= 0.49) ? ((y > 1.49) ? 2 : 1) : 0)"
     }
   },
   {
-    "class": "Record",
     "id": "y",
+    "class": "Record",
     "assignments": {
       "start_": "2"
     }
   },
   {
-    "class": "Record",
     "id": "x",
+    "class": "Record",
     "assignments": {
       "start_": "0"
     }
   },
   {
-    "class": "Process",
     "id": "y_proc",
+    "class": "Process",
     "assignments": {
       "ode_": "(-2)"
     },
@@ -37,8 +37,8 @@
     ]
   },
   {
-    "class": "Process",
     "id": "x_proc",
+    "class": "Process",
     "assignments": {
       "ode_": "1"
     },
@@ -51,27 +51,27 @@
   },
   {
     "id": "volume",
-    "units": "litre",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "litre"
   },
   {
     "id": "area",
-    "units": "metre^2",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "metre^2"
   },
   {
     "id": "length",
-    "units": "metre",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "metre"
   },
   {
     "id": "substance",
-    "units": "mole",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "mole"
   },
   {
     "id": "time",
-    "units": "second",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "second"
   }
 ]

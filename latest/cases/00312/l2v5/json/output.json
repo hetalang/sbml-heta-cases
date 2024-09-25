@@ -3,8 +3,8 @@
     "id": "t"
   },
   {
-    "class": "Compartment",
     "id": "C",
+    "class": "Compartment",
     "title": "C",
     "units": "volume",
     "assignments": {
@@ -12,8 +12,8 @@
     }
   },
   {
-    "class": "Species",
     "id": "S1",
+    "class": "Species",
     "title": "S1",
     "units": "substance/volume",
     "assignments": {
@@ -22,8 +22,8 @@
     "compartment": "C"
   },
   {
-    "class": "Species",
     "id": "S2",
+    "class": "Species",
     "title": "S2",
     "units": "substance/volume",
     "assignments": {
@@ -32,8 +32,8 @@
     "compartment": "C"
   },
   {
-    "class": "Reaction",
     "id": "reaction1",
+    "class": "Reaction",
     "title": "reaction1",
     "assignments": {
       "ode_": "C * k1 * S1"
@@ -51,32 +51,32 @@
     "reversible": false
   },
   {
-    "class": "Record",
     "id": "k1",
+    "class": "Record",
     "title": "k1",
     "assignments": {
       "start_": "0.9"
     }
   },
   {
-    "class": "Record",
     "id": "p1",
+    "class": "Record",
     "title": "p1",
     "assignments": {
       "start_": "0.1"
     }
   },
   {
-    "class": "Record",
     "id": "p2",
+    "class": "Record",
     "title": "p2",
     "assignments": {
       "start_": "1.5"
     }
   },
   {
-    "class": "Process",
     "id": "p2_proc",
+    "class": "Process",
     "aux": {
       "metaid": "rule2"
     },
@@ -92,27 +92,27 @@
   },
   {
     "id": "volume",
-    "units": "litre",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "litre"
   },
   {
     "id": "area",
-    "units": "metre^2",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "metre^2"
   },
   {
     "id": "length",
-    "units": "metre",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "metre"
   },
   {
     "id": "substance",
-    "units": "mole",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "mole"
   },
   {
     "id": "time",
-    "units": "second",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "second"
   }
 ]

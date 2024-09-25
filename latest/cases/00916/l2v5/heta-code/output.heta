@@ -9,6 +9,6 @@ t @TimeScale { };
 
 c @Compartment 'c' { units: area, } .= 2 / 3;
 
-c_proc @Process { actors:  = c, aux: {{"metaid":"rule1"}}, };
+c_proc @Process { actors:  = c, aux: {metaid: "rule1"}, };
 c_proc := 0.5 * c;
 

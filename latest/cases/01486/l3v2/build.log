@@ -1,8 +1,8 @@
 [info]	Namespace "nameless" was set as "concrete"
-[info]	Builder initialized in directory "/home/runner/work/sbml-heta-cases/sbml-heta-cases/result/latest/cases/01486/l3v2".
+[info]	Builder initialized in directory "result/latest/cases/01486/l3v2".
 [info]	Compilation of module "index.heta" of type "heta"...
-[info]	Reading module of type "heta" from file "/home/runner/work/sbml-heta-cases/sbml-heta-cases/result/latest/cases/01486/l3v2/index.heta"...
-[info]	Reading module of type "sbml" from file "/home/runner/work/sbml-heta-cases/sbml-heta-cases/result/latest/cases/01486/model-sbml-l3v2.xml"...
+[info]	Reading module of type "heta" from file "result/latest/cases/01486/l3v2/index.heta"...
+[info]	Reading module of type "sbml" from file "result/latest/cases/01486/model-sbml-l3v2.xml"...
 [error]	Function math "my_gt" should be a numeric expression.
 [error]	Function math "my_geq" should be a numeric expression.
 [error]	Function math "my_lt" should be a numeric expression.
@@ -13,7 +13,7 @@
 [error]	Function math "my_or" should be a numeric expression.
 [error]	Function math "my_xor" should be a numeric expression.
 [error]	Function math "my_not" should be a numeric expression.
-[info]	Setting references in elements, total length 126
+[info]	Setting references in elements, total length 124
 [error]	FunctionDef "sinh" is not found as expected here: my_sinh { math: sinh(x) };
 [error]	FunctionDef "cosh" is not found as expected here: my_cosh { math: cosh(x) };
 [error]	FunctionDef "asinh" is not found as expected here: my_arcsinh { math: asinh(x) };

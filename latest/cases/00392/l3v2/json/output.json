@@ -4,8 +4,8 @@
     "units": "second"
   },
   {
-    "class": "Compartment",
     "id": "C",
+    "class": "Compartment",
     "title": "C",
     "units": "litre",
     "assignments": {
@@ -14,8 +14,8 @@
     "boundary": true
   },
   {
-    "class": "Species",
     "id": "S1",
+    "class": "Species",
     "title": "S1",
     "units": "mole/litre",
     "assignments": {
@@ -25,8 +25,8 @@
     "compartment": "C"
   },
   {
-    "class": "Species",
     "id": "S2",
+    "class": "Species",
     "title": "S2",
     "units": "mole/litre",
     "assignments": {
@@ -35,8 +35,8 @@
     "compartment": "C"
   },
   {
-    "class": "Species",
     "id": "S3",
+    "class": "Species",
     "title": "S3",
     "units": "mole/litre",
     "assignments": {
@@ -45,8 +45,8 @@
     "compartment": "C"
   },
   {
-    "class": "Species",
     "id": "S4",
+    "class": "Species",
     "title": "S4",
     "units": "mole/litre",
     "assignments": {
@@ -56,13 +56,13 @@
     "compartment": "C"
   },
   {
-    "class": "Const",
     "id": "k__reaction1_local",
+    "class": "Const",
     "num": 750
   },
   {
-    "class": "Reaction",
     "id": "reaction1",
+    "class": "Reaction",
     "title": "reaction1",
     "assignments": {
       "ode_": "C * k__reaction1_local * S1 * S2"
@@ -88,13 +88,13 @@
     "reversible": false
   },
   {
-    "class": "Const",
     "id": "k__reaction2_local",
+    "class": "Const",
     "num": 250
   },
   {
-    "class": "Reaction",
     "id": "reaction2",
+    "class": "Reaction",
     "title": "reaction2",
     "assignments": {
       "ode_": "C * k__reaction2_local * S3 * S4"
@@ -120,14 +120,14 @@
     "reversible": false
   },
   {
-    "class": "DSwitcher",
     "id": "event1",
+    "class": "DSwitcher",
     "title": "event1",
     "trigger": "S4 > S2"
   },
   {
-    "class": "DSwitcher",
     "id": "event2",
+    "class": "DSwitcher",
     "title": "event2",
     "trigger": "S3 > (9 / 4000)"
   }

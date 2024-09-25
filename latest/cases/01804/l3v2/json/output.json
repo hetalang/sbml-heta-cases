@@ -3,32 +3,32 @@
     "id": "t"
   },
   {
-    "class": "Compartment",
     "id": "C",
+    "class": "Compartment",
     "assignments": {
       "start_": "1"
     },
     "boundary": true
   },
   {
-    "class": "Species",
     "id": "spec",
+    "class": "Species",
     "assignments": {
       "start_": "3"
     },
     "compartment": "C"
   },
   {
-    "class": "Species",
     "id": "Spec",
+    "class": "Species",
     "assignments": {
       "start_": "4"
     },
     "compartment": "C"
   },
   {
-    "class": "Species",
     "id": "sPeC",
+    "class": "Species",
     "assignments": {
       "start_": "5"
     },

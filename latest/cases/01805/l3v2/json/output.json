@@ -3,24 +3,24 @@
     "id": "t"
   },
   {
-    "class": "Compartment",
     "id": "comp",
+    "class": "Compartment",
     "assignments": {
       "start_": "3"
     },
     "boundary": true
   },
   {
-    "class": "Compartment",
     "id": "Comp",
+    "class": "Compartment",
     "assignments": {
       "start_": "4"
     },
     "boundary": true
   },
   {
-    "class": "Compartment",
     "id": "cOmP",
+    "class": "Compartment",
     "assignments": {
       "start_": "5"
     },

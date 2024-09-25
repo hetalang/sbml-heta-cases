@@ -4,8 +4,8 @@
     "units": "second"
   },
   {
-    "class": "Compartment",
     "id": "c",
+    "class": "Compartment",
     "title": "c",
     "units": "litre",
     "assignments": {
@@ -13,8 +13,8 @@
     }
   },
   {
-    "class": "Species",
     "id": "s",
+    "class": "Species",
     "title": "s",
     "units": "mole/litre",
     "assignments": {
@@ -23,8 +23,8 @@
     "compartment": "c"
   },
   {
-    "class": "Process",
     "id": "c_proc",
+    "class": "Process",
     "aux": {
       "metaid": "rule1"
     },

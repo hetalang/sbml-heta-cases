@@ -3,29 +3,29 @@
     "id": "t"
   },
   {
-    "class": "Compartment",
     "id": "C",
+    "class": "Compartment",
     "assignments": {
       "start_": "1"
     },
     "boundary": true
   },
   {
-    "class": "Species",
     "id": "S1",
+    "class": "Species",
     "assignments": {
       "start_": "1"
     },
     "compartment": "C"
   },
   {
-    "class": "Const",
     "id": "avogadro__J0_local",
+    "class": "Const",
     "num": 1e+24
   },
   {
-    "class": "Reaction",
     "id": "J0",
+    "class": "Reaction",
     "assignments": {
       "ode_": "6.02214076e+23 / avogadro__J0_local"
     },

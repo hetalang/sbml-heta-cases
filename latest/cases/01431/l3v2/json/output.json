@@ -3,32 +3,32 @@
     "id": "t"
   },
   {
-    "class": "Compartment",
     "id": "C",
+    "class": "Compartment",
     "assignments": {
       "start_": "1"
     },
     "boundary": true
   },
   {
-    "class": "Species",
     "id": "A",
-    "assignments": {
-      "start_": "1"
-    },
-    "compartment": "C"
-  },
-  {
     "class": "Species",
-    "id": "B",
     "assignments": {
       "start_": "1"
     },
     "compartment": "C"
   },
   {
-    "class": "Reaction",
+    "id": "B",
+    "class": "Species",
+    "assignments": {
+      "start_": "1"
+    },
+    "compartment": "C"
+  },
+  {
     "id": "J0",
+    "class": "Reaction",
     "assignments": {
       "ode_": "1"
     },

@@ -3,8 +3,8 @@
     "id": "t"
   },
   {
-    "class": "Record",
     "id": "reset",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "Qinc": "t",
@@ -12,29 +12,29 @@
     }
   },
   {
-    "class": "Record",
     "id": "Q",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "Qinc": "Q + 0.01"
     }
   },
   {
-    "class": "Record",
     "id": "R",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "Rinc": "R + 0.01"
     }
   },
   {
-    "class": "DSwitcher",
     "id": "Qinc",
+    "class": "DSwitcher",
     "trigger": "(t - reset) >= 0.01"
   },
   {
-    "class": "DSwitcher",
     "id": "Rinc",
+    "class": "DSwitcher",
     "trigger": "(t - reset) >= 0.01"
   }
 ]

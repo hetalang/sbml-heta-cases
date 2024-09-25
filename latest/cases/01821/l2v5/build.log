@@ -1,11 +1,11 @@
 [info]	Namespace "nameless" was set as "concrete"
-[info]	Builder initialized in directory "/home/runner/work/sbml-heta-cases/sbml-heta-cases/result/latest/cases/01821/l2v5".
+[info]	Builder initialized in directory "result/latest/cases/01821/l2v5".
 [info]	Compilation of module "index.heta" of type "heta"...
-[info]	Reading module of type "heta" from file "/home/runner/work/sbml-heta-cases/sbml-heta-cases/result/latest/cases/01821/l2v5/index.heta"...
-[info]	Reading module of type "sbml" from file "/home/runner/work/sbml-heta-cases/sbml-heta-cases/result/latest/cases/01821/model-sbml-l2v5.xml"...
+[info]	Reading module of type "heta" from file "result/latest/cases/01821/l2v5/index.heta"...
+[info]	Reading module of type "sbml" from file "result/latest/cases/01821/model-sbml-l2v5.xml"...
 [error]	id must not be a reserved word, got "time". Reserved words list: 
-	 include, block, namespace, abstract, concrete, begin, end, NaN, Infinity, e, E, pi, PI, time, SOLVERTIME, default
-[info]	Setting references in elements, total length 90
+	 include, block, namespace, abstract, concrete, begin, end, NaN, Infinity, e, E, pi, PI, time, SOLVERTIME, default, null
+[info]	Setting references in elements, total length 88
 [error]	Component "time" is not found in space "nameless" as expected in expression: a [start_]= time;
 [info]	Checking for circular references in Records.
 [warn]	Units checking and export were skipped because of errors in compilation.

@@ -15,7 +15,7 @@ S2 @Species 'S2' { units: substance/volume, compartment: C, } .= 0 / C;
 
 reaction1 @Reaction 'reaction1' { actors: S1 = S2, reversible: false, };
 reaction1 := C * multiply(k1, S1);
-C_proc @Process { actors:  = C, aux: {{"metaid":"rule1"}}, };
+C_proc @Process { actors:  = C, aux: {metaid: "rule1"}, };
 C_proc := (-1) * C * p1;
 
 k1 @Record 'k1' { } .= 0.9;

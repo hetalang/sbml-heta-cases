@@ -4,8 +4,8 @@
     "units": "second"
   },
   {
-    "class": "Compartment",
     "id": "compartment",
+    "class": "Compartment",
     "title": "compartment",
     "units": "litre",
     "assignments": {
@@ -14,8 +14,8 @@
     "boundary": true
   },
   {
-    "class": "Species",
     "id": "S1",
+    "class": "Species",
     "title": "S1",
     "units": "mole/litre",
     "assignments": {
@@ -24,8 +24,8 @@
     "compartment": "compartment"
   },
   {
-    "class": "Species",
     "id": "S2",
+    "class": "Species",
     "title": "S2",
     "units": "mole/litre",
     "assignments": {
@@ -34,8 +34,8 @@
     "compartment": "compartment"
   },
   {
-    "class": "Species",
     "id": "S3",
+    "class": "Species",
     "title": "S3",
     "units": "mole/litre",
     "assignments": {
@@ -44,8 +44,8 @@
     "compartment": "compartment"
   },
   {
-    "class": "Species",
     "id": "S4",
+    "class": "Species",
     "title": "S4",
     "units": "mole/litre",
     "assignments": {
@@ -54,8 +54,8 @@
     "compartment": "compartment"
   },
   {
-    "class": "Reaction",
     "id": "reaction1",
+    "class": "Reaction",
     "title": "reaction1",
     "assignments": {
       "ode_": "compartment * k1 * S1"
@@ -73,8 +73,8 @@
     "reversible": false
   },
   {
-    "class": "Reaction",
     "id": "reaction2",
+    "class": "Reaction",
     "title": "reaction2",
     "assignments": {
       "ode_": "calculate(S2, p1, p2)"
@@ -97,31 +97,31 @@
     ]
   },
   {
-    "class": "Const",
     "id": "p1",
+    "class": "Const",
     "title": "p1",
     "num": 1.5
   },
   {
-    "class": "Const",
     "id": "p2",
+    "class": "Const",
     "title": "p2",
     "num": 0.05
   },
   {
-    "class": "Const",
     "id": "k1",
+    "class": "Const",
     "title": "k1",
     "num": 1
   },
   {
     "id": "calculate",
+    "action": "defineFunction",
     "arguments": [
       "x",
       "y",
       "z"
     ],
-    "math": "((x > 4 xor x < 1 xor x < 2) ? y : z)",
-    "action": "defineFunction"
+    "math": "((x > 4 xor x < 1 xor x < 2) ? y : z)"
   }
 ]

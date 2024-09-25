@@ -50,7 +50,7 @@ S4 @Species 'S4' { units: mole/litre, boundary: true, compartment: C, } .= 1 / C
 
 reaction1 @Reaction 'reaction1' { actors: S1 = S2, reversible: false, };
 reaction1 := C * k1 * S1;
-S3_proc @Process { actors:  = S3, aux: {{"metaid":"rule1"}}, };
+S3_proc @Process { actors:  = S3, aux: {metaid: "rule1"}, };
 S3_proc := 0.15;
 
 k1 @Const 'k1' { } = 1.5;

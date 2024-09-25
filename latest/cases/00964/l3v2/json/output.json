@@ -3,40 +3,40 @@
     "id": "t"
   },
   {
-    "class": "Record",
     "id": "S",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "ode_": "Q + R + T"
     }
   },
   {
-    "class": "Record",
     "id": "Q",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "Qinc": "Q + 0.01"
     }
   },
   {
-    "class": "Record",
     "id": "R",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "Rinc": "R + 0.01"
     }
   },
   {
-    "class": "Record",
     "id": "T",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "Tinc": "T + 0.01"
     }
   },
   {
-    "class": "Record",
     "id": "reset",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "Qinc": "t",
@@ -45,36 +45,36 @@
     }
   },
   {
-    "class": "Const",
     "id": "tolerance",
+    "class": "Const",
     "num": 5
   },
   {
-    "class": "Record",
     "id": "error",
+    "class": "Record",
     "assignments": {
       "start_": "0",
       "error_check": "1"
     }
   },
   {
-    "class": "DSwitcher",
     "id": "Qinc",
+    "class": "DSwitcher",
     "trigger": "(t - reset) >= 0.01"
   },
   {
-    "class": "DSwitcher",
     "id": "Rinc",
+    "class": "DSwitcher",
     "trigger": "(t - reset) >= 0.01"
   },
   {
-    "class": "DSwitcher",
     "id": "Tinc",
+    "class": "DSwitcher",
     "trigger": "(t - reset) >= 0.01"
   },
   {
-    "class": "DSwitcher",
     "id": "error_check",
+    "class": "DSwitcher",
     "trigger": "abs(Q - R) >= tolerance or abs(Q - T) >= tolerance or abs(T - R) >= tolerance"
   }
 ]

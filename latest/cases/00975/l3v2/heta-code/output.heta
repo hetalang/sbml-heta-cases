@@ -2,7 +2,7 @@
 
 t @TimeScale { };
 
-default_compartment @Compartment { boundary: true, aux: {{"sboTerm":"SBO:0000410"}}, } .= 1;
+default_compartment @Compartment { boundary: true, aux: {sboTerm: "SBO:0000410"}, } .= 1;
 
 S1 @Species { compartment: default_compartment, } .= 0 / default_compartment;
 S2 @Species { compartment: default_compartment, } .= 0.001 / default_compartment;

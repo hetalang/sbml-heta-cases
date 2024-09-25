@@ -3,36 +3,36 @@
     "id": "t"
   },
   {
-    "class": "Record",
     "id": "P1",
+    "class": "Record",
     "assignments": {
       "ode_": "6.02214076e+23"
     }
   },
   {
-    "class": "Record",
     "id": "P2",
+    "class": "Record",
     "assignments": {
       "ode_": "6.02214076e+23"
     }
   },
   {
-    "class": "Record",
     "id": "P3",
+    "class": "Record",
     "assignments": {
       "ode_": "6.02214076e+23"
     }
   },
   {
-    "class": "Record",
     "id": "P4",
+    "class": "Record",
     "assignments": {
       "ode_": "6.02214076e+23"
     }
   },
   {
-    "class": "Record",
     "id": "P5",
+    "class": "Record",
     "assignments": {
       "ode_": "6.02214076e+23 - (6.0221e+23)"
     }

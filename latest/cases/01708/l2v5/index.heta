@@ -6,5 +6,3 @@
 
 #include { source: ../model-sbml-l2v5.xml, type: sbml };
 
-#export { format: HetaCode };
-#export { format: JSON };

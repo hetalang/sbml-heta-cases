@@ -4,8 +4,8 @@
     "units": "second"
   },
   {
-    "class": "Compartment",
     "id": "C1",
+    "class": "Compartment",
     "title": "C1",
     "units": "metre",
     "assignments": {
@@ -13,8 +13,8 @@
     }
   },
   {
-    "class": "Compartment",
     "id": "C2",
+    "class": "Compartment",
     "title": "C2",
     "units": "metre^2",
     "assignments": {
@@ -22,8 +22,8 @@
     }
   },
   {
-    "class": "Process",
     "id": "C1_proc",
+    "class": "Process",
     "aux": {
       "metaid": "rule1"
     },
@@ -38,8 +38,8 @@
     ]
   },
   {
-    "class": "Process",
     "id": "C2_proc",
+    "class": "Process",
     "aux": {
       "metaid": "rule2"
     },

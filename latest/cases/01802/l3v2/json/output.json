@@ -3,16 +3,16 @@
     "id": "t"
   },
   {
-    "class": "Compartment",
     "id": "C",
+    "class": "Compartment",
     "assignments": {
       "start_": "1"
     },
     "boundary": true
   },
   {
-    "class": "Species",
     "id": "S1",
+    "class": "Species",
     "assignments": {
       "start_": "2"
     },
@@ -20,8 +20,8 @@
     "isAmount": true
   },
   {
-    "class": "Species",
     "id": "S2",
+    "class": "Species",
     "assignments": {
       "start_": "3"
     },
@@ -29,23 +29,23 @@
     "isAmount": true
   },
   {
-    "class": "Const",
     "id": "S1_stoich__J1_local",
+    "class": "Const",
     "num": 0.1
   },
   {
-    "class": "Const",
     "id": "S2_stoich__J1_local",
-    "num": 0.1
-  },
-  {
     "class": "Const",
-    "id": "J1__J1_local",
     "num": 0.1
   },
   {
-    "class": "Reaction",
+    "id": "J1__J1_local",
+    "class": "Const",
+    "num": 0.1
+  },
+  {
     "id": "J1",
+    "class": "Reaction",
     "assignments": {
       "ode_": "S1_stoich__J1_local * S2_stoich__J1_local * J1__J1_local * 200"
     },

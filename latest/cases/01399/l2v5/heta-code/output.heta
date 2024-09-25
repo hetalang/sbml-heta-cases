@@ -7,7 +7,7 @@ time #defineUnit { units: second, };
 
 t @TimeScale { };
 
-default_compartment @Compartment { boundary: true, aux: {{"sboTerm":"SBO:0000410"}}, } .= 1;
+default_compartment @Compartment { boundary: true, aux: {sboTerm: "SBO:0000410"}, } .= 1;
 
 S1 @Species { compartment: default_compartment, } .= 5;
 S2 @Species { compartment: default_compartment, } .= 5;

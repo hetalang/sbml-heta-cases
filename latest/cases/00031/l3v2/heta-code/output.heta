@@ -6,6 +6,6 @@ compartment @Compartment 'compartment' { units: litre, boundary: true, } .= 1;
 
 S1 @Species 'S1' { units: mole/litre, compartment: compartment, } .= 0 / compartment;
 
-S1_proc @Process { actors:  = S1, aux: {{"metaid":"rule1"}}, };
+S1_proc @Process { actors:  = S1, aux: {metaid: "rule1"}, };
 S1_proc := 7;
 

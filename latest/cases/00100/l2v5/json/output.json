@@ -3,8 +3,8 @@
     "id": "t"
   },
   {
-    "class": "Compartment",
     "id": "compartment",
+    "class": "Compartment",
     "title": "compartment",
     "assignments": {
       "start_": "0"
@@ -12,8 +12,8 @@
     "boundary": true
   },
   {
-    "class": "Species",
     "id": "S1",
+    "class": "Species",
     "title": "S1",
     "units": "substance",
     "assignments": {
@@ -23,8 +23,8 @@
     "isAmount": true
   },
   {
-    "class": "Species",
     "id": "S2",
+    "class": "Species",
     "title": "S2",
     "units": "substance",
     "assignments": {
@@ -34,8 +34,8 @@
     "isAmount": true
   },
   {
-    "class": "Species",
     "id": "S3",
+    "class": "Species",
     "title": "S3",
     "units": "substance",
     "assignments": {
@@ -45,8 +45,8 @@
     "isAmount": true
   },
   {
-    "class": "Reaction",
     "id": "reaction1",
+    "class": "Reaction",
     "title": "reaction1",
     "assignments": {
       "ode_": "multiply(k1, S1, S2)"
@@ -68,8 +68,8 @@
     "reversible": false
   },
   {
-    "class": "Reaction",
     "id": "reaction2",
+    "class": "Reaction",
     "title": "reaction2",
     "assignments": {
       "ode_": "k2 * S3"
@@ -91,16 +91,16 @@
     "reversible": false
   },
   {
-    "class": "Record",
     "id": "k1",
+    "class": "Record",
     "title": "k1",
     "assignments": {
       "start_": "0.75"
     }
   },
   {
-    "class": "Record",
     "id": "k2",
+    "class": "Record",
     "title": "k2",
     "assignments": {
       "start_": "0.25"
@@ -108,37 +108,37 @@
   },
   {
     "id": "volume",
-    "units": "litre",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "litre"
   },
   {
     "id": "area",
-    "units": "metre^2",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "metre^2"
   },
   {
     "id": "length",
-    "units": "metre",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "metre"
   },
   {
     "id": "substance",
-    "units": "mole",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "mole"
   },
   {
     "id": "time",
-    "units": "second",
-    "action": "defineUnit"
+    "action": "defineUnit",
+    "units": "second"
   },
   {
     "id": "multiply",
+    "action": "defineFunction",
     "arguments": [
       "x",
       "y",
       "z"
     ],
-    "math": "x * y * z",
-    "action": "defineFunction"
+    "math": "x * y * z"
   }
 ]

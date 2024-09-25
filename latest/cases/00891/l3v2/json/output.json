@@ -4,30 +4,30 @@
     "units": "second"
   },
   {
-    "class": "Record",
     "id": "k1",
+    "class": "Record",
     "title": "k1",
     "assignments": {
       "start_": "1.5e-4"
     }
   },
   {
-    "class": "Record",
     "id": "k2",
+    "class": "Record",
     "title": "k2",
     "assignments": {
       "start_": "0"
     }
   },
   {
-    "class": "Const",
     "id": "k3",
+    "class": "Const",
     "title": "k3",
     "num": 1
   },
   {
-    "class": "Process",
     "id": "k1_proc",
+    "class": "Process",
     "aux": {
       "metaid": "rule1"
     },
@@ -42,8 +42,8 @@
     ]
   },
   {
-    "class": "Process",
     "id": "k2_proc",
+    "class": "Process",
     "aux": {
       "metaid": "rule2"
     },

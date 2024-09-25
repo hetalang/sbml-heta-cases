@@ -3,25 +3,25 @@
     "id": "t"
   },
   {
-    "class": "Record",
     "id": "P1",
+    "class": "Record",
     "assignments": {
       "start_": "1",
       "E0": "addTo(P1, 2)"
     }
   },
   {
-    "class": "DSwitcher",
     "id": "E0",
+    "class": "DSwitcher",
     "trigger": "P1 > 0.9"
   },
   {
     "id": "addTo",
+    "action": "defineFunction",
     "arguments": [
       "x",
       "y"
     ],
-    "math": "x + y",
-    "action": "defineFunction"
+    "math": "x + y"
   }
 ]

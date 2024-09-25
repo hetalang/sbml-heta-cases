@@ -3,8 +3,8 @@
     "id": "t"
   },
   {
-    "class": "Record",
     "id": "x",
+    "class": "Record",
     "assignments": {
       "ode_": "((2 > 0) ? 1 : 3)"
     }

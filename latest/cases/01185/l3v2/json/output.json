@@ -3,24 +3,24 @@
     "id": "t"
   },
   {
-    "class": "Compartment",
     "id": "C",
+    "class": "Compartment",
     "assignments": {
       "start_": "1"
     },
     "boundary": true
   },
   {
-    "class": "Species",
     "id": "S1",
+    "class": "Species",
     "assignments": {
       "start_": "1 / C"
     },
     "compartment": "C"
   },
   {
-    "class": "Reaction",
     "id": "_J0",
+    "class": "Reaction",
     "assignments": {
       "ode_": "k1"
     },
@@ -32,13 +32,13 @@
     ]
   },
   {
-    "class": "Const",
     "id": "k1",
+    "class": "Const",
     "num": -2
   },
   {
-    "class": "Const",
     "id": "y",
+    "class": "Const",
     "num": 3
   }
 ]

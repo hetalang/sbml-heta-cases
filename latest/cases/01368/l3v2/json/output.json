@@ -3,8 +3,8 @@
     "id": "t"
   },
   {
-    "class": "Compartment",
     "id": "J1",
+    "class": "Compartment",
     "assignments": {
       "start_": "5"
     },

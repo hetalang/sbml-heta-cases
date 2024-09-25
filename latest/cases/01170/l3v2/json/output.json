@@ -3,16 +3,16 @@
     "id": "t"
   },
   {
-    "class": "Compartment",
     "id": "C",
+    "class": "Compartment",
     "assignments": {
       "start_": "1"
     },
     "boundary": true
   },
   {
-    "class": "Species",
     "id": "s1",
+    "class": "Species",
     "assignments": {
       "start_": "0.001"
     },
@@ -20,13 +20,13 @@
     "isAmount": true
   },
   {
-    "class": "Const",
     "id": "timeconv",
+    "class": "Const",
     "num": 60
   },
   {
-    "class": "Record",
     "id": "t3",
+    "class": "Record",
     "assignments": {
       "start_": "10"
     }

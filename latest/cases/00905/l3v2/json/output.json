@@ -4,8 +4,8 @@
     "units": "second"
   },
   {
-    "class": "Compartment",
     "id": "c",
+    "class": "Compartment",
     "title": "c",
     "units": "metre",
     "assignments": {
@@ -13,8 +13,8 @@
     }
   },
   {
-    "class": "Process",
     "id": "c_proc",
+    "class": "Process",
     "aux": {
       "metaid": "rule1"
     },

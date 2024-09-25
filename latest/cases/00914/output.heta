@@ -38,6 +38,6 @@ t @TimeScale { units: second, };
 
 c @Compartment 'c' { units: metre^2, } .= 0.5;
 
-c_proc @Process { actors:  = c, aux: {{"metaid":"rule1"}}, };
+c_proc @Process { actors:  = c, aux: {metaid: "rule1"}, };
 c_proc := multiply(c, 0.5);
 

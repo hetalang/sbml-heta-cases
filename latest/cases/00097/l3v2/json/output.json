@@ -4,8 +4,8 @@
     "units": "second"
   },
   {
-    "class": "Compartment",
     "id": "compartment",
+    "class": "Compartment",
     "title": "compartment",
     "assignments": {
       "start_": "0"
@@ -13,8 +13,8 @@
     "boundary": true
   },
   {
-    "class": "Species",
     "id": "S1",
+    "class": "Species",
     "title": "S1",
     "units": "mole",
     "assignments": {
@@ -24,8 +24,8 @@
     "isAmount": true
   },
   {
-    "class": "Species",
     "id": "S2",
+    "class": "Species",
     "title": "S2",
     "units": "mole",
     "assignments": {
@@ -35,8 +35,8 @@
     "isAmount": true
   },
   {
-    "class": "Reaction",
     "id": "reaction1",
+    "class": "Reaction",
     "title": "reaction1",
     "assignments": {
       "ode_": "multiply(k1, S1)"
@@ -54,18 +54,18 @@
     "reversible": false
   },
   {
-    "class": "Const",
     "id": "k1",
+    "class": "Const",
     "title": "k1",
     "num": 1
   },
   {
     "id": "multiply",
+    "action": "defineFunction",
     "arguments": [
       "x",
       "y"
     ],
-    "math": "x * y",
-    "action": "defineFunction"
+    "math": "x * y"
   }
 ]

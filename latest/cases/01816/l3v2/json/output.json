@@ -3,18 +3,18 @@
     "id": "t"
   },
   {
-    "class": "Const",
     "id": "false",
+    "class": "Const",
     "num": 4
   },
   {
-    "class": "Const",
     "id": "False",
+    "class": "Const",
     "num": 5
   },
   {
-    "class": "Const",
     "id": "FALSE",
+    "class": "Const",
     "num": 6
   }
 ]

@@ -3,15 +3,15 @@
     "id": "t"
   },
   {
-    "class": "Compartment",
     "id": "c",
+    "class": "Compartment",
     "assignments": {
       "start_": "2"
     }
   },
   {
-    "class": "Species",
     "id": "S1",
+    "class": "Species",
     "assignments": {
       "start_": "1.2"
     },
@@ -19,8 +19,8 @@
     "isAmount": true
   },
   {
-    "class": "Process",
     "id": "S1_proc",
+    "class": "Process",
     "assignments": {
       "ode_": "1"
     },
@@ -32,8 +32,8 @@
     ]
   },
   {
-    "class": "Process",
     "id": "c_proc",
+    "class": "Process",
     "assignments": {
       "ode_": "1"
     },

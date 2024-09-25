@@ -3,15 +3,15 @@
     "id": "t"
   },
   {
-    "class": "Record",
     "id": "x",
+    "class": "Record",
     "assignments": {
       "start_": "3"
     }
   },
   {
-    "class": "Process",
     "id": "x_proc",
+    "class": "Process",
     "assignments": {
       "ode_": "((2 > 0) ? 1 : 0)"
     },
