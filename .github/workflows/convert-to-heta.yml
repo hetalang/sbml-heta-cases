@@ -25,7 +25,6 @@ jobs:
       - name: Installations of heta-compiler
         run: |
           npm ci
-#          npm i hetalang/heta-compiler
           npm i heta-compiler
           npx heta -v
 
