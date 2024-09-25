@@ -17,15 +17,16 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Install Node.js 18
-        uses: actions/setup-node@v3
+      - name: Install Node.js 20
+        uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
 
-      - name: Installations of heta-compiler from repository
+      - name: Installations of heta-compiler
         run: |
           npm ci
-          npm i hetalang/heta-compiler
+#          npm i hetalang/heta-compiler
+          npm i heta-compiler
           npx heta -v
 
       - name: Download semantic cases of version 3.4.0

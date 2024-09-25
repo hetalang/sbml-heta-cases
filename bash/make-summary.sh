@@ -42,7 +42,7 @@ for dir in $dirs; do
         echo "$dir has no SBML L2V5 file"
         l2v5RetCode=9
     else
-        npx heta build --skip-updates --dist-dir . --log-mode error $base_dir/cases/$dir/l2v5 > /dev/null 2>&1 
+        npx heta build --export HetaCode,JSON --skip-updates --dist-dir . --log-mode error $base_dir/cases/$dir/l2v5 > /dev/null 2>&1 
         l2v5RetCode=$(echo $?)
     fi
     cp cases/semantic/$dir/$dir-sbml-l3v2.xml $base_dir/cases/$dir/model-sbml-l3v2.xml > /dev/null 2>&1
@@ -50,7 +50,7 @@ for dir in $dirs; do
         echo "$dir has no SBML L3V2 file"
         l3v2RetCode=9
     else
-        npx heta build --skip-updates --dist-dir . --log-mode error $base_dir/cases/$dir/l3v2 > /dev/null 2>&1
+        npx heta build --export HetaCode,JSON --skip-updates --dist-dir . --log-mode error $base_dir/cases/$dir/l3v2 > /dev/null 2>&1
         l3v2RetCode=$(echo $?)
     fi
 
