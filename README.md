@@ -1,5 +1,7 @@
 # SBML Heta Cases
 
+> This project is not maintained and will not receive further development. Please use [hetalang/format-conversion-test-suite](https://github.com/hetalang/format-conversion-test-suite) instead.
+
 The repository is designed to test different aspects of Heta formats on [SBML Test Suite](https://github.com/sbmlteam/sbml-test-suite).
 
 [![Heta project](https://img.shields.io/badge/%CD%B1-Heta_project-blue)](https://hetalang.github.io/)
